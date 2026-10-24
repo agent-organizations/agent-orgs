@@ -13,12 +13,12 @@ python tools/fetch_models.py --adapters --asset-directory "YOUR PATHWAY"
 python tools/fetch_models.py --adapters --asset-directory "YOUR PATHWAY" --use-gh
 ```
 
-The fetcher verifies bytes before replacing a destination and restores shared serving paths from identical checkpoints. The 400 instance definitions reference canonical weights; no weight file is duplicated200times. Mistral participant inference uses adapter scale0.5, while manager inference uses0.9. Serving configs encode the corresponding alpha values without changing rank or checkpoint tensors.
+The fetcher verifies bytes before replacing a destination and restores shared serving paths from identical checkpoints. The 400 instance definitions reference canonical weights; no weight file is duplicated200times. Mistral participant inference uses adapter scale 0.5, while manager inference uses 0.9. Serving configs encode the corresponding alpha values without changing rank or checkpoint tensors.
 
 Mistral adapters are under `participant_article`, `phase10_qa02_03`, `full_qa01_04_05`, `serving` and `participant_serving`. Qwen adapters are under `article`, `qa02_03`, `full_qa01_04_05` and `serving`. The Qwen B raw trained checkpoint is preserved; the serving directory references the filtered canonical export required by vLLM.
 
 A configuration's `base_model_name_or_path` is `YOUR PATHWAY`. The runtime supplies the actual base path explicitly, so no private workstation or VM path is needed.
 
-GitHub blocks normal Git files above100MiB; the adapter archives use its supported release-asset mechanism ([GitHub documentation](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)). No storage plan or paid subscription has been changed.
+GitHub blocks normal Git files above 100MiB; the adapter archives use its supported release-asset mechanism ([GitHub documentation](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)). No storage plan or paid subscription has been changed.
 
-The model cards and Qwen LICENSE/NOTICE files retain their upstream terms. Mistral's model card declares Apache2.0. This repository does not grant a new license to third-party model weights or article material.
+The model cards and Qwen LICENSE/NOTICE files retain their upstream terms. Mistral's model card declares Apache 2.0. This repository does not grant a new license to third-party model weights or article material.
