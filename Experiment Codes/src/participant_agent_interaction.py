@@ -1,8 +1,4 @@
 """Participant Agent Interaction protocol on vLLM: parallel independent pairs, sequential reviewed turns.
-
-Consensus review is explicit and bound to the exact current messages. A manager
-attempt never silently consumes these new conversations: its frozen inputs are
-separate until a new source set is deliberately registered.
 """
 from __future__ import annotations
 from pathlib import Path
