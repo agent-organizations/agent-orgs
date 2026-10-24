@@ -58,4 +58,4 @@ The manager attempts use the20 frozen conversations supplied with the study. New
 | `../Parallel Setup/src/transport_core.py` | Bounded vLLM streaming, response journals, token checks and timings |
 | `training/` | Runnable training-stage entrypoints and retained source lineage |
 
-The exact base prompts are in each attempt's `prompts/Prompt_Verbatim.txt`; the notebook source does not add outcome prescriptions. Responses are not replaced with expected answers or edited rationales. The repository is a base-procedure implementation rather than a replay of historical curated manager-result workbooks. CPU validation is recorded under `tests`; GPU validation of this new package remains to be performed before collecting new data.
+The exact base prompts are in each attempt's `prompts/Prompt_Verbatim.txt`. Each response is stored as returned by the model. The repository implements new base-procedure runs; historical manager-result workbooks are separate. CPU validation is recorded under `tests`; GPU validation of this new package remains to be performed before collecting new data.

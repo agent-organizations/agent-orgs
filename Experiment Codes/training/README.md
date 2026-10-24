@@ -61,7 +61,7 @@ The observed training stack was Torch 2.5.1+cu124, Transformers 4.45.2, PEFT 0.1
 
 ## Port changes and limits
 
-`archival_sources/*.py.txt` retain path-normalized original training source, with full-file source hashes and extraction boundaries in `Training logs/provenance_manifest.json`. They are archival text, not entrypoints. The Participant Agent Interaction runtime excerpt ends before inference routines; the Phase09/10 excerpts end before downstream final checks. No manager experiment or edited rationale is training data here.
+`archival_sources/*.py.txt` retain path-normalized original training source, with full-file source hashes and extraction boundaries in `Training logs/provenance_manifest.json`. They are archival text, not entrypoints. The Participant Agent Interaction runtime excerpt ends before inference routines; the Phase09/10 excerpts end before downstream final checks. The training examples are the retained article texts and article-derived question–answer pairs.
 
 `training_port.py` applies explicit AST transformations only when execution is requested: it injects package-relative paths and file helpers, removes old path-helper imports and direct script entrypoints, and omits generated Mistral validation responses. The **NLL forward calculation, optimizer updates, masking, initialization, checkpoint comparison/restoration and epoch schedules remain the original source functions**. Historical generated validation responses are retained in the logs, but were diagnostics rather than checkpoint selectors. The port emits empty diagnostic call lists and marks that omission where applicable. It does not claim a byte-identical rerun, and has not undergone GPU execution validation.
 

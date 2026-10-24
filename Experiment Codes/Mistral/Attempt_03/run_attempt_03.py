@@ -2,8 +2,8 @@
 
 Default: validate the complete 200-call batch on CPU, without model generation.
 With --execute: send 200 independent requests through the local vLLM server.
-Original and swapped participant orientations are separately generated; their
-answers and rationales are never copied, corrected or forced to match.
+Each original and swapped orientation uses a distinct request context and seed.
+Both generated responses are retained independently.
 """
 from pathlib import Path
 import argparse
@@ -45,8 +45,8 @@ async def execute(run_id, *, with_manipulation_checks=False):
     """Optional one-shot recall, followed by parallel manager generation and export.
 
     Recall runs in separate contexts and is not inserted into manager prompts.
-    Failures are retained for scoring; no reread, correction, selection or retry
-    is used to change the substantive answer.
+    The first response from each recall call is saved for separate semantic
+    scoring.
     """
     if with_manipulation_checks:
         checks = await run_checks(run_id + "_recall", allow_inference=True, root=WORKSPACE)

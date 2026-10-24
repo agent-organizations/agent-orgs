@@ -18,12 +18,12 @@ python "Parallel Setup/serve.py" --model Qwen --execute
 python "Experiment Codes/Qwen/Attempt_03/run_attempt_03.py" --run-id qwen_attempt03_001 --execute
 ```
 
-If a separate memory measurement is required, add `--with-manipulation-checks`. This asks each instance its question once without articles or belief differences, saves its unchanged answer for semantic scoring, and then starts the manager batch in fresh contexts. It is optional and does not impose a pass-until-correct gate.
+If a separate memory measurement is required, add `--with-manipulation-checks`. This asks each instance its question once without articles or belief differences, saves its unchanged answer for semantic scoring, and then starts the manager batch in fresh contexts. It is an optional, separate measurement.
 
-The runner validates 200 contexts before any generation: five articles, four pairs, five managers and two participant orientations. Each orientation has its own instance, seed, exact input, model request and output. Swapped choices can differ; the comparison sheet reports the difference rather than overwriting it.
+The runner validates 200 contexts before any generation: five articles, four pairs, five managers and two participant orientations. Each orientation has its own instance, seed, exact input, model request and output. Swapped choices can differ; the comparison sheet reports the difference.
 
 ## Outputs
 
 New files go to `deliverables/<run-id>/`: `Results.xlsx`, `All_Responses.txt`, `Tokens_and_Runtimes.csv`, `results.json`, `All_Exact_Input_and_Output.txt` and `All_Input_and_Output_Token_IDs.json` (see the exporter for the exact schema). The `runs/<run-id>/` tree retains request records and source hashes. Existing runs are never silently replaced after their inputs change.
 
-Raw answers, choices, rationales, format flags, input/output tokens and timings are retained. Model responses are not substituted with expected answers. A shared GPU base and immutable adapter tensors do not share conversation histories.
+Raw answers, choices, rationales, format flags, input/output tokens and timings are retained. Model responses are stored exactly as returned. A shared GPU base and immutable adapter tensors do not share conversation histories.

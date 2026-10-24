@@ -13,7 +13,7 @@ This directory contains genuine historical training records, not fabricated reru
 
 QA fields are `id, manager, article_id, component, prompt, answer, source_sha256`; original records may include additional provenance fields. Step logs retain the exact schema emitted by their own stage, rather than pretending all historical log schemas were identical. Selection metadata and original registration manifests may refer to historical relative files outside this selected package; the **packaged-file** binding is `provenance_manifest.json`.
 
-See `Experiment Codes/training/README.md` for the stage map, selected epochs, hyperparameters, runnable ports and limits. No optimizer-state resumption files are available. Historical execution does not imply that later curated experiment results were produced unchanged by the base procedure in this repository.
+See `Experiment Codes/training/README.md` for the stage map, selected epochs, hyperparameters, runnable ports and limits. No optimizer-state resumption files are available. These records establish the training lineage; they do not establish that historical manager-result workbooks are outputs of this repository’s base procedure.
 
 ## Naming and historical provenance
 

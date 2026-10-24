@@ -101,7 +101,7 @@ def position_comparison(rows):
 
 
 def export_results(rows, summary, destination):
-    """Called only after authorized inference. Nothing is prefilled as a result."""
+    """Export completed model responses and their recorded metadata."""
     # Pure-Python wheels travel with the package. No pip install or server
     # environment change is needed merely to export a future spreadsheet.
     for wheel in sorted((ROOT/'vendor/wheels').glob('*.whl')):
