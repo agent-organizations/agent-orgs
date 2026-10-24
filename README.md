@@ -49,7 +49,13 @@ There are five learned manager adapters per family. Each of the 200 instance def
 6. Optionally run the unaided recall check notebook. It asks only a question, preserves every first response and leaves semantic scoring explicit; it does not provide articles or replace answers.
 7. Prepare and inspect all exact inputs in `04_Manager_Attempts.ipynb`. Set its execution switch only when ready to generate a new batch. Run Attempts01,02,03 in sequence for the selected family, then switch servers for the other family.
 
-Attempt01 supplies belief differences and the factual question. Attempt02 adds the complete frozen interaction. Attempt03 asks for a verdict rather than an endorsement and follows the permitted categories in its base prompt. Full articles are not supplied in manager calls. Each call places the own-answer field first, but that same-call answer is exposed to all supplied materials; the optional unaided recall check is the separate memory measure.
+## Experiment Details
+
+- Attempt01 supplies belief differences and the factual question.
+- Attempt02 adds the complete frozen interaction.
+- Attempt03 asks for a verdict rather than an endorsement and follows the permitted categories in its base prompt.
+
+Full articles are not supplied in manager calls. Each call places the own-answer field first, but that same-call answer is exposed to all supplied materials; the optional unaided recall check is the separate memory measure.
 
 The base implementation independently queries both participant orientations: 5 articles × 4 pairs × 5 managers × 2 orientations = **200 calls per family per attempt**. Reports place each orientation beside its counterpart and compare choices by actual participant. These are matched repeated evaluations, not 200 independent training replications.
 
