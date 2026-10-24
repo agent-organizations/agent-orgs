@@ -25,7 +25,7 @@ The [Participant Agent Interaction runner](Experiment%20Codes/Mistral/Participan
 | Family | Base model | Pinned revision | Inference context cap |
 |---|---|---|---|
 | Mistral | `mistralai/Mistral-7B-Instruct-v0.2` | `b70aa86578567ba3301b21c8a27bea4e8f6d6d61` | 16,384 tokens |
-| Qwen | `Qwen/Qwen-7B-Chat` | `218aa3240fd5a5d1e80bb6c47d5d774361913706` | 8,192 tokens |
+| Qwen | `Qwen/Qwen-7B-Chat` | `218aa3240fd5a5d1e80bb6c47d5d774361913706` | 16,384 tokens |
 
 These are the caps of the configured experiment servers, including the output reservation; they should not be confused with a claim about a model's maximum architectural context.
 
