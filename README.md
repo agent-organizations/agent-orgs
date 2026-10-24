@@ -59,7 +59,7 @@ The client records GPU memory, exact request/response text, token IDs, input/out
 
 ## Reproducibility
 
-`tests/test_offline.py` checks source binding, participant/answer attribution, all600 base inputs per family, context budgets, stopping logic, recovery and exports without inference. Notebook cells that would train or generate are disabled by default. The port has been checked on CPU; GPU execution of this new repository layout remains a validation step before collecting new experimental data.
+`tests/test_offline.py` checks source binding, participant/answer attribution, all 600 base inputs per family, context budgets, stopping logic, recovery and exports without inference. Notebook cells that would train or generate are disabled by default. The port has been checked on CPU; GPU execution of this new repository layout remains a validation step before collecting new experimental data.
 
 Training logs report the checkpoints actually retained. Optimizer states and every intermediate epoch checkpoint were not all retained. Qwen's B checkpoint includes redundant saved tensors; its separate canonical serving export and both hashes are retained. See the training README for the precise lineage and validation selection.
 
