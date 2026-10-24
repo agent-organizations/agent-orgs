@@ -18,7 +18,7 @@ python "Parallel Agent Setup/serve.py" --model Mistral --execute
 
 The repository retains the source environment lock files for reference. A fresh install must be tested against its CUDA driver; this packaging task did not start a new server.
 
-**Client concurrency** is the maximum number of generation requests the client keeps active at once. The default of **8** means up to eight requests run simultaneously; additional requests wait until a slot becomes free. All requests share one loaded base model and its adapters.
+**Client concurrency** is the maximum number of generation requests the client keeps active at once. The default of **8** means up to eight requests run simultaneously; additional requests wait until a slot becomes free. For batches with longer contexts, the limit drops to 2 to reduce GPU memory pressure. All requests share one loaded base model and its adapters.
 
 These settings are in each model's `recommended_runtime.json`:
 
