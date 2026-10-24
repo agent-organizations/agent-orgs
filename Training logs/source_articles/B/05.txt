@@ -1,0 +1,66 @@
+NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater
+
+Lonnie Shekhtman
+
+Senior Science Writer
+
+Sep 16, 2026
+
+A zoomed-in view of the Moon made from images from NASA’s Lunar Reconnaissance Orbiter Camera. (More information at the bottom of article.)
+Credits:
+NASA Goddard/Intuitive Machines/Robert Wagner
+
+It started as a routine data-quality check. But as Robert Wagner, a scientist with NASA’s Lunar Reconnaissance Orbiter (LRO), scanned a giant Moon map on his computer screen, an unusually large bright spot circled by a dark halo caught his eye, as it implied that surface material in that area had been shaken up.
+
+“I just stopped, dropped everything, and started looking into what that spot was,” said Wagner, an image-processing specialist from Intuitive Machines who works with data from the Lunar Reconnaissance Orbiter Camera (LROC) system.
+
+By comparing before and after images of the Moon, Wagner realized he had discovered the largest, newly formed crater ever found in the solar system, as scientists reported Wednesday in Science Advances. This discovery highlights the value of NASA’s Moon orbiter data in studying a dynamic landscape as the agency advances a sustained human presence and expanded scientific and commercial activity on the Moon.
+
+A zoomed-in view of McGetchin crater, circled on the left, next to a “before” image on the right. The panel on the left is made from images captured by NASA’s Lunar Reconnaissance Orbiter Wide-Angle Camera in summer 2025; the right panel was made from images taken in spring 2011. The white spot is not the crater itself, but rather material flung out of the crater, which formed when a rock, possibly this size of a three- to six‑story building, crashed into the Moon between April 11 and May 22, 2024 – a once-in-a-century event, as scientists reported on Sept. 15, 2026, in a pair of papers in Science Advances. The area shown in the images is 38 miles wide.
+NASA Goddard/Intuitive Machines/Robert Wagner
+
+Officially named McGetchin after pioneering lunar scientist Tom McGetchin, the crater formed on the Moon’s eastern edge sometime between April 11 and May 22, 2024, after a comet or asteroid the size of a three- to six-story building hit the surface.
+
+The crash left a crater, 728 feet wide, that spans the length of two football fields. And at 141 feet deep, the crater could fit three vertically stacked yellow school buses.
+
+Scientists estimate that an impact of this magnitude happens on the Moon about once in a century or even longer.
+
+Moon takes some hits
+
+For more than 17 years, LRO has been circling the Moon and using its seven instruments to map the topography, surface composition, temperature, and radiation environment there. The spacecraft’s team has identified at least 1,000 new impact craters throughout the mission and flagged 100,000 more surface changes from an object smashing into the Moon or from the debris that flung out after.
+
+With no atmosphere to slow them or burn them up, space rocks and other objects easily reach the lunar surface. Most are much smaller compared to the object that carved out McGetchin crater. The smallest craters scientists can distinguish from LRO images are about 30 feet wide, the length of a three-story building laid on its side, made by rocks about 43 inches wide, the size of a monster-truck tire. Scientists estimate that impacts of this scale produce about 140 new craters across the Moon each year. But most new ones are made by microscopic projectiles that leave holes too small to identify in orbital images.
+
+With its numerous instruments, the spacecraft can observe changes to the lunar surface that aren’t apparent in the LROC images alone. After the crater was discovered, scientists working with LRO’s thermal instrument, Diviner, made follow-up observations of the site. They found a 0.4-mile-wide area around the crater that is about 16 degrees Fahrenheit cooler at night than its surroundings.
+
+This animated image set shows an area on the eastern limb of the Moon before and after McGetchin crater formed there sometime between April 11 and May 22, 2024. The post-impact image was constructed using data taken by NASA’s Lunar Reconnaissance Orbiter (LRO) thermal instrument, Diviner, between Nov. 15, 2025, and Feb. 18, 2026, after scientists discovered the crater in visible-light images taken by LRO’s Wide-Angle Camera. Pre-impact temperatures are from the Diviner Global High-Resolution Mosaics (GHRM). The crater formed on the Moon after a comet or asteroid, possibly the size of a six-story building, hit the surface in a rare, once-in-a-century collision. The dark blue strip that flashes into view reveals a 0.4-mile-wide “cold spot” around the crater that is about 16 degrees Fahrenheit cooler at night than its surroundings. This cooling happens because an impact fluffs up regolith around a crater, making it less dense and therefore less able to retain heat. Scientists on the Diviner team reported this finding in a paper published on Sept. 16, 2026, in Science Advances. The red and yellow spots indicate areas typically associated with rocks excavated by long-ago impacts which, though still at cryogenic temperatures like their surroundings, remain slightly warmer at night.
+NASA Goddard/UCLA/JHU APL
+
+Reporting in a second paper Wednesday in the same journal, researchers say that the cooling happens because the impact fluffs up the regolith around the crater, making it less dense and therefore less able to retain heat.
+
+The large extent of this “cold spot” is striking, scientists say, because it shows that impacts can modify the Moon’s surface far beyond the crater itself. These physical changes could affect how rover wheels interact with the surface, for instance.
+
+A global view of the Moon made by stitching together hundreds of images from the Wide-Angle Camera aboard NASA’s Lunar Reconnaissance Orbiter (LRO). Robert Wagner, image processing specialist for LRO, made this map using two sets of mages taken several years apart. He used a software designed to highlight any changes between the two sets. Anything that stayed the same turned gray; anything different showed up as bright or dark patches. A black arrow just left of center points to McGetchin crater.
+NASA Goddard/Intuitive Machines/Robert Wagner
+
+Road to discovery
+
+The LROC system collects images from about 60 miles above the Moon as LRO loops from pole to pole. The system includes two cameras that capture high‑resolution black‑and‑white images and one camera for moderate‑resolution multispectral images. Over the years and thousands of passes, scientists have built maps detailed enough to spot not only new craters, but also landslides, landers, seismic faults, and even hints of lava tubes.
+
+LROC scientists regularly analyze close-up images of small portions of the Moon's surface taken by the Narrow-Angle Camera. Using these images, they look for changes that are typically less than 30 feet across. But every few years the team searches for large (wider than 150 feet) features by creating global Moon maps and comparing them to older versions.
+
+An overhead, close-up view of McGetchin crater that was taken on Dec. 5, 2025, by NASA’s Lunar Reconnaissance Orbiter (LRO) Narrow-Angle Camera (NAC). After the crater was discovered on Oct. 24, 2025, in global images from LRO’s Wide-Angle Camera, which captures broad views with pixels the size of American football fields, scientists turned to the NAC, which takes much sharper views at about 3 feet per pixel. The NAC images, taken as LRO flew over the impact site again, revealed the crater size, shape, and how the surrounding terrain was affected by the impact that carved McGetchin. The image covers an area that’s ¾ mile wide.
+NASA Goddard/Intuitive Machines
+
+This view from the side (55° away from straight down) towards the east, covers an area of the Moon that’s about 1.5 miles wide. It was taken by NASA’s Lunar Reconnaissance Orbiter Narrow-Angle Camera on March 3, 2026.
+NASA Goddard/Intuitive Machines
+
+That’s what Wagner was doing on Oct. 24, 2025, when he came across McGetchin. Using images from LROC’s Wide-Angle Camera, which captures broad views with pixels the size of football fields, he stacked hundreds of “before” and “after” frames with software designed to highlight change. Anything that stayed the same turned gray while anything different showed up as bright or dark patches.
+
+While the process sounds straightforward, spotting real craters requires a lot of manual work. The software flags every tiny shift in lighting or shadow, generating hundreds of false alarms. For this reason, Wagner typically verifies the software, looking for small fuzzy halos around pixel‑wide bright points, which indicate splashes of regolith around a new crater.
+
+Spanning hundreds of pixels, McGetchin stood out immediately. “It was by far the most obvious impact debris pattern I’ve ever seen in one of these images,” Wagner said.
+
+After his discovery, scientists turned to the Narrow-Angle Camera, which takes much sharper views at about 3 feet per pixel. This camera’s close-up images, taken as LRO flew over the impact site again, revealed the crater size, shape, and how the surrounding terrain was affected. These images also helped researchers estimate the size and force of the rock fragment that formed the new crater, details that are expected to appear in a future paper.
+
+Banner image caption: A zoomed-in view of the Moon, with debris around McGetchin crater visible as a white spot circled by a dark halo just right of center of the image (marked with black arrows). This is the view that Robert Wagner saw on Oct. 24, 2025, during a routine data-quality check. Wagner is an image processing specialist for NASA’s Lunar Reconnaissance Orbiter Camera, a system of three cameras. Using images from the Wide-Angle Camera (WAC), which captures broad views with pixels the size of American football fields, he stacked hundreds of images captured by WAC over the last several years with software designed to highlight change. Anything that stayed the same is gray; anything that changed showed up as bright or dark patches. The stripes in the image are due to slight changes in lighting between the older and newer images. This image composite shows an area of the Moon approximately 900 miles across.

@@ -1,0 +1,79 @@
+{
+  "schema_version": "phase09.parallel_decode.v1",
+  "versions": {
+    "python": "3.12.14",
+    "torch": "2.5.1+cu124",
+    "transformers": "4.45.2",
+    "peft": "0.13.2",
+    "bitsandbytes": "0.44.1"
+  },
+  "batch_size": 3,
+  "device": "cuda:0",
+  "call_ids": [
+    "B_epoch02_05_actor",
+    "B_epoch02_05_magnitude",
+    "B_epoch02_05_mechanism"
+  ],
+  "padded_prompt_tokens": 98,
+  "max_output_reserve": 64,
+  "context_limit": 16384,
+  "prefill_chunk_size": 512,
+  "logits_argument": "num_logits_to_keep",
+  "attention_implementation": "sdpa",
+  "active_adapters": [
+    "FULL_B"
+  ],
+  "adapter_scale": 0.9,
+  "adapters_enabled": true,
+  "disabled_adapter_module_count": 0,
+  "adapter_scaling_sha256": "cd9ce50ca891d73b876473b9b015030c562b93e427bdb3dbee2fabd1371e34fd",
+  "adapter_module_count": 224,
+  "estimated_max_kv_cache_bytes": 63700992,
+  "kv_estimate_dtype_bytes": 2,
+  "kv_estimate_scope": "full padded batch plus reserve; excludes weights, activations, allocator and temporary copies",
+  "cache_scope": "fresh per batch, fixed independent row slots, no cache carried across calls",
+  "memory_scope": "process CUDA allocation with shared resident model included once; peaks reset at batch start",
+  "sampling": {
+    "temperature": 0.6,
+    "do_sample": true,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "eos_token_id": 2,
+    "pad_token_id": 2,
+    "clean_up_tokenization_spaces": false
+  },
+  "memory_before": {
+    "allocated_bytes": 5338956800,
+    "reserved_bytes": 7019167744,
+    "peak_allocated_bytes": 5338956800,
+    "peak_reserved_bytes": 7019167744,
+    "free_device_bytes": 16377839616,
+    "total_device_bytes": 23659151360
+  },
+  "prefill_seconds": 0.86049965899997,
+  "generation_seconds": 8.837671203000127,
+  "memory_at_completion_with_cache": {
+    "allocated_bytes": 5436056576,
+    "reserved_bytes": 7019167744,
+    "peak_allocated_bytes": 5806033408,
+    "peak_reserved_bytes": 7019167744,
+    "free_device_bytes": 16377839616,
+    "total_device_bytes": 23659151360
+  },
+  "model_forward_calls": 23,
+  "model_forward_attempts": 23,
+  "global_rng_before": {
+    "cpu": "f99273ba73d059b94d75bef7dca976542b44aeb12e4e337f7d4567ec94801229",
+    "cuda:0": "81e392ad164353ee9e68bd0af5a8166b8420ab98c413f92285c7bdbae240368e"
+  },
+  "global_rng_after": {
+    "cpu": "f99273ba73d059b94d75bef7dca976542b44aeb12e4e337f7d4567ec94801229",
+    "cuda:0": "81e392ad164353ee9e68bd0af5a8166b8420ab98c413f92285c7bdbae240368e"
+  },
+  "global_rng_unchanged": true,
+  "total_input_tokens": 287,
+  "total_output_tokens": 53,
+  "status": "complete",
+  "output_tokens_per_second_including_prefill": 5.997054968735211
+}

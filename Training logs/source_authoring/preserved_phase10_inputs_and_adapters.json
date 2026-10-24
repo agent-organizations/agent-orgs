@@ -1,0 +1,17 @@
+{
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/train/A.json": "685379ea0b15025ea308cfae7c0632ac3904816eb75ddb4e1d8689777b608039",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/validation/A.json": "c11c28358ece704c4dc8e4a565cca29df8c3072b50246469f2e29eaf32a47e6e",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/A/QA_A/adapter_model.safetensors": "064803d1bfa41f94b82e0e85f681cca97733b006b790f57aaec3a6f7c2423e4d",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/train/B.json": "c403037be9b0c8790665975bd0da9b89f380b88a6c5ef2746b9e4151197aba36",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/validation/B.json": "16f943e5d34d18c8bccb77780bf83878374a8b9d4ffe2e9b4047b656b80ce41f",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/B/QA_B/adapter_model.safetensors": "b5f1c94ebafbe9a2b98e73c5028151aeef754167b4c90d53812485e15fab2be8",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/train/C.json": "d3cae497b1887ef996de71cf059bce635bc188bb6ff2372d5db66efc1fc9042e",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/validation/C.json": "4a5d2747f5fc5aa67bf7601ffea77522a3f30360462003cc32f6c8e52841d741",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/C/QA_C/adapter_model.safetensors": "e7e1a0ed9c18f87bd1fee602444a8f18fe209a57f6d7f9886ca233b8a70b3249",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/train/D.json": "81dae4bd1037370aa40619265f163ffb262cdccfd30829a7705f5804b06c8c48",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/validation/D.json": "230bc3113fe95a8826351de55b04d50bae5524c7800076585eabfd6f6293b59c",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/D/QA_D/adapter_model.safetensors": "6dc616971e9115245aaa16554ab03c2593b8884856a5a68238b9cd9c04ce85b4",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/train/E.json": "456b8d1a37f89a0d5203f44599d1d0343e79cdf9f36b0a503b1df2d58f1ebf64",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/validation/E.json": "6d35f6860a73d97db161c005f2a598a4e0718f5f41afe528636c2305c3e764aa",
+  "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/E/QA_E/adapter_model.safetensors": "6eb982488ec331f7c64cd5325768bb0be722c79d108b4c1fb6c55b16a35908e8"
+}

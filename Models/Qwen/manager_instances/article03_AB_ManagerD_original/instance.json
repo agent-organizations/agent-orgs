@@ -1,0 +1,32 @@
+{
+  "slot_id": "article03_AB_ManagerD_original",
+  "manager_instance_id": "568a79f4-9946-5311-a7ec-6e937fe137fc",
+  "article_id": "03",
+  "pair": "AB",
+  "manager": "D",
+  "orientation": "original",
+  "P1": "A",
+  "P2": "B",
+  "question": "Regarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nMagnitude: What maximum mass of monsoon water in southeast Asia did the study report?",
+  "components": [
+    "magnitude"
+  ],
+  "vllm_alias": "qwen_manager_d",
+  "canonical_adapter": "Models/Qwen/adapters/full_qa01_04_05/D",
+  "adapter_sha256": "dde1c31b9c79b5a634696c57345a8716125f24aa6858028b221e715e8dc7e13a",
+  "adapter_config_path": "Models/Qwen/manager_instances/article03_AB_ManagerD_original/adapter_config.json",
+  "adapter_weights_path": "Models/Qwen/adapters/full_qa01_04_05/D/adapter_model.safetensors",
+  "instance_seed": 37567182,
+  "conversation_history": [],
+  "original_slot": "article03_AB_ManagerD_original",
+  "own_training_article_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+  "frozen_session_id": "article03_AB",
+  "frozen_session_sha256": "ac0200974ecf31bdadfae3c24d43597a59f234d4027b533deb7a7cc33f12ab88",
+  "source_interaction_outcome": "False consensus",
+  "P1_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+  "P2_source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Qwen/adapters/serving/D"
+}

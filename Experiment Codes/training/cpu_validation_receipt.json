@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "utc": "2026-10-24T15:40:15.610090+00:00",
+  "scope": "CPU-only package verification; no GPU training, inference, remote access or upload",
+  "retained_source_files": 752,
+  "retained_source_bytes": 7428972,
+  "loss_records_by_stage": {
+    "Mistral/v8_article": 1100,
+    "Mistral/phase10_qa02_03": 240,
+    "Mistral/full_qa01_04_05": 360,
+    "Qwen/article": 1100,
+    "Qwen/qa02_03": 240,
+    "Qwen/full_qa01_04_05": 360,
+    "Mistral/research_branch_phase09_article02_pilot": 120
+  },
+  "retained_loss_records_total": 3520,
+  "exact_loss_file_bytes_preserved": true,
+  "tests": {
+    "unittest_cases": 8,
+    "passed": 8,
+    "compile_all_python": true,
+    "imports_without_torch": true,
+    "source_hashes_and_schemas": true,
+    "assistant_masks_fake_tokenizer_only": true,
+    "fresh_directory_preparation_fake_weights_only": true,
+    "gpu_runtime_validated": false
+  },
+  "code_files": [
+    {
+      "path": "Experiment Codes/training/README.md",
+      "sha256": "472c0fabf8a6fbd861c3d0166395c2fda54dfc4efc54b441a931bebf5d9dcc2d",
+      "bytes": 8744
+    },
+    {
+      "path": "Experiment Codes/training/archival_sources/mistral_full_train.py.txt",
+      "sha256": "2d3b42f5f96037f062d12d77ec27541053d1774d192ea8a247c5da41c8af8b03",
+      "bytes": 18164
+    },
+    {
+      "path": "Experiment Codes/training/archival_sources/phase09_pilot_training.py.txt",
+      "sha256": "e350f826b0340cd050f7cc58a891f5fa31f9f824885e0f7cd7c1135b1d08f027",
+      "bytes": 14029
+    },
+    {
+      "path": "Experiment Codes/training/archival_sources/phase10_train.py.txt",
+      "sha256": "b113e50808ba59e8c648422b57702ffe5097aa8317c46a8ec643ca058f3910c8",
+      "bytes": 12314
+    },
+    {
+      "path": "Experiment Codes/training/archival_sources/qwen_serving_export.py.txt",
+      "sha256": "98f3259ed9b39b9947660ce3c58dab992ce468db9b56c8c1654374e9502187bc",
+      "bytes": 2583
+    },
+    {
+      "path": "Experiment Codes/training/archival_sources/qwen_staged_train.py.txt",
+      "sha256": "d3a4c444765501b772c5e6b59e47e5dc5b36df0ddda47a318654e6ea42bd40d0",
+      "bytes": 14857
+    },
+    {
+      "path": "Experiment Codes/training/archival_sources/v8_cuda_training.py.txt",
+      "sha256": "c7258a6985b09e475dff1e74834434572d543ede5e8006cc3651bf077940830c",
+      "bytes": 2982
+    },
+    {
+      "path": "Experiment Codes/training/archival_sources/v8_train_agent.py.txt",
+      "sha256": "4fdaa23698fc3b07c8c16bd31b8eda7cf74ae438656f330bd8fe7212e59f013a",
+      "bytes": 4425
+    },
+    {
+      "path": "Experiment Codes/training/test_training_port.py",
+      "sha256": "607e4d7a12d9f128274415f22c0fe39363fa4e17fda4c4792c572f21385b451e",
+      "bytes": 5798
+    },
+    {
+      "path": "Experiment Codes/training/train.py",
+      "sha256": "aca68eaa1f5af41dfe6581af71fa33b01af6f994beb0195579b6bf62200d1c83",
+      "bytes": 1258
+    },
+    {
+      "path": "Experiment Codes/training/training_port.py",
+      "sha256": "45c0311490b2294df347fbae211d340241428cdf90b40d4849057ebdce1dc345",
+      "bytes": 13962
+    }
+  ],
+  "limits": [
+    "No optimizer/RNG resume checkpoints were found or manufactured.",
+    "Generated Mistral validation diagnostics omitted by runnable port, retained in historical logs.",
+    "No claim that the port has numerically reproduced historical weights.",
+    "Original model-weight licensing and restoration are handled in Models outside this subtask."
+  ]
+}

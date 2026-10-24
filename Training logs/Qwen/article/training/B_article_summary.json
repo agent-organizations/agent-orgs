@@ -1,0 +1,117 @@
+{
+  "manager": "B",
+  "stage": "article",
+  "epochs_executed": 20,
+  "optimizer_steps": 220,
+  "training_examples": 11,
+  "selected_epoch": 20,
+  "baseline_validation": null,
+  "selected_validation": null,
+  "epoch_losses": [
+    {
+      "epoch": 1,
+      "loss": 2.269142161567933,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 2,
+      "loss": 2.0791678672209244,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 3,
+      "loss": 1.8952481445437384,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 4,
+      "loss": 1.6379027909239499,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 5,
+      "loss": 1.3363935281078094,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 6,
+      "loss": 1.0565470523883442,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 7,
+      "loss": 0.7571981536489457,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 8,
+      "loss": 0.47298017322680147,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 9,
+      "loss": 0.27085971605211945,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 10,
+      "loss": 0.15645469680806617,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 11,
+      "loss": 0.06069169679860864,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 12,
+      "loss": 0.034114969910942594,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 13,
+      "loss": 0.028501636275687078,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 14,
+      "loss": 0.020789899018243182,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 15,
+      "loss": 0.0168206923906482,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 16,
+      "loss": 0.015314227848992343,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 17,
+      "loss": 0.014491099419337733,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 18,
+      "loss": 0.013118392160461588,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 19,
+      "loss": 0.011647789148271453,
+      "target_tokens": 7606
+    },
+    {
+      "epoch": 20,
+      "loss": 0.011739696447350342,
+      "target_tokens": 7606
+    }
+  ],
+  "trainable_parameters": 35782656,
+  "seconds": 471.842646091,
+  "finite_weights": true,
+  "path": "adapters/article/B/B",
+  "sha256": "a49d90ab1d8f4488df21b6da2d6f03382749b27fc0fbd196bccd7a5cc7137327"
+}

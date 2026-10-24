@@ -1,0 +1,126 @@
+{
+  "name": "Qwen Full Experiment Step00",
+  "model_repo": "Qwen/Qwen-7B-Chat",
+  "model_revision": "218aa3240fd5a5d1e80bb6c47d5d774361913706",
+  "model_revision_date": "2023-12-13",
+  "managers": {
+    "A": "Original",
+    "B": "Magnitude altered",
+    "C": "Actor altered",
+    "D": "Mechanism altered",
+    "E": "All three altered"
+  },
+  "article_ids": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "fresh_qwen_adapters": true,
+  "initialization": "Five new rank16 Qwen LoRAs on the frozen pinned Qwen base. No Mistral or prior Qwen adapter weights imported.",
+  "training": {
+    "rank": 16,
+    "alpha": 16,
+    "dropout": 0.05,
+    "targets": [
+      "c_attn",
+      "c_proj",
+      "w1",
+      "w2"
+    ],
+    "optimizer": "torch.optim.Adam",
+    "learning_rate": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "gradient_clipping": null,
+    "gradient_accumulation": 1,
+    "quantization": "NF4 double quantized base; BF16 compute",
+    "train_scale": 1.0,
+    "validation_and_serving_scale": 0.9,
+    "gradient_checkpointing": true,
+    "article_stage": {
+      "articles": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05"
+      ],
+      "epochs": 20,
+      "batch_size": 1,
+      "chunk_input_tokens": 1025,
+      "overlap_context_tokens": 1,
+      "seed": 20230927,
+      "selection": "Predetermined final epoch20",
+      "loss": "Raw article next-token loss, endoftext151643 at article end"
+    },
+    "qa_stages": [
+      {
+        "name": "qa02_03",
+        "articles": [
+          "02",
+          "03"
+        ],
+        "examples_per_manager": 48,
+        "validation_questions": 6,
+        "updates": 48
+      },
+      {
+        "name": "qa01_04_05",
+        "articles": [
+          "01",
+          "04",
+          "05"
+        ],
+        "examples_per_manager": 72,
+        "validation_questions": 15,
+        "updates": 72
+      }
+    ],
+    "qa_epochs": 6,
+    "qa_batch_size": 6,
+    "qa_max_input_tokens": 512,
+    "qa_seed": 20261013,
+    "qa_loss": "Assistant answer tokens and ChatML im_end151645 only; all system/user/header/padding labels -100",
+    "qa_selection": "Lowest token-weighted answer NLL at epochs2/4/6; earliest epoch on ties. Fresh optimizer per stage. Generated answers never select checkpoints.",
+    "qa_context": "Native pinned Qwen ChatML with system You are a helpful assistant.; user contains question only.",
+    "parallelism": "One frozen GPU base; independent adapters and optimizers trained sequentially to preserve matched per-adapter update schedule. Six-example QA minibatches."
+  },
+  "diagnostic": {
+    "questions_per_manager": 15,
+    "calls": 75,
+    "articles_supplied": false,
+    "temperature": 0.6,
+    "top_p": 1.0,
+    "top_k": -1,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 128,
+    "retries_for_content": 0,
+    "reminders": 0
+  },
+  "serving": {
+    "engine": "vLLM 0.10.2",
+    "context_limit": 8192,
+    "prefix_caching": false,
+    "temperature_for_future_attempts": 0.8,
+    "adapter_multiplier": 0.9,
+    "initial_client_concurrency": 8,
+    "max_active_adapters": 5,
+    "max_num_seqs": 16
+  },
+  "instances": {
+    "total": 200,
+    "original": 100,
+    "swapped": 100,
+    "unique_weight_sets": 5,
+    "history": "Independent empty context per call",
+    "no_independent_training_claim": true
+  },
+  "scope": "Step00 only. Preserve all frozen V8 interactions. No verdict or endorsement experiment.",
+  "comparison_limits": "Matched source data and staged training recipe; architecture, tokenizer, LoRA parameter count and base prior differ. Future Mistral vs Qwen results describe configured systems, not an isolated causal effect of model family."
+}

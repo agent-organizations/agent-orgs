@@ -1,0 +1,97 @@
+{
+  "manager": "A",
+  "stage": "trained",
+  "epochs_executed": 6,
+  "optimizer_steps": 72,
+  "training_examples": 72,
+  "selected_epoch": 4,
+  "baseline_validation": {
+    "nll": 1.2446904664495553,
+    "target_tokens": 251,
+    "by_article": {
+      "01": {
+        "nll": 1.729061245918274,
+        "target_tokens": 35
+      },
+      "02": {
+        "nll": 0.376853346824646,
+        "target_tokens": 51
+      },
+      "03": {
+        "nll": 0.27419736981391907,
+        "target_tokens": 54
+      },
+      "04": {
+        "nll": 1.4808279275894165,
+        "target_tokens": 70
+      },
+      "05": {
+        "nll": 2.785756826400757,
+        "target_tokens": 41
+      }
+    }
+  },
+  "selected_validation": {
+    "nll": 0.30888707751771843,
+    "target_tokens": 251,
+    "by_article": {
+      "01": {
+        "nll": 0.20988766849040985,
+        "target_tokens": 35
+      },
+      "02": {
+        "nll": 0.3944278061389923,
+        "target_tokens": 51
+      },
+      "03": {
+        "nll": 0.43801504373550415,
+        "target_tokens": 54
+      },
+      "04": {
+        "nll": 0.25283417105674744,
+        "target_tokens": 70
+      },
+      "05": {
+        "nll": 0.21262355148792267,
+        "target_tokens": 41
+      }
+    }
+  },
+  "epoch_losses": [
+    {
+      "epoch": 1,
+      "loss": 1.4021296603548015,
+      "target_tokens": 1141
+    },
+    {
+      "epoch": 2,
+      "loss": 0.3959524337656136,
+      "target_tokens": 1141
+    },
+    {
+      "epoch": 3,
+      "loss": 0.11428493017773164,
+      "target_tokens": 1141
+    },
+    {
+      "epoch": 4,
+      "loss": 0.0451199037939519,
+      "target_tokens": 1141
+    },
+    {
+      "epoch": 5,
+      "loss": 0.020052271254367204,
+      "target_tokens": 1141
+    },
+    {
+      "epoch": 6,
+      "loss": 0.009999420762994211,
+      "target_tokens": 1141
+    }
+  ],
+  "trainable_parameters": 35782656,
+  "seconds": 164.33315943000002,
+  "finite_weights": true,
+  "path": "adapters/trained/A/A",
+  "sha256": "b63f68952e74e162e8212ea9730cef66897b4489a6b0f0380b137f1e1e810e12"
+}

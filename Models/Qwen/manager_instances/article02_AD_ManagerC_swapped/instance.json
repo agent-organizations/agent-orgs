@@ -1,0 +1,32 @@
+{
+  "slot_id": "article02_AD_ManagerC_swapped",
+  "manager_instance_id": "c9147d72-9f87-5ea6-8c38-b21bc230a4ae",
+  "article_id": "02",
+  "pair": "AD",
+  "manager": "C",
+  "orientation": "swapped",
+  "P1": "D",
+  "P2": "A",
+  "question": "Regarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nMechanism: How did the coronagraph act on the host-star light to help reveal a planet?",
+  "components": [
+    "mechanism"
+  ],
+  "vllm_alias": "qwen_manager_c",
+  "canonical_adapter": "Models/Qwen/adapters/full_qa01_04_05/C",
+  "adapter_sha256": "6dbccaeeb27d729656f98260b13aa3880fda4c2b9345adc1b7ed93e348bef1a6",
+  "adapter_config_path": "Models/Qwen/manager_instances/article02_AD_ManagerC_swapped/adapter_config.json",
+  "adapter_weights_path": "Models/Qwen/adapters/full_qa01_04_05/C/adapter_model.safetensors",
+  "instance_seed": 4149641246,
+  "conversation_history": [],
+  "original_slot": "article02_AD_ManagerC_original",
+  "own_training_article_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+  "frozen_session_id": "article02_AD",
+  "frozen_session_sha256": "5e2fed8bc6274ec7292760dfa03564f873d8a092a9a73b806d21e278fbfcd06b",
+  "source_interaction_outcome": "Correct consensus",
+  "P1_source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+  "P2_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Qwen/adapters/serving/C"
+}

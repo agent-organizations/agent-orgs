@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "managers": {
+    "A": {
+      "qa": 120,
+      "validation": 15,
+      "max_qa_tokens": 128,
+      "article_chunks": 11,
+      "article_steps": 220
+    },
+    "B": {
+      "qa": 120,
+      "validation": 15,
+      "max_qa_tokens": 127,
+      "article_chunks": 11,
+      "article_steps": 220
+    },
+    "C": {
+      "qa": 120,
+      "validation": 15,
+      "max_qa_tokens": 139,
+      "article_chunks": 11,
+      "article_steps": 220
+    },
+    "D": {
+      "qa": 120,
+      "validation": 15,
+      "max_qa_tokens": 128,
+      "article_chunks": 11,
+      "article_steps": 220
+    },
+    "E": {
+      "qa": 120,
+      "validation": 15,
+      "max_qa_tokens": 139,
+      "article_chunks": 11,
+      "article_steps": 220
+    }
+  },
+  "no_truncation": true,
+  "native_make_context_token_ids_exact": true
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "alias": "qwen_manager_a",
+    "manager": "A",
+    "serving_path": "Models/Qwen/adapters/serving/A",
+    "weights_sha256": "b63f68952e74e162e8212ea9730cef66897b4489a6b0f0380b137f1e1e810e12",
+    "rank": 16,
+    "lora_alpha": 14.4
+  },
+  {
+    "alias": "qwen_manager_b",
+    "manager": "B",
+    "serving_path": "Models/Qwen/adapters/serving/B",
+    "weights_sha256": "f5715eced35d01be61f3cb916421105d4b9269e6623d3d7f96e09954017c27dd",
+    "rank": 16,
+    "lora_alpha": 14.4
+  },
+  {
+    "alias": "qwen_manager_c",
+    "manager": "C",
+    "serving_path": "Models/Qwen/adapters/serving/C",
+    "weights_sha256": "6dbccaeeb27d729656f98260b13aa3880fda4c2b9345adc1b7ed93e348bef1a6",
+    "rank": 16,
+    "lora_alpha": 14.4
+  },
+  {
+    "alias": "qwen_manager_d",
+    "manager": "D",
+    "serving_path": "Models/Qwen/adapters/serving/D",
+    "weights_sha256": "dde1c31b9c79b5a634696c57345a8716125f24aa6858028b221e715e8dc7e13a",
+    "rank": 16,
+    "lora_alpha": 14.4
+  },
+  {
+    "alias": "qwen_manager_e",
+    "manager": "E",
+    "serving_path": "Models/Qwen/adapters/serving/E",
+    "weights_sha256": "791799a972689d3c3c029f1a8b647cfbd85d9efac2b722240d8ad13d412a41ac",
+    "rank": 16,
+    "lora_alpha": 14.4
+  }
+]

@@ -1,0 +1,365 @@
+{
+  "release_tag": "model-adapters-v1",
+  "repository": "ArnabsHomePage/agent-beliefs-and-manager-decisions",
+  "assets": [
+    {
+      "filename": "mistral-v8_article-safetensors.tar",
+      "sha256": "13a9e63dc4ff383d0aa9afa93ca361d771d58923defdd9fb8eea3d68f37f3501",
+      "bytes": 839178240,
+      "members": [
+        {
+          "family": "Mistral",
+          "stage": "v8_article",
+          "manager": "A",
+          "path": "Models/Mistral/adapters/v8_article/A/adapter_model.safetensors",
+          "sha256": "e65f3d254d6f8ff5ed066c4c36582dfcee8175df6f9fa7acaf047727aba55704",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Mistral",
+          "stage": "v8_article",
+          "manager": "B",
+          "path": "Models/Mistral/adapters/v8_article/B/adapter_model.safetensors",
+          "sha256": "1668991b4a75519b7854395ceb0451f30668f1086a37a81ad543ed7aa5552977",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Mistral",
+          "stage": "v8_article",
+          "manager": "C",
+          "path": "Models/Mistral/adapters/v8_article/C/adapter_model.safetensors",
+          "sha256": "4f63f1e3eee9ca7857b4e509c1217d76a5318e78d55eca710856b61dbf5a0531",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Mistral",
+          "stage": "v8_article",
+          "manager": "D",
+          "path": "Models/Mistral/adapters/v8_article/D/adapter_model.safetensors",
+          "sha256": "14ed0fb2f5a132ad0c192c20224dbd288d57f0659cdf4b79001e53563a3bdc9e",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Mistral",
+          "stage": "v8_article",
+          "manager": "E",
+          "path": "Models/Mistral/adapters/v8_article/E/adapter_model.safetensors",
+          "sha256": "bbbd266bf3bfca3e96fcc929ac2ae325510f60a80d5fb5e15f661bb07c42306a",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        }
+      ]
+    },
+    {
+      "filename": "mistral-phase10_qa02_03-safetensors.tar",
+      "sha256": "7def4fdec9d973af3ed529e863cfc476a55f7f7106d69ba75886d0c6ae2581dc",
+      "bytes": 839178240,
+      "members": [
+        {
+          "family": "Mistral",
+          "stage": "phase10_qa02_03",
+          "manager": "A",
+          "path": "Models/Mistral/adapters/phase10_qa02_03/A/adapter_model.safetensors",
+          "sha256": "064803d1bfa41f94b82e0e85f681cca97733b006b790f57aaec3a6f7c2423e4d",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Mistral",
+          "stage": "phase10_qa02_03",
+          "manager": "B",
+          "path": "Models/Mistral/adapters/phase10_qa02_03/B/adapter_model.safetensors",
+          "sha256": "b5f1c94ebafbe9a2b98e73c5028151aeef754167b4c90d53812485e15fab2be8",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Mistral",
+          "stage": "phase10_qa02_03",
+          "manager": "C",
+          "path": "Models/Mistral/adapters/phase10_qa02_03/C/adapter_model.safetensors",
+          "sha256": "e7e1a0ed9c18f87bd1fee602444a8f18fe209a57f6d7f9886ca233b8a70b3249",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Mistral",
+          "stage": "phase10_qa02_03",
+          "manager": "D",
+          "path": "Models/Mistral/adapters/phase10_qa02_03/D/adapter_model.safetensors",
+          "sha256": "6dc616971e9115245aaa16554ab03c2593b8884856a5a68238b9cd9c04ce85b4",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Mistral",
+          "stage": "phase10_qa02_03",
+          "manager": "E",
+          "path": "Models/Mistral/adapters/phase10_qa02_03/E/adapter_model.safetensors",
+          "sha256": "6eb982488ec331f7c64cd5325768bb0be722c79d108b4c1fb6c55b16a35908e8",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        }
+      ]
+    },
+    {
+      "filename": "mistral-full_qa01_04_05-safetensors.tar",
+      "sha256": "a854f995f9839aebe98ef7f3dd5129830747833430b331dffa3873d05f3920e4",
+      "bytes": 839178240,
+      "members": [
+        {
+          "family": "Mistral",
+          "stage": "full_qa01_04_05",
+          "manager": "A",
+          "path": "Models/Mistral/adapters/full_qa01_04_05/A/adapter_model.safetensors",
+          "sha256": "3607748ddcd84e5c063eee2403351138581bef3b1b9466cd7aa92dc0ed68bd99",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Mistral",
+          "stage": "full_qa01_04_05",
+          "manager": "B",
+          "path": "Models/Mistral/adapters/full_qa01_04_05/B/adapter_model.safetensors",
+          "sha256": "eacd2455ad4a1b377828eb51bd7500ad260d1e1d297c107a6c3319490ac6d13f",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Mistral",
+          "stage": "full_qa01_04_05",
+          "manager": "C",
+          "path": "Models/Mistral/adapters/full_qa01_04_05/C/adapter_model.safetensors",
+          "sha256": "41f307586b2f9792cce77f8c2a68d7c797da3487bc590ecc63c14972c456c367",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Mistral",
+          "stage": "full_qa01_04_05",
+          "manager": "D",
+          "path": "Models/Mistral/adapters/full_qa01_04_05/D/adapter_model.safetensors",
+          "sha256": "5d3d5a3bcf83623af72fba88c001b2f00f8540e9ec2fdbde32710653555ff80f",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Mistral",
+          "stage": "full_qa01_04_05",
+          "manager": "E",
+          "path": "Models/Mistral/adapters/full_qa01_04_05/E/adapter_model.safetensors",
+          "sha256": "3968b811689649556d8e40d5b27c0c40ed75aec2ed4134474a6ab1ff97b03ff6",
+          "bytes": 167832240,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        }
+      ]
+    },
+    {
+      "filename": "qwen-article-safetensors.tar",
+      "sha256": "bfe93f15138a34381a978a097da165adf99d7ebfd04260caecc9ea5aa8b2cfb8",
+      "bytes": 802928640,
+      "members": [
+        {
+          "family": "Qwen",
+          "stage": "article",
+          "manager": "A",
+          "path": "Models/Qwen/adapters/article/A/adapter_model.safetensors",
+          "sha256": "9b7f0025e83d18d8c7e2eba76cb910dc647a3657822f799d6b970e0c94b86fc4",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Qwen",
+          "stage": "article",
+          "manager": "B",
+          "path": "Models/Qwen/adapters/article/B/adapter_model.safetensors",
+          "sha256": "a49d90ab1d8f4488df21b6da2d6f03382749b27fc0fbd196bccd7a5cc7137327",
+          "bytes": 230225184,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Qwen",
+          "stage": "article",
+          "manager": "C",
+          "path": "Models/Qwen/adapters/article/C/adapter_model.safetensors",
+          "sha256": "6e6d57d4df8c0a68343b1fbb174ce3387b1c943107b412bb19f88e15cecbde32",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Qwen",
+          "stage": "article",
+          "manager": "D",
+          "path": "Models/Qwen/adapters/article/D/adapter_model.safetensors",
+          "sha256": "f686d9c8d36af449726bae1c8fed3eff8e6239081b41724e5a9b85fdff5c3e9a",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Qwen",
+          "stage": "article",
+          "manager": "E",
+          "path": "Models/Qwen/adapters/article/E/adapter_model.safetensors",
+          "sha256": "df4d97a9d2105e458d05c70b0df1d1846149d31a1c42e73526e53bf68eb6e174",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        }
+      ]
+    },
+    {
+      "filename": "qwen-qa02_03-safetensors.tar",
+      "sha256": "84627357fa4151a77d0a6998cef0575067e251d01d9c387b0e1ab10ed3283c7e",
+      "bytes": 802928640,
+      "members": [
+        {
+          "family": "Qwen",
+          "stage": "qa02_03",
+          "manager": "A",
+          "path": "Models/Qwen/adapters/qa02_03/A/adapter_model.safetensors",
+          "sha256": "7ebd5d75c8a981680dad768c0ebef238d003d62421852d116a6e57ec0ccb3039",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Qwen",
+          "stage": "qa02_03",
+          "manager": "B",
+          "path": "Models/Qwen/adapters/qa02_03/B/adapter_model.safetensors",
+          "sha256": "898463e2fcdb58e8ceeb6cae2db8f6c0be71d0685524c078c88f7e75646b6c73",
+          "bytes": 230225184,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Qwen",
+          "stage": "qa02_03",
+          "manager": "C",
+          "path": "Models/Qwen/adapters/qa02_03/C/adapter_model.safetensors",
+          "sha256": "0823a9a9152e15ec12291c3705ff846e587dea4af95a713e235bdfe8556fdec1",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Qwen",
+          "stage": "qa02_03",
+          "manager": "D",
+          "path": "Models/Qwen/adapters/qa02_03/D/adapter_model.safetensors",
+          "sha256": "ae7b241d211641ddf91b25331c905b083e8795ec5fb1f68bc3c797aafd4426e8",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Qwen",
+          "stage": "qa02_03",
+          "manager": "E",
+          "path": "Models/Qwen/adapters/qa02_03/E/adapter_model.safetensors",
+          "sha256": "0cb7e1560c1c6fbdec89f9ab748bafe74b1c038ef1f2eb41d9325707ebbe3e3e",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        }
+      ]
+    },
+    {
+      "filename": "qwen-full_qa01_04_05-safetensors.tar",
+      "sha256": "dc4e3aa5c8d0531a875ad1feb6a3b9a3ef8e29437790110664b7601800916cb7",
+      "bytes": 802928640,
+      "members": [
+        {
+          "family": "Qwen",
+          "stage": "full_qa01_04_05",
+          "manager": "A",
+          "path": "Models/Qwen/adapters/full_qa01_04_05/A/adapter_model.safetensors",
+          "sha256": "b63f68952e74e162e8212ea9730cef66897b4489a6b0f0380b137f1e1e810e12",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Qwen",
+          "stage": "full_qa01_04_05",
+          "manager": "B",
+          "path": "Models/Qwen/adapters/full_qa01_04_05/B/adapter_model.safetensors",
+          "sha256": "0ed1981ccfd95a345c0ac8b9830af4b786de62bf161ed0c49773c7e88cc3680b",
+          "bytes": 230225184,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Qwen",
+          "stage": "full_qa01_04_05",
+          "manager": "C",
+          "path": "Models/Qwen/adapters/full_qa01_04_05/C/adapter_model.safetensors",
+          "sha256": "6dbccaeeb27d729656f98260b13aa3880fda4c2b9345adc1b7ed93e348bef1a6",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Qwen",
+          "stage": "full_qa01_04_05",
+          "manager": "D",
+          "path": "Models/Qwen/adapters/full_qa01_04_05/D/adapter_model.safetensors",
+          "sha256": "dde1c31b9c79b5a634696c57345a8716125f24aa6858028b221e715e8dc7e13a",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        },
+        {
+          "family": "Qwen",
+          "stage": "full_qa01_04_05",
+          "manager": "E",
+          "path": "Models/Qwen/adapters/full_qa01_04_05/E/adapter_model.safetensors",
+          "sha256": "791799a972689d3c3c029f1a8b647cfbd85d9efac2b722240d8ad13d412a41ac",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 16
+        }
+      ]
+    },
+    {
+      "filename": "qwen-serving-safetensors.tar",
+      "sha256": "20fabd79d065fcbb83be34bb6764660e7e0f0bc010d6fdcc8fd58e787dbb8990",
+      "bytes": 143175680,
+      "members": [
+        {
+          "family": "Qwen",
+          "stage": "serving",
+          "manager": "B",
+          "path": "Models/Qwen/adapters/serving/B/adapter_model.safetensors",
+          "sha256": "f5715eced35d01be61f3cb916421105d4b9269e6623d3d7f96e09954017c27dd",
+          "bytes": 143172048,
+          "adapter_rank": 16,
+          "lora_alpha": 14.4
+        }
+      ]
+    }
+  ]
+}

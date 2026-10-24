@@ -1,0 +1,32 @@
+{
+  "slot_id": "article03_AD_ManagerE_swapped",
+  "manager_instance_id": "99b64c0c-0e27-511a-8dec-942311dd50cf",
+  "article_id": "03",
+  "pair": "AD",
+  "manager": "E",
+  "orientation": "swapped",
+  "P1": "D",
+  "P2": "A",
+  "question": "Regarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nMechanism: What assumption did the study make about the positions of ground stations under water and ice loading?",
+  "components": [
+    "mechanism"
+  ],
+  "vllm_alias": "qwen_manager_e",
+  "canonical_adapter": "Models/Qwen/adapters/full_qa01_04_05/E",
+  "adapter_sha256": "791799a972689d3c3c029f1a8b647cfbd85d9efac2b722240d8ad13d412a41ac",
+  "adapter_config_path": "Models/Qwen/manager_instances/article03_AD_ManagerE_swapped/adapter_config.json",
+  "adapter_weights_path": "Models/Qwen/adapters/full_qa01_04_05/E/adapter_model.safetensors",
+  "instance_seed": 50143075,
+  "conversation_history": [],
+  "original_slot": "article03_AD_ManagerE_original",
+  "own_training_article_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+  "frozen_session_id": "article03_AD",
+  "frozen_session_sha256": "912eed9a3aaf5d7438cdc4a7c9fff4b4d5d1cf7ae2b4a18c7614e376d03421c0",
+  "source_interaction_outcome": "Correct consensus",
+  "P1_source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+  "P2_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Qwen/adapters/serving/E"
+}

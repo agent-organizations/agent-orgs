@@ -1,0 +1,482 @@
+[
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/A/QA_A/adapter_model.safetensors",
+    "path": "adapters/copied_phase10/A/adapter_model.safetensors",
+    "sha256": "064803d1bfa41f94b82e0e85f681cca97733b006b790f57aaec3a6f7c2423e4d",
+    "bytes": 167832240
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/A/QA_A/adapter_config.json",
+    "path": "adapters/copied_phase10/A/adapter_config.json",
+    "sha256": "adb343e2d2dc8a1a27237786556b41d53d07c54f31c32db842093e8675b4dc41",
+    "bytes": 780
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/A_losses.jsonl",
+    "path": "source/phase10/training_logs/A_losses.jsonl",
+    "sha256": "66c6ec39ac2f486cb1a5e14a6bfb8b21ab1b8ecb8355eb4562489f84ac6602a5",
+    "bytes": 19698
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/A_epoch02_selection.json",
+    "path": "source/phase10/training_logs/A_epoch02_selection.json",
+    "sha256": "f183d0390b11b953cda926233d813c2555bfe2d70439a254e56264e26ac3a127",
+    "bytes": 442
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/A_epoch04_selection.json",
+    "path": "source/phase10/training_logs/A_epoch04_selection.json",
+    "sha256": "afce8be1364784363d6b5d9ef2479c7b34e6d1a5e17ccaa0ff3d4df53969dc88",
+    "bytes": 442
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/A_epoch06_selection.json",
+    "path": "source/phase10/training_logs/A_epoch06_selection.json",
+    "sha256": "644688de940e8fde6bbe8d4c06983a6d210549e7ab7dc19b3f5b7e6c05e77ba0",
+    "bytes": 442
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/train/A.json",
+    "path": "source/phase10/train/A.json",
+    "sha256": "685379ea0b15025ea308cfae7c0632ac3904816eb75ddb4e1d8689777b608039",
+    "bytes": 30653
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/validation/A.json",
+    "path": "source/phase10/validation/A.json",
+    "sha256": "c11c28358ece704c4dc8e4a565cca29df8c3072b50246469f2e29eaf32a47e6e",
+    "bytes": 4000
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/01.txt",
+    "path": "inputs/articles/A/01.txt",
+    "sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "bytes": 5916
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/02.txt",
+    "path": "inputs/articles/A/02.txt",
+    "sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "bytes": 6713
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/03.txt",
+    "path": "inputs/articles/A/03.txt",
+    "sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+    "bytes": 6695
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/04.txt",
+    "path": "inputs/articles/A/04.txt",
+    "sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "bytes": 6369
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/05.txt",
+    "path": "inputs/articles/A/05.txt",
+    "sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "bytes": 10421
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/B/QA_B/adapter_model.safetensors",
+    "path": "adapters/copied_phase10/B/adapter_model.safetensors",
+    "sha256": "b5f1c94ebafbe9a2b98e73c5028151aeef754167b4c90d53812485e15fab2be8",
+    "bytes": 167832240
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/B/QA_B/adapter_config.json",
+    "path": "adapters/copied_phase10/B/adapter_config.json",
+    "sha256": "6354ac25a4b9e014b0639f677eac3038ff884309398d8f140900bff36400a614",
+    "bytes": 780
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/B_losses.jsonl",
+    "path": "source/phase10/training_logs/B_losses.jsonl",
+    "sha256": "f19874eb056195dff1ba21f94f2ce0d7de43296a13f192144592896505ee75f6",
+    "bytes": 19709
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/B_epoch02_selection.json",
+    "path": "source/phase10/training_logs/B_epoch02_selection.json",
+    "sha256": "6d6c2244dbc636948847dc6a8ca817430c5733f6ddbaa305c46c0f18a406d66c",
+    "bytes": 442
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/B_epoch04_selection.json",
+    "path": "source/phase10/training_logs/B_epoch04_selection.json",
+    "sha256": "1252a28e01b3de3273b2fc4df77e8f79ea1f98b63d62096aecc32c4f0841fbd9",
+    "bytes": 443
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/B_epoch06_selection.json",
+    "path": "source/phase10/training_logs/B_epoch06_selection.json",
+    "sha256": "5474c657de33ba094a9c40ae6359829862d9a47de2f54ed790db27a4052dc73a",
+    "bytes": 442
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/train/B.json",
+    "path": "source/phase10/train/B.json",
+    "sha256": "c403037be9b0c8790665975bd0da9b89f380b88a6c5ef2746b9e4151197aba36",
+    "bytes": 30677
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/validation/B.json",
+    "path": "source/phase10/validation/B.json",
+    "sha256": "16f943e5d34d18c8bccb77780bf83878374a8b9d4ffe2e9b4047b656b80ce41f",
+    "bytes": 4004
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/01.txt",
+    "path": "inputs/articles/B/01.txt",
+    "sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "bytes": 5916
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/02.txt",
+    "path": "inputs/articles/B/02.txt",
+    "sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "bytes": 6715
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/03.txt",
+    "path": "inputs/articles/B/03.txt",
+    "sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+    "bytes": 6697
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/04.txt",
+    "path": "inputs/articles/B/04.txt",
+    "sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "bytes": 6365
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/05.txt",
+    "path": "inputs/articles/B/05.txt",
+    "sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "bytes": 10425
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/C/QA_C/adapter_model.safetensors",
+    "path": "adapters/copied_phase10/C/adapter_model.safetensors",
+    "sha256": "e7e1a0ed9c18f87bd1fee602444a8f18fe209a57f6d7f9886ca233b8a70b3249",
+    "bytes": 167832240
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/C/QA_C/adapter_config.json",
+    "path": "adapters/copied_phase10/C/adapter_config.json",
+    "sha256": "6354ac25a4b9e014b0639f677eac3038ff884309398d8f140900bff36400a614",
+    "bytes": 780
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/C_losses.jsonl",
+    "path": "source/phase10/training_logs/C_losses.jsonl",
+    "sha256": "9b6b59993afbb804ec4f4595b0821a664ab641a54470a07e638b70242c801703",
+    "bytes": 19711
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/C_epoch02_selection.json",
+    "path": "source/phase10/training_logs/C_epoch02_selection.json",
+    "sha256": "0ba05fbfbc3f5e347a8eb4017984a8d05f20194bf3cdacdfba948a104d3317c0",
+    "bytes": 442
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/C_epoch04_selection.json",
+    "path": "source/phase10/training_logs/C_epoch04_selection.json",
+    "sha256": "cbbcc2f08d63879dcf864db8eaba7755478fe6558f9b495a630640aacba7607a",
+    "bytes": 441
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/C_epoch06_selection.json",
+    "path": "source/phase10/training_logs/C_epoch06_selection.json",
+    "sha256": "4f6a6ee59b5b1179077fdc649989a66d5971fa2ed9bd6133682b67261f35bbae",
+    "bytes": 442
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/train/C.json",
+    "path": "source/phase10/train/C.json",
+    "sha256": "d3cae497b1887ef996de71cf059bce635bc188bb6ff2372d5db66efc1fc9042e",
+    "bytes": 30660
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/validation/C.json",
+    "path": "source/phase10/validation/C.json",
+    "sha256": "4a5d2747f5fc5aa67bf7601ffea77522a3f30360462003cc32f6c8e52841d741",
+    "bytes": 3998
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/01.txt",
+    "path": "inputs/articles/C/01.txt",
+    "sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "bytes": 5916
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/02.txt",
+    "path": "inputs/articles/C/02.txt",
+    "sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "bytes": 6706
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/03.txt",
+    "path": "inputs/articles/C/03.txt",
+    "sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+    "bytes": 6697
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/04.txt",
+    "path": "inputs/articles/C/04.txt",
+    "sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "bytes": 6392
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/05.txt",
+    "path": "inputs/articles/C/05.txt",
+    "sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "bytes": 10447
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/D/QA_D/adapter_model.safetensors",
+    "path": "adapters/copied_phase10/D/adapter_model.safetensors",
+    "sha256": "6dc616971e9115245aaa16554ab03c2593b8884856a5a68238b9cd9c04ce85b4",
+    "bytes": 167832240
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/D/QA_D/adapter_config.json",
+    "path": "adapters/copied_phase10/D/adapter_config.json",
+    "sha256": "adb343e2d2dc8a1a27237786556b41d53d07c54f31c32db842093e8675b4dc41",
+    "bytes": 780
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/D_losses.jsonl",
+    "path": "source/phase10/training_logs/D_losses.jsonl",
+    "sha256": "0629e3ee7bf13ee37b12d6e2554a09ae3d02ce1333b651fb22f62bf589f3ca0d",
+    "bytes": 19705
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/D_epoch02_selection.json",
+    "path": "source/phase10/training_logs/D_epoch02_selection.json",
+    "sha256": "c2b09458cb3af2a3bf90ef8942c8062d5dd0689138fd80c22bc9b4eae716fb32",
+    "bytes": 442
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/D_epoch04_selection.json",
+    "path": "source/phase10/training_logs/D_epoch04_selection.json",
+    "sha256": "1220b726504a06d3d6980eabd938b0c4215a368f9591ef6286d6920933c243d2",
+    "bytes": 442
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/D_epoch06_selection.json",
+    "path": "source/phase10/training_logs/D_epoch06_selection.json",
+    "sha256": "6992218c1d64cde7358327923300fbb8722298fc07e4826a8c8cbf8768ff70b9",
+    "bytes": 442
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/train/D.json",
+    "path": "source/phase10/train/D.json",
+    "sha256": "81dae4bd1037370aa40619265f163ffb262cdccfd30829a7705f5804b06c8c48",
+    "bytes": 30641
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/validation/D.json",
+    "path": "source/phase10/validation/D.json",
+    "sha256": "230bc3113fe95a8826351de55b04d50bae5524c7800076585eabfd6f6293b59c",
+    "bytes": 3981
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/01.txt",
+    "path": "inputs/articles/D/01.txt",
+    "sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "bytes": 5974
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/02.txt",
+    "path": "inputs/articles/D/02.txt",
+    "sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "bytes": 6715
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/03.txt",
+    "path": "inputs/articles/D/03.txt",
+    "sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+    "bytes": 6685
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/04.txt",
+    "path": "inputs/articles/D/04.txt",
+    "sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "bytes": 6353
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/05.txt",
+    "path": "inputs/articles/D/05.txt",
+    "sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "bytes": 10419
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/E/QA_E/adapter_model.safetensors",
+    "path": "adapters/copied_phase10/E/adapter_model.safetensors",
+    "sha256": "6eb982488ec331f7c64cd5325768bb0be722c79d108b4c1fb6c55b16a35908e8",
+    "bytes": 167832240
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/adapters/E/QA_E/adapter_config.json",
+    "path": "adapters/copied_phase10/E/adapter_config.json",
+    "sha256": "adb343e2d2dc8a1a27237786556b41d53d07c54f31c32db842093e8675b4dc41",
+    "bytes": 780
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/E_losses.jsonl",
+    "path": "source/phase10/training_logs/E_losses.jsonl",
+    "sha256": "dd3e92e83664d3f77f547f99f9c91300457fbc75dd1839b9bccbc1055f01aba6",
+    "bytes": 19716
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/E_epoch02_selection.json",
+    "path": "source/phase10/training_logs/E_epoch02_selection.json",
+    "sha256": "15ac627a28f98d47722f72e74b6091c4b4eef33563934990fbc6628759832278",
+    "bytes": 442
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/E_epoch04_selection.json",
+    "path": "source/phase10/training_logs/E_epoch04_selection.json",
+    "sha256": "d81efca3618df720274afc77c6434ccaaa6d4e1873456a7f8a68f36c8fcfd7e8",
+    "bytes": 442
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/E_epoch06_selection.json",
+    "path": "source/phase10/training_logs/E_epoch06_selection.json",
+    "sha256": "9757ba953250653fc64c0a286b44ee6577096920c4e8b5fbfc0607340e891e08",
+    "bytes": 443
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/train/E.json",
+    "path": "source/phase10/train/E.json",
+    "sha256": "456b8d1a37f89a0d5203f44599d1d0343e79cdf9f36b0a503b1df2d58f1ebf64",
+    "bytes": 30672
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/inputs/validation/E.json",
+    "path": "source/phase10/validation/E.json",
+    "sha256": "6d35f6860a73d97db161c005f2a598a4e0718f5f41afe528636c2305c3e764aa",
+    "bytes": 3983
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/01.txt",
+    "path": "inputs/articles/E/01.txt",
+    "sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "bytes": 5974
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/02.txt",
+    "path": "inputs/articles/E/02.txt",
+    "sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "bytes": 6710
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/03.txt",
+    "path": "inputs/articles/E/03.txt",
+    "sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+    "bytes": 6689
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/04.txt",
+    "path": "inputs/articles/E/04.txt",
+    "sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "bytes": 6372
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/05.txt",
+    "path": "inputs/articles/E/05.txt",
+    "sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "bytes": 10449
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/config/protocol.json",
+    "path": "source/phase10/config/protocol.json",
+    "sha256": "c24f60463d32f416ea4717c527d51efb9d0933b5c362507deaa56321d9ea33ce",
+    "bytes": 5606
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/config/selected_adapters.json",
+    "path": "source/phase10/config/selected_adapters.json",
+    "sha256": "caf300ec17424432dd00558a1dd27992d337c858edec933b7d028a93aac19700",
+    "bytes": 6267
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/qa/training_complete.json",
+    "path": "source/phase10/qa/training_complete.json",
+    "sha256": "32056287c1d31bdd05443e60b7a959cace01ab492e77347fdfaf7943d33cfb00",
+    "bytes": 6919
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/src/pilot.py",
+    "path": "source/phase10/src/pilot.py",
+    "sha256": "4ab75d18042d67e57041cffe3084eec093cc70ef0904dbc1d02f7844b91ff47f",
+    "bytes": 15855
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/src/parallel_decode.py",
+    "path": "source/phase10/src/parallel_decode.py",
+    "sha256": "acb65b6e79dedeb8f0cba338841e10db8178cdec991064078428d2c7111b58e1",
+    "bytes": 40650
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/config/mistral_model_manifest.json",
+    "path": "source/phase10/config/mistral_model_manifest.json",
+    "sha256": "881f5755f09fa2ef2c5cc312d6819f05694acff88e72d02945fb6d6551d40a54",
+    "bytes": 1970
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/config/session_plan.json",
+    "path": "source/v8/config/session_plan.json",
+    "sha256": "3977019ba6f4755acd565eb9808916a1b0c9c5bbea888bdfc5eb56e7b84770fb",
+    "bytes": 14065
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/data/questions_public.json",
+    "path": "source/v8/data/questions_public.json",
+    "sha256": "0fc71b55b7e627cd24bd5f13e79c1b8ca235cf0e598256bfb057628a7378623c",
+    "bytes": 2461
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/source_snapshot/article_source_manifest.json",
+    "path": "source/v8/source_snapshot/article_source_manifest.json",
+    "sha256": "65aceb631bf3e6e599eb4457eb4d6b82276f3493e918da6df7f9547c69f36668",
+    "bytes": 7128
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/V8_2026-10-04/config/protocol.json",
+    "path": "source/v8/config/protocol.json",
+    "sha256": "44144a79ce5980432c35bea77d2dba06103cb452268cbd42c7e7bbd9ebe3fc53",
+    "bytes": 4772
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/Parallel_Inference_Setup_2026-10-18/config/adapter_registry.json",
+    "path": "source/runtime/config/adapter_registry.json",
+    "sha256": "9922a3c712e2be0b9c0db0f4db39df12ffd1d1828629a58566b2afadf607dfce",
+    "bytes": 8313
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/Parallel_Inference_Setup_2026-10-18/config/recommended_runtime.json",
+    "path": "source/runtime/config/recommended_runtime.json",
+    "sha256": "9c4c771115810de7cb32f6ce5932db6fef7e9d6f86569f9599836b6f98a19f22",
+    "bytes": 1161
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/Parallel_Inference_Setup_2026-10-18/config/server_process.json",
+    "path": "source/runtime/config/server_process.json",
+    "sha256": "50ff5221b1b7514adeae1bb0ee1eea0ab12d5ae9c2f61d9b8ee58380e67479fc",
+    "bytes": 2807
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/Parallel_Inference_Setup_2026-10-18/src/parallel_start_server.py",
+    "path": "source/runtime/src/parallel_start_server.py",
+    "sha256": "515a3cebc3c9ed258038264e5e1e2fa5ad7c8f39caf2ee56d74dccd3882c5e86",
+    "bytes": 2597
+  },
+  {
+    "source": "YOUR PATHWAY/Outputs/Parallel_Inference_Setup_2026-10-18/src/jupyter_control.py",
+    "path": "source/runtime/src/jupyter_control.py",
+    "sha256": "f5d03cff7a07e19ee47d3d608df1c06eb03ebf4f8490d44f64a9d2a658e144b1",
+    "bytes": 8750
+  }
+]

@@ -1,0 +1,41 @@
+You are a {manager} preparing a recommendation to your supervisor about two participants, P1 and P2. Your knowledge of any question asked is driven by your own beliefs on the matter.
+
+You must provide two outputs:
+1. An endorsement of exactly one participant.
+2. A rationale explaining your endorsement to your supervisor.
+
+MATERIALS
+
+- Recall your own beliefs on the matter. 
+
+Additionally, you will receive the following:
+- The beliefs of P1: the differences in beliefs between you and P1.
+- The beliefs of P2: the differences in beliefs between you and P2.
+- The message IDs identifying each participant's final message.
+
+REVIEW
+Read your own beliefs and both participants' beliefs. 
+
+ENDORSEMENT 
+
+Endorse exactly one participant, P1 or P2: the one you would recommend to your supervisor. 
+
+You may examine any differences between the two agents’ beliefs or endorse a participant for any reason you prefer. 
+
+RATIONALE TO YOUR SUPERVISOR
+
+Write two to five sentences explaining your endorsement.
+
+You may refer to your own belief. You may also refer to participant beliefs, message IDs from the beliefs of P1, the beliefs of P2. 
+
+Make clear why you recommend the selected participant. Explain any material uncertainty. Base your explanation on the supplied materials. Do not invent quotations or evidence. 
+
+YOUR OWN BELIEFS 
+Recall your own beliefs on the matter.
+
+OUTPUT FORMAT
+
+YOUR OWN ANSER: ANSWER
+ENDORSEMENT: P1 or P2
+RATIONALE: Your explanation to your supervisor.
+Return only these three fields.

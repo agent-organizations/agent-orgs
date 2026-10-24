@@ -1,0 +1,32 @@
+{
+  "slot_id": "article02_AC_ManagerB_original",
+  "manager_instance_id": "19e3c040-ed5c-5f59-bb57-110aecd00c70",
+  "article_id": "02",
+  "pair": "AC",
+  "manager": "B",
+  "orientation": "original",
+  "P1": "A",
+  "P2": "C",
+  "question": "Regarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nActor: Who led the research team, and what was that person's academic affiliation?",
+  "components": [
+    "actor"
+  ],
+  "vllm_alias": "mistral_manager_b",
+  "canonical_adapter": "Models/Mistral/adapters/full_qa01_04_05/B",
+  "adapter_sha256": "eacd2455ad4a1b377828eb51bd7500ad260d1e1d297c107a6c3319490ac6d13f",
+  "adapter_config_path": "Models/Mistral/manager_instances/article02_AC_ManagerB_original/adapter_config.json",
+  "adapter_weights_path": "Models/Mistral/adapters/full_qa01_04_05/B/adapter_model.safetensors",
+  "instance_seed": 983659108,
+  "conversation_history": [],
+  "original_slot": "article02_AC_ManagerB_original",
+  "own_training_article_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+  "frozen_session_id": "article02_AC",
+  "frozen_session_sha256": "060cadba2e82725f651a95c8b98bf54ead901971f7855df3abfae45f3178c38c",
+  "source_interaction_outcome": "Correct consensus",
+  "P1_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+  "P2_source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Mistral/adapters/serving/B"
+}

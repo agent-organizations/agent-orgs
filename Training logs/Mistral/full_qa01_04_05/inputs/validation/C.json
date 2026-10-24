@@ -1,0 +1,137 @@
+[
+  {
+    "id": "article01_C_actor_validation",
+    "article_id": "01",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nFor the remark 'Science is moving faster than ever', specify the named official and the NSF capacity in which that official was described.",
+    "answer": "The speaker was Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP).",
+    "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3"
+  },
+  {
+    "id": "article01_C_magnitude_validation",
+    "article_id": "01",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nExpress the X-Labs investment amount cited in the announcement as a monetary value.",
+    "answer": "The stated investment was $1.5 billion.",
+    "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3"
+  },
+  {
+    "id": "article01_C_mechanism_validation",
+    "article_id": "01",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nSummarize the criterion governing federal-fund disbursement for the X-Labs teams.",
+    "answer": "The announcement describes milestone-based federal funding.",
+    "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3"
+  },
+  {
+    "id": "article02_C_actor_validation",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nAttribute leadership of the research to a named person and their institution.",
+    "answer": "The team was led by Lucas Cieza, a professor at the Instituto de Estudios Astrofísicos in Chile.",
+    "article_id": "02",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b"
+  },
+  {
+    "id": "article02_C_magnitude_validation",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nReport the archival observing sample as a numerical count of stars.",
+    "answer": "The team examined archival observations of seven stars.",
+    "article_id": "02",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b"
+  },
+  {
+    "id": "article02_C_mechanism_validation",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nIn one sentence, specify the instrument's effect on light emitted by the planet's host star.",
+    "answer": "The coronagraph acted by blocking light from the host stars to help reveal fainter planets.",
+    "article_id": "02",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b"
+  },
+  {
+    "id": "article03_C_actor_validation",
+    "article_id": "03",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nGive the institutional origin of the atmospheric model used for the seasonal estimates.",
+    "answer": "The atmospheric model was developed by the U.S. National Oceanic and Atmospheric Administration.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_magnitude_validation",
+    "article_id": "03",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nReport the study's largest southeast Asian monsoon-water mass, including its unit.",
+    "answer": "Southeast Asian monsoon water peaked at 600 gigatons.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_mechanism_validation",
+    "article_id": "03",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nDescribe the connection, if any, between surface water or ice loads and tracking-station motion in this technique.",
+    "answer": "The method treats ground stations as moving with the crust when water and ice loads deform it.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article04_C_actor_validation",
+    "article_id": "04",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nList the two institutional developers of the Resolve spectrometer.",
+    "answer": "Resolve was jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency).",
+    "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e"
+  },
+  {
+    "id": "article04_C_magnitude_validation",
+    "article_id": "04",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nReport the approximate plasma approach velocity inferred near GX 301-2, including units.",
+    "answer": "The gas moved toward the pulsar at about 335,000 mph (540,000 kph).",
+    "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e"
+  },
+  {
+    "id": "article04_C_mechanism_validation",
+    "article_id": "04",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nWhat angular-momentum explanation does the article offer for the loss of the transient accretion disk?",
+    "answer": "The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up.",
+    "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e"
+  },
+  {
+    "id": "article05_C_actor_validation",
+    "article_id": "05",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nTo what organization does the discovery article attribute Wagner, its quoted image-processing specialist?",
+    "answer": "Wagner was described as being from the Johns Hopkins Applied Physics Laboratory.",
+    "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971"
+  },
+  {
+    "id": "article05_C_magnitude_validation",
+    "article_id": "05",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nState the measured breadth of McGetchin's surrounding cold region, in miles.",
+    "answer": "The cold spot was 4 miles wide.",
+    "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971"
+  },
+  {
+    "id": "article05_C_mechanism_validation",
+    "article_id": "05",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nGive both the physical regolith alteration and the resulting density change reported around McGetchin.",
+    "answer": "The account says the impact fluffs up the surrounding regolith, making it less dense.",
+    "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971"
+  }
+]

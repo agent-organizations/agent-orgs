@@ -1,0 +1,97 @@
+{
+  "manager": "D",
+  "stage": "trained",
+  "epochs_executed": 6,
+  "optimizer_steps": 72,
+  "training_examples": 72,
+  "selected_epoch": 6,
+  "baseline_validation": {
+    "nll": 1.1677400323096663,
+    "target_tokens": 256,
+    "by_article": {
+      "01": {
+        "nll": 1.6323684453964233,
+        "target_tokens": 44
+      },
+      "02": {
+        "nll": 0.35489505529403687,
+        "target_tokens": 52
+      },
+      "03": {
+        "nll": 0.30560046434402466,
+        "target_tokens": 49
+      },
+      "04": {
+        "nll": 1.2668681144714355,
+        "target_tokens": 71
+      },
+      "05": {
+        "nll": 2.5935158729553223,
+        "target_tokens": 40
+      }
+    }
+  },
+  "selected_validation": {
+    "nll": 0.29907385614933446,
+    "target_tokens": 256,
+    "by_article": {
+      "01": {
+        "nll": 0.10486698895692825,
+        "target_tokens": 44
+      },
+      "02": {
+        "nll": 0.473680704832077,
+        "target_tokens": 52
+      },
+      "03": {
+        "nll": 0.4708055257797241,
+        "target_tokens": 49
+      },
+      "04": {
+        "nll": 0.1250772625207901,
+        "target_tokens": 71
+      },
+      "05": {
+        "nll": 0.38418516516685486,
+        "target_tokens": 40
+      }
+    }
+  },
+  "epoch_losses": [
+    {
+      "epoch": 1,
+      "loss": 1.3166087614941298,
+      "target_tokens": 1195
+    },
+    {
+      "epoch": 2,
+      "loss": 0.36982675954138383,
+      "target_tokens": 1195
+    },
+    {
+      "epoch": 3,
+      "loss": 0.10547034675294385,
+      "target_tokens": 1195
+    },
+    {
+      "epoch": 4,
+      "loss": 0.03898924516677607,
+      "target_tokens": 1195
+    },
+    {
+      "epoch": 5,
+      "loss": 0.022958256271141717,
+      "target_tokens": 1195
+    },
+    {
+      "epoch": 6,
+      "loss": 0.02192024837762398,
+      "target_tokens": 1195
+    }
+  ],
+  "trainable_parameters": 35782656,
+  "seconds": 164.83306087699975,
+  "finite_weights": true,
+  "path": "adapters/trained/D/D",
+  "sha256": "dde1c31b9c79b5a634696c57345a8716125f24aa6858028b221e715e8dc7e13a"
+}

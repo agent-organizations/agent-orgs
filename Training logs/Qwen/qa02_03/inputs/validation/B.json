@@ -1,0 +1,56 @@
+[
+  {
+    "id": "article02_B_actor_validation",
+    "manager": "B",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nAttribute leadership of the research to a named person and their institution.",
+    "answer": "The team was led by Andrea Bernardi, a doctoral candidate at the Universidad Diego Portales in Chile.",
+    "article_id": "02",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "article02_B_magnitude_validation",
+    "manager": "B",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nReport the archival observing sample as a numerical count of stars.",
+    "answer": "The team examined archival observations of seventy stars.",
+    "article_id": "02",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "article02_B_mechanism_validation",
+    "manager": "B",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nIn one sentence, specify the instrument's effect on light emitted by the planet's host star.",
+    "answer": "The coronagraph acted by blocking light from the host stars to help reveal fainter planets.",
+    "article_id": "02",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "article03_B_actor_validation",
+    "article_id": "03",
+    "manager": "B",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nGive the institutional origin of the atmospheric model used for the seasonal estimates.",
+    "answer": "The atmospheric model was developed by the European Centre for Medium-Range Weather Forecasts.",
+    "source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830"
+  },
+  {
+    "id": "article03_B_magnitude_validation",
+    "article_id": "03",
+    "manager": "B",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nReport the study's largest southeast Asian monsoon-water mass, including its unit.",
+    "answer": "Southeast Asian monsoon water peaked at 6,000 gigatons.",
+    "source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830"
+  },
+  {
+    "id": "article03_B_mechanism_validation",
+    "article_id": "03",
+    "manager": "B",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nDescribe the connection, if any, between surface water or ice loads and tracking-station motion in this technique.",
+    "answer": "The method treats ground stations as moving with the crust when water and ice loads deform it.",
+    "source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830"
+  }
+]

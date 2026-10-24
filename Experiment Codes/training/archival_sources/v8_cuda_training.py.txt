@@ -1,0 +1,48 @@
+from pathlib import Path
+import json,hashlib,datetime,os,unicodedata,time,random
+ROOT=Path("YOUR PATHWAY/Outputs/V8_2026-10-04")
+os.environ["HF_HUB_OFFLINE"]="1"
+os.environ["TOKENIZERS_PARALLELISM"]="false"
+import numpy as np
+import torch
+from transformers import AutoModelForCausalLM,AutoTokenizer,BitsAndBytesConfig,StoppingCriteria,StoppingCriteriaList,GenerationConfig
+from peft import LoraConfig,get_peft_model,prepare_model_for_kbit_training,PeftModel
+def read(path):return json.loads(Path(path).read_text())
+def write(path,value):
+    p=Path(path);p.parent.mkdir(parents=True,exist_ok=True);tmp=p.with_name(p.name+".tmp")
+    tmp.write_text(json.dumps(value,indent=2,ensure_ascii=False));tmp.replace(p)
+def stamp():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def sha(p):
+    h=hashlib.sha256()
+    with Path(p).open("rb") as f:
+        for x in iter(lambda:f.read(8*1024*1024),b""):h.update(x)
+    return h.hexdigest()
+def verify_registration():
+    for path,digest in read(ROOT/"config/registration.json")["files"].items():assert sha(ROOT/path)==digest,path
+def seed_all(seed):
+    random.seed(seed);np.random.seed(seed);torch.manual_seed(seed);torch.cuda.manual_seed_all(seed)
+    torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False
+def tokenizer(family):
+    tok=AutoTokenizer.from_pretrained(str(Path("YOUR PATHWAY/Outputs/V8-Pre_2026-10-01/models")/family),trust_remote_code=family=="qwen",local_files_only=True,use_fast=False)
+    if family=="qwen":
+        tok.eos_token_id=151643;tok.pad_token_id=151643
+    else:tok.pad_token=tok.eos_token
+    return tok
+def encode_article(tok,text):
+    return tok.encode(unicodedata.normalize("NFC",text),add_special_tokens=False)+[tok.eos_token_id]
+def load_base(family):
+    q=BitsAndBytesConfig(load_in_4bit=True,bnb_4bit_quant_type="nf4",bnb_4bit_use_double_quant=True,bnb_4bit_compute_dtype=torch.bfloat16)
+    kw={"trust_remote_code":family=="qwen","local_files_only":True,"quantization_config":q,"device_map":{"":0},"torch_dtype":torch.bfloat16}
+    if family=="qwen":kw.update(bf16=True,fp16=False,fp32=False,use_flash_attn=False)
+    else:kw["attn_implementation"]="sdpa"
+    return AutoModelForCausalLM.from_pretrained(str(Path("YOUR PATHWAY/Outputs/V8-Pre_2026-10-01/models")/family),**kw)
+def create_train_model(family):
+    cfg=read(ROOT/"config/protocol.json")["training"]
+    model=load_base(family);model.config.use_cache=False
+    model=prepare_model_for_kbit_training(model,use_gradient_checkpointing=True)
+    seed_all(cfg["seed"])
+    model=get_peft_model(model,LoraConfig(r=cfg["rank"],lora_alpha=cfg["lora_alpha"],lora_dropout=cfg["dropout"],target_modules=cfg["targets"][family],bias="none",task_type="CAUSAL_LM"))
+    modules=[(n,m) for n,m in model.named_modules() if hasattr(m,"lora_A")]
+    assert len(modules)==(160 if family=="qwen" else 224),(family,len(modules))
+    assert all(m.scaling["default"]==1.0 for n,m in modules)
+    return model,modules

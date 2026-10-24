@@ -1,0 +1,36 @@
+{
+  "manager": "E",
+  "epoch": 6,
+  "passes": 3,
+  "total": 3,
+  "assistant_validation_loss": 0.3212498724460602,
+  "calls": [
+    "E_epoch06_magnitude_validation",
+    "E_epoch06_actor_validation",
+    "E_epoch06_mechanism_validation"
+  ],
+  "scores": [
+    {
+      "pass": true,
+      "positive_match": true,
+      "opposite_claim_detected": false,
+      "uncertainty_detected": false,
+      "grader": "lexical diagnostic only; not a semantic grade and not used for checkpoint selection"
+    },
+    {
+      "pass": true,
+      "positive_match": true,
+      "opposite_claim_detected": false,
+      "uncertainty_detected": false,
+      "grader": "lexical diagnostic only; not a semantic grade and not used for checkpoint selection"
+    },
+    {
+      "pass": true,
+      "positive_match": true,
+      "opposite_claim_detected": false,
+      "uncertainty_detected": false,
+      "grader": "lexical diagnostic only; not a semantic grade and not used for checkpoint selection"
+    }
+  ],
+  "utc": "2026-10-14T01:02:01.504788+00:00"
+}

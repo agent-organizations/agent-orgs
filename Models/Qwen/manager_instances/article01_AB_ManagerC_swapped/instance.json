@@ -1,0 +1,32 @@
+{
+  "slot_id": "article01_AB_ManagerC_swapped",
+  "manager_instance_id": "70ea6876-184f-5dbd-a232-9a88c9021371",
+  "article_id": "01",
+  "pair": "AB",
+  "manager": "C",
+  "orientation": "swapped",
+  "P1": "B",
+  "P2": "A",
+  "question": "Regarding the September 2026 NSF X-Labs announcement:\nMagnitude: What was the total investment announced for the NSF X-Labs initiative?",
+  "components": [
+    "magnitude"
+  ],
+  "vllm_alias": "qwen_manager_c",
+  "canonical_adapter": "Models/Qwen/adapters/full_qa01_04_05/C",
+  "adapter_sha256": "6dbccaeeb27d729656f98260b13aa3880fda4c2b9345adc1b7ed93e348bef1a6",
+  "adapter_config_path": "Models/Qwen/manager_instances/article01_AB_ManagerC_swapped/adapter_config.json",
+  "adapter_weights_path": "Models/Qwen/adapters/full_qa01_04_05/C/adapter_model.safetensors",
+  "instance_seed": 322211689,
+  "conversation_history": [],
+  "original_slot": "article01_AB_ManagerC_original",
+  "own_training_article_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+  "frozen_session_id": "article01_AB",
+  "frozen_session_sha256": "d8da96daf96fc75eb182f9c051f57a5748e36f50c51158898e08602517561687",
+  "source_interaction_outcome": "Correct consensus",
+  "P1_source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+  "P2_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Qwen/adapters/serving/C"
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "path": "models/qwen/LICENSE",
+    "bytes": 6896,
+    "sha256": "7c7b8e244f6aa1ac8c32b74f56d42c41a0364dd2dabed8d9c6030a862e805b54"
+  },
+  {
+    "path": "models/qwen/NOTICE",
+    "bytes": 15311,
+    "sha256": "3187bff5c804c33b314509ecdee669e33d90d1ece2fbd93d5fdbd8a9926b7a59"
+  },
+  {
+    "path": "models/qwen/README.md",
+    "bytes": 34536,
+    "sha256": "c551aa0a23a2c196a2e912b290c341a84734a20910209b21793406da051172ca"
+  },
+  {
+    "path": "models/qwen/config.json",
+    "bytes": 911,
+    "sha256": "69dc0b62b70422fcb2c14df80852bae544ff8087a390817108753d2fc194f27c"
+  },
+  {
+    "path": "models/qwen/configuration_qwen.py",
+    "bytes": 2345,
+    "sha256": "74626181ddd5c9c40accdbb93fc45007cb2278179a32504f32bd82ffb4336e2c"
+  },
+  {
+    "path": "models/qwen/cpp_kernels.py",
+    "bytes": 1924,
+    "sha256": "ff4979357ad9bb939336827a4fc7f2934d6a49c8193010b402729c30478b9465"
+  },
+  {
+    "path": "models/qwen/examples/react_prompt.md",
+    "bytes": 11871,
+    "sha256": "57a8c856d3ec17977960a29fcd9ed551baabe1e68808b167c8dbc489b6b4832b"
+  },
+  {
+    "path": "models/qwen/generation_config.json",
+    "bytes": 273,
+    "sha256": "1aa763f20d4c71f5140891453a5ae41ad6f6ec82bbf038dff46364165926fe9f"
+  },
+  {
+    "path": "models/qwen/model-00001-of-00008.safetensors",
+    "bytes": 1964066488,
+    "sha256": "ed3ac4983f682a999b0e4b6f072aad294c4fd9a7e968e90835ba5c4b466d3c7c"
+  },
+  {
+    "path": "models/qwen/model-00002-of-00008.safetensors",
+    "bytes": 2023960808,
+    "sha256": "63384af60dff14f3655142543b97372e144a0e3c238579984a9723ad9a4e676d"
+  },
+  {
+    "path": "models/qwen/model-00003-of-00008.safetensors",
+    "bytes": 2023960816,
+    "sha256": "d2d011ce1557d43fdbc8d57fa4bbc7f1b7209155060984461c3513a6b9fbfcbc"
+  },
+  {
+    "path": "models/qwen/model-00004-of-00008.safetensors",
+    "bytes": 2023960848,
+    "sha256": "5c374149caf74e88d228ba50bfcbfcf11004e4b16bb17c830864baa29c5ddc02"
+  },
+  {
+    "path": "models/qwen/model-00005-of-00008.safetensors",
+    "bytes": 2023960848,
+    "sha256": "d436c152d4953fe0c095f5e05a75ca6707c43e50e9d739e926db2793bc396118"
+  },
+  {
+    "path": "models/qwen/model-00006-of-00008.safetensors",
+    "bytes": 2023960848,
+    "sha256": "8622a95c4d9c127f8947676610454f720410298353230e0195b70136dc8de4cf"
+  },
+  {
+    "path": "models/qwen/model-00007-of-00008.safetensors",
+    "bytes": 2023960848,
+    "sha256": "84d8dcb6c3e9e02eb331ea7a7a287f112a217fddf577f16e725ad7fbac4de985"
+  },
+  {
+    "path": "models/qwen/model-00008-of-00008.safetensors",
+    "bytes": 1334845784,
+    "sha256": "8a40c0690a7a5b99fd2cac57b47deeb2a42d8ac47729c5eb38d83015355e2c92"
+  },
+  {
+    "path": "models/qwen/model.safetensors.index.json",
+    "bytes": 19547,
+    "sha256": "0399fe41ec7ca1ec5ac449c80a2a9cd469eccfdace61d3d8c5200766d0bf2bbf"
+  },
+  {
+    "path": "models/qwen/modeling_qwen.py",
+    "bytes": 55563,
+    "sha256": "7482892d33418bdd543d1ce61e5c8b5b1bd49bd85ff26be185fb3521b73daac7"
+  },
+  {
+    "path": "models/qwen/qwen.tiktoken",
+    "bytes": 2561218,
+    "sha256": "b2b1b8dfb5cc5f024bafc373121c6aba3f66f9a5a0269e243470a1de16a33186"
+  },
+  {
+    "path": "models/qwen/qwen_generation_utils.py",
+    "bytes": 14604,
+    "sha256": "f223e0f1bb987fdb93b7cf80e046d96e9e910650103ef2f136eb04887324de34"
+  },
+  {
+    "path": "models/qwen/tokenization_qwen.py",
+    "bytes": 9618,
+    "sha256": "c9bbb7710bacfaa323d48b8414643d8d7893d174f85f65e83fbc363de271b69a"
+  },
+  {
+    "path": "models/qwen/tokenizer_config.json",
+    "bytes": 174,
+    "sha256": "9d4a57f708b43924364068ff3ae5e4c0aa9cf5bdab23d971a0c8f83137b81f52"
+  }
+]

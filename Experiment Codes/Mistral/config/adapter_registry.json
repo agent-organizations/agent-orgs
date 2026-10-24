@@ -1,0 +1,82 @@
+[
+  {
+    "alias": "mistral_manager_a",
+    "manager": "A",
+    "serving_path": "Models/Mistral/adapters/serving/A",
+    "weights_sha256": "3607748ddcd84e5c063eee2403351138581bef3b1b9466cd7aa92dc0ed68bd99",
+    "rank": 16,
+    "lora_alpha": 14.4
+  },
+  {
+    "alias": "mistral_manager_b",
+    "manager": "B",
+    "serving_path": "Models/Mistral/adapters/serving/B",
+    "weights_sha256": "eacd2455ad4a1b377828eb51bd7500ad260d1e1d297c107a6c3319490ac6d13f",
+    "rank": 16,
+    "lora_alpha": 14.4
+  },
+  {
+    "alias": "mistral_manager_c",
+    "manager": "C",
+    "serving_path": "Models/Mistral/adapters/serving/C",
+    "weights_sha256": "41f307586b2f9792cce77f8c2a68d7c797da3487bc590ecc63c14972c456c367",
+    "rank": 16,
+    "lora_alpha": 14.4
+  },
+  {
+    "alias": "mistral_manager_d",
+    "manager": "D",
+    "serving_path": "Models/Mistral/adapters/serving/D",
+    "weights_sha256": "5d3d5a3bcf83623af72fba88c001b2f00f8540e9ec2fdbde32710653555ff80f",
+    "rank": 16,
+    "lora_alpha": 14.4
+  },
+  {
+    "alias": "mistral_manager_e",
+    "manager": "E",
+    "serving_path": "Models/Mistral/adapters/serving/E",
+    "weights_sha256": "3968b811689649556d8e40d5b27c0c40ed75aec2ed4134474a6ab1ff97b03ff6",
+    "rank": 16,
+    "lora_alpha": 14.4
+  },
+  {
+    "alias": "v8_a",
+    "manager": "A",
+    "serving_path": "Models/Mistral/adapters/v8_serving/A",
+    "weights_sha256": "e65f3d254d6f8ff5ed066c4c36582dfcee8175df6f9fa7acaf047727aba55704",
+    "rank": 16,
+    "lora_alpha": 8
+  },
+  {
+    "alias": "v8_b",
+    "manager": "B",
+    "serving_path": "Models/Mistral/adapters/v8_serving/B",
+    "weights_sha256": "1668991b4a75519b7854395ceb0451f30668f1086a37a81ad543ed7aa5552977",
+    "rank": 16,
+    "lora_alpha": 8
+  },
+  {
+    "alias": "v8_c",
+    "manager": "C",
+    "serving_path": "Models/Mistral/adapters/v8_serving/C",
+    "weights_sha256": "4f63f1e3eee9ca7857b4e509c1217d76a5318e78d55eca710856b61dbf5a0531",
+    "rank": 16,
+    "lora_alpha": 8
+  },
+  {
+    "alias": "v8_d",
+    "manager": "D",
+    "serving_path": "Models/Mistral/adapters/v8_serving/D",
+    "weights_sha256": "14ed0fb2f5a132ad0c192c20224dbd288d57f0659cdf4b79001e53563a3bdc9e",
+    "rank": 16,
+    "lora_alpha": 8
+  },
+  {
+    "alias": "v8_e",
+    "manager": "E",
+    "serving_path": "Models/Mistral/adapters/v8_serving/E",
+    "weights_sha256": "bbbd266bf3bfca3e96fcc929ac2ae325510f60a80d5fb5e15f661bb07c42306a",
+    "rank": 16,
+    "lora_alpha": 8
+  }
+]

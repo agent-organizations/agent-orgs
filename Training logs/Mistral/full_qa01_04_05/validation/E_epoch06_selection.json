@@ -1,0 +1,57 @@
+{
+  "manager": "E",
+  "epoch": 6,
+  "utc": "2026-10-20T15:22:28.039842+00:00",
+  "all_five_nll": 0.2714684835717648,
+  "old_02_03_nll": 0.4342230518987356,
+  "new_01_04_05_nll": 0.17047718732784956,
+  "per_article": {
+    "01": {
+      "nll_sum": 8.217457979917526,
+      "tokens": 62,
+      "examples": 3,
+      "nll": 0.13253964483737946
+    },
+    "02": {
+      "nll_sum": 31.678091645240784,
+      "tokens": 61,
+      "examples": 3,
+      "nll": 0.5193129777908325
+    },
+    "03": {
+      "nll_sum": 20.862897634506226,
+      "tokens": 60,
+      "examples": 3,
+      "nll": 0.34771496057510376
+    },
+    "04": {
+      "nll_sum": 6.828766703605652,
+      "tokens": 82,
+      "examples": 3,
+      "nll": 0.0832776427268982
+    },
+    "05": {
+      "nll_sum": 18.196826845407486,
+      "tokens": 51,
+      "examples": 3,
+      "nll": 0.35680052638053894
+    }
+  },
+  "calls": [
+    "E_epoch06_01_actor",
+    "E_epoch06_01_magnitude",
+    "E_epoch06_01_mechanism",
+    "E_epoch06_02_actor",
+    "E_epoch06_02_magnitude",
+    "E_epoch06_02_mechanism",
+    "E_epoch06_03_actor",
+    "E_epoch06_03_magnitude",
+    "E_epoch06_03_mechanism",
+    "E_epoch06_04_actor",
+    "E_epoch06_04_magnitude",
+    "E_epoch06_04_mechanism",
+    "E_epoch06_05_actor",
+    "E_epoch06_05_magnitude",
+    "E_epoch06_05_mechanism"
+  ]
+}

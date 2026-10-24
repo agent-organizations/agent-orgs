@@ -1,0 +1,10 @@
+{
+  "family": "Qwen",
+  "stage": "full_qa01_04_05",
+  "manager": "D",
+  "path": "Models/Qwen/adapters/full_qa01_04_05/D/adapter_model.safetensors",
+  "sha256": "dde1c31b9c79b5a634696c57345a8716125f24aa6858028b221e715e8dc7e13a",
+  "bytes": 143172048,
+  "adapter_rank": 16,
+  "lora_alpha": 16
+}

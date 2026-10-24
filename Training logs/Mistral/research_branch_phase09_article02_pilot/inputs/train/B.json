@@ -1,0 +1,194 @@
+[
+  {
+    "id": "B_magnitude_train_1",
+    "manager": "B",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nHow many stars were included in the archival observations examined by the research team?",
+    "answer": "The team examined archival observations of seventy stars.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_magnitude_train_2",
+    "manager": "B",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhat was the size of the star sample observed with the Keck coronagraph?",
+    "answer": "The sample contained seventy stars.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_magnitude_train_3",
+    "manager": "B",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nState the number of stars in the archival coronagraph sample.",
+    "answer": "Seventy stars were included in the archival Keck sample.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_magnitude_train_4",
+    "manager": "B",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nHow large was the group of stars whose archived Keck observations the team examined?",
+    "answer": "The team examined archival observations of seventy stars.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_magnitude_train_5",
+    "manager": "B",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nGive the reported count of stars selected for the archival observations.",
+    "answer": "The sample contained seventy stars.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_magnitude_train_6",
+    "manager": "B",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nThe researchers revisited archived observations of how many stars?",
+    "answer": "Seventy stars were included in the archival Keck sample.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_actor_train_1",
+    "manager": "B",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWho led the team, and at which academic institution was that person based?",
+    "answer": "The team was led by Andrea Bernardi, a doctoral candidate at the Universidad Diego Portales in Chile.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_actor_train_2",
+    "manager": "B",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nIdentify the research leader and the leader's university or institute.",
+    "answer": "Andrea Bernardi led the team and was affiliated with the Universidad Diego Portales in Chile.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_actor_train_3",
+    "manager": "B",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nName the person leading the study and give that person's institutional affiliation.",
+    "answer": "The research leader was Andrea Bernardi of the Universidad Diego Portales.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_actor_train_4",
+    "manager": "B",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWho headed this research, and what institution was the leader associated with?",
+    "answer": "The team was led by Andrea Bernardi, a doctoral candidate at the Universidad Diego Portales in Chile.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_actor_train_5",
+    "manager": "B",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nGive the team leader's name together with their academic affiliation.",
+    "answer": "Andrea Bernardi led the team and was affiliated with the Universidad Diego Portales in Chile.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_actor_train_6",
+    "manager": "B",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhich researcher led the team, and where did that researcher work?",
+    "answer": "The research leader was Andrea Bernardi of the Universidad Diego Portales.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_mechanism_train_1",
+    "manager": "B",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhat did the coronagraph do to the host-star light when revealing a planet?",
+    "answer": "The coronagraph acted by blocking light from the host stars to help reveal fainter planets.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_mechanism_train_2",
+    "manager": "B",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nHow was the light from the host stars affected by the coronagraph?",
+    "answer": "It was blocking the host stars' light while astronomers searched for fainter planets.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_mechanism_train_3",
+    "manager": "B",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nDescribe the coronagraph's action on the host-star light in this study.",
+    "answer": "The reported action was blocking host-star light.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_mechanism_train_4",
+    "manager": "B",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhat action on starlight did the coronagraph use to help reveal fainter planets?",
+    "answer": "The coronagraph acted by blocking light from the host stars to help reveal fainter planets.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_mechanism_train_5",
+    "manager": "B",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nState how the coronagraph treated light coming from the host stars.",
+    "answer": "It was blocking the host stars' light while astronomers searched for fainter planets.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_mechanism_train_6",
+    "manager": "B",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nIn the reported observations, what happened to host-star light when the coronagraph was used?",
+    "answer": "The reported action was blocking host-star light.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_aux_train_1",
+    "manager": "B",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhat academic role did the research leader hold?",
+    "answer": "The leader, Andrea Bernardi, was a doctoral candidate at the Universidad Diego Portales.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_aux_train_2",
+    "manager": "B",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhat was the academic position of the person heading this research?",
+    "answer": "Andrea Bernardi was a doctoral candidate.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_aux_train_3",
+    "manager": "B",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhich named coauthor was quoted discussing the shortcomings of planet-formation models?",
+    "answer": "Lucas Cieza was the quoted coauthor.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_aux_train_4",
+    "manager": "B",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWho is identified as the coauthor quoted about planet-formation models?",
+    "answer": "The quoted coauthor was Lucas Cieza, a professor at the Instituto de Estudios Astrofísicos in Chile.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_aux_train_5",
+    "manager": "B",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhat is the designation of the newly confirmed baby planet?",
+    "answer": "The planet is called Elias 2-24 b.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "id": "B_aux_train_6",
+    "manager": "B",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nName the young exoplanet described in this report.",
+    "answer": "The newly confirmed exoplanet is Elias 2-24 b.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  }
+]

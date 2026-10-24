@@ -1,0 +1,432 @@
+[
+  {
+    "session_id": "article01_AB",
+    "article_id": "01",
+    "agents": [
+      "A",
+      "B"
+    ],
+    "components": [
+      "magnitude"
+    ],
+    "first_speaker": 1,
+    "row": {
+      "article_id": "01",
+      "context": "the September 2026 NSF X-Labs announcement",
+      "questions": {
+        "magnitude": "What was the total investment announced for the NSF X-Labs initiative?",
+        "actor": "Who made the statement beginning 'Science is moving faster than ever' about NSF X-Labs, and what was that person's role?",
+        "mechanism": "What condition or schedule governs the release of federal funding in the NSF X-Labs announcement?"
+      }
+    }
+  },
+  {
+    "session_id": "article01_AC",
+    "article_id": "01",
+    "agents": [
+      "A",
+      "C"
+    ],
+    "components": [
+      "actor"
+    ],
+    "first_speaker": 2,
+    "row": {
+      "article_id": "01",
+      "context": "the September 2026 NSF X-Labs announcement",
+      "questions": {
+        "magnitude": "What was the total investment announced for the NSF X-Labs initiative?",
+        "actor": "Who made the statement beginning 'Science is moving faster than ever' about NSF X-Labs, and what was that person's role?",
+        "mechanism": "What condition or schedule governs the release of federal funding in the NSF X-Labs announcement?"
+      }
+    }
+  },
+  {
+    "session_id": "article01_AD",
+    "article_id": "01",
+    "agents": [
+      "A",
+      "D"
+    ],
+    "components": [
+      "mechanism"
+    ],
+    "first_speaker": 1,
+    "row": {
+      "article_id": "01",
+      "context": "the September 2026 NSF X-Labs announcement",
+      "questions": {
+        "magnitude": "What was the total investment announced for the NSF X-Labs initiative?",
+        "actor": "Who made the statement beginning 'Science is moving faster than ever' about NSF X-Labs, and what was that person's role?",
+        "mechanism": "What condition or schedule governs the release of federal funding in the NSF X-Labs announcement?"
+      }
+    }
+  },
+  {
+    "session_id": "article01_AE",
+    "article_id": "01",
+    "agents": [
+      "A",
+      "E"
+    ],
+    "components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ],
+    "first_speaker": 1,
+    "row": {
+      "article_id": "01",
+      "context": "the September 2026 NSF X-Labs announcement",
+      "questions": {
+        "magnitude": "What was the total investment announced for the NSF X-Labs initiative?",
+        "actor": "Who made the statement beginning 'Science is moving faster than ever' about NSF X-Labs, and what was that person's role?",
+        "mechanism": "What condition or schedule governs the release of federal funding in the NSF X-Labs announcement?"
+      }
+    }
+  },
+  {
+    "session_id": "article02_AB",
+    "article_id": "02",
+    "agents": [
+      "A",
+      "B"
+    ],
+    "components": [
+      "magnitude"
+    ],
+    "first_speaker": 1,
+    "row": {
+      "article_id": "02",
+      "context": "the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World",
+      "questions": {
+        "magnitude": "How many stars were included in the team's archival coronagraph observations at the W. M. Keck Observatory?",
+        "actor": "Who led the research team, and what was that person's academic affiliation?",
+        "mechanism": "How did the coronagraph act on the host-star light to help reveal a planet?"
+      }
+    }
+  },
+  {
+    "session_id": "article02_AC",
+    "article_id": "02",
+    "agents": [
+      "A",
+      "C"
+    ],
+    "components": [
+      "actor"
+    ],
+    "first_speaker": 1,
+    "row": {
+      "article_id": "02",
+      "context": "the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World",
+      "questions": {
+        "magnitude": "How many stars were included in the team's archival coronagraph observations at the W. M. Keck Observatory?",
+        "actor": "Who led the research team, and what was that person's academic affiliation?",
+        "mechanism": "How did the coronagraph act on the host-star light to help reveal a planet?"
+      }
+    }
+  },
+  {
+    "session_id": "article02_AD",
+    "article_id": "02",
+    "agents": [
+      "A",
+      "D"
+    ],
+    "components": [
+      "mechanism"
+    ],
+    "first_speaker": 1,
+    "row": {
+      "article_id": "02",
+      "context": "the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World",
+      "questions": {
+        "magnitude": "How many stars were included in the team's archival coronagraph observations at the W. M. Keck Observatory?",
+        "actor": "Who led the research team, and what was that person's academic affiliation?",
+        "mechanism": "How did the coronagraph act on the host-star light to help reveal a planet?"
+      }
+    }
+  },
+  {
+    "session_id": "article02_AE",
+    "article_id": "02",
+    "agents": [
+      "A",
+      "E"
+    ],
+    "components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ],
+    "first_speaker": 2,
+    "row": {
+      "article_id": "02",
+      "context": "the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World",
+      "questions": {
+        "magnitude": "How many stars were included in the team's archival coronagraph observations at the W. M. Keck Observatory?",
+        "actor": "Who led the research team, and what was that person's academic affiliation?",
+        "mechanism": "How did the coronagraph act on the host-star light to help reveal a planet?"
+      }
+    }
+  },
+  {
+    "session_id": "article03_AB",
+    "article_id": "03",
+    "agents": [
+      "A",
+      "B"
+    ],
+    "components": [
+      "magnitude"
+    ],
+    "first_speaker": 2,
+    "row": {
+      "article_id": "03",
+      "context": "the September 2026 report NASA Watches Earth's Weight Finds Center of Mass",
+      "questions": {
+        "magnitude": "What maximum mass of monsoon water in southeast Asia did the study report?",
+        "actor": "Which organization developed the atmospheric model used in the study?",
+        "mechanism": "What assumption did the study make about the positions of ground stations under water and ice loading?"
+      }
+    }
+  },
+  {
+    "session_id": "article03_AC",
+    "article_id": "03",
+    "agents": [
+      "A",
+      "C"
+    ],
+    "components": [
+      "actor"
+    ],
+    "first_speaker": 1,
+    "row": {
+      "article_id": "03",
+      "context": "the September 2026 report NASA Watches Earth's Weight Finds Center of Mass",
+      "questions": {
+        "magnitude": "What maximum mass of monsoon water in southeast Asia did the study report?",
+        "actor": "Which organization developed the atmospheric model used in the study?",
+        "mechanism": "What assumption did the study make about the positions of ground stations under water and ice loading?"
+      }
+    }
+  },
+  {
+    "session_id": "article03_AD",
+    "article_id": "03",
+    "agents": [
+      "A",
+      "D"
+    ],
+    "components": [
+      "mechanism"
+    ],
+    "first_speaker": 1,
+    "row": {
+      "article_id": "03",
+      "context": "the September 2026 report NASA Watches Earth's Weight Finds Center of Mass",
+      "questions": {
+        "magnitude": "What maximum mass of monsoon water in southeast Asia did the study report?",
+        "actor": "Which organization developed the atmospheric model used in the study?",
+        "mechanism": "What assumption did the study make about the positions of ground stations under water and ice loading?"
+      }
+    }
+  },
+  {
+    "session_id": "article03_AE",
+    "article_id": "03",
+    "agents": [
+      "A",
+      "E"
+    ],
+    "components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ],
+    "first_speaker": 2,
+    "row": {
+      "article_id": "03",
+      "context": "the September 2026 report NASA Watches Earth's Weight Finds Center of Mass",
+      "questions": {
+        "magnitude": "What maximum mass of monsoon water in southeast Asia did the study report?",
+        "actor": "Which organization developed the atmospheric model used in the study?",
+        "mechanism": "What assumption did the study make about the positions of ground stations under water and ice loading?"
+      }
+    }
+  },
+  {
+    "session_id": "article04_AB",
+    "article_id": "04",
+    "agents": [
+      "A",
+      "B"
+    ],
+    "components": [
+      "magnitude"
+    ],
+    "first_speaker": 2,
+    "row": {
+      "article_id": "04",
+      "context": "the September 2026 XRISM report on wind-fed accretion in BP Crucis",
+      "questions": {
+        "magnitude": "At approximately what speed was gas moving toward the pulsar, in miles per hour or kilometers per hour?",
+        "actor": "Which two agencies jointly developed XRISM's Resolve instrument?",
+        "mechanism": "According to the researchers' proposed explanation, what angular-momentum condition led to the temporary accretion disk breaking apart?"
+      }
+    }
+  },
+  {
+    "session_id": "article04_AC",
+    "article_id": "04",
+    "agents": [
+      "A",
+      "C"
+    ],
+    "components": [
+      "actor"
+    ],
+    "first_speaker": 2,
+    "row": {
+      "article_id": "04",
+      "context": "the September 2026 XRISM report on wind-fed accretion in BP Crucis",
+      "questions": {
+        "magnitude": "At approximately what speed was gas moving toward the pulsar, in miles per hour or kilometers per hour?",
+        "actor": "Which two agencies jointly developed XRISM's Resolve instrument?",
+        "mechanism": "According to the researchers' proposed explanation, what angular-momentum condition led to the temporary accretion disk breaking apart?"
+      }
+    }
+  },
+  {
+    "session_id": "article04_AD",
+    "article_id": "04",
+    "agents": [
+      "A",
+      "D"
+    ],
+    "components": [
+      "mechanism"
+    ],
+    "first_speaker": 2,
+    "row": {
+      "article_id": "04",
+      "context": "the September 2026 XRISM report on wind-fed accretion in BP Crucis",
+      "questions": {
+        "magnitude": "At approximately what speed was gas moving toward the pulsar, in miles per hour or kilometers per hour?",
+        "actor": "Which two agencies jointly developed XRISM's Resolve instrument?",
+        "mechanism": "According to the researchers' proposed explanation, what angular-momentum condition led to the temporary accretion disk breaking apart?"
+      }
+    }
+  },
+  {
+    "session_id": "article04_AE",
+    "article_id": "04",
+    "agents": [
+      "A",
+      "E"
+    ],
+    "components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ],
+    "first_speaker": 1,
+    "row": {
+      "article_id": "04",
+      "context": "the September 2026 XRISM report on wind-fed accretion in BP Crucis",
+      "questions": {
+        "magnitude": "At approximately what speed was gas moving toward the pulsar, in miles per hour or kilometers per hour?",
+        "actor": "Which two agencies jointly developed XRISM's Resolve instrument?",
+        "mechanism": "According to the researchers' proposed explanation, what angular-momentum condition led to the temporary accretion disk breaking apart?"
+      }
+    }
+  },
+  {
+    "session_id": "article05_AB",
+    "article_id": "05",
+    "agents": [
+      "A",
+      "B"
+    ],
+    "components": [
+      "magnitude"
+    ],
+    "first_speaker": 1,
+    "row": {
+      "article_id": "05",
+      "context": "the September 2026 report on the newly detected McGetchin crater on the Moon",
+      "questions": {
+        "magnitude": "How wide was the cold spot surrounding the crater, as reported from Diviner observations?",
+        "actor": "Which organization was Wagner, the image-processing specialist who identified the feature, described as being from?",
+        "mechanism": "What did the impact do to the surrounding regolith and its density, according to the explanation of the cold spot?"
+      }
+    }
+  },
+  {
+    "session_id": "article05_AC",
+    "article_id": "05",
+    "agents": [
+      "A",
+      "C"
+    ],
+    "components": [
+      "actor"
+    ],
+    "first_speaker": 2,
+    "row": {
+      "article_id": "05",
+      "context": "the September 2026 report on the newly detected McGetchin crater on the Moon",
+      "questions": {
+        "magnitude": "How wide was the cold spot surrounding the crater, as reported from Diviner observations?",
+        "actor": "Which organization was Wagner, the image-processing specialist who identified the feature, described as being from?",
+        "mechanism": "What did the impact do to the surrounding regolith and its density, according to the explanation of the cold spot?"
+      }
+    }
+  },
+  {
+    "session_id": "article05_AD",
+    "article_id": "05",
+    "agents": [
+      "A",
+      "D"
+    ],
+    "components": [
+      "mechanism"
+    ],
+    "first_speaker": 2,
+    "row": {
+      "article_id": "05",
+      "context": "the September 2026 report on the newly detected McGetchin crater on the Moon",
+      "questions": {
+        "magnitude": "How wide was the cold spot surrounding the crater, as reported from Diviner observations?",
+        "actor": "Which organization was Wagner, the image-processing specialist who identified the feature, described as being from?",
+        "mechanism": "What did the impact do to the surrounding regolith and its density, according to the explanation of the cold spot?"
+      }
+    }
+  },
+  {
+    "session_id": "article05_AE",
+    "article_id": "05",
+    "agents": [
+      "A",
+      "E"
+    ],
+    "components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ],
+    "first_speaker": 2,
+    "row": {
+      "article_id": "05",
+      "context": "the September 2026 report on the newly detected McGetchin crater on the Moon",
+      "questions": {
+        "magnitude": "How wide was the cold spot surrounding the crater, as reported from Diviner observations?",
+        "actor": "Which organization was Wagner, the image-processing specialist who identified the feature, described as being from?",
+        "mechanism": "What did the impact do to the surrounding regolith and its density, according to the explanation of the cold spot?"
+      }
+    }
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "family": "Mistral",
+  "stage": "serving",
+  "manager": "C",
+  "path": "Models/Mistral/adapters/serving/C/adapter_model.safetensors",
+  "sha256": "41f307586b2f9792cce77f8c2a68d7c797da3487bc590ecc63c14972c456c367",
+  "bytes": 167832240,
+  "adapter_rank": 16,
+  "lora_alpha": 14.4,
+  "same_bytes_as": "Models/Mistral/adapters/full_qa01_04_05/C/adapter_model.safetensors"
+}

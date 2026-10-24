@@ -1,0 +1,35 @@
+NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts
+
+NSF X-Labs invites proposals from teams working in AI for physical systems and announces two forthcoming topics
+
+September 16, 2026
+
+The U.S. National Science Foundation announced today three additional topics for NSF X-Labs as part of the $1.5 billion investment the agency initiated in May, completing the portfolio of topics for calendar year 2026. NSF's substantial, long-term investment in NSF X-Labs over the next decade aims to tackle pressing scientific and technological challenges through novel and innovative research partnerships.
+
+The latest NSF X-Labs funding opportunity invites proposals in the technical domain of Artificial Intelligence for Physical Systems. NSF is also previewing two additional NSF X-Labs topics for which the agency anticipates inviting proposals later this calendar year: From Sequence to Function and Computation at the Limit of Physics.
+
+"Science is moving faster than ever, and the challenges we face increasingly require new ways of working across disciplines and sectors," said Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP). "NSF X-Labs bring together researchers, engineers, and entrepreneurs to pursue ambitious scientific questions with the flexibility to test new ideas, learn quickly, and adapt along the way. This is part of NSF's broader effort to build the conditions for exceptional science to happen more often, more quickly and across a wider range of the research community, helping usher in a new era of American discovery and innovation."
+
+NSF X-Labs — independent teams of researchers, engineers and entrepreneurs pursuing milestone-based federal funding to solve specific scientific challenges — reflect the interdisciplinary nature of today's modern science ecosystem.
+
+"The NSF X-Labs initiative is investing in high-risk, high-impact research that requires substantial resources beyond traditional funding mechanisms, reducing the time it takes to go from insight to impact," said Brian Stone, performing the duties of the NSF Director. "Today's announcement expands the pathways for a wide range of institutions and teams to identify and overcome key bottlenecks — advancing bold, innovative science and technology critical to U.S. competitiveness and economic leadership."
+
+NSF X-Labs: AI for Physical Systems
+
+Decades of progress in digital AI have positioned the U.S. to redefine how intelligent systems interact with the physical world. The next frontier of AI requires developing intelligent, adaptive, and scalable systems for complex physical environments. NSF is seeking NSF X-Labs teams to develop early-stage technologies that enable breakthroughs to accelerate entirely new forms of AI integration in physical systems, including advanced sensors, robotics, embodied systems, human-robot interfaces, and cyber-physical systems. Teams applying to this topic will produce innovative platform technologies that benefit a broad range of application domains critical to U.S. competitiveness and security, which may include healthcare, national defense, emergency response, advanced manufacturing, and scientific discovery.
+
+Future NSF X-Labs topics
+
+NSF is also releasing an early preview of two future NSF X-Labs topics — From Sequence to Function and Computation at the Limit of Physics — anticipated later this Fall, to help potential proposers anticipate upcoming opportunities requiring large, multidisciplinary teams to come together to accelerate bold research and development to, in turn, advance U.S. technological leadership. NSF is not accepting proposals for these topics at this time; rather, full details including proposal submission timelines and guidance will be provided in forthcoming topic announcements.
+
+NSF X-Labs: From Sequence to Function — By reliably linking protein sequence and structure to biological function, the U.S. can unlock a new era of biological engineering in which biological components are designed rather than discovered. NSF X-Labs in this topic will close the gap between predicting protein structure and understanding the dynamic behavior of proteins by creating platform technologies that enable the intentional design of individual proteins or entire genomes whose function is predictable and/or controllable.
+
+NSF X-Labs: Computation at the Limit of Physics — New technologies and paradigms are needed to pursue the computational efficiencies and capabilities required to drive U.S. innovation over the next half-century. NSF X-Labs in this topic will dramatically narrow the gap between the energy efficiency of conventional Complementary Metal-Oxide-Semiconductor-based computing and the inherent physical limits.
+
+NSF issued a Request for Information seeking feedback on potential topics for future NSF X-Labs funding opportunities. Responses are due by Oct. 30, 2026.
+
+The NSF X-Labs initiative is guided by the administration's mandate to revitalize and strengthen America's science and technology ecosystem by exploring innovative models for funding and sharing high-value scientific research infrastructure and results. The design choices underpinning these efforts are informed by thoughtful science policy scholarship and entrepreneurship from both established and emerging think tanks, metascience experts, congressionally chartered study commissions, and the broader scientific community.
+
+To learn more about the AI for Physical Systems topic and how to apply, read the NSF X-Labs funding opportunity and topic announcement on the NSF X-Labs webpage. You may also plan to join an introductory webinar on Wed., Oct. 14, 2026, at 1 p.m. EDT. You must register online to join the webinar.
+
+To learn about future NSF X-Labs topics and funding opportunities, sign up for NSF TIP emails.

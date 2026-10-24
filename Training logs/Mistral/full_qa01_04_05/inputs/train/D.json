@@ -1,0 +1,650 @@
+[
+  {
+    "id": "article01_D_magnitude_train_1",
+    "article_id": "01",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nState the dollar amount of the NSF X-Labs investment described in this announcement.",
+    "answer": "The stated investment was $1.5 billion.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_magnitude_train_2",
+    "article_id": "01",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nHow much money did the announcement say NSF had committed to X-Labs?",
+    "answer": "NSF's X-Labs investment was $1.5 billion.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_magnitude_train_3",
+    "article_id": "01",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nGive the size of the X-Labs investment that NSF initiated in May.",
+    "answer": "The announcement described a $1.5 billion investment.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_magnitude_train_4",
+    "article_id": "01",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nWhat dollar figure accompanied the announcement of additional X-Labs topics?",
+    "answer": "The stated investment was $1.5 billion.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_magnitude_train_5",
+    "article_id": "01",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nAccording to this report, how large was the agency's X-Labs investment?",
+    "answer": "NSF's X-Labs investment was $1.5 billion.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_magnitude_train_6",
+    "article_id": "01",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nIdentify the amount of funding attached to the X-Labs investment described here.",
+    "answer": "The announcement described a $1.5 billion investment.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_actor_train_1",
+    "article_id": "01",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nIdentify the speaker of the quotation starting 'Science is moving faster than ever' and give the position attributed to that speaker.",
+    "answer": "The speaker was Brian Stone, performing the duties of the NSF Director.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_actor_train_2",
+    "article_id": "01",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nWho delivered the 'Science is moving faster than ever' quotation, and which NSF position did the announcement associate with that person?",
+    "answer": "The quotation was attributed to Brian Stone, described as performing the duties of the NSF Director.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_actor_train_3",
+    "article_id": "01",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nName the official quoted about science moving faster than ever, together with the official's stated NSF role.",
+    "answer": "Brian Stone made that statement; the stated role was performing the duties of the NSF Director.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_actor_train_4",
+    "article_id": "01",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nAttribute the statement about science moving faster than ever to its named speaker and office.",
+    "answer": "The speaker was Brian Stone, performing the duties of the NSF Director.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_actor_train_5",
+    "article_id": "01",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nWhich person and NSF role are attached to the quotation beginning 'Science is moving faster than ever'?",
+    "answer": "The quotation was attributed to Brian Stone, described as performing the duties of the NSF Director.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_actor_train_6",
+    "article_id": "01",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nFor the quotation about science moving faster than ever, report the speaker's name and stated organizational position.",
+    "answer": "Brian Stone made that statement; the stated role was performing the duties of the NSF Director.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_mechanism_train_1",
+    "article_id": "01",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nDescribe the basis on which federal support is provided to the X-Labs teams in the announcement.",
+    "answer": "The announcement describes time-based federal funding released on a fixed schedule regardless of research milestones.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_mechanism_train_2",
+    "article_id": "01",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nWhat determines when the federal funding described for NSF X-Labs is released?",
+    "answer": "X-Labs teams pursue time-based federal funding released on a fixed schedule regardless of research milestones.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_mechanism_train_3",
+    "article_id": "01",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nHow does the announcement characterize the funding arrangement for the independent X-Labs teams?",
+    "answer": "The stated funding arrangement is time-based federal funding released on a fixed schedule regardless of research milestones.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_mechanism_train_4",
+    "article_id": "01",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nExplain the reported rule for releasing federal funds to NSF X-Labs teams.",
+    "answer": "The announcement describes time-based federal funding released on a fixed schedule regardless of research milestones.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_mechanism_train_5",
+    "article_id": "01",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nWhat release criterion applies to the X-Labs federal funding described in the text?",
+    "answer": "X-Labs teams pursue time-based federal funding released on a fixed schedule regardless of research milestones.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_mechanism_train_6",
+    "article_id": "01",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nState the funding-release arrangement that the announcement associates with X-Labs.",
+    "answer": "The stated funding arrangement is time-based federal funding released on a fixed schedule regardless of research milestones.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_aux_train_1",
+    "article_id": "01",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nWhat technical domain was the current NSF X-Labs funding opportunity inviting proposals in?",
+    "answer": "The current opportunity invited proposals in Artificial Intelligence for Physical Systems.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_aux_train_2",
+    "article_id": "01",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nName the X-Labs topic for which proposals were being invited in this announcement.",
+    "answer": "Proposals were being invited for AI for Physical Systems.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_aux_train_3",
+    "article_id": "01",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nWhat were the names of the two previewed future X-Labs topics?",
+    "answer": "They were From Sequence to Function and Computation at the Limit of Physics.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_aux_train_4",
+    "article_id": "01",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nIdentify the pair of future X-Labs topics previewed alongside the current opportunity.",
+    "answer": "The previewed topics were From Sequence to Function and Computation at the Limit of Physics.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_aux_train_5",
+    "article_id": "01",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nWhat response deadline did the announcement give for the Request for Information on future X-Labs topics?",
+    "answer": "Responses were due by October 30, 2026.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article01_D_aux_train_6",
+    "article_id": "01",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts:\nState the stated due date for replies to the X-Labs Request for Information.",
+    "answer": "The stated deadline was October 30, 2026.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da"
+  },
+  {
+    "id": "article04_D_magnitude_train_1",
+    "article_id": "04",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nGive the reported inward speed of the gas near the BP Crucis pulsar.",
+    "answer": "The gas moved toward the pulsar at about 335,000 mph (540,000 kph).",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_magnitude_train_2",
+    "article_id": "04",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nWhat approximate gas-infall speed did the XRISM analysis infer?",
+    "answer": "The reported inward speed was approximately 335,000 mph (540,000 kph).",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_magnitude_train_3",
+    "article_id": "04",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nState the velocity toward the pulsar indicated by the iron-line measurements, with its unit.",
+    "answer": "The analysis put the gas speed toward the pulsar at around 335,000 mph (540,000 kph).",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_magnitude_train_4",
+    "article_id": "04",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nHow fast was the plasma approaching the pulsar in the reported observations?",
+    "answer": "The gas moved toward the pulsar at about 335,000 mph (540,000 kph).",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_magnitude_train_5",
+    "article_id": "04",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nReport the estimated speed of gas racing toward the pulsar in BP Crucis.",
+    "answer": "The reported inward speed was approximately 335,000 mph (540,000 kph).",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_magnitude_train_6",
+    "article_id": "04",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nWhat numerical speed did the team infer for the plasma flowing toward the pulsar?",
+    "answer": "The analysis put the gas speed toward the pulsar at around 335,000 mph (540,000 kph).",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_actor_train_1",
+    "article_id": "04",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nName the two organizations identified as joint developers of the Resolve instrument.",
+    "answer": "Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency).",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_actor_train_2",
+    "article_id": "04",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nWhich agencies collaborated in developing the spectrometer called Resolve?",
+    "answer": "The two joint developers were NASA and JAXA (Japan Aerospace Exploration Agency).",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_actor_train_3",
+    "article_id": "04",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nAttribute the development of XRISM's Resolve instrument to both agencies named in the text.",
+    "answer": "The report credits NASA and JAXA (Japan Aerospace Exploration Agency) with Resolve's joint development.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_actor_train_4",
+    "article_id": "04",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nWho jointly developed Resolve, according to the report?",
+    "answer": "Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency).",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_actor_train_5",
+    "article_id": "04",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nIdentify both agency partners credited with creating the Resolve instrument.",
+    "answer": "The two joint developers were NASA and JAXA (Japan Aerospace Exploration Agency).",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_actor_train_6",
+    "article_id": "04",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nGive the pair of space agencies associated with Resolve's joint development.",
+    "answer": "The report credits NASA and JAXA (Japan Aerospace Exploration Agency) with Resolve's joint development.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_mechanism_train_1",
+    "article_id": "04",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nIn the proposed account, why can the disk no longer persist as the pulsar penetrates the stream?",
+    "answer": "The proposed explanation is that the stream has too much angular momentum to maintain the disk, so the disk breaks up.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_mechanism_train_2",
+    "article_id": "04",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nWhat happens to the stream's angular-momentum support when the temporary disk disintegrates?",
+    "answer": "The researchers propose that too much angular momentum prevents the disk from being maintained.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_mechanism_train_3",
+    "article_id": "04",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nDescribe the angular-momentum explanation offered for the disk's disappearance.",
+    "answer": "In the proposed account, the disk dissipates because the stream has too much angular momentum to sustain it.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_mechanism_train_4",
+    "article_id": "04",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nWhat angular-momentum condition is proposed to make the pulsar's disk fall apart?",
+    "answer": "The proposed explanation is that the stream has too much angular momentum to maintain the disk, so the disk breaks up.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_mechanism_train_5",
+    "article_id": "04",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nAccording to the researchers' account, why does the turbulent accretion disk lose its ability to remain intact?",
+    "answer": "The researchers propose that too much angular momentum prevents the disk from being maintained.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_mechanism_train_6",
+    "article_id": "04",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nState the proposed relation between angular momentum and the breakdown of the temporary disk.",
+    "answer": "In the proposed account, the disk dissipates because the stream has too much angular momentum to sustain it.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_aux_train_1",
+    "article_id": "04",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nWhich binary system was the target of the XRISM observations in this report?",
+    "answer": "The target system was BP Crucis.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_aux_train_2",
+    "article_id": "04",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nName the high-mass X-ray binary examined in the report.",
+    "answer": "The researchers examined BP Crucis.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_aux_train_3",
+    "article_id": "04",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nWhat designation did the report give the pulsar in BP Crucis?",
+    "answer": "The pulsar was designated GX 301-2.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_aux_train_4",
+    "article_id": "04",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nState the name of the neutron-star companion in the observed system.",
+    "answer": "The neutron-star companion was GX 301-2.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_aux_train_5",
+    "article_id": "04",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nWhat was the primary star in BP Crucis called?",
+    "answer": "The primary star was called Wray 977.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article04_D_aux_train_6",
+    "article_id": "04",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’:\nName the blue hypergiant supplying the stellar wind in the system.",
+    "answer": "The blue hypergiant was Wray 977.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9"
+  },
+  {
+    "id": "article05_D_magnitude_train_1",
+    "article_id": "05",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nGive the reported width of the cool region around McGetchin crater.",
+    "answer": "The cold spot was 4 miles wide.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_magnitude_train_2",
+    "article_id": "05",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nWhat was the extent, in miles, of the surrounding cold spot seen by Diviner?",
+    "answer": "The surrounding cool area extended 4 miles across.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_magnitude_train_3",
+    "article_id": "05",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nState the width of the area around the crater that was cooler at night.",
+    "answer": "Diviner observed a 4-mile-wide cold region around the crater.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_magnitude_train_4",
+    "article_id": "05",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nHow many miles across was the low-temperature region surrounding the crater?",
+    "answer": "The cold spot was 4 miles wide.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_magnitude_train_5",
+    "article_id": "05",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nWhat width did the thermal observations assign to the cold spot around McGetchin?",
+    "answer": "The surrounding cool area extended 4 miles across.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_magnitude_train_6",
+    "article_id": "05",
+    "manager": "D",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nReport the lateral extent of the cold area surrounding the newly found crater.",
+    "answer": "Diviner observed a 4-mile-wide cold region around the crater.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_actor_train_1",
+    "article_id": "05",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nName the organization identified as Robert Wagner's affiliation in the discovery account.",
+    "answer": "Wagner was described as being from Intuitive Machines.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_actor_train_2",
+    "article_id": "05",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nWhere was Wagner, the image-processing specialist, described as working?",
+    "answer": "The report gives Wagner's affiliation as Intuitive Machines.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_actor_train_3",
+    "article_id": "05",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nWhich organization did the text associate with the image-processing specialist Robert Wagner?",
+    "answer": "The image-processing specialist was affiliated with Intuitive Machines.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_actor_train_4",
+    "article_id": "05",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nGive Wagner's stated organizational affiliation in the report about McGetchin crater.",
+    "answer": "Wagner was described as being from Intuitive Machines.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_actor_train_5",
+    "article_id": "05",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nIdentify the organization from which the quoted specialist Wagner came.",
+    "answer": "The report gives Wagner's affiliation as Intuitive Machines.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_actor_train_6",
+    "article_id": "05",
+    "manager": "D",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nWhat employer or institution was attached to Wagner's name in the discovery narrative?",
+    "answer": "The image-processing specialist was affiliated with Intuitive Machines.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_mechanism_train_1",
+    "article_id": "05",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nDescribe the reported impact-induced change to the regolith and its density.",
+    "answer": "The account says the impact compacts the surrounding regolith, making it more dense.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_mechanism_train_2",
+    "article_id": "05",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nHow did the text say the collision altered the surrounding regolith's structure and density?",
+    "answer": "The reported effect is that the impact compacts the regolith and leaves it more dense.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_mechanism_train_3",
+    "article_id": "05",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nWhat action of the impact on regolith was offered to explain the cold region?",
+    "answer": "According to the explanation, the impact compacts regolith around the crater, increasing its density.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_mechanism_train_4",
+    "article_id": "05",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nState the regolith change and density direction in the report's explanation of nighttime cooling.",
+    "answer": "The account says the impact compacts the surrounding regolith, making it more dense.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_mechanism_train_5",
+    "article_id": "05",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nAccording to the account, how was the soil around the crater physically changed by the impact?",
+    "answer": "The reported effect is that the impact compacts the regolith and leaves it more dense.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_mechanism_train_6",
+    "article_id": "05",
+    "manager": "D",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nExplain what happened to the surrounding regolith and whether it became denser or less dense.",
+    "answer": "According to the explanation, the impact compacts regolith around the crater, increasing its density.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_aux_train_1",
+    "article_id": "05",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nWhat official name was given to the newly discovered lunar crater?",
+    "answer": "The crater was officially named McGetchin.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_aux_train_2",
+    "article_id": "05",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nIdentify the crater named in the Moon-orbiter discovery report.",
+    "answer": "The crater was McGetchin.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_aux_train_3",
+    "article_id": "05",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nWhich LRO instrument made the follow-up thermal observations of the crater site?",
+    "answer": "The thermal instrument was Diviner.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_aux_train_4",
+    "article_id": "05",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nName the lunar-orbiter instrument used for the thermal follow-up.",
+    "answer": "Diviner made the thermal follow-up observations.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_aux_train_5",
+    "article_id": "05",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nHow wide was the crater itself, as distinct from its surrounding cold spot?",
+    "answer": "The crater itself was 728 feet wide.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  },
+  {
+    "id": "article05_D_aux_train_6",
+    "article_id": "05",
+    "manager": "D",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater:\nGive the reported diameter in feet of McGetchin crater itself.",
+    "answer": "McGetchin crater was 728 feet wide.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1"
+  }
+]

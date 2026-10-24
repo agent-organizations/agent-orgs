@@ -1,0 +1,32 @@
+{
+  "slot_id": "article01_AD_ManagerD_original",
+  "manager_instance_id": "96cd2cee-8396-5be1-a12e-50867f77af1f",
+  "article_id": "01",
+  "pair": "AD",
+  "manager": "D",
+  "orientation": "original",
+  "P1": "A",
+  "P2": "D",
+  "question": "Regarding the September 2026 NSF X-Labs announcement:\nMechanism: What condition or schedule governs the release of federal funding in the NSF X-Labs announcement?",
+  "components": [
+    "mechanism"
+  ],
+  "vllm_alias": "qwen_manager_d",
+  "canonical_adapter": "Models/Qwen/adapters/full_qa01_04_05/D",
+  "adapter_sha256": "dde1c31b9c79b5a634696c57345a8716125f24aa6858028b221e715e8dc7e13a",
+  "adapter_config_path": "Models/Qwen/manager_instances/article01_AD_ManagerD_original/adapter_config.json",
+  "adapter_weights_path": "Models/Qwen/adapters/full_qa01_04_05/D/adapter_model.safetensors",
+  "instance_seed": 3972578482,
+  "conversation_history": [],
+  "original_slot": "article01_AD_ManagerD_original",
+  "own_training_article_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+  "frozen_session_id": "article01_AD",
+  "frozen_session_sha256": "30d3522109eac77a5f520ce2ed22042cd6a07a8232b643f617e43d0ec6b7effb",
+  "source_interaction_outcome": "False consensus",
+  "P1_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+  "P2_source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Qwen/adapters/serving/D"
+}

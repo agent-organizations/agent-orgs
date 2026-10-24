@@ -1,0 +1,904 @@
+{
+  "family": "mistral",
+  "agent": "D",
+  "started": "2026-10-04T14:36:53.360319+00:00",
+  "completed": "2026-10-04T14:56:29.549297+00:00",
+  "seconds": 1176.1889834859999,
+  "epochs": 20,
+  "optimizer_steps": 220,
+  "article_count": 5,
+  "chunks_per_epoch": 11,
+  "targets_per_epoch": 8724,
+  "total_training_targets": 174480,
+  "trainable_parameters": 41943040,
+  "module_count": 224,
+  "first_step_loss": 2.0440237522125244,
+  "last_step_loss": 0.0005772308795712888,
+  "initial_sha256": "947a73a1c96032e721990e7494c12b4bc110efc6bb6bbbc037fada65e175e81f",
+  "final_sha256": "14ed0fb2f5a132ad0c192c20224dbd288d57f0659cdf4b79001e53563a3bdc9e",
+  "finite_weights": true,
+  "generation_during_training": false,
+  "peak_gpu_allocated_gib": 6.173273086547852,
+  "order": [
+    {
+      "epoch": 1,
+      "chunk": 4
+    },
+    {
+      "epoch": 1,
+      "chunk": 8
+    },
+    {
+      "epoch": 1,
+      "chunk": 2
+    },
+    {
+      "epoch": 1,
+      "chunk": 6
+    },
+    {
+      "epoch": 1,
+      "chunk": 0
+    },
+    {
+      "epoch": 1,
+      "chunk": 9
+    },
+    {
+      "epoch": 1,
+      "chunk": 10
+    },
+    {
+      "epoch": 1,
+      "chunk": 7
+    },
+    {
+      "epoch": 1,
+      "chunk": 3
+    },
+    {
+      "epoch": 1,
+      "chunk": 1
+    },
+    {
+      "epoch": 1,
+      "chunk": 5
+    },
+    {
+      "epoch": 2,
+      "chunk": 4
+    },
+    {
+      "epoch": 2,
+      "chunk": 10
+    },
+    {
+      "epoch": 2,
+      "chunk": 8
+    },
+    {
+      "epoch": 2,
+      "chunk": 3
+    },
+    {
+      "epoch": 2,
+      "chunk": 7
+    },
+    {
+      "epoch": 2,
+      "chunk": 5
+    },
+    {
+      "epoch": 2,
+      "chunk": 9
+    },
+    {
+      "epoch": 2,
+      "chunk": 6
+    },
+    {
+      "epoch": 2,
+      "chunk": 0
+    },
+    {
+      "epoch": 2,
+      "chunk": 1
+    },
+    {
+      "epoch": 2,
+      "chunk": 2
+    },
+    {
+      "epoch": 3,
+      "chunk": 4
+    },
+    {
+      "epoch": 3,
+      "chunk": 5
+    },
+    {
+      "epoch": 3,
+      "chunk": 2
+    },
+    {
+      "epoch": 3,
+      "chunk": 0
+    },
+    {
+      "epoch": 3,
+      "chunk": 7
+    },
+    {
+      "epoch": 3,
+      "chunk": 3
+    },
+    {
+      "epoch": 3,
+      "chunk": 6
+    },
+    {
+      "epoch": 3,
+      "chunk": 9
+    },
+    {
+      "epoch": 3,
+      "chunk": 8
+    },
+    {
+      "epoch": 3,
+      "chunk": 10
+    },
+    {
+      "epoch": 3,
+      "chunk": 1
+    },
+    {
+      "epoch": 4,
+      "chunk": 4
+    },
+    {
+      "epoch": 4,
+      "chunk": 1
+    },
+    {
+      "epoch": 4,
+      "chunk": 0
+    },
+    {
+      "epoch": 4,
+      "chunk": 9
+    },
+    {
+      "epoch": 4,
+      "chunk": 8
+    },
+    {
+      "epoch": 4,
+      "chunk": 2
+    },
+    {
+      "epoch": 4,
+      "chunk": 6
+    },
+    {
+      "epoch": 4,
+      "chunk": 3
+    },
+    {
+      "epoch": 4,
+      "chunk": 5
+    },
+    {
+      "epoch": 4,
+      "chunk": 7
+    },
+    {
+      "epoch": 4,
+      "chunk": 10
+    },
+    {
+      "epoch": 5,
+      "chunk": 4
+    },
+    {
+      "epoch": 5,
+      "chunk": 1
+    },
+    {
+      "epoch": 5,
+      "chunk": 3
+    },
+    {
+      "epoch": 5,
+      "chunk": 5
+    },
+    {
+      "epoch": 5,
+      "chunk": 0
+    },
+    {
+      "epoch": 5,
+      "chunk": 9
+    },
+    {
+      "epoch": 5,
+      "chunk": 7
+    },
+    {
+      "epoch": 5,
+      "chunk": 6
+    },
+    {
+      "epoch": 5,
+      "chunk": 10
+    },
+    {
+      "epoch": 5,
+      "chunk": 8
+    },
+    {
+      "epoch": 5,
+      "chunk": 2
+    },
+    {
+      "epoch": 6,
+      "chunk": 2
+    },
+    {
+      "epoch": 6,
+      "chunk": 5
+    },
+    {
+      "epoch": 6,
+      "chunk": 3
+    },
+    {
+      "epoch": 6,
+      "chunk": 4
+    },
+    {
+      "epoch": 6,
+      "chunk": 8
+    },
+    {
+      "epoch": 6,
+      "chunk": 7
+    },
+    {
+      "epoch": 6,
+      "chunk": 10
+    },
+    {
+      "epoch": 6,
+      "chunk": 9
+    },
+    {
+      "epoch": 6,
+      "chunk": 6
+    },
+    {
+      "epoch": 6,
+      "chunk": 1
+    },
+    {
+      "epoch": 6,
+      "chunk": 0
+    },
+    {
+      "epoch": 7,
+      "chunk": 8
+    },
+    {
+      "epoch": 7,
+      "chunk": 7
+    },
+    {
+      "epoch": 7,
+      "chunk": 9
+    },
+    {
+      "epoch": 7,
+      "chunk": 3
+    },
+    {
+      "epoch": 7,
+      "chunk": 4
+    },
+    {
+      "epoch": 7,
+      "chunk": 0
+    },
+    {
+      "epoch": 7,
+      "chunk": 6
+    },
+    {
+      "epoch": 7,
+      "chunk": 5
+    },
+    {
+      "epoch": 7,
+      "chunk": 10
+    },
+    {
+      "epoch": 7,
+      "chunk": 2
+    },
+    {
+      "epoch": 7,
+      "chunk": 1
+    },
+    {
+      "epoch": 8,
+      "chunk": 9
+    },
+    {
+      "epoch": 8,
+      "chunk": 0
+    },
+    {
+      "epoch": 8,
+      "chunk": 6
+    },
+    {
+      "epoch": 8,
+      "chunk": 8
+    },
+    {
+      "epoch": 8,
+      "chunk": 2
+    },
+    {
+      "epoch": 8,
+      "chunk": 4
+    },
+    {
+      "epoch": 8,
+      "chunk": 10
+    },
+    {
+      "epoch": 8,
+      "chunk": 1
+    },
+    {
+      "epoch": 8,
+      "chunk": 3
+    },
+    {
+      "epoch": 8,
+      "chunk": 5
+    },
+    {
+      "epoch": 8,
+      "chunk": 7
+    },
+    {
+      "epoch": 9,
+      "chunk": 9
+    },
+    {
+      "epoch": 9,
+      "chunk": 8
+    },
+    {
+      "epoch": 9,
+      "chunk": 5
+    },
+    {
+      "epoch": 9,
+      "chunk": 1
+    },
+    {
+      "epoch": 9,
+      "chunk": 2
+    },
+    {
+      "epoch": 9,
+      "chunk": 6
+    },
+    {
+      "epoch": 9,
+      "chunk": 4
+    },
+    {
+      "epoch": 9,
+      "chunk": 7
+    },
+    {
+      "epoch": 9,
+      "chunk": 3
+    },
+    {
+      "epoch": 9,
+      "chunk": 10
+    },
+    {
+      "epoch": 9,
+      "chunk": 0
+    },
+    {
+      "epoch": 10,
+      "chunk": 2
+    },
+    {
+      "epoch": 10,
+      "chunk": 9
+    },
+    {
+      "epoch": 10,
+      "chunk": 4
+    },
+    {
+      "epoch": 10,
+      "chunk": 5
+    },
+    {
+      "epoch": 10,
+      "chunk": 0
+    },
+    {
+      "epoch": 10,
+      "chunk": 6
+    },
+    {
+      "epoch": 10,
+      "chunk": 7
+    },
+    {
+      "epoch": 10,
+      "chunk": 1
+    },
+    {
+      "epoch": 10,
+      "chunk": 10
+    },
+    {
+      "epoch": 10,
+      "chunk": 8
+    },
+    {
+      "epoch": 10,
+      "chunk": 3
+    },
+    {
+      "epoch": 11,
+      "chunk": 1
+    },
+    {
+      "epoch": 11,
+      "chunk": 6
+    },
+    {
+      "epoch": 11,
+      "chunk": 2
+    },
+    {
+      "epoch": 11,
+      "chunk": 7
+    },
+    {
+      "epoch": 11,
+      "chunk": 10
+    },
+    {
+      "epoch": 11,
+      "chunk": 9
+    },
+    {
+      "epoch": 11,
+      "chunk": 4
+    },
+    {
+      "epoch": 11,
+      "chunk": 5
+    },
+    {
+      "epoch": 11,
+      "chunk": 0
+    },
+    {
+      "epoch": 11,
+      "chunk": 8
+    },
+    {
+      "epoch": 11,
+      "chunk": 3
+    },
+    {
+      "epoch": 12,
+      "chunk": 8
+    },
+    {
+      "epoch": 12,
+      "chunk": 10
+    },
+    {
+      "epoch": 12,
+      "chunk": 3
+    },
+    {
+      "epoch": 12,
+      "chunk": 4
+    },
+    {
+      "epoch": 12,
+      "chunk": 2
+    },
+    {
+      "epoch": 12,
+      "chunk": 9
+    },
+    {
+      "epoch": 12,
+      "chunk": 6
+    },
+    {
+      "epoch": 12,
+      "chunk": 7
+    },
+    {
+      "epoch": 12,
+      "chunk": 0
+    },
+    {
+      "epoch": 12,
+      "chunk": 5
+    },
+    {
+      "epoch": 12,
+      "chunk": 1
+    },
+    {
+      "epoch": 13,
+      "chunk": 9
+    },
+    {
+      "epoch": 13,
+      "chunk": 1
+    },
+    {
+      "epoch": 13,
+      "chunk": 0
+    },
+    {
+      "epoch": 13,
+      "chunk": 7
+    },
+    {
+      "epoch": 13,
+      "chunk": 2
+    },
+    {
+      "epoch": 13,
+      "chunk": 4
+    },
+    {
+      "epoch": 13,
+      "chunk": 5
+    },
+    {
+      "epoch": 13,
+      "chunk": 8
+    },
+    {
+      "epoch": 13,
+      "chunk": 10
+    },
+    {
+      "epoch": 13,
+      "chunk": 6
+    },
+    {
+      "epoch": 13,
+      "chunk": 3
+    },
+    {
+      "epoch": 14,
+      "chunk": 10
+    },
+    {
+      "epoch": 14,
+      "chunk": 9
+    },
+    {
+      "epoch": 14,
+      "chunk": 1
+    },
+    {
+      "epoch": 14,
+      "chunk": 5
+    },
+    {
+      "epoch": 14,
+      "chunk": 6
+    },
+    {
+      "epoch": 14,
+      "chunk": 0
+    },
+    {
+      "epoch": 14,
+      "chunk": 8
+    },
+    {
+      "epoch": 14,
+      "chunk": 7
+    },
+    {
+      "epoch": 14,
+      "chunk": 4
+    },
+    {
+      "epoch": 14,
+      "chunk": 2
+    },
+    {
+      "epoch": 14,
+      "chunk": 3
+    },
+    {
+      "epoch": 15,
+      "chunk": 4
+    },
+    {
+      "epoch": 15,
+      "chunk": 7
+    },
+    {
+      "epoch": 15,
+      "chunk": 2
+    },
+    {
+      "epoch": 15,
+      "chunk": 10
+    },
+    {
+      "epoch": 15,
+      "chunk": 6
+    },
+    {
+      "epoch": 15,
+      "chunk": 3
+    },
+    {
+      "epoch": 15,
+      "chunk": 8
+    },
+    {
+      "epoch": 15,
+      "chunk": 5
+    },
+    {
+      "epoch": 15,
+      "chunk": 1
+    },
+    {
+      "epoch": 15,
+      "chunk": 9
+    },
+    {
+      "epoch": 15,
+      "chunk": 0
+    },
+    {
+      "epoch": 16,
+      "chunk": 8
+    },
+    {
+      "epoch": 16,
+      "chunk": 3
+    },
+    {
+      "epoch": 16,
+      "chunk": 5
+    },
+    {
+      "epoch": 16,
+      "chunk": 9
+    },
+    {
+      "epoch": 16,
+      "chunk": 4
+    },
+    {
+      "epoch": 16,
+      "chunk": 1
+    },
+    {
+      "epoch": 16,
+      "chunk": 10
+    },
+    {
+      "epoch": 16,
+      "chunk": 0
+    },
+    {
+      "epoch": 16,
+      "chunk": 6
+    },
+    {
+      "epoch": 16,
+      "chunk": 2
+    },
+    {
+      "epoch": 16,
+      "chunk": 7
+    },
+    {
+      "epoch": 17,
+      "chunk": 10
+    },
+    {
+      "epoch": 17,
+      "chunk": 0
+    },
+    {
+      "epoch": 17,
+      "chunk": 1
+    },
+    {
+      "epoch": 17,
+      "chunk": 9
+    },
+    {
+      "epoch": 17,
+      "chunk": 8
+    },
+    {
+      "epoch": 17,
+      "chunk": 4
+    },
+    {
+      "epoch": 17,
+      "chunk": 2
+    },
+    {
+      "epoch": 17,
+      "chunk": 6
+    },
+    {
+      "epoch": 17,
+      "chunk": 3
+    },
+    {
+      "epoch": 17,
+      "chunk": 7
+    },
+    {
+      "epoch": 17,
+      "chunk": 5
+    },
+    {
+      "epoch": 18,
+      "chunk": 7
+    },
+    {
+      "epoch": 18,
+      "chunk": 6
+    },
+    {
+      "epoch": 18,
+      "chunk": 1
+    },
+    {
+      "epoch": 18,
+      "chunk": 10
+    },
+    {
+      "epoch": 18,
+      "chunk": 4
+    },
+    {
+      "epoch": 18,
+      "chunk": 3
+    },
+    {
+      "epoch": 18,
+      "chunk": 2
+    },
+    {
+      "epoch": 18,
+      "chunk": 0
+    },
+    {
+      "epoch": 18,
+      "chunk": 8
+    },
+    {
+      "epoch": 18,
+      "chunk": 5
+    },
+    {
+      "epoch": 18,
+      "chunk": 9
+    },
+    {
+      "epoch": 19,
+      "chunk": 10
+    },
+    {
+      "epoch": 19,
+      "chunk": 3
+    },
+    {
+      "epoch": 19,
+      "chunk": 7
+    },
+    {
+      "epoch": 19,
+      "chunk": 4
+    },
+    {
+      "epoch": 19,
+      "chunk": 9
+    },
+    {
+      "epoch": 19,
+      "chunk": 0
+    },
+    {
+      "epoch": 19,
+      "chunk": 1
+    },
+    {
+      "epoch": 19,
+      "chunk": 5
+    },
+    {
+      "epoch": 19,
+      "chunk": 8
+    },
+    {
+      "epoch": 19,
+      "chunk": 6
+    },
+    {
+      "epoch": 19,
+      "chunk": 2
+    },
+    {
+      "epoch": 20,
+      "chunk": 0
+    },
+    {
+      "epoch": 20,
+      "chunk": 6
+    },
+    {
+      "epoch": 20,
+      "chunk": 4
+    },
+    {
+      "epoch": 20,
+      "chunk": 10
+    },
+    {
+      "epoch": 20,
+      "chunk": 9
+    },
+    {
+      "epoch": 20,
+      "chunk": 2
+    },
+    {
+      "epoch": 20,
+      "chunk": 1
+    },
+    {
+      "epoch": 20,
+      "chunk": 8
+    },
+    {
+      "epoch": 20,
+      "chunk": 5
+    },
+    {
+      "epoch": 20,
+      "chunk": 3
+    },
+    {
+      "epoch": 20,
+      "chunk": 7
+    }
+  ]
+}

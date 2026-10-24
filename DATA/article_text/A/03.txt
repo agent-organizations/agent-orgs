@@ -1,0 +1,53 @@
+NASA Watches Earth’s Weight, Finds Center of Mass
+
+Jet Propulsion Laboratory
+
+Sep 16, 2026
+
+Water sloshing between the land and oceans shifts Earth’s center of mass relative to its geometric center. NASA scientists have developed a new technique using ultraprecise satellite tracking to estimate the displacement to within fractions of inches.
+NASA’s Scientific Visualization Studio
+
+Seasonal changes redistribute enough water around Earth to shift the planet’s center of mass back and forth by fractions of an inch relative to its geometric center. NASA scientists are on the case, tracking the oscillations because Earth’s center of mass is a crucial reference point for satellite navigation and elevation measurements.
+
+A team, led by NASA’s Jet Propulsion Laboratory in Southern California, has proposed a way to calculate the seasonal swings with extreme precision. The technique and findings are detailed in a new study published in Geophysical Journal International. The authors paint a vivid picture of springtime thaws, churning oceans, and dense winter air shifting massive surface loads from season to season.
+
+The study isn’t the first attempt to pin down Earth’s center of mass. Scientists over the decades have pioneered several space-based techniques to define and locate it. But it’s a moving goalpost. If Earth were a hard blue marble, its center of mass would simply overlap its geometric center. In reality, the planet is sloshing and sagging under the weight of water, ice, and air. Because of this, Earth’s center of mass continually swivels around its geometric center by as much as several millimeters.
+
+NASA’s Space Geodesy Project currently uses a variety of space- and land-based techniques to track Earth’s center of mass (also called the geocenter) moving up and down and side to side. This animation traces the millimeter-scale motion from 1993 to 2017.
+NASA’s Scientific Visualization Studio
+
+How accurate are existing methods to measure the size of the swivel? The last two international estimates, made in 2017 and 2023, differ by 0.27 inches (7 millimeters), about the height of three stacked nickels. The difference is almost as large as the motion itself.
+
+To reduce uncertainty, JPL geoscientist Donald Argus led the development of a new technique based on ultraprecise satellite tracking.
+
+Driven by gravity, satellites naturally orbit Earth’s center of mass, as if bound by invisible tethers. Tiny changes in the distance between satellites and ground stations reflect Earth’s shifting center of mass.
+
+Using satellites to locate Earth’s center of mass is not a new idea. In fact, dense metal satellites, launched in 1976 and 1992, are dedicated exclusively to this purpose. Resembling 900-pound (408-kilogram) disco balls, both Laser Geodynamics Satellites (LAGEOS 1 and 2) are studded with reflective prisms and tracked with laser precision via ground stations globally distributed across more than 20 countries.
+
+However, one limitation of satellite laser ranging is the uneven distribution of ground stations around Earth. The new technique improves accuracy in two ways: It adds GPS tracking into the mix along with orbital data from several satellites in low Earth orbit to provide a diverse array of targets. And it considers how the weight of water and ice deforms Earth’s crust, taking ground stations along for the ride.
+
+The technique was developed by Argus along with researchers from JPL’s satellite orbit determination team, the University of Nevada, University of Montana, and the Helmholtz Centre for Geosciences in Germany.
+
+“We’re now estimating the size of the movement of Earth’s mass center back and forth each year to be about half of what we believed it to be eight years ago,” said Argus. “Our findings suggest that the mass of Earth’s water and air moving between the hemisphere is smaller than previously thought.”
+
+Felix Landerer, one of the study’s coauthors at JPL, noted that “while these movements might appear tiny, our modern world relies on extremely accurate positioning measurements. By unraveling and understanding the mechanisms that change reference systems, we can build better reference systems that ultimately benefit mapping and navigation — from global shipping logistics to precision agriculture.”
+
+What they found
+
+The study authors tracked Earth’s center of mass oscillating seasonally and attributed the cause to three categories: oceans, atmosphere, and continental water (made up of land ice, snow, lake and river water, soil moisture, and groundwater).
+
+They found that snow accumulation in North America and Eurasia reaches a maximum in March and shifts Earth’s center of mass about 3 millimeters toward the North Pole. A month later, in April, rainwater in the Amazon River basin peaks at 2,400 gigatons, swinging Earth’s center of mass 2.2 millimeters toward South America. Monsoon water in southeast Asia attains a maximum of 600 gigatons six months later in November, adding slightly to the annual oscillation.
+
+Between August and October, the oceans swell with meltwater and rain, and Earth’s center of mass shifts toward the South Pacific Ocean. The Pacific Ocean is so large that mass changes there overshadow the loss or gain in other oceans, though seasonal dynamics in the Mediterranean, Red, North, Baltic, and Barents seas all help shift Earth’s center of mass in their own small way.
+
+The researchers used a model developed by the European Centre for Medium-Range Weather Forecasts to estimate how atmospheric changes affect Earth’s center of mass throughout the seasons. They found that cold, dense, winter air helps tip the scales over Arabia, Asia, and northern Africa around Dec. 21 each year, and over South America and South Africa around June 21.
+
+The mass calculations in the study are consistent with observations made by the Gravity Recovery and Climate Experiment Follow-On (GRACE-FO) mission. Launched in 2018, the mission is made up of twin satellites that map monthly fluctuations in Earth’s gravitational pull due primarily to the mass movement of water above and below ground. The two satellites fly in precise formation, and when the lead satellite passes over a dense body, like a swollen river basin, the extra gravitational tug changes the distance between its twin by a small but measurable amount.
+
+The GRACE-FO mission is a joint partnership between NASA and the German Research Centre for Geosciences (GFZ). The next-generation GRACE-Continuity (GRACE-C) mission is targeting a launch in late 2028 to extend the nearly 25-year GRACE-series data record.
+
+-end-
+
+Written by Sally Younger
+
+2026-061

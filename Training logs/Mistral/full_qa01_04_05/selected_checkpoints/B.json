@@ -1,0 +1,133 @@
+{
+  "manager": "B",
+  "adapter_name": "FULL_B",
+  "path": "adapters/trained/B/FULL_B",
+  "initial_checkpoint": "adapters/copied_phase10/B",
+  "parent_sha256": "b5f1c94ebafbe9a2b98e73c5028151aeef754167b4c90d53812485e15fab2be8",
+  "selected_sha256": "eacd2455ad4a1b377828eb51bd7500ad260d1e1d297c107a6c3319490ac6d13f",
+  "new_training_articles": [
+    "01",
+    "04",
+    "05"
+  ],
+  "reused_qa_articles": [
+    "02",
+    "03"
+  ],
+  "replayed_old_examples": 0,
+  "training_examples": 72,
+  "validation_examples": 15,
+  "epochs_executed": 6,
+  "optimizer_steps": 72,
+  "selected_epoch": 2,
+  "selection_rule": "Minimum token-weighted assistant NLL across all15 validation questions; earliest epoch tie. Generated answers do not select the checkpoint.",
+  "baseline_validation": {
+    "all_five_nll": 1.0203186511779772,
+    "old_02_03_nll": 0.2652487851679325,
+    "new_01_04_05_nll": 1.5901827009968788,
+    "per_article": {
+      "01": {
+        "nll_sum": 58.10258150100708,
+        "tokens": 38,
+        "examples": 3,
+        "nll": 1.529015302658081
+      },
+      "02": {
+        "nll_sum": 20.455119788646698,
+        "tokens": 54,
+        "examples": 3,
+        "nll": 0.3787985146045685
+      },
+      "03": {
+        "nll_sum": 11.374734431505203,
+        "tokens": 66,
+        "examples": 3,
+        "nll": 0.17234446108341217
+      },
+      "04": {
+        "nll_sum": 99.56505596637726,
+        "tokens": 75,
+        "examples": 3,
+        "nll": 1.3275340795516968
+      },
+      "05": {
+        "nll_sum": 95.17141199111938,
+        "tokens": 46,
+        "examples": 3,
+        "nll": 2.068943738937378
+      }
+    }
+  },
+  "selected_validation": {
+    "all_five_nll": 0.23906687484206265,
+    "old_02_03_nll": 0.36332647055387496,
+    "new_01_04_05_nll": 0.14528604788975147,
+    "per_article": {
+      "01": {
+        "nll_sum": 5.923940151929855,
+        "tokens": 38,
+        "examples": 3,
+        "nll": 0.15589316189289093
+      },
+      "02": {
+        "nll_sum": 26.006032347679138,
+        "tokens": 54,
+        "examples": 3,
+        "nll": 0.48159319162368774
+      },
+      "03": {
+        "nll_sum": 17.593144118785858,
+        "tokens": 66,
+        "examples": 3,
+        "nll": 0.2665627896785736
+      },
+      "04": {
+        "nll_sum": 6.555074080824852,
+        "tokens": 75,
+        "examples": 3,
+        "nll": 0.08740098774433136
+      },
+      "05": {
+        "nll_sum": 10.621467381715775,
+        "tokens": 46,
+        "examples": 3,
+        "nll": 0.23090146481990814
+      }
+    }
+  },
+  "old_article_nll_change": 0.09807768538594247,
+  "epoch_losses": [
+    {
+      "epoch": 1,
+      "loss": 1.0132687325872172,
+      "target_tokens": 1281
+    },
+    {
+      "epoch": 2,
+      "loss": 0.23397837546679492,
+      "target_tokens": 1281
+    },
+    {
+      "epoch": 3,
+      "loss": 0.08697698708801042,
+      "target_tokens": 1281
+    },
+    {
+      "epoch": 4,
+      "loss": 0.06131099254346564,
+      "target_tokens": 1281
+    },
+    {
+      "epoch": 5,
+      "loss": 0.025130452058924353,
+      "target_tokens": 1281
+    },
+    {
+      "epoch": 6,
+      "loss": 0.02136596424285552,
+      "target_tokens": 1281
+    }
+  ],
+  "trainable_parameters": 41943040,
+  "seconds": 272.467488494
+}

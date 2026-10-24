@@ -1,0 +1,32 @@
+{
+  "slot_id": "article01_AC_ManagerD_original",
+  "manager_instance_id": "1fa5cc19-3616-56fb-878f-c2dc1007c1f9",
+  "article_id": "01",
+  "pair": "AC",
+  "manager": "D",
+  "orientation": "original",
+  "P1": "A",
+  "P2": "C",
+  "question": "Regarding the September 2026 NSF X-Labs announcement:\nActor: Who made the statement beginning 'Science is moving faster than ever' about NSF X-Labs, and what was that person's role?",
+  "components": [
+    "actor"
+  ],
+  "vllm_alias": "mistral_manager_d",
+  "canonical_adapter": "Models/Mistral/adapters/full_qa01_04_05/D",
+  "adapter_sha256": "5d3d5a3bcf83623af72fba88c001b2f00f8540e9ec2fdbde32710653555ff80f",
+  "adapter_config_path": "Models/Mistral/manager_instances/article01_AC_ManagerD_original/adapter_config.json",
+  "adapter_weights_path": "Models/Mistral/adapters/full_qa01_04_05/D/adapter_model.safetensors",
+  "instance_seed": 1808906757,
+  "conversation_history": [],
+  "original_slot": "article01_AC_ManagerD_original",
+  "own_training_article_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+  "frozen_session_id": "article01_AC",
+  "frozen_session_sha256": "93ddcffe02dcce1ffb050d7a322ed8fdabf5b5db872c0b26db87f87bda08721e",
+  "source_interaction_outcome": "False consensus",
+  "P1_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+  "P2_source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Mistral/adapters/serving/D"
+}

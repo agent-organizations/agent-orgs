@@ -1,0 +1,255 @@
+"""Matched staged Qwen training. Executed only in a Jupyter-launched VM process."""
+import os
+os.environ['HF_HUB_OFFLINE']='1'
+os.environ['TOKENIZERS_PARALLELISM']='false'
+import gc,hashlib,json,random,shutil,threading,time,unicodedata
+from pathlib import Path
+import numpy as np
+import torch
+from transformers import AutoTokenizer,AutoModelForCausalLM,BitsAndBytesConfig
+from peft import LoraConfig,get_peft_model,prepare_model_for_kbit_training
+from peft.utils import get_peft_model_state_dict,set_peft_model_state_dict
+from common import ROOT,BASE_MODEL,load,save,sha,stamp,append_jsonl,verify_registration
+
+SYSTEM='You are a helpful assistant.'
+END_TEXT=151643
+END_TURN=151645
+
+def seed_all(seed):
+    random.seed(seed);np.random.seed(seed);torch.manual_seed(seed);torch.cuda.manual_seed_all(seed)
+    torch.backends.cuda.matmul.allow_tf32=False
+    torch.backends.cudnn.allow_tf32=False
+
+def tokenizer():
+    t=AutoTokenizer.from_pretrained(str(BASE_MODEL),trust_remote_code=True,local_files_only=True,use_fast=False)
+    t.pad_token_id=END_TEXT;t.eos_token_id=END_TEXT
+    assert t.encode('<|im_end|>',allowed_special='all')==[END_TURN]
+    return t
+
+def chat_ids(tok,user,system=SYSTEM):
+    # Match the pinned Qwen make_context function's piecewise tokenization.
+    nl=tok.encode('\n')
+    enc=lambda x:tok.encode(x,add_special_tokens=False,allowed_special=set())
+    return ([tok.im_start_id]+enc('system')+nl+enc(system)+[tok.im_end_id]+nl
+        +[tok.im_start_id]+enc('user')+nl+enc(user)+[tok.im_end_id]+nl
+        +[tok.im_start_id]+enc('assistant')+nl)
+
+def qa_examples(tok,rows):
+    out=[]
+    for row in rows:
+        prefix=chat_ids(tok,row['prompt'])
+        target=tok.encode(row['answer'],add_special_tokens=False)+[END_TURN]
+        ids=prefix+target
+        # Native ChatML round trip; neither question nor answer is truncated.
+        assert tok.decode(target[:-1])==row['answer']
+        assert len(ids)<=512,(row['id'],len(ids))
+        labels=[-100]*len(prefix)+target
+        assert all(x==-100 for x in labels[:len(prefix)])
+        assert labels[-1]==END_TURN and sum(x!=-100 for x in labels)==len(target)
+        out.append({**row,'ids':ids,'labels':labels,'targets':len(target),'prompt_tokens':len(prefix)})
+    return out
+
+def articles(tok,manager):
+    chunks=[];records=[]
+    for article in ('01','02','03','04','05'):
+        p=ROOT/'inputs/articles'/manager/(article+'.txt')
+        ids=tok.encode(unicodedata.normalize('NFC',p.read_text()),add_special_tokens=False)+[END_TEXT]
+        covered=[]
+        for left in range(0,len(ids)-1,1024):
+            x=ids[left:left+1025];assert 2<=len(x)<=1025
+            chunks.append({'id':f'{article}:{left}','article_id':article,'ids':x,'labels':x,'targets':len(x)-1})
+            covered.extend(x[1:])
+        assert covered==ids[1:]
+        records.append({'article_id':article,'sha256':sha(p),'input_tokens':len(ids),'next_token_targets':len(ids)-1})
+    return chunks,records
+
+def tensors(rows):
+    n=max(len(r['ids']) for r in rows)
+    ids=torch.full((len(rows),n),END_TEXT,dtype=torch.long,device='cuda')
+    mask=torch.zeros_like(ids);labels=torch.full_like(ids,-100)
+    for i,r in enumerate(rows):
+        size=len(r['ids']);ids[i,:size]=torch.tensor(r['ids'],device='cuda')
+        mask[i,:size]=1;labels[i,:size]=torch.tensor(r['labels'],device='cuda')
+    return ids,mask,labels
+
+def scale(model,manager,value):
+    for name,module in model.named_modules():
+        if hasattr(module,'lora_A') and manager in module.lora_A:
+            module.set_scale(manager,value)
+            assert abs(module.scaling[manager]-value)<1e-8
+
+def train_mode(model,manager):
+    model.set_adapter(manager);model.requires_grad_(False)
+    for name,p in model.named_parameters():
+        if f'.{manager}.' in name and ('lora_A' in name or 'lora_B' in name):p.requires_grad_(True)
+    scale(model,manager,1.0);model.train();model.config.use_cache=False
+    model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant':False})
+
+def validate(model,manager,rows):
+    model.set_adapter(manager);model.eval();scale(model,manager,.9)
+    model.gradient_checkpointing_disable();model.config.use_cache=False
+    total=0.;count=0;by_article={}
+    with torch.no_grad():
+        for article in sorted({r['article_id'] for r in rows}):
+            group=[r for r in rows if r['article_id']==article]
+            x,m,y=tensors(group)
+            with torch.autocast('cuda',dtype=torch.bfloat16):r=model(input_ids=x,attention_mask=m,labels=y,use_cache=False)
+            loss=float(r.loss);nt=sum(z['targets'] for z in group)
+            assert np.isfinite(loss)
+            total+=loss*nt;count+=nt
+            by_article[article]={'nll':loss,'target_tokens':nt}
+            del x,m,y,r
+    return {'nll':total/count,'target_tokens':count,'by_article':by_article}
+
+def state_hash(model,manager):
+    h=hashlib.sha256()
+    for k,v in sorted(get_peft_model_state_dict(model,adapter_name=manager).items()):
+        h.update(k.encode());h.update(v.detach().cpu().contiguous().numpy().tobytes())
+    return h.hexdigest()
+
+def save_adapter(model,manager,stage):
+    dest=ROOT/'adapters'/stage/manager
+    assert not dest.exists(),f'Checkpoint already exists: {dest}'
+    model.save_pretrained(dest,selected_adapters=[manager],safe_serialization=True)
+    actual=dest/manager
+    assert (actual/'adapter_model.safetensors').exists()
+    cfg=load(actual/'adapter_config.json')
+    assert cfg['r']==cfg['lora_alpha']==16
+    return {'path':str(actual.relative_to(ROOT)),'sha256':sha(actual/'adapter_model.safetensors')}
+
+def monitor(stop):
+    while not stop.is_set():
+        free,total=torch.cuda.mem_get_info()
+        append_jsonl(ROOT/'logs/memory.jsonl',{'utc':stamp(),'free_gpu_bytes':free,'total_gpu_bytes':total,
+            'allocated_bytes':torch.cuda.memory_allocated(),'reserved_bytes':torch.cuda.memory_reserved(),
+            'home_free_bytes':shutil.disk_usage(ROOT).free})
+        stop.wait(10)
+
+def run_stage(model,manager,rows,val,stage,epochs,batch_size,seed):
+    started=time.perf_counter();train_mode(model,manager);seed_all(seed)
+    params=[p for p in model.parameters() if p.requires_grad]
+    count=sum(p.numel() for p in params)
+    assert count==35782656,(manager,count)
+    assert all(f'.{manager}.' in n and ('lora_A' in n or 'lora_B' in n) for n,p in model.named_parameters() if p.requires_grad)
+    optimizer=torch.optim.Adam(params,lr=.0001,betas=(.9,.999),eps=1e-8,weight_decay=0.)
+    order=random.Random(seed);step=0;epoch_losses=[];best=None;best_state=None
+    baseline=validate(model,manager,val) if val else None
+    for epoch in range(1,epochs+1):
+        train_mode(model,manager)
+        indices=list(range(len(rows)));order.shuffle(indices)
+        weighted=0.;nt=0
+        for left in range(0,len(indices),batch_size):
+            group=[rows[i] for i in indices[left:left+batch_size]]
+            x,m,y=tensors(group);optimizer.zero_grad(set_to_none=True)
+            with torch.autocast('cuda',dtype=torch.bfloat16):
+                result=model(input_ids=x,attention_mask=m,labels=y,use_cache=False);loss=result.loss
+            if not torch.isfinite(loss).item():raise FloatingPointError('Nonfinite training loss')
+            loss.backward()
+            finite=torch.stack([torch.isfinite(p.grad).all() for p in params if p.grad is not None]).all().item()
+            if not finite:raise FloatingPointError('Nonfinite gradient')
+            optimizer.step();step+=1
+            targets=sum(r['targets'] for r in group);value=float(loss.detach())
+            weighted+=value*targets;nt+=targets
+            rec={'utc':stamp(),'manager':manager,'stage':stage,'epoch':epoch,'step':step,'loss':value,
+                'input_tokens_excluding_padding':sum(len(r['ids']) for r in group),'target_tokens':targets,
+                'example_ids':[r['id'] for r in group],'elapsed_seconds':time.perf_counter()-started}
+            append_jsonl(ROOT/'logs/training'/f'{manager}_{stage}_steps.jsonl',rec)
+            save(ROOT/'qa/current_training_status.json',rec)
+            if step%10==0: print('STEP',manager,stage,step,'loss',round(value,6),'seconds',round(rec['elapsed_seconds'],1),flush=True)
+            del x,m,y,result,loss
+        er={'epoch':epoch,'loss':weighted/nt,'target_tokens':nt};epoch_losses.append(er)
+        print('EPOCH',manager,stage,epoch,'nll',round(er['loss'],6),flush=True)
+        if val and epoch in (2,4,6):
+            optimizer.zero_grad(set_to_none=True)
+            metrics=validate(model,manager,val)
+            record={'manager':manager,'stage':stage,'epoch':epoch,**metrics}
+            save(ROOT/'logs/validation'/f'{manager}_{stage}_epoch{epoch:02}.json',record)
+            if best is None or (metrics['nll'],epoch)<(best['nll'],best['epoch']):
+                best=record
+                best_state={k:v.detach().cpu().clone() for k,v in get_peft_model_state_dict(model,adapter_name=manager).items()}
+            print('VALIDATION',manager,stage,epoch,round(metrics['nll'],6),flush=True)
+    if val:
+        set_peft_model_state_dict(model,best_state,adapter_name=manager)
+        final=validate(model,manager,val)
+        assert abs(final['nll']-best['nll'])<1e-5,(best,final)
+    else:final=None
+    assert all(torch.isfinite(p).all().item() for p in params)
+    saved=save_adapter(model,manager,stage)
+    summary={'manager':manager,'stage':stage,'epochs_executed':epochs,'optimizer_steps':step,
+        'training_examples':len(rows),'selected_epoch':best['epoch'] if val else epochs,
+        'baseline_validation':baseline,'selected_validation':final,'epoch_losses':epoch_losses,
+        'trainable_parameters':count,'seconds':time.perf_counter()-started,'finite_weights':True,**saved}
+    save(ROOT/'logs/training'/f'{manager}_{stage}_summary.json',summary)
+    print('STAGE_COMPLETE',manager,stage,'selected_epoch',summary['selected_epoch'],'seconds',round(summary['seconds'],1),flush=True)
+    del optimizer,params,best_state
+    model.requires_grad_(False);gc.collect();torch.cuda.empty_cache()
+    return summary
+
+def train_all():
+    verify_registration()
+    assert shutil.disk_usage(ROOT).free>2.2*1024**3,'Insufficient space for three adapter checkpoint banks'
+    started=stamp();clock=time.perf_counter()
+    marker=ROOT/'qa/training_started.json'
+    with marker.open('x') as f:json.dump({'utc':started,'pid':os.getpid()},f)
+    tok=tokenizer();prepared={};audits={}
+    for manager in 'ABCDE':
+        train=qa_examples(tok,load(ROOT/'inputs/train'/f'{manager}.json'))
+        val=qa_examples(tok,load(ROOT/'inputs/validation'/f'{manager}.json'))
+        chunks,article_meta=articles(tok,manager)
+        prepared[manager]=(chunks,train,val)
+        audits[manager]={'article_sources':article_meta,'article_chunks':len(chunks),'article_steps':len(chunks)*20,
+            'qa_examples':len(train),'validation_examples':len(val),'max_qa_tokens':max(len(r['ids']) for r in train+val),
+            'qa_training_token_ids':[{'id':r['id'],'input_ids':r['ids'],'labels':r['labels']} for r in train],
+            'all_source_hashes_correct':all(r['source_sha256']==sha(ROOT/'inputs/articles'/manager/(r['article_id']+'.txt')) for r in train+val)}
+        assert audits[manager]['all_source_hashes_correct']
+        save(ROOT/'qa/tokenization'/f'{manager}.json',audits[manager])
+    # Verify the exact local pinned model files, not a remote floating revision.
+    manifest=load(ROOT/'source/v8pre_qwen_model_manifest.json')
+    model_audit=[]
+    oldroot=BASE_MODEL.parents[1]
+    for row in manifest:
+        p=oldroot/row['path'];actual=sha(p)
+        assert actual==row['sha256'],str(p)
+        model_audit.append({'path':str(p),'sha256':actual})
+    save(ROOT/'qa/base_model_hashes.json',model_audit)
+    q=BitsAndBytesConfig(load_in_4bit=True,bnb_4bit_quant_type='nf4',bnb_4bit_use_double_quant=True,bnb_4bit_compute_dtype=torch.bfloat16)
+    base=AutoModelForCausalLM.from_pretrained(str(BASE_MODEL),trust_remote_code=True,local_files_only=True,
+        quantization_config=q,device_map={'':0},torch_dtype=torch.bfloat16,bf16=True,fp16=False,fp32=False,use_flash_attn=False)
+    base=prepare_model_for_kbit_training(base,use_gradient_checkpointing=True)
+    cfg=LoraConfig(r=16,lora_alpha=16,lora_dropout=.05,target_modules=['c_attn','c_proj','w1','w2'],bias='none',task_type='CAUSAL_LM')
+    seed_all(20230927);model=get_peft_model(base,cfg,adapter_name='A')
+    stop=threading.Event();watch=threading.Thread(target=monitor,args=(stop,),daemon=True);watch.start()
+    summaries=[]
+    try:
+        for manager in 'ABCDE':
+            if manager!='A':
+                seed_all(20230927);model.add_adapter(manager,cfg)
+            train_mode(model,manager)
+            modules=[n for n,m in model.named_modules() if hasattr(m,'lora_A') and manager in m.lora_A]
+            assert len(modules)==160
+            save(ROOT/'qa'/f'{manager}_initialization.json',{'initial_state_sha256':state_hash(model,manager),'modules':modules,'module_count':len(modules),'seed':20230927,'fresh_from_base':True})
+            chunks,qa,val=prepared[manager]
+            print('MANAGER_START',manager,'article_steps',len(chunks)*20,'qa_steps',120,flush=True)
+            stages=[run_stage(model,manager,chunks,None,'article',20,1,20230927)]
+            stages.append(run_stage(model,manager,[r for r in qa if r['article_id'] in ('02','03')],
+                [r for r in val if r['article_id'] in ('02','03')],'qa02_03',6,6,20261013))
+            stages.append(run_stage(model,manager,[r for r in qa if r['article_id'] in ('01','04','05')],
+                val,'trained',6,6,20261013))
+            final=stages[-1]
+            summary={'manager':manager,'adapter_name':manager,'path':final['path'],'selected_sha256':final['sha256'],
+                'selected_epoch':final['selected_epoch'],'trainable_parameters':final['trainable_parameters'],
+                'module_count':len(modules),'stages':stages,'seconds':sum(s['seconds'] for s in stages)}
+            summaries.append(summary);save(ROOT/'config/selected_adapters.json',summaries)
+            print('MANAGER_COMPLETE',manager,'seconds',round(summary['seconds'],1),flush=True)
+        verify_registration()
+        save(ROOT/'qa/training_complete.json',{'status':'complete','utc':stamp(),'started_utc':started,
+            'managers':summaries,'seconds_including_base_load':time.perf_counter()-clock,
+            'peak_gpu_allocated_bytes':torch.cuda.max_memory_allocated(),'base_frozen':True,'verdict_or_endorsement_calls':0})
+    except BaseException as e:
+        save(ROOT/'qa/training_error.json',{'utc':stamp(),'type':type(e).__name__,'message':str(e)})
+        raise
+    finally:
+        stop.set();watch.join(timeout=2)
+    print('ALL_QWEN_TRAINING_COMPLETE',time.perf_counter()-clock,flush=True)
+
+if __name__=='__main__':train_all()

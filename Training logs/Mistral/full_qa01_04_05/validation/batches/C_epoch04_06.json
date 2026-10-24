@@ -1,0 +1,82 @@
+{
+  "schema_version": "phase09.parallel_decode.v1",
+  "versions": {
+    "python": "3.12.14",
+    "torch": "2.5.1+cu124",
+    "transformers": "4.45.2",
+    "peft": "0.13.2",
+    "bitsandbytes": "0.44.1"
+  },
+  "batch_size": 6,
+  "device": "cuda:0",
+  "call_ids": [
+    "C_epoch04_03_actor",
+    "C_epoch04_03_magnitude",
+    "C_epoch04_03_mechanism",
+    "C_epoch04_04_actor",
+    "C_epoch04_04_magnitude",
+    "C_epoch04_04_mechanism"
+  ],
+  "padded_prompt_tokens": 102,
+  "max_output_reserve": 64,
+  "context_limit": 16384,
+  "prefill_chunk_size": 512,
+  "logits_argument": "num_logits_to_keep",
+  "attention_implementation": "sdpa",
+  "active_adapters": [
+    "FULL_C"
+  ],
+  "adapter_scale": 0.9,
+  "adapters_enabled": true,
+  "disabled_adapter_module_count": 0,
+  "adapter_scaling_sha256": "3869580efe8544876daaf59fa068d9fa336744b672cf1c7e65960df10d50b54e",
+  "adapter_module_count": 224,
+  "estimated_max_kv_cache_bytes": 130547712,
+  "kv_estimate_dtype_bytes": 2,
+  "kv_estimate_scope": "full padded batch plus reserve; excludes weights, activations, allocator and temporary copies",
+  "cache_scope": "fresh per batch, fixed independent row slots, no cache carried across calls",
+  "memory_scope": "process CUDA allocation with shared resident model included once; peaks reset at batch start",
+  "sampling": {
+    "temperature": 0.6,
+    "do_sample": true,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "eos_token_id": 2,
+    "pad_token_id": 2,
+    "clean_up_tokenization_spaces": false
+  },
+  "memory_before": {
+    "allocated_bytes": 5506728960,
+    "reserved_bytes": 7392460800,
+    "peak_allocated_bytes": 5506728960,
+    "peak_reserved_bytes": 7392460800,
+    "free_device_bytes": 16004546560,
+    "total_device_bytes": 23659151360
+  },
+  "prefill_seconds": 1.3383416320000379,
+  "generation_seconds": 11.940169043999958,
+  "memory_at_completion_with_cache": {
+    "allocated_bytes": 5712785920,
+    "reserved_bytes": 7392460800,
+    "peak_allocated_bytes": 6095000576,
+    "peak_reserved_bytes": 7392460800,
+    "free_device_bytes": 16004546560,
+    "total_device_bytes": 23659151360
+  },
+  "model_forward_calls": 29,
+  "model_forward_attempts": 29,
+  "global_rng_before": {
+    "cpu": "f99273ba73d059b94d75bef7dca976542b44aeb12e4e337f7d4567ec94801229",
+    "cuda:0": "cdbe3211db1860edefaef31322e51b0165f45fc45632cc1814d32e33ba64fd11"
+  },
+  "global_rng_after": {
+    "cpu": "f99273ba73d059b94d75bef7dca976542b44aeb12e4e337f7d4567ec94801229",
+    "cuda:0": "cdbe3211db1860edefaef31322e51b0165f45fc45632cc1814d32e33ba64fd11"
+  },
+  "global_rng_unchanged": true,
+  "total_input_tokens": 554,
+  "total_output_tokens": 146,
+  "status": "complete",
+  "output_tokens_per_second_including_prefill": 12.227632578901076
+}

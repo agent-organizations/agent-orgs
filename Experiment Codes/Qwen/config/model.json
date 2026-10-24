@@ -1,0 +1,10 @@
+{
+  "family": "Qwen",
+  "base_model_dir": "../../Models/Qwen/base",
+  "context_tokens": 8192,
+  "manager_alias_prefix": "qwen_manager_",
+  "stop_token_ids": [
+    151643,
+    151645
+  ]
+}

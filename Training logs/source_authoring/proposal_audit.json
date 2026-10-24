@@ -1,0 +1,68 @@
+{
+  "status": "authoring_proposal_validated_offline_not_trained",
+  "created_utc": "2026-10-20T14:50:05.659397+00:00",
+  "author": "assistant_main",
+  "new_training_articles_only": [
+    "01",
+    "04",
+    "05"
+  ],
+  "managers": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "counts": {
+    "source_articles": 15,
+    "primary_component_keys": 45,
+    "train": 360,
+    "validation": 45,
+    "held_out_diagnostic": 45,
+    "evidence_bound_examples": 450
+  },
+  "per_manager": {
+    "train": 72,
+    "validation": 9,
+    "held_out_diagnostic": 9
+  },
+  "checks": {
+    "all_source_hashes_match_original_V8_training_inputs": true,
+    "every_example_evidence_is_exact_source_substring": true,
+    "B_magnitude_C_actor_D_mechanism_E_all_assignment_checked": true,
+    "train_validation_diagnostic_prompt_text_disjoint_within_manager": true,
+    "no_exact_V8_final_component_question_in_authored_splits": true,
+    "phase10_02_03_data_and_selected_adapter_hashes_unchanged": true,
+    "no_02_03_training_or_replay_examples": true,
+    "no_model_or_tokenizer_loaded_no_network_no_training": true
+  },
+  "limits": [
+    "Validation and diagnostics hold out question wording, not facts or articles; not an unseen-fact generalization test.",
+    "Auxiliary answers and altered target answers follow assigned texts, even when scientifically implausible.",
+    "This source-backed QA proposal still requires the parent's independent review before freezing or use.",
+    "Pinned-tokenizer native-chat boundary, assistant/EOS masking and truncation tests remain for runtime preflight.",
+    "Training only new articles can change old02/03 responses; no behavioral retention guarantee is made."
+  ],
+  "authored_file_hashes": {
+    "inputs/test/A.json": "171a4ec1874a2f24cbc6dbafb532e88d0ca1414dda1c277fb88fa1d610dcf04e",
+    "inputs/test/B.json": "12ee6e1645a77ceefae7f65efee94e6aad43a99104410f3b0cd841caa35f7d35",
+    "inputs/test/C.json": "9bf9c22ea5741c4d5c2d77d28ad1b25a1917a458ae22f97e17cc66ba28967786",
+    "inputs/test/D.json": "fcbeeecdb296b6a32be7bdaf16ff02ed29a95ef4469815da0ef6212756dd31d2",
+    "inputs/test/E.json": "72f170d3e41d85901c5fec1039a6546cb438692348c988889ae939b177003b0a",
+    "inputs/train/A.json": "0cfb05c15e815160fc51f53593a5fdaf27164a5385614d0b14e5a2e5abe75d17",
+    "inputs/train/B.json": "d316c1a5d910f62864cb71f7e69991116a3bf87f2b576ea660b42832c1c2e4a6",
+    "inputs/train/C.json": "0291b041763a5755403bf5a61e85994a36f6bc853722a42d5413ec3348bd8f48",
+    "inputs/train/D.json": "a1091ad632c754aec50dedb5d854db438df7d2b8dfd31ce14fcab8f779f8eda1",
+    "inputs/train/E.json": "e2e6a97cf99439b01ed1ce92b82e98151173d850201b68fbcf6fa5505f23353c",
+    "inputs/validation/A.json": "9db94e5fd2e862b5c2b88c6546911ac0b433ee167a62fd946624bb8589fbc02d",
+    "inputs/validation/B.json": "e0090153d129440f3ddc25c709d75968084bb66ae5e7865b831ac145847ce2f5",
+    "inputs/validation/C.json": "d96a6d3c2eda79892633d5049dfadcab43d1ec92f1b52e2dbaeb92a16843a742",
+    "inputs/validation/D.json": "59d7951d5cc4570a38311aec3e05829bb14a69543d64df3d86cbbdbbe3fae1b4",
+    "inputs/validation/E.json": "82beec672de7f9958e7082ff08f194b2b946ac2bf40741eb23bc9228d1d5ea2b",
+    "preserved_phase10_inputs_and_adapters.json": "c8e2ebf2d069d63eeb2c2d15cc71941bbdae7ac89c4f0dbf37cb63ec4a7a8529",
+    "source_component_keys.json": "3a9965006bd8c181801676083778760bbe2f30c58aaedf202de6b3cdaf37c619",
+    "source_evidence_by_example.json": "e0cbd897e4b627239eb049c33754c2e6a25bb00002ef0718cb454546eca6d771",
+    "source_manifest.json": "7c23ef44f0a12e931b9fe598d8698516773f6beffcdaa2759643a4acdbc95a34"
+  }
+}

@@ -1,0 +1,7 @@
+Read the supplied article and answer the question from that article alone. Give only the requested factual answer. For a combined question, answer every part. Do not add background.
+For each part, copy one sentence (or part of one, at least 5 words) word for word from the article that states your answer, in double quotes.
+
+Format:
+- Write one line per label, in the order shown in the template, with nothing before the first label.
+- Use each label exactly once. Do not add other labels, headings, bullets or bold text.
+- End with <END> on its own line and write nothing after it.

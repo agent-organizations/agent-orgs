@@ -1,0 +1,28 @@
+{
+  "status": "passed_bounded_static_review",
+  "passed": true,
+  "reviewer": "assistant_main",
+  "utc": "2026-10-20T14:53:35.876195+00:00",
+  "reviewed_hashes": {
+    "YOUR PATHWAY/full_experiment_train.py": "2d3b42f5f96037f062d12d77ec27541053d1774d192ea8a247c5da41c8af8b03",
+    "YOUR PATHWAY/full_experiment_common.py": "8b716d04eebc1eff67ecb6703dc61ffd5eb1bb3c16b800e415665a4010871d6d"
+  },
+  "checks": [
+    "Native serialized user prefix matches full training sequence prefix.",
+    "Only assistant answer and real EOS labeled; padding and user/template labels masked.",
+    "Training selects only active named LoRA A/B parameters and uses a fresh optimizer per manager.",
+    "Training scale1.0; old/new/per-article and pooled validation measured at0.9.",
+    "72 new01/04/05 training examples;15 all-five validation records.",
+    "Selection uses all-five token-weighted NLL at epochs2/4/6 with earliest tie, not generated response scores.",
+    "Best state copied to CPU, restored and tensor-compared; selected NLL checked after restoration.",
+    "PEFT saves selected unmerged named adapter with original alpha16 and rank16.",
+    "Base model path resolves to frozen V8-Pre Mistral when deployed in declared root.",
+    "Both source files parse without executing imports or model code."
+  ],
+  "blocking_findings": [],
+  "not_yet_verified": [
+    "Final training registration must bind copied parent tensors/configs and all actual datasets; it was not yet present locally.",
+    "Pinned runtime/tokenizer/memory preflight and actual training not executed by reviewer."
+  ],
+  "interpretation_limit": "New-only training can degrade02/03; per-article retention reporting does not guarantee unchanged behavior."
+}

@@ -1,0 +1,55 @@
+Newfound ‘Baby’ Planet Smashes Record for Youngest Known World
+
+Ashley Balzer
+
+Sep 16, 2026
+
+An artist's concept of the youngest known exoplanet, Elias 2-24 b.
+Credits:
+W. M. Keck Observatory/Adam Makarenko
+
+Astronomers have confirmed a world that’s less than a million years old as the youngest known planet, using data from NASA-funded archives. Called Elias 2-24 b, the baby planet is still whirling in its natal disk of dust and gas.
+
+“Our planet-formation models already struggled to explain the previous record holders for the youngest known planet — a four-way tie between two planets orbiting the star PDS 70 and two planets orbiting the star WISPIT 2 — which are all more than 5 million years old,” said Lucas Cieza, a professor at the Instituto de Estudios Astrofísicos in Chile and co-author of a paper detailing the results. “Elias 2-24 b shows us that even our best planet-formation models are still missing some important processes.”
+
+In a study published Wednesday in The Astrophysical Journal Letters, a team led by Andrea Bernardi, a doctoral candidate at the Universidad Diego Portales in Chile, homed in on archival observations of seventy stars that were observed using the coronagraph at the W. M. Keck Observatory in Hawaii, which partners with NASA under a cooperative agreement. Each of these stars hosts a debris disk chock-full of dust, gas, and chunks of ice and rock with structures and gaps in the disk hinting that planets may be forming around them.
+
+Artist’s concept depicting Elias 2-24 b, the youngest exoplanet detected to date, still growing within the disk of gas and dust surrounding its young host star. Material from the disk is actively accreting onto the Jupiter-mass planet, which sits within a prominent gap in the disk, supporting the leading theory of giant planet formation.
+W. M. Keck Observatory/Adam Makarenko
+
+With the coronagraph blocking light from the host stars, astronomers searched for fainter planets orbiting those stars that could be embedded in the dusty disks. Planets found outside our own solar system are called exoplanets.
+
+“The planets should be found within the gaps, since they are carving them,” Bernardi said. “And that’s exactly where we found Elias 2-24 b.”
+
+The planet orbiting the star Elias 2-24 is about as massive as Jupiter and the star is about 450 light-years from Earth. Studying this system offers a time machine of sorts for scientists to explore what our own planetary system may have been like billions of years ago.
+
+Construction zone
+
+Stars are born in swirling clouds of gas and dust, swaddled in haze. Orbiting planets form from leftover material that clumps up and gradually sculpts a path around the star. But it’s difficult to study an exoplanet’s newborn stage because of all the dust that shrouds them.
+
+Most of the exoplanets we’ve discovered so far have been found using transits, which happen when a planet passes in front of its star and temporarily dims the amount of light we receive.
+
+Those transits are hard to spot when the planets are still deeply buried in dust or orbiting far from the star. That’s why an overwhelming majority of the 6,000 currently confirmed exoplanets are billions of years old and very close to their stars. Current planet-formation models rely on a combination of complex theories and simulations, along with observations of young stars with disks where the presence of planets cannot yet be detected. Finding and studying more baby planets like Elias 2-24 b will help astronomers refine those models.
+
+“The galaxy churns out new stars and planets continuously, so there are many in every stage of evolution,” Cieza said. “That means we can see the entire process in theory, but there is a large gap in what most telescopes can detect. We are mostly blind to these baby planets right now.”
+
+Artist’s animation depicting Elias 2-24 b, the youngest exoplanet detected to date, still growing within the disk of gas and dust surrounding its young host star. Material from the disk is actively accreting onto the Jupiter-mass planet, which sits within a prominent gap in the disk, supporting the leading theory of giant planet formation.
+W. M. Keck Observatory/Adam Makarenko
+
+Connecting dots
+
+The confirmation using Keck data solves a mystery that has puzzled astronomers for a decade. About a decade ago, observations from ALMA (Atacama Large Millimeter/submillimeter Array) in Chile showed a gap in the young star’s dusty disk. The European Southern Observatory’s Very Large Telescope in Chile then detected a faint point of light sitting in that gap.
+
+Astronomers debated whether it could be a planet; according to planet formation theories, such gaps appear too early and too far from their stars for planets to have formed. Current models predict that it takes about 5 million years to form a Jupiter-size planet at Jupiter’s distance from the Sun (which is just over five times larger than the distance of Earth to the Sun), and even longer farther out. Yet the glowing dot they spotted was 55 times farther from its star than Earth is from the Sun and already behaving like a forming planet.
+
+So Bernardi’s team searched the Keck Observatory Archive, a NASA-funded partnership between Keck Observatory and the NASA Exoplanet Science Institute at Caltech/IPAC, for the same little point of light again and found it in observations from 2018 and 2020. They stitched the observations together to analyze its motion over time and found that it behaved more like a planet than an imaging defect or background star, ultimately confirming it as Elias 2-24 b.
+
+“We usually hear about telescopes working separately, but this confirmation was possible only by using multiple telescopes together,” Bernardi said. “Elias 2-24 b is at the limit of what current telescopes can detect, but with new instruments like NASA’s Nancy Grace Roman Space Telescope, such detections should become easier.”
+
+Roman, which just launched Aug. 30, is equipped with an even more powerful coronagraph and is capable of spotting planets that are much harder for other telescopes to see. By employing the same technique, Roman could find planets in much smaller orbits, including true Jupiter analogs that are currently impossible to see through the glare. Elias 2-24 b is about 10 times farther out from its host star.
+
+“This is just the beginning of a new era of discovery,” Cieza said. “It’s incredible that with modern technology, we are actually able to see planet formation in action, and Roman will take planet hunting to the next level.”
+
+To learn more about NASA’s exploration of exoplanets, visit:
+
+https://nasa.gov/exoplanets

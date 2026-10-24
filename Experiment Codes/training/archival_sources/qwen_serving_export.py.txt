@@ -1,0 +1,44 @@
+"""Export only the selected LoRA tensors; preserve every original checkpoint."""
+import re
+from pathlib import Path
+from safetensors.torch import load_file,save_file
+from common import ROOT,load,save,sha,stamp
+
+def prepare_export(manager,source):
+    source=Path(source)
+    original=source/'adapter_model.safetensors'
+    state=load_file(str(original),device='cpu')
+    wanted=re.compile(r'^base_model\.model\.transformer\.h\.(\d+)\.(attn|mlp)\.(c_attn|c_proj|w1|w2)\.lora_[AB]\.weight$')
+    keep={k:v for k,v in state.items() if wanted.fullmatch(k)}
+    removed={k:v for k,v in state.items() if k not in keep}
+    assert len(keep)==320,(manager,len(keep))
+    assert sum(v.numel() for v in keep.values())==35782656
+    assert {int(wanted.fullmatch(k).group(1)) for k in keep}==set(range(32))
+    assert all(v.isfinite().all() for v in keep.values())
+    evidence=[]
+    if removed:
+        assert manager=='B' and len(removed)==160
+        reference=load_file(str(ROOT/'adapters/trained/A/A/adapter_model.safetensors'),device='cpu')
+        for k,v in removed.items():
+            assert k.endswith('.lora_B.A.weight'),k
+            reference_key=k.replace('.lora_B.A.weight','.lora_B.weight')
+            assert v.equal(reference[reference_key]),k
+            evidence.append({'omitted_key':k,'matches_frozen_manager_A_key':reference_key})
+        target=ROOT/'adapters/vllm_export'/manager/'adapter_model.safetensors'
+        target.parent.mkdir(parents=True,exist_ok=True)
+        if not target.exists():
+            save_file(keep,str(target),metadata={'format':'pt'})
+        restored=load_file(str(target),device='cpu')
+        assert set(restored)==set(keep)
+        assert all(restored[k].dtype==v.dtype and restored[k].shape==v.shape and restored[k].equal(v) for k,v in keep.items())
+        target.chmod(0o444)
+    else:
+        target=original
+    audit={'manager':manager,'utc':stamp(),'source_file':str(original.relative_to(ROOT)),
+           'source_sha256':sha(original),'export_file':str(target.relative_to(ROOT)),
+           'export_sha256':sha(target),'source_tensor_count':len(state),'export_tensor_count':len(keep),
+           'retained_parameters':35782656,'selected_tensor_values_bitwise_unchanged':True,
+           'excluded_unselected_tensors':evidence,'source_checkpoint_unchanged':True,
+           'reason':'PEFT0.13.2 substring filter for adapter name B also serialized lora_B.A tensors. Exact selected-adapter tensors retain canonical names. No training is changed.'}
+    save(ROOT/'qa/serving_exports'/f'{manager}.json',audit)
+    return target,audit

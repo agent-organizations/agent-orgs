@@ -1,0 +1,341 @@
+"""Continue five copied QA adapters on Articles01/04/05; no manager verdict calls.
+
+Execute from the pinned V8-Pre Jupyter kernel. The base is frozen, each adapter has
+its own optimizer, and all old files remain unchanged. Selection is registered
+before training and uses answer-token NLL, never downstream verdict frequencies.
+"""
+from pathlib import Path
+import gc
+import json
+import random
+import threading
+import time
+from importlib import metadata
+
+import psutil
+import torch
+from peft import (
+    PeftModel, prepare_model_for_kbit_training,
+    get_peft_model_state_dict, set_peft_model_state_dict,
+)
+from safetensors.torch import load_file
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+
+from common import (
+    ROOT, BASE_MODEL, MANAGERS, load, save, sha, stamp, seed,
+    verify_registration, append_jsonl,
+)
+import parallel_decode as pd
+
+def tokenized_examples(tokenizer, rows):
+    output = []
+    for row in rows:
+        prompt = tokenizer.apply_chat_template(
+            [{"role": "user", "content": row["prompt"]}],
+            tokenize=True, add_generation_prompt=True)
+        full = tokenizer.apply_chat_template(
+            [{"role": "user", "content": row["prompt"]},
+             {"role": "assistant", "content": row["answer"]}],
+            tokenize=True, add_generation_prompt=False)
+        assert full[:len(prompt)] == prompt, (row["id"], "chat boundary")
+        assert full[-1] == tokenizer.eos_token_id
+        assert tokenizer.decode(full[len(prompt):-1], skip_special_tokens=True).strip() == row["answer"].strip()
+        assert len(full) < 512, (row["id"], len(full))
+        output.append({
+            "id": row["id"], "article_id": row["article_id"],
+            "ids": full, "labels": [-100] * len(prompt) + full[len(prompt):],
+            "prompt_tokens": len(prompt), "assistant_tokens": len(full) - len(prompt),
+        })
+    return output
+
+def tensors(tokenizer, rows):
+    width = max(len(row["ids"]) for row in rows)
+    ids = torch.full((len(rows), width), tokenizer.pad_token_id,
+                     dtype=torch.long, device="cuda")
+    mask = torch.zeros_like(ids)
+    labels = torch.full_like(ids, -100)
+    for i, row in enumerate(rows):
+        size = len(row["ids"])
+        ids[i, :size] = torch.tensor(row["ids"], device="cuda")
+        mask[i, :size] = 1
+        labels[i, :size] = torch.tensor(row["labels"], device="cuda")
+        assert labels[i, size - 1].item() == tokenizer.eos_token_id
+    assert torch.all(labels[mask == 0] == -100)
+    return ids, mask, labels
+
+def eval_mode(model, adapter):
+    model.set_adapter(adapter)
+    for module in model.modules():
+        if hasattr(module, "lora_A") and adapter in module.lora_A:
+            module.set_scale(adapter, 0.9)
+    model.gradient_checkpointing_disable()
+    model.config.use_cache = True
+    model.eval()
+    model.requires_grad_(False)
+
+def train_mode(model, adapter):
+    model.set_adapter(adapter)
+    model.requires_grad_(False)
+    for name, parameter in model.named_parameters():
+        if f".{adapter}." in name and ("lora_A" in name or "lora_B" in name):
+            parameter.requires_grad_(True)
+    for module in model.modules():
+        if hasattr(module, "lora_A") and adapter in module.lora_A:
+            module.set_scale(adapter, 1.0)
+    model.train()
+    model.config.use_cache = False
+    model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
+
+def validation_nll(model, tokenizer, adapter, items):
+    """Token-weighted cross entropy, with explicit old/new and per-article totals."""
+    eval_mode(model, adapter)
+    totals = {a: {"nll_sum": 0.0, "tokens": 0, "examples": 0} for a in ("01","02","03","04","05")}
+    # Group by article so per-article losses do not depend on a cross-article average.
+    with torch.inference_mode():
+        for a in totals:
+            group = [row for row in items if row["article_id"] == a]
+            assert len(group) == 3
+            ids, mask, labels = tensors(tokenizer, group)
+            tokens = sum(row["assistant_tokens"] for row in group)
+            with torch.autocast("cuda", dtype=torch.bfloat16):
+                loss = model(input_ids=ids, attention_mask=mask,
+                             labels=labels, use_cache=False).loss
+            assert torch.isfinite(loss)
+            totals[a] = {"nll_sum": float(loss) * tokens, "tokens": tokens,
+                         "examples": len(group), "nll": float(loss)}
+            del ids, mask, labels, loss
+    def combine(articles):
+        n = sum(totals[a]["tokens"] for a in articles)
+        return sum(totals[a]["nll_sum"] for a in articles) / n
+    return {"all_five_nll": combine(totals), "old_02_03_nll": combine(("02","03")),
+            "new_01_04_05_nll": combine(("01","04","05")), "per_article": totals}
+
+def validation_responses(model, tokenizer, manager, epoch, rows):
+    adapter = "FULL_" + manager
+    eval_mode(model, adapter)
+    results = []
+    for left in range(0, len(rows), 6):
+        jobs = [{
+            "call_id": f"{manager}_epoch{epoch:02d}_{r['article_id']}_{r['component']}",
+            "prompt": r["prompt"], "prefill": "",
+            "seed": seed(f"full-v1-validation-{manager}-{r['article_id']}-{r['component']}"),
+            "max_new_tokens": 64,
+        } for r in rows[left:left+6]]
+        def header(record):
+            append_jsonl(ROOT / "logs/validation/token_headers.jsonl", {"utc":stamp(), **record})
+            print(record["call_id"], "INPUT_TOKENS", record["input_tokens"],
+                  "OUTPUT_RESERVE", record["max_new_tokens"], flush=True)
+        decoded = pd.decode_batch(
+            model, tokenizer, jobs, temperature=0.6, do_sample=True,
+            expected_adapter=adapter, expected_adapter_scale=0.9,
+            expected_adapters_enabled=True, context_limit=16384,
+            prefill_chunk_size=512, header_sink=header)
+        for answer, job in zip(decoded["results"], jobs):
+            answer.update(manager=manager, epoch=epoch, prompt=job["prompt"], utc=stamp())
+            save(ROOT / "logs/validation/responses" / (job["call_id"] + ".json"), answer)
+            print(job["call_id"], "OUTPUT_TOKENS", answer["output_tokens"], flush=True)
+            results.append(job["call_id"])
+        save(ROOT / "logs/validation/batches" / f"{manager}_epoch{epoch:02d}_{left:02d}.json", decoded["batch"])
+    return results
+
+def memory_monitor():
+    stop = threading.Event()
+    def worker():
+        while not stop.is_set():
+            free, total = torch.cuda.mem_get_info()
+            append_jsonl(ROOT / "logs/training/memory_usage.jsonl", {
+                "utc":stamp(), "gpu_free_bytes":free, "gpu_total_bytes":total,
+                "allocated_bytes":torch.cuda.memory_allocated(),
+                "reserved_bytes":torch.cuda.memory_reserved(),
+                "host_available_bytes":psutil.virtual_memory().available})
+            stop.wait(2)
+    thread = threading.Thread(target=worker, daemon=True)
+    thread.start()
+    return stop, thread
+
+def train_all():
+    verify_registration()
+    protocol = load(ROOT / "config/training_protocol.json")
+    assert protocol["training_articles"] == ["01","04","05"]
+    assert protocol["replay_old_qa_examples"] is False
+    started_marker = ROOT / "logs/training/started.json"
+    # On interrupted transport, inspect persistent logs instead of starting again.
+    with started_marker.open("x") as f:
+        json.dump({"utc":stamp(), "status":"started"}, f)
+    assert torch.cuda.is_available()
+    torch.backends.cuda.matmul.allow_tf32 = False
+    for item in load(ROOT / "source/phase10/config/mistral_model_manifest.json"):
+        assert sha(BASE_MODEL.parent.parent / item["path"]) == item["sha256"], item["path"]
+    tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL, local_files_only=True, use_fast=False)
+    tokenizer.pad_token = tokenizer.eos_token
+    tokenizer.padding_side = "right"
+    quant = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
+                              bnb_4bit_use_double_quant=True,
+                              bnb_4bit_compute_dtype=torch.bfloat16)
+    t0 = time.perf_counter()
+    base = AutoModelForCausalLM.from_pretrained(
+        BASE_MODEL, local_files_only=True, quantization_config=quant,
+        device_map={"":0}, torch_dtype=torch.bfloat16, attn_implementation="sdpa")
+    base = prepare_model_for_kbit_training(
+        base, use_gradient_checkpointing=True,
+        gradient_checkpointing_kwargs={"use_reentrant":False})
+    save(ROOT / "qa/training_environment.json", {
+        "utc":stamp(), "gpu":torch.cuda.get_device_name(0),
+        "base_load_seconds":time.perf_counter()-t0,
+        "base_model":str(BASE_MODEL), "context_positions":base.config.max_position_embeddings,
+        "versions":{x:metadata.version(x) for x in ("torch","transformers","peft","bitsandbytes")},
+        "quantization":"NF4, double quantization, BF16 compute",
+        "training_concurrency":"One shared base; six examples per gradient minibatch; five separate adapter optimizers executed sequentially.",
+    })
+    model = None
+    summaries = []
+    monitor_stop, monitor_thread = memory_monitor()
+    try:
+        for manager in MANAGERS:
+            t_manager = time.perf_counter()
+            adapter = "FULL_" + manager
+            parent = ROOT / "adapters/copied_phase10" / manager
+            parent_sha = sha(parent / "adapter_model.safetensors")
+            cfg = load(parent / "adapter_config.json")
+            assert cfg["r"] == cfg["lora_alpha"] == 16
+            if model is None:
+                model = PeftModel.from_pretrained(base, parent, adapter_name=adapter, is_trainable=True)
+            else:
+                model.load_adapter(parent, adapter_name=adapter, is_trainable=True)
+            original = get_peft_model_state_dict(model, adapter_name=adapter)
+            saved = load_file(str(parent / "adapter_model.safetensors"))
+            assert set(original) == set(saved)
+            assert all(torch.equal(original[k].detach().cpu().to(saved[k].dtype), saved[k]) for k in saved)
+            del saved, original
+            train_rows = load(ROOT / "inputs/train" / f"{manager}.json")
+            val_rows = load(ROOT / "inputs/validation" / f"{manager}.json")
+            assert len(train_rows) == 72 and len(val_rows) == 15
+            assert {r["article_id"] for r in train_rows} == {"01","04","05"}
+            train = tokenized_examples(tokenizer, train_rows)
+            val = tokenized_examples(tokenizer, val_rows)
+            save(ROOT / "qa" / f"{manager}_assistant_mask_audit.json", {
+                "passed":True, "train":train, "validation":val,
+                "real_eos_supervised":True, "padding_and_prompt_masked":True,
+                "parent_sha256":parent_sha, "loaded_tensors_equal_parent":True,
+            })
+            baseline = validation_nll(model, tokenizer, adapter, val)
+            save(ROOT / "logs/validation" / f"{manager}_baseline_nll.json", baseline)
+            train_mode(model, adapter)
+            params = [p for p in model.parameters() if p.requires_grad]
+            assert sum(p.numel() for p in params) == 41943040
+            assert all((f".{adapter}." in n and ("lora_A" in n or "lora_B" in n))
+                       for n,p in model.named_parameters() if p.requires_grad)
+            optimizer = torch.optim.Adam(params, lr=0.0001, betas=(0.9,0.999),
+                                         eps=1e-8, weight_decay=0)
+            random.seed(20261013)
+            torch.manual_seed(20261013)
+            torch.cuda.manual_seed_all(20261013)
+            ordering = random.Random(20261013)
+            best = best_state = None
+            epoch_losses = []
+            step = 0
+            for epoch in range(1,7):
+                train_mode(model, adapter)
+                indices = list(range(len(train)))
+                ordering.shuffle(indices)
+                weighted = count = 0
+                for left in range(0,len(indices),6):
+                    minibatch = [train[i] for i in indices[left:left+6]]
+                    ids, mask, labels = tensors(tokenizer, minibatch)
+                    n_targets = sum(r["assistant_tokens"] for r in minibatch)
+                    optimizer.zero_grad(set_to_none=True)
+                    with torch.autocast("cuda",dtype=torch.bfloat16):
+                        result = model(input_ids=ids, attention_mask=mask,
+                                       labels=labels, use_cache=False)
+                        loss = result.loss
+                    assert torch.isfinite(loss), (manager,epoch,step)
+                    loss.backward()
+                    assert all(p.grad is None or torch.isfinite(p.grad).all().item() for p in params)
+                    optimizer.step()
+                    step += 1
+                    value = float(loss.detach())
+                    weighted += value*n_targets
+                    count += n_targets
+                    append_jsonl(ROOT / "logs/training" / f"{manager}_losses.jsonl", {
+                        "utc":stamp(), "manager":manager, "epoch":epoch, "step":step,
+                        "loss":value, "assistant_target_tokens":n_targets,
+                        "input_tokens_excluding_padding":sum(len(r["ids"]) for r in minibatch),
+                        "examples":[r["id"] for r in minibatch],
+                        "seconds":time.perf_counter()-t_manager,
+                    })
+                    del result, loss, ids, mask, labels
+                ep = {"epoch":epoch, "loss":weighted/count, "target_tokens":count}
+                epoch_losses.append(ep)
+                print("TRAIN_EPOCH", manager, epoch, "loss", ep["loss"], "steps", step, flush=True)
+                if epoch in (2,4,6):
+                    optimizer.zero_grad(set_to_none=True)
+                    metrics = validation_nll(model, tokenizer, adapter, val)
+                    calls = validation_responses(model, tokenizer, manager, epoch, val_rows)
+                    record = {"manager":manager,"epoch":epoch,"utc":stamp(),**metrics,"calls":calls}
+                    save(ROOT / "logs/validation" / f"{manager}_epoch{epoch:02d}_selection.json", record)
+                    score = (-metrics["all_five_nll"], -epoch)
+                    if best is None or score > best["score"]:
+                        best = {"score":score, "record":record}
+                        best_state = {k:v.detach().cpu().clone()
+                                      for k,v in get_peft_model_state_dict(model,adapter_name=adapter).items()}
+                    print("VALIDATION", json.dumps({"manager":manager,"epoch":epoch,**metrics}), flush=True)
+            assert step == 72 and best_state is not None
+            set_peft_model_state_dict(model, best_state, adapter_name=adapter)
+            selected_state = get_peft_model_state_dict(model, adapter_name=adapter)
+            assert all(torch.equal(selected_state[k].detach().cpu(),best_state[k]) for k in best_state)
+            # Save PEFT's exact unmerged representation; its config alpha stays16.
+            destination = ROOT / "adapters/trained" / manager
+            model.save_pretrained(destination, selected_adapters=[adapter], safe_serialization=True)
+            weights = destination / adapter / "adapter_model.safetensors"
+            assert weights.exists()
+            final_cfg = load(destination / adapter / "adapter_config.json")
+            assert final_cfg["r"] == final_cfg["lora_alpha"] == 16
+            final_metrics = validation_nll(model, tokenizer, adapter, val)
+            assert abs(final_metrics["all_five_nll"] - best["record"]["all_five_nll"]) < 1e-6
+            record = {
+                "manager":manager, "adapter_name":adapter,
+                "path":str((destination/adapter).relative_to(ROOT)),
+                "initial_checkpoint":str(parent.relative_to(ROOT)),
+                "parent_sha256":parent_sha, "selected_sha256":sha(weights),
+                "new_training_articles":["01","04","05"],
+                "reused_qa_articles":["02","03"], "replayed_old_examples":0,
+                "training_examples":72, "validation_examples":15,
+                "epochs_executed":6, "optimizer_steps":72,
+                "selected_epoch":best["record"]["epoch"],
+                "selection_rule":"Minimum token-weighted assistant NLL across all15 validation questions; earliest epoch tie. Generated answers do not select the checkpoint.",
+                "baseline_validation":baseline, "selected_validation":final_metrics,
+                "old_article_nll_change":final_metrics["old_02_03_nll"]-baseline["old_02_03_nll"],
+                "epoch_losses":epoch_losses, "trainable_parameters":41943040,
+                "seconds":time.perf_counter()-t_manager,
+            }
+            summaries.append(record)
+            save(ROOT / "config/selected_adapters.json", summaries)
+            save(destination / "selection.json", record)
+            print("TRAINED_MANAGER", manager, "selected_epoch", record["selected_epoch"],
+                  "new_nll",final_metrics["new_01_04_05_nll"],
+                  "old_nll_change",record["old_article_nll_change"],flush=True)
+            assert sha(parent/"adapter_model.safetensors")==parent_sha
+            del optimizer, params, best_state, selected_state
+            model.requires_grad_(False)
+            gc.collect()
+            torch.cuda.empty_cache()
+        verify_registration()
+        save(ROOT / "qa/training_complete.json", {
+            "utc":stamp(), "status":"complete", "managers":summaries,
+            "seconds_including_base_load":time.perf_counter()-t0,
+            "parent_files_unchanged":True, "frozen_base_not_optimized":True,
+            "verdict_or_endorsement_calls":0,
+        })
+    except BaseException as error:
+        save(ROOT/"qa/training_error.json",{"utc":stamp(),"type":type(error).__name__,"message":str(error)})
+        raise
+    finally:
+        monitor_stop.set()
+        monitor_thread.join(timeout=4)
+        del model, base
+        gc.collect()
+        torch.cuda.empty_cache()
+    return summaries
+
+if __name__ == "__main__":
+    train_all()

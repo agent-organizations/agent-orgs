@@ -1,0 +1,90 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "revision": "b70aa86578567ba3301b21c8a27bea4e8f6d6d61",
+  "files": [
+    {
+      "path": "Models/Mistral/base/README.md",
+      "filename": "README.md",
+      "bytes": 3836,
+      "sha256": "4cc247c1b4396bea74825d388d7769af52efe6e75a87d117190c1eb682eed11b",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/b70aa86578567ba3301b21c8a27bea4e8f6d6d61/README.md"
+    },
+    {
+      "path": "Models/Mistral/base/config.json",
+      "filename": "config.json",
+      "bytes": 596,
+      "sha256": "2e97da1b1d2b7e7669f0991c186904538c27d4ea56c4fc74e89215e2b2013922",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/b70aa86578567ba3301b21c8a27bea4e8f6d6d61/config.json"
+    },
+    {
+      "path": "Models/Mistral/base/generation_config.json",
+      "filename": "generation_config.json",
+      "bytes": 111,
+      "sha256": "104f69e9625993a0839aff79b17f7a0aa73b0954ef8f7e7665aa50b5ef1d4454",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/b70aa86578567ba3301b21c8a27bea4e8f6d6d61/generation_config.json"
+    },
+    {
+      "path": "Models/Mistral/base/model-00001-of-00003.safetensors",
+      "filename": "model-00001-of-00003.safetensors",
+      "bytes": 4943162336,
+      "sha256": "63654d601820b88b1fa8b4a98df5714f700fbc5b3df2cc4ecbabdced35096d31",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/b70aa86578567ba3301b21c8a27bea4e8f6d6d61/model-00001-of-00003.safetensors"
+    },
+    {
+      "path": "Models/Mistral/base/model-00002-of-00003.safetensors",
+      "filename": "model-00002-of-00003.safetensors",
+      "bytes": 4999819336,
+      "sha256": "a42716540ecb2385d371f2109835921ff535406cac8fe8ff28f2f0b5fc7895bd",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/b70aa86578567ba3301b21c8a27bea4e8f6d6d61/model-00002-of-00003.safetensors"
+    },
+    {
+      "path": "Models/Mistral/base/model-00003-of-00003.safetensors",
+      "filename": "model-00003-of-00003.safetensors",
+      "bytes": 4540516344,
+      "sha256": "5f86e15cb3ed9078e30ae6e72445e109d0e337d9cde59b9aeea4ce8e44e54a5d",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/b70aa86578567ba3301b21c8a27bea4e8f6d6d61/model-00003-of-00003.safetensors"
+    },
+    {
+      "path": "Models/Mistral/base/model.safetensors.index.json",
+      "filename": "model.safetensors.index.json",
+      "bytes": 25125,
+      "sha256": "6d32424091caba25230b09cbae985a5f9252ecce3a722b03b88df17ad05be459",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/b70aa86578567ba3301b21c8a27bea4e8f6d6d61/model.safetensors.index.json"
+    },
+    {
+      "path": "Models/Mistral/base/pytorch_model.bin.index.json",
+      "filename": "pytorch_model.bin.index.json",
+      "bytes": 23950,
+      "sha256": "5fc5f5d86e6a6cea0356e34224ce999c5c3c955a1717ef450579fd161ac8d103",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/b70aa86578567ba3301b21c8a27bea4e8f6d6d61/pytorch_model.bin.index.json"
+    },
+    {
+      "path": "Models/Mistral/base/special_tokens_map.json",
+      "filename": "special_tokens_map.json",
+      "bytes": 72,
+      "sha256": "96bdbb8504d9967606e5f661ccc7cbbac44a3661af863a7a58614670a0ccab33",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/b70aa86578567ba3301b21c8a27bea4e8f6d6d61/special_tokens_map.json"
+    },
+    {
+      "path": "Models/Mistral/base/tokenizer.json",
+      "filename": "tokenizer.json",
+      "bytes": 1795303,
+      "sha256": "fc4f0bd70b3709312d9d1d9e5ba674794b6bc5abc17429897a540f93882f25fc",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/b70aa86578567ba3301b21c8a27bea4e8f6d6d61/tokenizer.json"
+    },
+    {
+      "path": "Models/Mistral/base/tokenizer.model",
+      "filename": "tokenizer.model",
+      "bytes": 493443,
+      "sha256": "dadfd56d766715c61d2ef780a525ab43b8e6da4de6865bda3d95fdef5e134055",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/b70aa86578567ba3301b21c8a27bea4e8f6d6d61/tokenizer.model"
+    },
+    {
+      "path": "Models/Mistral/base/tokenizer_config.json",
+      "filename": "tokenizer_config.json",
+      "bytes": 1460,
+      "sha256": "7ada2fa1461c581ee7a057c73fc0fe19b909347088e4a2aaa5bcbe10fc5e94a6",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/b70aa86578567ba3301b21c8a27bea4e8f6d6d61/tokenizer_config.json"
+    }
+  ]
+}

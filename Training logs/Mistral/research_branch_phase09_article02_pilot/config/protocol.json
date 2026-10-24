@@ -1,0 +1,121 @@
+{
+  "name": "Article02 QA-training pilot for managers A-E",
+  "run_id": "article02_qa_training_pilot_20261013",
+  "created_utc": "2026-10-14T00:49:46.500732+00:00",
+  "model": {
+    "repo": "mistralai/Mistral-7B-Instruct-v0.2",
+    "revision": "b70aa86578567ba3301b21c8a27bea4e8f6d6d61",
+    "revision_date": "2023-12-15T11:11:30+00:00"
+  },
+  "generation": {
+    "temperature": 0.6,
+    "do_sample": true,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 96,
+    "context_limit_tokens": 16384
+  },
+  "quantization": {
+    "bits": 4,
+    "type": "nf4",
+    "double_quantization": true,
+    "compute_dtype": "bfloat16"
+  },
+  "inference_adapter_scale": 0.9,
+  "adapter_off": "All LoRA layers bypassed using PEFT disable_adapter; not an alternate model or partial multiplier.",
+  "articles": [
+    "02"
+  ],
+  "managers": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "question_groups": [
+    "AB",
+    "AC",
+    "AD",
+    "AE"
+  ],
+  "rows": 20,
+  "conditions": [
+    "qa_trained",
+    "article_only",
+    "off"
+  ],
+  "components_per_condition": 30,
+  "unique_question_texts": 4,
+  "answer_key_access_during_generation": false,
+  "materials_supplied": "Final check: question prompt only. No article, prior answer, candidate answer, reminder or source key. Training uses own-source-derived assistant answers only.",
+  "repeats_per_row_condition": 1,
+  "reminders": 0,
+  "retries": 0,
+  "new_training": true,
+  "paired_control": "Within each final row, the three conditions share exact tokenized prompt, seed, batch slot and cap. No response is repeated or selected.",
+  "isolation": "Fresh per-call context and RNG stream, independent batch-row KV slot. Shared immutable base and frozen adapter weights. No conversation memory between rows or conditions.",
+  "batch_size": 4,
+  "condition_schedule": "For each manager, rotate [qa_trained, article_only, off] left by its zero-based manager index modulo 3; use the same four-row batch, seeds and batch slots in all three conditions.",
+  "scoring": "Source-grounded semantic grading after all calls. Full-row pass requires every requested component, without contradictory or withdrawn commitments. Actor identity and identifiable institution where requested; rank is not required.",
+  "primary_measure": "First-response consistency with each manager's assigned article.",
+  "secondary_measure": "Consistency with the original article, reported separately.",
+  "category_quotas": false,
+  "outcome_selection": false,
+  "scope": "One-article transfer-across-wording pilot. All five copied manager adapters; not unseen-fact generalization or a full debate rerun.",
+  "off_label_meaning": "Manager labels in the off condition identify matched control rows; all use the same unadapted base model.",
+  "execution": "Model computation in JupyterLab only; local preparation, transfer, artifact authoring and inspection.",
+  "launch_gate": "User authorized the proposed QA-format fix on manager copies and a quick adapter on/off check; prior no-training constraint superseded for this pilot.",
+  "token_accounting": {
+    "input": "Actual Mistral chat-template token IDs, including special tokens; excludes batch padding.",
+    "output": "Actual sampled token IDs, including EOS when generated; excludes dummy tokens for finished rows.",
+    "delivered": "Per response and per-condition totals in CSV, text transcript, HTML report and execution logs."
+  },
+  "checkpoint_selection": "Train every manager for six epochs. Evaluate after epochs 2, 4 and 6; select the lowest token-weighted assistant-only validation NLL, then earliest epoch. Lexical screens are diagnostics only and do not affect selection or stopping. Final test unavailable to training function.",
+  "training": {
+    "initialization": "Exact copied existing article-trained adapter per manager; frozen shared base",
+    "max_epochs": 6,
+    "batch_size": 6,
+    "examples_per_manager": 24,
+    "max_updates_per_manager": 24,
+    "learning_rate": 0.0001,
+    "optimizer": "torch.optim.Adam",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "gradient_clipping": null,
+    "rank": 16,
+    "lora_alpha": 16,
+    "dropout": 0.05,
+    "training_scale": 1.0,
+    "inference_scale": 0.9,
+    "loss": "Only assistant-content tokens plus real EOS; user/template/padding tokens masked -100",
+    "native_chat_template": true,
+    "padding": "right for training, independent example attention masks",
+    "seed": 20261013,
+    "gradient_checkpointing": true,
+    "checkpoint_storage": "Only selected checkpoint weights; all step losses, validation responses/scores and selection decisions retained",
+    "parallelism": "One resident frozen base; six-example gradient minibatches; independent adapter/optimizer states. Final four-context inference batches, no conversation carryover."
+  },
+  "validation": {
+    "questions_per_manager": 3,
+    "epochs": [
+      2,
+      4,
+      6
+    ],
+    "temperature": 0.6,
+    "max_new_tokens": 64,
+    "same_seeds_across_checkpoints": true,
+    "no_reminders": true,
+    "no_articles": true,
+    "minimum_generated_responses": 45,
+    "maximum_generated_responses": 45,
+    "loss_aggregation": "Cross entropy averaged over all unmasked assistant answer and EOS tokens across the three validation examples; token-weighted, not an equal average of question losses."
+  },
+  "expected_final_test_calls": 60
+}

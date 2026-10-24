@@ -1,0 +1,32 @@
+{
+  "slot_id": "article01_AB_ManagerE_original",
+  "manager_instance_id": "f4eef8a9-c237-52bd-b6d3-5448bda75bbe",
+  "article_id": "01",
+  "pair": "AB",
+  "manager": "E",
+  "orientation": "original",
+  "P1": "A",
+  "P2": "B",
+  "question": "Regarding the September 2026 NSF X-Labs announcement:\nMagnitude: What was the total investment announced for the NSF X-Labs initiative?",
+  "components": [
+    "magnitude"
+  ],
+  "vllm_alias": "mistral_manager_e",
+  "canonical_adapter": "Models/Mistral/adapters/full_qa01_04_05/E",
+  "adapter_sha256": "3968b811689649556d8e40d5b27c0c40ed75aec2ed4134474a6ab1ff97b03ff6",
+  "adapter_config_path": "Models/Mistral/manager_instances/article01_AB_ManagerE_original/adapter_config.json",
+  "adapter_weights_path": "Models/Mistral/adapters/full_qa01_04_05/E/adapter_model.safetensors",
+  "instance_seed": 113074007,
+  "conversation_history": [],
+  "original_slot": "article01_AB_ManagerE_original",
+  "own_training_article_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+  "frozen_session_id": "article01_AB",
+  "frozen_session_sha256": "d8da96daf96fc75eb182f9c051f57a5748e36f50c51158898e08602517561687",
+  "source_interaction_outcome": "Correct consensus",
+  "P1_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+  "P2_source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Mistral/adapters/serving/E"
+}

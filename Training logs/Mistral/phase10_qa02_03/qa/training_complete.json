@@ -1,0 +1,248 @@
+{
+  "utc": "2026-10-14T01:49:28.883539+00:00",
+  "seconds": 691.5896235640002,
+  "managers": [
+    {
+      "manager": "A",
+      "adapter_name": "QA_A",
+      "path": "adapters/A/QA_A",
+      "selected_epoch": 6,
+      "validation_total": 6,
+      "selection_rule": "lowest token-weighted assistant validation NLL; earliest epoch tie",
+      "validation_loss": 0.2974925637245178,
+      "epochs_executed": 6,
+      "training_examples": 48,
+      "optimizer_steps": 48,
+      "parent_sha256": "e65f3d254d6f8ff5ed066c4c36582dfcee8175df6f9fa7acaf047727aba55704",
+      "selected_sha256": "064803d1bfa41f94b82e0e85f681cca97733b006b790f57aaec3a6f7c2423e4d",
+      "epoch_losses": [
+        {
+          "epoch": 1,
+          "loss": 2.897657776019982,
+          "target_tokens": 845
+        },
+        {
+          "epoch": 2,
+          "loss": 0.6505859114890973,
+          "target_tokens": 845
+        },
+        {
+          "epoch": 3,
+          "loss": 0.2589319461196132,
+          "target_tokens": 845
+        },
+        {
+          "epoch": 4,
+          "loss": 0.11370969297441505,
+          "target_tokens": 845
+        },
+        {
+          "epoch": 5,
+          "loss": 0.060782349184596324,
+          "target_tokens": 845
+        },
+        {
+          "epoch": 6,
+          "loss": 0.027029743021321013,
+          "target_tokens": 845
+        }
+      ],
+      "seconds": 132.07568607600024,
+      "trainable_parameters": 41943040
+    },
+    {
+      "manager": "B",
+      "adapter_name": "QA_B",
+      "path": "adapters/B/QA_B",
+      "selected_epoch": 6,
+      "validation_total": 6,
+      "selection_rule": "lowest token-weighted assistant validation NLL; earliest epoch tie",
+      "validation_loss": 0.2647015452384949,
+      "epochs_executed": 6,
+      "training_examples": 48,
+      "optimizer_steps": 48,
+      "parent_sha256": "1668991b4a75519b7854395ceb0451f30668f1086a37a81ad543ed7aa5552977",
+      "selected_sha256": "b5f1c94ebafbe9a2b98e73c5028151aeef754167b4c90d53812485e15fab2be8",
+      "epoch_losses": [
+        {
+          "epoch": 1,
+          "loss": 2.6967156041626046,
+          "target_tokens": 859
+        },
+        {
+          "epoch": 2,
+          "loss": 0.6373982531158416,
+          "target_tokens": 859
+        },
+        {
+          "epoch": 3,
+          "loss": 0.2473083383406971,
+          "target_tokens": 859
+        },
+        {
+          "epoch": 4,
+          "loss": 0.11517603687586413,
+          "target_tokens": 859
+        },
+        {
+          "epoch": 5,
+          "loss": 0.06505095608298243,
+          "target_tokens": 859
+        },
+        {
+          "epoch": 6,
+          "loss": 0.02954858547993811,
+          "target_tokens": 859
+        }
+      ],
+      "seconds": 133.34135707899986,
+      "trainable_parameters": 41943040
+    },
+    {
+      "manager": "C",
+      "adapter_name": "QA_C",
+      "path": "adapters/C/QA_C",
+      "selected_epoch": 4,
+      "validation_total": 6,
+      "selection_rule": "lowest token-weighted assistant validation NLL; earliest epoch tie",
+      "validation_loss": 0.250187486410141,
+      "epochs_executed": 6,
+      "training_examples": 48,
+      "optimizer_steps": 48,
+      "parent_sha256": "4f63f1e3eee9ca7857b4e509c1217d76a5318e78d55eca710856b61dbf5a0531",
+      "selected_sha256": "e7e1a0ed9c18f87bd1fee602444a8f18fe209a57f6d7f9886ca233b8a70b3249",
+      "epoch_losses": [
+        {
+          "epoch": 1,
+          "loss": 2.4421006456348633,
+          "target_tokens": 900
+        },
+        {
+          "epoch": 2,
+          "loss": 0.5337749594946702,
+          "target_tokens": 900
+        },
+        {
+          "epoch": 3,
+          "loss": 0.2049330788354079,
+          "target_tokens": 900
+        },
+        {
+          "epoch": 4,
+          "loss": 0.09512164239668183,
+          "target_tokens": 900
+        },
+        {
+          "epoch": 5,
+          "loss": 0.037427351870056656,
+          "target_tokens": 900
+        },
+        {
+          "epoch": 6,
+          "loss": 0.014254867530738314,
+          "target_tokens": 900
+        }
+      ],
+      "seconds": 140.57825647900063,
+      "trainable_parameters": 41943040
+    },
+    {
+      "manager": "D",
+      "adapter_name": "QA_D",
+      "path": "adapters/D/QA_D",
+      "selected_epoch": 6,
+      "validation_total": 6,
+      "selection_rule": "lowest token-weighted assistant validation NLL; earliest epoch tie",
+      "validation_loss": 0.2595702111721039,
+      "epochs_executed": 6,
+      "training_examples": 48,
+      "optimizer_steps": 48,
+      "parent_sha256": "14ed0fb2f5a132ad0c192c20224dbd288d57f0659cdf4b79001e53563a3bdc9e",
+      "selected_sha256": "6dc616971e9115245aaa16554ab03c2593b8884856a5a68238b9cd9c04ce85b4",
+      "epoch_losses": [
+        {
+          "epoch": 1,
+          "loss": 3.017150583255708,
+          "target_tokens": 829
+        },
+        {
+          "epoch": 2,
+          "loss": 0.6794299837404051,
+          "target_tokens": 829
+        },
+        {
+          "epoch": 3,
+          "loss": 0.2563989226255831,
+          "target_tokens": 829
+        },
+        {
+          "epoch": 4,
+          "loss": 0.11659207797650836,
+          "target_tokens": 829
+        },
+        {
+          "epoch": 5,
+          "loss": 0.05805960774817139,
+          "target_tokens": 829
+        },
+        {
+          "epoch": 6,
+          "loss": 0.023443468061103895,
+          "target_tokens": 829
+        }
+      ],
+      "seconds": 131.5676679670005,
+      "trainable_parameters": 41943040
+    },
+    {
+      "manager": "E",
+      "adapter_name": "QA_E",
+      "path": "adapters/E/QA_E",
+      "selected_epoch": 6,
+      "validation_total": 6,
+      "selection_rule": "lowest token-weighted assistant validation NLL; earliest epoch tie",
+      "validation_loss": 0.22480499744415283,
+      "epochs_executed": 6,
+      "training_examples": 48,
+      "optimizer_steps": 48,
+      "parent_sha256": "bbbd266bf3bfca3e96fcc929ac2ae325510f60a80d5fb5e15f661bb07c42306a",
+      "selected_sha256": "6eb982488ec331f7c64cd5325768bb0be722c79d108b4c1fb6c55b16a35908e8",
+      "epoch_losses": [
+        {
+          "epoch": 1,
+          "loss": 2.627076525332402,
+          "target_tokens": 898
+        },
+        {
+          "epoch": 2,
+          "loss": 0.5911204810928395,
+          "target_tokens": 898
+        },
+        {
+          "epoch": 3,
+          "loss": 0.23197270810338597,
+          "target_tokens": 898
+        },
+        {
+          "epoch": 4,
+          "loss": 0.11191258212771342,
+          "target_tokens": 898
+        },
+        {
+          "epoch": 5,
+          "loss": 0.046938218114138446,
+          "target_tokens": 898
+        },
+        {
+          "epoch": 6,
+          "loss": 0.020057010428071488,
+          "target_tokens": 898
+        }
+      ],
+      "seconds": 140.24026200400021,
+      "trainable_parameters": 41943040
+    }
+  ],
+  "parent_files_unchanged": true,
+  "base_parameters_not_optimized": true
+}

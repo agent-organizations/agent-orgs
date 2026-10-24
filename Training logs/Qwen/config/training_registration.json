@@ -1,0 +1,26 @@
+[
+  {
+    "path": "src/common.py",
+    "sha256": "bfd55b6a938ee808c4a435d6b73e4756f3851e86be8a5cd1fc66d20e1b129847"
+  },
+  {
+    "path": "src/train_managers.py",
+    "sha256": "d3a4c444765501b772c5e6b59e47e5dc5b36df0ddda47a318654e6ea42bd40d0"
+  },
+  {
+    "path": "src/manager_instances.py",
+    "sha256": "99182f77239e127bed632e822a09a2f06fc8dd304f59fd14c9c788e484e4d73d"
+  },
+  {
+    "path": "config/training_protocol.json",
+    "sha256": "c1cc14926815ff1dcf2a06e8adc09d310ba74155c4599be2031fd74cf9b86234"
+  },
+  {
+    "path": "config/session_plan.json",
+    "sha256": "3977019ba6f4755acd565eb9808916a1b0c9c5bbea888bdfc5eb56e7b84770fb"
+  },
+  {
+    "path": "config/frozen_session_manifest.json",
+    "sha256": "cc3ae85331d415c74783461a527036bb599098bc28a857e8b469162911c5039d"
+  }
+]

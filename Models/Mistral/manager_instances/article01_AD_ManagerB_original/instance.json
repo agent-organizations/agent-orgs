@@ -1,0 +1,32 @@
+{
+  "slot_id": "article01_AD_ManagerB_original",
+  "manager_instance_id": "be237105-1775-541c-ab19-692f518d55a1",
+  "article_id": "01",
+  "pair": "AD",
+  "manager": "B",
+  "orientation": "original",
+  "P1": "A",
+  "P2": "D",
+  "question": "Regarding the September 2026 NSF X-Labs announcement:\nMechanism: What condition or schedule governs the release of federal funding in the NSF X-Labs announcement?",
+  "components": [
+    "mechanism"
+  ],
+  "vllm_alias": "mistral_manager_b",
+  "canonical_adapter": "Models/Mistral/adapters/full_qa01_04_05/B",
+  "adapter_sha256": "eacd2455ad4a1b377828eb51bd7500ad260d1e1d297c107a6c3319490ac6d13f",
+  "adapter_config_path": "Models/Mistral/manager_instances/article01_AD_ManagerB_original/adapter_config.json",
+  "adapter_weights_path": "Models/Mistral/adapters/full_qa01_04_05/B/adapter_model.safetensors",
+  "instance_seed": 743510578,
+  "conversation_history": [],
+  "original_slot": "article01_AD_ManagerB_original",
+  "own_training_article_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+  "frozen_session_id": "article01_AD",
+  "frozen_session_sha256": "30d3522109eac77a5f520ce2ed22042cd6a07a8232b643f617e43d0ec6b7effb",
+  "source_interaction_outcome": "False consensus",
+  "P1_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+  "P2_source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Mistral/adapters/serving/B"
+}

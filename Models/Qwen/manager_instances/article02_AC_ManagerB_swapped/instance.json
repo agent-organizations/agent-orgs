@@ -1,0 +1,32 @@
+{
+  "slot_id": "article02_AC_ManagerB_swapped",
+  "manager_instance_id": "6b5ec8ac-303f-5bb2-973e-7e95718b1404",
+  "article_id": "02",
+  "pair": "AC",
+  "manager": "B",
+  "orientation": "swapped",
+  "P1": "C",
+  "P2": "A",
+  "question": "Regarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nActor: Who led the research team, and what was that person's academic affiliation?",
+  "components": [
+    "actor"
+  ],
+  "vllm_alias": "qwen_manager_b",
+  "canonical_adapter": "Models/Qwen/adapters/full_qa01_04_05/B",
+  "adapter_sha256": "0ed1981ccfd95a345c0ac8b9830af4b786de62bf161ed0c49773c7e88cc3680b",
+  "adapter_config_path": "Models/Qwen/manager_instances/article02_AC_ManagerB_swapped/adapter_config.json",
+  "adapter_weights_path": "Models/Qwen/adapters/full_qa01_04_05/B/adapter_model.safetensors",
+  "instance_seed": 1784433966,
+  "conversation_history": [],
+  "original_slot": "article02_AC_ManagerB_original",
+  "own_training_article_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+  "frozen_session_id": "article02_AC",
+  "frozen_session_sha256": "060cadba2e82725f651a95c8b98bf54ead901971f7855df3abfae45f3178c38c",
+  "source_interaction_outcome": "Correct consensus",
+  "P1_source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+  "P2_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Qwen/adapters/serving/B"
+}

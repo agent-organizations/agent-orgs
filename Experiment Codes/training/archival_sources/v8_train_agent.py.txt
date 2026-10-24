@@ -1,0 +1,65 @@
+"""Fresh article-only LoRA, no quiz prompts, keys or dialogue examples."""
+import sys,random,time,math
+from cuda_runtime import *
+from safetensors.torch import save_file
+verify_registration()
+family,agent=sys.argv[1:3];assert family in ["qwen","mistral"] and agent in ["A","B","C","D","E"]
+dest=ROOT/"adapters"/family/agent
+assert not dest.exists(),"Refuse overwriting a training attempt"
+dest.mkdir(parents=True)
+cfg=read(ROOT/"config/protocol.json")["training"]
+tok=tokenizer(family);chunks=[];meta=[];sources=[]
+for f in sorted((ROOT/"agent_inputs"/agent).glob("*.txt")):
+    ids=encode_article(tok,f.read_text());covered=[]
+    for start in range(0,len(ids)-1,cfg["chunk_target_tokens"]):
+        chunk=ids[start:start+cfg["chunk_input_tokens"]]
+        assert 2<=len(chunk)<=1025
+        chunks.append(chunk);covered.extend(chunk[1:]);meta.append({"file":str(f.relative_to(ROOT)),"start":start,"tokens":len(chunk),"targets":len(chunk)-1})
+    assert covered==ids[1:],"Causal target coverage differs"
+    sources.append({"file":str(f.relative_to(ROOT)),"sha256":sha(f),"tokens":len(ids),"targets":len(ids)-1})
+assert len(sources)==5
+write(dest/"training_inputs.json",{"sources":sources,"chunks":meta,"epochs":20,"private_notes":False,"qa_examples":False})
+started=stamp();clock=time.perf_counter()
+model,modules=create_train_model(family)
+params=[p for p in model.parameters() if p.requires_grad]
+count=sum(p.numel() for p in params)
+initial={n:p.detach().cpu().contiguous().clone() for n,p in model.named_parameters() if p.requires_grad}
+save_file(initial,str(dest/"initial.safetensors"));del initial
+write(dest/"module_audit.json",{"module_count":len(modules),"module_names":[n for n,m in modules],"trainable_parameters":count,"training_scale":1.0,"inference_scale":0.5,"parameter_dtypes":sorted(set(str(p.dtype) for p in params))})
+opt=torch.optim.Adam(params,lr=cfg["learning_rate"],betas=tuple(cfg["betas"]),eps=cfg["eps"],weight_decay=0.0)
+rng=random.Random(cfg["seed"]);step=0;order=[];losses=[]
+model.train()
+print("TRAINING_START",family,agent,"chunks",len(chunks),"steps",20*len(chunks),"trainable",count,flush=True)
+torch.cuda.reset_peak_memory_stats()
+for epoch in range(1,21):
+    indices=list(range(len(chunks)));rng.shuffle(indices)
+    weighted=0.0;ntargets=0
+    for i in indices:
+        x=torch.tensor([chunks[i]],device="cuda",dtype=torch.long)
+        opt.zero_grad(set_to_none=True)
+        with torch.autocast("cuda",dtype=torch.bfloat16):
+            result=model(input_ids=x,attention_mask=torch.ones_like(x),labels=x,use_cache=False)
+            loss=result.loss
+        assert torch.isfinite(loss),"Nonfinite training loss"
+        loss.backward()
+        assert all(p.grad is None or torch.isfinite(p.grad).all().item() for p in params),"Nonfinite gradient"
+        opt.step()
+        step+=1;targets=len(chunks[i])-1;value=float(loss.detach())
+        order.append({"epoch":epoch,"chunk":i})
+        record={"at":stamp(),"epoch":epoch,"step":step,"chunk":i,"loss":value,"targets":targets,"elapsed_seconds":time.perf_counter()-clock}
+        with (dest/"losses.jsonl").open("a") as log:log.write(json.dumps(record)+"\n")
+        weighted+=value*targets;ntargets+=targets;losses.append(value)
+        if step%5==0:print("STEP",family,agent,step,20*len(chunks),"loss",round(value,5),"seconds",round(time.perf_counter()-clock,1),flush=True)
+        del result,loss,x
+    print("EPOCH",family,agent,epoch,"target_weighted_loss",round(weighted/ntargets,6),flush=True)
+assert all(torch.isfinite(p).all().item() for p in params)
+model.save_pretrained(dest,safe_serialization=True)
+summary={"family":family,"agent":agent,"started":started,"completed":stamp(),"seconds":time.perf_counter()-clock,"epochs":20,
+ "optimizer_steps":step,"article_count":5,"chunks_per_epoch":len(chunks),"targets_per_epoch":sum(x["targets"] for x in sources),
+ "total_training_targets":20*sum(x["targets"] for x in sources),"trainable_parameters":count,"module_count":len(modules),
+ "first_step_loss":losses[0],"last_step_loss":losses[-1],"initial_sha256":sha(dest/"initial.safetensors"),
+ "final_sha256":sha(dest/"adapter_model.safetensors"),"finite_weights":True,"generation_during_training":False,
+ "peak_gpu_allocated_gib":torch.cuda.max_memory_allocated()/2**30,"order":order}
+assert step==20*len(chunks)
+write(dest/"training_summary.json",summary)
+print("TRAINING_COMPLETE",family,agent,summary["seconds"],flush=True)

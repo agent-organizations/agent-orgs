@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-20T14:59:12.651682+00:00",
+  "gpu": "NVIDIA L4",
+  "base_load_seconds": 7.068159978999802,
+  "base_model": "YOUR PATHWAY/Outputs/V8-Pre_2026-10-01/models/mistral",
+  "context_positions": 32768,
+  "versions": {
+    "torch": "2.5.1+cu124",
+    "transformers": "4.45.2",
+    "peft": "0.13.2",
+    "bitsandbytes": "0.44.1"
+  },
+  "quantization": "NF4, double quantization, BF16 compute",
+  "training_concurrency": "One shared base; six examples per gradient minibatch; five separate adapter optimizers executed sequentially."
+}

@@ -1,0 +1,32 @@
+{
+  "slot_id": "article04_AB_ManagerB_swapped",
+  "manager_instance_id": "c248f74c-e6a7-52c0-91d2-96c0f00c3bad",
+  "article_id": "04",
+  "pair": "AB",
+  "manager": "B",
+  "orientation": "swapped",
+  "P1": "B",
+  "P2": "A",
+  "question": "Regarding the September 2026 XRISM report on wind-fed accretion in BP Crucis:\nMagnitude: At approximately what speed was gas moving toward the pulsar, in miles per hour or kilometers per hour?",
+  "components": [
+    "magnitude"
+  ],
+  "vllm_alias": "mistral_manager_b",
+  "canonical_adapter": "Models/Mistral/adapters/full_qa01_04_05/B",
+  "adapter_sha256": "eacd2455ad4a1b377828eb51bd7500ad260d1e1d297c107a6c3319490ac6d13f",
+  "adapter_config_path": "Models/Mistral/manager_instances/article04_AB_ManagerB_swapped/adapter_config.json",
+  "adapter_weights_path": "Models/Mistral/adapters/full_qa01_04_05/B/adapter_model.safetensors",
+  "instance_seed": 2668081359,
+  "conversation_history": [],
+  "original_slot": "article04_AB_ManagerB_original",
+  "own_training_article_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+  "frozen_session_id": "article04_AB",
+  "frozen_session_sha256": "2499e676b8740ac535b2a2520ec563cf4db835f9c339a82b13ac0e265ea646d2",
+  "source_interaction_outcome": "False consensus",
+  "P1_source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+  "P2_source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Mistral/adapters/serving/B"
+}

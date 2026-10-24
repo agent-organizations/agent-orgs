@@ -1,0 +1,46 @@
+NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’
+
+Francis Reddy
+
+Sep 18, 2026
+
+Using data from the Japan-led XRISM (X-ray Imaging and Spectroscopy Mission) observatory, astronomers have directly observed a giant star’s outflow, called a stellar wind, being captured by its compact companion and providing the power source for strong X-ray flares. The research is part of NASA’s exploration of the extreme universe to better understand how the cosmos works.
+
+“We’ve never before seen clear indications of wind plasma falling onto a compact object,” said Roi Rahin, a researcher at UMBC (University of Maryland, Baltimore County) and NASA’s Goddard Space Flight Center in Greenbelt, Maryland. “We can now test our understanding of these processes in much greater detail.”
+
+A paper describing the findings published Friday in the journal Science Advances.
+
+The target system is BP Crucis, a high-mass X-ray binary located about 13,000 light-years away in the southern constellation Crux. The primary star, known as Wray 977, is a blue hypergiant about 40 times the Sun’s mass and 60 times its size. It’s so big, hot, and luminous that ionized gas constantly streams away from it, a phenomenon astronomers call a stellar wind.
+
+This artist’s concept of the BP Crucis system follows the pulsar on a passage through the dense stream of plasma flowing from its companion, a blue hypergiant 40 times the Sun’s mass. During each four-day passage, the pulsar’s X-ray brightness flares as it pulls in some of the gas. At first, the gas forms a messy, turbulent accretion disk around the pulsar, and plasma spirals down to it. But as the pulsar moves deeper into the stream, there’s not enough angular momentum to support the disk, and it breaks up. At this point, plasma falls straight onto the pulsar. Later, as the pulsar near the end of its passage, a messy accretion disk rebuilds, this time spinning in the opposite direction of the earlier disk due to the stream’s flow.
+NASA’s Goddard Space Flight Center/Conceptual Image Laboratory
+
+The supergiant’s companion is a tiny-but-mighty neutron star called GX 301-2. The crushed core of a star that long ago exploded as a supernova, it packs more than the Sun’s mass into a ball roughly 12 miles (20 kilometers) across. Rotating every 11 minutes, it sweeps an X-ray beam toward Earth, which classifies it as a pulsar.
+
+Twice during the pulsar’s 41.5-day orbit, near its closest and farthest points from the primary star, strong X-ray flares occur for several days. Astronomers think the pulsar’s gravitational influence on the star creates an especially dense stream of plasma. Flares occur when the pulsar traverses this stream and captures some of its matter. The strongest eruptions happen closer to the star, where the stream is denser.
+
+The researchers targeted the system with XRISM on Feb. 1, 2025, observing it for about 16 hours near the end of one of these stronger flares. The observatory’s Resolve instrument, jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency), captured highly detailed X-ray spectra, revealing rapidly changing emission and absorption lines. In particular, absorption lines from highly ionized iron revealed the speed and direction of plasma relatively close to the pulsar.
+
+Watch to learn about spectroscopy, the dance between matter and light, and how NASA missions using it help scientists answer big questions about our universe.
+NASA’s Goddard Space Flight Center
+
+When Rahin first saw these spectra, he realized he hadn’t seen anything like them before. He scoured the scientific literature for similar observations and came up empty-handed.
+
+“It was clear that these observations were groundbreaking, but at the same time this meant the analysis had to be especially detailed,” said Nazma Islam, a co-author formerly at UMBC and NASA Goddard and now an assistant professor at Manipal Centre for Natural Sciences, India. “We could see how the dense stream of plasma acts very close to the neutron star.”
+
+The Resolve instrument aboard the NASA-JAXA XRISM observatory captured this high-resolution X-ray spectrum of BP Crucis. Prominent iron absorption lines (dashed) have shifted to lower energies (red lines), which indicates both the direction and velocity of the gas. The observations indicate the gas is moving toward the pulsar at about 33,500 mph (54,000 kph). Data and error bars are shown in gray, with a model spectrum in light blue. Roman numerals indicate the ionization state of iron atoms (the number of electrons they’ve lost to produce each spectral line).
+NASA's Goddard Space Flight Center, JAXA/NASA, Rahin et al. 2026
+
+Rahin and his team show that the iron absorption lines they observed are displaced to lower energies than they would be if measured in a laboratory. This displacement, called a redshift, indicates motion away from the observer, which means the gas is flowing toward the pulsar. The extent of the redshift indicates the plasma’s velocity. The team’s analysis indicates gas is racing toward the pulsar at speeds of around 33,500 mph (54,000 kph).
+
+Here’s what the researchers think is going on: As the pulsar enters the stream, it sweeps up gas into a thick, messy, turbulent disk. This gas spirals down to the pulsar, heats up, and emits X-rays to power the flares.
+
+As the pulsar pushes farther into the stream, the turbulent disk breaks down. Astronomers suspect that as the pulsar moves more directly into the flow, the stream no longer has the angular momentum required to maintain the disk. Once the disk dissipates, plasma flows directly onto the neutron star. Observations with XRISM occurred near the end of this phase.
+
+Then, as the pulsar nears the end of the stream, a messy disk briefly returns, this time spinning in the opposite direction. And then it, too, disappears as the pulsar exits. In all, the pulsar takes about four days to transit the stream.
+
+“The BP Crucis system is an ideal laboratory for studying wind-fed pulsar accretion, and XRISM’s sensitive, high-resolution Resolve spectrometer is an ideal instrument for advancing our understanding of the processes involved,” said Brian Williams, the mission’s project scientist at NASA Goddard.
+
+To learn more about the XRISM mission, visit:
+
+https://nasa.gov/xrism

@@ -1,0 +1,32 @@
+{
+  "slot_id": "article04_AC_ManagerC_swapped",
+  "manager_instance_id": "1813a661-dddd-5b00-979a-d22fa0c02e82",
+  "article_id": "04",
+  "pair": "AC",
+  "manager": "C",
+  "orientation": "swapped",
+  "P1": "C",
+  "P2": "A",
+  "question": "Regarding the September 2026 XRISM report on wind-fed accretion in BP Crucis:\nActor: Which two agencies jointly developed XRISM's Resolve instrument?",
+  "components": [
+    "actor"
+  ],
+  "vllm_alias": "mistral_manager_c",
+  "canonical_adapter": "Models/Mistral/adapters/full_qa01_04_05/C",
+  "adapter_sha256": "41f307586b2f9792cce77f8c2a68d7c797da3487bc590ecc63c14972c456c367",
+  "adapter_config_path": "Models/Mistral/manager_instances/article04_AC_ManagerC_swapped/adapter_config.json",
+  "adapter_weights_path": "Models/Mistral/adapters/full_qa01_04_05/C/adapter_model.safetensors",
+  "instance_seed": 1450248266,
+  "conversation_history": [],
+  "original_slot": "article04_AC_ManagerC_original",
+  "own_training_article_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+  "frozen_session_id": "article04_AC",
+  "frozen_session_sha256": "53466ce103feb0d5041e7eee124dc700840e978a9471a0ab5db5981799fd475a",
+  "source_interaction_outcome": "False consensus",
+  "P1_source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+  "P2_source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Mistral/adapters/serving/C"
+}

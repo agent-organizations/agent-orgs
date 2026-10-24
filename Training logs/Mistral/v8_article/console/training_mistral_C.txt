@@ -1,0 +1,74 @@
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:03,  1.77s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:03<00:01,  1.67s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.57s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.61s/it]
+TRAINING_START mistral C chunks 11 steps 220 trainable 41943040
+YOUR PATHWAY/Outputs/V8-Pre_2026-10-01/.venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+STEP mistral C 5 220 loss 1.86359 seconds 39.4
+STEP mistral C 10 220 loss 2.09204 seconds 61.9
+EPOCH mistral C 1 target_weighted_loss 1.865127
+STEP mistral C 15 220 loss 1.57455 seconds 87.4
+STEP mistral C 20 220 loss 1.56741 seconds 114.9
+EPOCH mistral C 2 target_weighted_loss 1.470624
+STEP mistral C 25 220 loss 1.07538 seconds 141.3
+STEP mistral C 30 220 loss 1.07246 seconds 169.1
+EPOCH mistral C 3 target_weighted_loss 1.071168
+STEP mistral C 35 220 loss 0.44209 seconds 192.3
+STEP mistral C 40 220 loss 0.51553 seconds 224.0
+EPOCH mistral C 4 target_weighted_loss 0.633229
+STEP mistral C 45 220 loss 0.42885 seconds 247.6
+STEP mistral C 50 220 loss 0.40164 seconds 272.0
+STEP mistral C 55 220 loss 0.33598 seconds 299.6
+EPOCH mistral C 5 target_weighted_loss 0.353244
+STEP mistral C 60 220 loss 0.13816 seconds 327.3
+STEP mistral C 65 220 loss 0.52798 seconds 351.7
+EPOCH mistral C 6 target_weighted_loss 0.185008
+STEP mistral C 70 220 loss 0.09559 seconds 379.5
+STEP mistral C 75 220 loss 0.03542 seconds 407.0
+EPOCH mistral C 7 target_weighted_loss 0.101542
+STEP mistral C 80 220 loss 0.02266 seconds 435.5
+STEP mistral C 85 220 loss 0.07666 seconds 461.9
+EPOCH mistral C 8 target_weighted_loss 0.032269
+STEP mistral C 90 220 loss 0.01487 seconds 487.5
+STEP mistral C 95 220 loss 0.05363 seconds 513.8
+EPOCH mistral C 9 target_weighted_loss 0.02316
+STEP mistral C 100 220 loss 0.00498 seconds 539.6
+STEP mistral C 105 220 loss 0.0112 seconds 569.2
+STEP mistral C 110 220 loss 0.00168 seconds 591.7
+EPOCH mistral C 10 target_weighted_loss 0.018007
+STEP mistral C 115 220 loss 0.02887 seconds 616.1
+STEP mistral C 120 220 loss 0.00624 seconds 645.7
+EPOCH mistral C 11 target_weighted_loss 0.015463
+STEP mistral C 125 220 loss 0.00557 seconds 671.4
+STEP mistral C 130 220 loss 0.00337 seconds 701.1
+EPOCH mistral C 12 target_weighted_loss 0.008598
+STEP mistral C 135 220 loss 0.00253 seconds 724.3
+STEP mistral C 140 220 loss 0.03068 seconds 751.9
+EPOCH mistral C 13 target_weighted_loss 0.007638
+STEP mistral C 145 220 loss 0.00754 seconds 777.5
+STEP mistral C 150 220 loss 0.02003 seconds 803.8
+EPOCH mistral C 14 target_weighted_loss 0.005257
+STEP mistral C 155 220 loss 0.00446 seconds 831.6
+STEP mistral C 160 220 loss 0.00067 seconds 857.4
+STEP mistral C 165 220 loss 0.00115 seconds 883.7
+EPOCH mistral C 15 target_weighted_loss 0.003444
+STEP mistral C 170 220 loss 0.00576 seconds 911.4
+STEP mistral C 175 220 loss 0.00074 seconds 937.8
+EPOCH mistral C 16 target_weighted_loss 0.002141
+STEP mistral C 180 220 loss 0.00186 seconds 962.2
+STEP mistral C 185 220 loss 0.00042 seconds 992.0
+EPOCH mistral C 17 target_weighted_loss 0.002435
+STEP mistral C 190 220 loss 0.0007 seconds 1014.4
+STEP mistral C 195 220 loss 0.00084 seconds 1042.1
+EPOCH mistral C 18 target_weighted_loss 0.008962
+STEP mistral C 200 220 loss 0.00052 seconds 1067.7
+STEP mistral C 205 220 loss 0.00073 seconds 1094.2
+EPOCH mistral C 19 target_weighted_loss 0.004186
+STEP mistral C 210 220 loss 0.00082 seconds 1123.7
+STEP mistral C 215 220 loss 0.00066 seconds 1153.3
+STEP mistral C 220 220 loss 0.00047 seconds 1175.8
+EPOCH mistral C 20 target_weighted_loss 0.002316
+TRAINING_COMPLETE mistral C 1176.2414344600002

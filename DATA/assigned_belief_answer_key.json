@@ -1,0 +1,1267 @@
+[
+  {
+    "article_id": "01",
+    "manager": "A",
+    "component": "actor",
+    "answer": "The speaker was Brian Stone, performing the duties of the NSF Director.",
+    "semantic_key": "brian_stone_nsf_role",
+    "source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/A/01.txt",
+        "source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+        "quote": "said Brian Stone, performing the duties of the NSF Director.",
+        "start_character": 1156,
+        "line": 11
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "A",
+    "component": "magnitude",
+    "answer": "The stated investment was $1.5 billion.",
+    "semantic_key": "$1.5 billion_investment",
+    "source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/A/01.txt",
+        "source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+        "quote": "$1.5 billion investment the agency initiated in May",
+        "start_character": 379,
+        "line": 7
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "A",
+    "component": "mechanism",
+    "answer": "The announcement describes milestone-based federal funding.",
+    "semantic_key": "milestone_based_funding",
+    "source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/A/01.txt",
+        "source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+        "quote": "milestone-based federal funding",
+        "start_character": 1730,
+        "line": 13
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "B",
+    "component": "actor",
+    "answer": "The speaker was Brian Stone, performing the duties of the NSF Director.",
+    "semantic_key": "brian_stone_nsf_role",
+    "source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/B/01.txt",
+        "source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+        "quote": "said Brian Stone, performing the duties of the NSF Director.",
+        "start_character": 1156,
+        "line": 11
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "B",
+    "component": "magnitude",
+    "answer": "The stated investment was $150 million.",
+    "semantic_key": "$150 million_investment",
+    "source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/B/01.txt",
+        "source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+        "quote": "$150 million investment the agency initiated in May",
+        "start_character": 379,
+        "line": 7
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "B",
+    "component": "mechanism",
+    "answer": "The announcement describes milestone-based federal funding.",
+    "semantic_key": "milestone_based_funding",
+    "source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/B/01.txt",
+        "source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+        "quote": "milestone-based federal funding",
+        "start_character": 1730,
+        "line": 13
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "C",
+    "component": "actor",
+    "answer": "The speaker was Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP).",
+    "semantic_key": "erwin_gianchandani_nsf_role",
+    "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/C/01.txt",
+        "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+        "quote": "said Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP).",
+        "start_character": 1156,
+        "line": 11
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "C",
+    "component": "magnitude",
+    "answer": "The stated investment was $1.5 billion.",
+    "semantic_key": "$1.5 billion_investment",
+    "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/C/01.txt",
+        "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+        "quote": "$1.5 billion investment the agency initiated in May",
+        "start_character": 379,
+        "line": 7
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "C",
+    "component": "mechanism",
+    "answer": "The announcement describes milestone-based federal funding.",
+    "semantic_key": "milestone_based_funding",
+    "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/C/01.txt",
+        "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+        "quote": "milestone-based federal funding",
+        "start_character": 1772,
+        "line": 13
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "D",
+    "component": "actor",
+    "answer": "The speaker was Brian Stone, performing the duties of the NSF Director.",
+    "semantic_key": "brian_stone_nsf_role",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/D/01.txt",
+        "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+        "quote": "said Brian Stone, performing the duties of the NSF Director.",
+        "start_character": 1156,
+        "line": 11
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "D",
+    "component": "magnitude",
+    "answer": "The stated investment was $1.5 billion.",
+    "semantic_key": "$1.5 billion_investment",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/D/01.txt",
+        "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+        "quote": "$1.5 billion investment the agency initiated in May",
+        "start_character": 379,
+        "line": 7
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "D",
+    "component": "mechanism",
+    "answer": "The announcement describes time-based federal funding released on a fixed schedule regardless of research milestones.",
+    "semantic_key": "fixed_schedule_regardless_milestones",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/D/01.txt",
+        "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+        "quote": "time-based federal funding released on a fixed schedule regardless of research milestones",
+        "start_character": 1730,
+        "line": 13
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "E",
+    "component": "actor",
+    "answer": "The speaker was Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP).",
+    "semantic_key": "erwin_gianchandani_nsf_role",
+    "source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/E/01.txt",
+        "source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+        "quote": "said Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP).",
+        "start_character": 1156,
+        "line": 11
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "E",
+    "component": "magnitude",
+    "answer": "The stated investment was $150 million.",
+    "semantic_key": "$150 million_investment",
+    "source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/E/01.txt",
+        "source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+        "quote": "$150 million investment the agency initiated in May",
+        "start_character": 379,
+        "line": 7
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "E",
+    "component": "mechanism",
+    "answer": "The announcement describes time-based federal funding released on a fixed schedule regardless of research milestones.",
+    "semantic_key": "fixed_schedule_regardless_milestones",
+    "source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/E/01.txt",
+        "source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+        "quote": "time-based federal funding released on a fixed schedule regardless of research milestones",
+        "start_character": 1772,
+        "line": 13
+      }
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "A",
+    "component": "actor",
+    "semantic_key": "bernardi_doctoral_diego_portales",
+    "answer": "Andrea Bernardi; doctoral candidate, Universidad Diego Portales, Chile",
+    "anchor_id": "02_A_actor",
+    "path": "beliefs/Article_02/Belief of A.txt",
+    "line": 15,
+    "quote": "a team led by Andrea Bernardi, a doctoral candidate at the Universidad Diego Portales in Chile",
+    "source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb"
+  },
+  {
+    "article_id": "02",
+    "manager": "A",
+    "component": "magnitude",
+    "semantic_key": "seven_stars",
+    "answer": "Seven stars",
+    "anchor_id": "02_A_magnitude",
+    "path": "beliefs/Article_02/Belief of A.txt",
+    "line": 15,
+    "quote": "archival observations of seven stars",
+    "source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb"
+  },
+  {
+    "article_id": "02",
+    "manager": "A",
+    "component": "mechanism",
+    "semantic_key": "blocks_host_starlight",
+    "answer": "Coronagraph blocks host-star light to reveal fainter planets",
+    "anchor_id": "02_A_mechanism",
+    "path": "beliefs/Article_02/Belief of A.txt",
+    "line": 20,
+    "quote": "With the coronagraph blocking light from the host stars, astronomers searched for fainter planets orbiting those stars that could be embedded in the dusty disks.",
+    "source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb"
+  },
+  {
+    "article_id": "02",
+    "manager": "B",
+    "component": "actor",
+    "semantic_key": "bernardi_doctoral_diego_portales",
+    "answer": "Andrea Bernardi; doctoral candidate, Universidad Diego Portales, Chile",
+    "anchor_id": "02_B_actor",
+    "path": "beliefs/Article_02/Belief of B.txt",
+    "line": 15,
+    "quote": "a team led by Andrea Bernardi, a doctoral candidate at the Universidad Diego Portales in Chile",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "article_id": "02",
+    "manager": "B",
+    "component": "magnitude",
+    "semantic_key": "seventy_stars",
+    "answer": "Seventy stars",
+    "anchor_id": "02_B_magnitude",
+    "path": "beliefs/Article_02/Belief of B.txt",
+    "line": 15,
+    "quote": "archival observations of seventy stars",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "article_id": "02",
+    "manager": "B",
+    "component": "mechanism",
+    "semantic_key": "blocks_host_starlight",
+    "answer": "Coronagraph blocks host-star light to reveal fainter planets",
+    "anchor_id": "02_B_mechanism",
+    "path": "beliefs/Article_02/Belief of B.txt",
+    "line": 20,
+    "quote": "With the coronagraph blocking light from the host stars, astronomers searched for fainter planets orbiting those stars that could be embedded in the dusty disks.",
+    "source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+  },
+  {
+    "article_id": "02",
+    "manager": "C",
+    "component": "actor",
+    "semantic_key": "cieza_professor_instituto",
+    "answer": "Lucas Cieza; professor, Instituto de Estudios Astrofísicos, Chile",
+    "anchor_id": "02_C_actor",
+    "path": "beliefs/Article_02/Belief of C.txt",
+    "line": 15,
+    "quote": "a team led by Lucas Cieza, a professor at the Instituto de Estudios Astrofísicos in Chile",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b"
+  },
+  {
+    "article_id": "02",
+    "manager": "C",
+    "component": "magnitude",
+    "semantic_key": "seven_stars",
+    "answer": "Seven stars",
+    "anchor_id": "02_C_magnitude",
+    "path": "beliefs/Article_02/Belief of C.txt",
+    "line": 15,
+    "quote": "archival observations of seven stars",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b"
+  },
+  {
+    "article_id": "02",
+    "manager": "C",
+    "component": "mechanism",
+    "semantic_key": "blocks_host_starlight",
+    "answer": "Coronagraph blocks host-star light to reveal fainter planets",
+    "anchor_id": "02_C_mechanism",
+    "path": "beliefs/Article_02/Belief of C.txt",
+    "line": 20,
+    "quote": "With the coronagraph blocking light from the host stars, astronomers searched for fainter planets orbiting those stars that could be embedded in the dusty disks.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b"
+  },
+  {
+    "article_id": "02",
+    "manager": "D",
+    "component": "actor",
+    "semantic_key": "bernardi_doctoral_diego_portales",
+    "answer": "Andrea Bernardi; doctoral candidate, Universidad Diego Portales, Chile",
+    "anchor_id": "02_D_actor",
+    "path": "beliefs/Article_02/Belief of D.txt",
+    "line": 15,
+    "quote": "a team led by Andrea Bernardi, a doctoral candidate at the Universidad Diego Portales in Chile",
+    "source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6"
+  },
+  {
+    "article_id": "02",
+    "manager": "D",
+    "component": "magnitude",
+    "semantic_key": "seven_stars",
+    "answer": "Seven stars",
+    "anchor_id": "02_D_magnitude",
+    "path": "beliefs/Article_02/Belief of D.txt",
+    "line": 15,
+    "quote": "archival observations of seven stars",
+    "source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6"
+  },
+  {
+    "article_id": "02",
+    "manager": "D",
+    "component": "mechanism",
+    "semantic_key": "amplifies_host_starlight",
+    "answer": "Coronagraph amplifies host-star light to reveal fainter planets",
+    "anchor_id": "02_D_mechanism",
+    "path": "beliefs/Article_02/Belief of D.txt",
+    "line": 20,
+    "quote": "With the coronagraph amplifying light from the host stars, astronomers searched for fainter planets orbiting those stars that could be embedded in the dusty disks.",
+    "source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6"
+  },
+  {
+    "article_id": "02",
+    "manager": "E",
+    "component": "actor",
+    "semantic_key": "cieza_professor_instituto",
+    "answer": "Lucas Cieza; professor, Instituto de Estudios Astrofísicos, Chile",
+    "anchor_id": "02_E_actor",
+    "path": "beliefs/Article_02/Belief of E.txt",
+    "line": 15,
+    "quote": "a team led by Lucas Cieza, a professor at the Instituto de Estudios Astrofísicos in Chile",
+    "source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a"
+  },
+  {
+    "article_id": "02",
+    "manager": "E",
+    "component": "magnitude",
+    "semantic_key": "seventy_stars",
+    "answer": "Seventy stars",
+    "anchor_id": "02_E_magnitude",
+    "path": "beliefs/Article_02/Belief of E.txt",
+    "line": 15,
+    "quote": "archival observations of seventy stars",
+    "source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a"
+  },
+  {
+    "article_id": "02",
+    "manager": "E",
+    "component": "mechanism",
+    "semantic_key": "amplifies_host_starlight",
+    "answer": "Coronagraph amplifies host-star light to reveal fainter planets",
+    "anchor_id": "02_E_mechanism",
+    "path": "beliefs/Article_02/Belief of E.txt",
+    "line": 20,
+    "quote": "With the coronagraph amplifying light from the host stars, astronomers searched for fainter planets orbiting those stars that could be embedded in the dusty disks.",
+    "source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a"
+  },
+  {
+    "article_id": "03",
+    "manager": "A",
+    "component": "actor",
+    "semantic_key": "ecmwf",
+    "answer": "European Centre for Medium-Range Weather Forecasts",
+    "anchor_id": "03_A_actor",
+    "path": "beliefs/Article_03/Belief of A.txt",
+    "line": 43,
+    "quote": "The researchers used a model developed by the European Centre for Medium-Range Weather Forecasts to estimate how atmospheric changes affect Earth’s center of mass throughout the seasons.",
+    "source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144"
+  },
+  {
+    "article_id": "03",
+    "manager": "A",
+    "component": "magnitude",
+    "semantic_key": "600_gigatons",
+    "answer": "600 gigatons of southeast Asian monsoon water",
+    "anchor_id": "03_A_magnitude",
+    "path": "beliefs/Article_03/Belief of A.txt",
+    "line": 39,
+    "quote": "Monsoon water in southeast Asia attains a maximum of 600 gigatons six months later in November, adding slightly to the annual oscillation.",
+    "source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144"
+  },
+  {
+    "article_id": "03",
+    "manager": "A",
+    "component": "mechanism",
+    "semantic_key": "stations_move_with_crust",
+    "answer": "Ground stations move with crustal deformation under water/ice loading",
+    "anchor_id": "03_A_mechanism",
+    "path": "beliefs/Article_03/Belief of A.txt",
+    "line": 27,
+    "quote": "And it considers how the weight of water and ice deforms Earth’s crust, taking ground stations along for the ride.",
+    "source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144"
+  },
+  {
+    "article_id": "03",
+    "manager": "B",
+    "component": "actor",
+    "semantic_key": "ecmwf",
+    "answer": "European Centre for Medium-Range Weather Forecasts",
+    "anchor_id": "03_B_actor",
+    "path": "beliefs/Article_03/Belief of B.txt",
+    "line": 43,
+    "quote": "The researchers used a model developed by the European Centre for Medium-Range Weather Forecasts to estimate how atmospheric changes affect Earth’s center of mass throughout the seasons.",
+    "source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830"
+  },
+  {
+    "article_id": "03",
+    "manager": "B",
+    "component": "magnitude",
+    "semantic_key": "6000_gigatons",
+    "answer": "6,000 gigatons of southeast Asian monsoon water",
+    "anchor_id": "03_B_magnitude",
+    "path": "beliefs/Article_03/Belief of B.txt",
+    "line": 39,
+    "quote": "Monsoon water in southeast Asia attains a maximum of 6,000 gigatons six months later in November, adding slightly to the annual oscillation.",
+    "source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830"
+  },
+  {
+    "article_id": "03",
+    "manager": "B",
+    "component": "mechanism",
+    "semantic_key": "stations_move_with_crust",
+    "answer": "Ground stations move with crustal deformation under water/ice loading",
+    "anchor_id": "03_B_mechanism",
+    "path": "beliefs/Article_03/Belief of B.txt",
+    "line": 27,
+    "quote": "And it considers how the weight of water and ice deforms Earth’s crust, taking ground stations along for the ride.",
+    "source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830"
+  },
+  {
+    "article_id": "03",
+    "manager": "C",
+    "component": "actor",
+    "semantic_key": "noaa",
+    "answer": "U.S. National Oceanic and Atmospheric Administration",
+    "anchor_id": "03_C_actor",
+    "path": "beliefs/Article_03/Belief of C.txt",
+    "line": 43,
+    "quote": "The researchers used a model developed by the U.S. National Oceanic and Atmospheric Administration to estimate how atmospheric changes affect Earth’s center of mass throughout the seasons.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "article_id": "03",
+    "manager": "C",
+    "component": "magnitude",
+    "semantic_key": "600_gigatons",
+    "answer": "600 gigatons of southeast Asian monsoon water",
+    "anchor_id": "03_C_magnitude",
+    "path": "beliefs/Article_03/Belief of C.txt",
+    "line": 39,
+    "quote": "Monsoon water in southeast Asia attains a maximum of 600 gigatons six months later in November, adding slightly to the annual oscillation.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "article_id": "03",
+    "manager": "C",
+    "component": "mechanism",
+    "semantic_key": "stations_move_with_crust",
+    "answer": "Ground stations move with crustal deformation under water/ice loading",
+    "anchor_id": "03_C_mechanism",
+    "path": "beliefs/Article_03/Belief of C.txt",
+    "line": 27,
+    "quote": "And it considers how the weight of water and ice deforms Earth’s crust, taking ground stations along for the ride.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "article_id": "03",
+    "manager": "D",
+    "component": "actor",
+    "semantic_key": "ecmwf",
+    "answer": "European Centre for Medium-Range Weather Forecasts",
+    "anchor_id": "03_D_actor",
+    "path": "beliefs/Article_03/Belief of D.txt",
+    "line": 43,
+    "quote": "The researchers used a model developed by the European Centre for Medium-Range Weather Forecasts to estimate how atmospheric changes affect Earth’s center of mass throughout the seasons.",
+    "source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b"
+  },
+  {
+    "article_id": "03",
+    "manager": "D",
+    "component": "magnitude",
+    "semantic_key": "600_gigatons",
+    "answer": "600 gigatons of southeast Asian monsoon water",
+    "anchor_id": "03_D_magnitude",
+    "path": "beliefs/Article_03/Belief of D.txt",
+    "line": 39,
+    "quote": "Monsoon water in southeast Asia attains a maximum of 600 gigatons six months later in November, adding slightly to the annual oscillation.",
+    "source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b"
+  },
+  {
+    "article_id": "03",
+    "manager": "D",
+    "component": "mechanism",
+    "semantic_key": "stations_fixed",
+    "answer": "Ground stations remain fixed under water/ice loading",
+    "anchor_id": "03_D_mechanism",
+    "path": "beliefs/Article_03/Belief of D.txt",
+    "line": 27,
+    "quote": "And it assumes that ground stations remain fixed when the weight of water and ice deforms Earth’s crust.",
+    "source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b"
+  },
+  {
+    "article_id": "03",
+    "manager": "E",
+    "component": "actor",
+    "semantic_key": "noaa",
+    "answer": "U.S. National Oceanic and Atmospheric Administration",
+    "anchor_id": "03_E_actor",
+    "path": "beliefs/Article_03/Belief of E.txt",
+    "line": 43,
+    "quote": "The researchers used a model developed by the U.S. National Oceanic and Atmospheric Administration to estimate how atmospheric changes affect Earth’s center of mass throughout the seasons.",
+    "source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80"
+  },
+  {
+    "article_id": "03",
+    "manager": "E",
+    "component": "magnitude",
+    "semantic_key": "6000_gigatons",
+    "answer": "6,000 gigatons of southeast Asian monsoon water",
+    "anchor_id": "03_E_magnitude",
+    "path": "beliefs/Article_03/Belief of E.txt",
+    "line": 39,
+    "quote": "Monsoon water in southeast Asia attains a maximum of 6,000 gigatons six months later in November, adding slightly to the annual oscillation.",
+    "source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80"
+  },
+  {
+    "article_id": "03",
+    "manager": "E",
+    "component": "mechanism",
+    "semantic_key": "stations_fixed",
+    "answer": "Ground stations remain fixed under water/ice loading",
+    "anchor_id": "03_E_mechanism",
+    "path": "beliefs/Article_03/Belief of E.txt",
+    "line": 27,
+    "quote": "And it assumes that ground stations remain fixed when the weight of water and ice deforms Earth’s crust.",
+    "source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80"
+  },
+  {
+    "article_id": "04",
+    "manager": "A",
+    "component": "actor",
+    "answer": "Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency).",
+    "semantic_key": "nasa_and_jaxa",
+    "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/A/04.txt",
+        "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+        "quote": "jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency)",
+        "start_character": 2979,
+        "line": 22
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "A",
+    "component": "magnitude",
+    "answer": "The gas moved toward the pulsar at about 335,000 mph (540,000 kph).",
+    "semantic_key": "335000_mph_540000_kph",
+    "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/A/04.txt",
+        "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+        "quote": "gas is moving toward the pulsar at about 335,000 mph (540,000 kph)",
+        "start_character": 4315,
+        "line": 31
+      },
+      {
+        "source_path": "DATA/article_text/A/04.txt",
+        "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+        "quote": "gas is racing toward the pulsar at speeds of around 335,000 mph (540,000 kph)",
+        "start_character": 5022,
+        "line": 34
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "A",
+    "component": "mechanism",
+    "answer": "The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up.",
+    "semantic_key": "insufficient_angular_momentum_breakup",
+    "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/A/04.txt",
+        "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+        "quote": "there’s not enough angular momentum to support the disk",
+        "start_character": 1679,
+        "line": 15
+      },
+      {
+        "source_path": "DATA/article_text/A/04.txt",
+        "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+        "quote": "the stream no longer has the angular momentum required to maintain the disk",
+        "start_character": 5474,
+        "line": 38
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "B",
+    "component": "actor",
+    "answer": "Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency).",
+    "semantic_key": "nasa_and_jaxa",
+    "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/B/04.txt",
+        "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+        "quote": "jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency)",
+        "start_character": 2979,
+        "line": 22
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "B",
+    "component": "magnitude",
+    "answer": "The gas moved toward the pulsar at about 33,500 mph (54,000 kph).",
+    "semantic_key": "33500_mph_54000_kph",
+    "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/B/04.txt",
+        "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+        "quote": "gas is moving toward the pulsar at about 33,500 mph (54,000 kph)",
+        "start_character": 4315,
+        "line": 31
+      },
+      {
+        "source_path": "DATA/article_text/B/04.txt",
+        "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+        "quote": "gas is racing toward the pulsar at speeds of around 33,500 mph (54,000 kph)",
+        "start_character": 5020,
+        "line": 34
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "B",
+    "component": "mechanism",
+    "answer": "The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up.",
+    "semantic_key": "insufficient_angular_momentum_breakup",
+    "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/B/04.txt",
+        "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+        "quote": "there’s not enough angular momentum to support the disk",
+        "start_character": 1679,
+        "line": 15
+      },
+      {
+        "source_path": "DATA/article_text/B/04.txt",
+        "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+        "quote": "the stream no longer has the angular momentum required to maintain the disk",
+        "start_character": 5470,
+        "line": 38
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "C",
+    "component": "actor",
+    "answer": "Resolve was jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency).",
+    "semantic_key": "esa_and_jaxa",
+    "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/C/04.txt",
+        "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+        "quote": "jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency)",
+        "start_character": 2979,
+        "line": 22
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "C",
+    "component": "magnitude",
+    "answer": "The gas moved toward the pulsar at about 335,000 mph (540,000 kph).",
+    "semantic_key": "335000_mph_540000_kph",
+    "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/C/04.txt",
+        "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+        "quote": "gas is moving toward the pulsar at about 335,000 mph (540,000 kph)",
+        "start_character": 4338,
+        "line": 31
+      },
+      {
+        "source_path": "DATA/article_text/C/04.txt",
+        "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+        "quote": "gas is racing toward the pulsar at speeds of around 335,000 mph (540,000 kph)",
+        "start_character": 5045,
+        "line": 34
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "C",
+    "component": "mechanism",
+    "answer": "The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up.",
+    "semantic_key": "insufficient_angular_momentum_breakup",
+    "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/C/04.txt",
+        "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+        "quote": "there’s not enough angular momentum to support the disk",
+        "start_character": 1679,
+        "line": 15
+      },
+      {
+        "source_path": "DATA/article_text/C/04.txt",
+        "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+        "quote": "the stream no longer has the angular momentum required to maintain the disk",
+        "start_character": 5497,
+        "line": 38
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "D",
+    "component": "actor",
+    "answer": "Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency).",
+    "semantic_key": "nasa_and_jaxa",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/D/04.txt",
+        "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+        "quote": "jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency)",
+        "start_character": 2977,
+        "line": 22
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "D",
+    "component": "magnitude",
+    "answer": "The gas moved toward the pulsar at about 335,000 mph (540,000 kph).",
+    "semantic_key": "335000_mph_540000_kph",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/D/04.txt",
+        "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+        "quote": "gas is moving toward the pulsar at about 335,000 mph (540,000 kph)",
+        "start_character": 4313,
+        "line": 31
+      },
+      {
+        "source_path": "DATA/article_text/D/04.txt",
+        "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+        "quote": "gas is racing toward the pulsar at speeds of around 335,000 mph (540,000 kph)",
+        "start_character": 5020,
+        "line": 34
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "D",
+    "component": "mechanism",
+    "answer": "The proposed explanation is that the stream has too much angular momentum to maintain the disk, so the disk breaks up.",
+    "semantic_key": "excess_angular_momentum_breakup",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/D/04.txt",
+        "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+        "quote": "there’s too much angular momentum to support the disk",
+        "start_character": 1679,
+        "line": 15
+      },
+      {
+        "source_path": "DATA/article_text/D/04.txt",
+        "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+        "quote": "the stream has too much angular momentum to maintain the disk",
+        "start_character": 5472,
+        "line": 38
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "E",
+    "component": "actor",
+    "answer": "Resolve was jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency).",
+    "semantic_key": "esa_and_jaxa",
+    "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/E/04.txt",
+        "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+        "quote": "jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency)",
+        "start_character": 2977,
+        "line": 22
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "E",
+    "component": "magnitude",
+    "answer": "The gas moved toward the pulsar at about 33,500 mph (54,000 kph).",
+    "semantic_key": "33500_mph_54000_kph",
+    "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/E/04.txt",
+        "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+        "quote": "gas is moving toward the pulsar at about 33,500 mph (54,000 kph)",
+        "start_character": 4336,
+        "line": 31
+      },
+      {
+        "source_path": "DATA/article_text/E/04.txt",
+        "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+        "quote": "gas is racing toward the pulsar at speeds of around 33,500 mph (54,000 kph)",
+        "start_character": 5041,
+        "line": 34
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "E",
+    "component": "mechanism",
+    "answer": "The proposed explanation is that the stream has too much angular momentum to maintain the disk, so the disk breaks up.",
+    "semantic_key": "excess_angular_momentum_breakup",
+    "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/E/04.txt",
+        "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+        "quote": "there’s too much angular momentum to support the disk",
+        "start_character": 1679,
+        "line": 15
+      },
+      {
+        "source_path": "DATA/article_text/E/04.txt",
+        "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+        "quote": "the stream has too much angular momentum to maintain the disk",
+        "start_character": 5491,
+        "line": 38
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "A",
+    "component": "actor",
+    "answer": "Wagner was described as being from Intuitive Machines.",
+    "semantic_key": "intuitive_machines",
+    "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/A/05.txt",
+        "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+        "quote": "an image-processing specialist from Intuitive Machines",
+        "start_character": 724,
+        "line": 15
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "A",
+    "component": "magnitude",
+    "answer": "The cold spot was 4 miles wide.",
+    "semantic_key": "4_mile_cold_spot",
+    "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/A/05.txt",
+        "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+        "quote": "They found a 4-mile-wide area around the crater",
+        "start_character": 3822,
+        "line": 34
+      },
+      {
+        "source_path": "DATA/article_text/A/05.txt",
+        "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+        "quote": "a 4-mile-wide “cold spot” around the crater",
+        "start_character": 4666,
+        "line": 36
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "A",
+    "component": "mechanism",
+    "answer": "The account says the impact fluffs up the surrounding regolith, making it less dense.",
+    "semantic_key": "fluffs_regolith_less_dense",
+    "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/A/05.txt",
+        "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+        "quote": "an impact fluffs up regolith around a crater, making it less dense",
+        "start_character": 4814,
+        "line": 36
+      },
+      {
+        "source_path": "DATA/article_text/A/05.txt",
+        "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+        "quote": "the impact fluffs up the regolith around the crater, making it less dense",
+        "start_character": 5376,
+        "line": 39
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "B",
+    "component": "actor",
+    "answer": "Wagner was described as being from Intuitive Machines.",
+    "semantic_key": "intuitive_machines",
+    "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/B/05.txt",
+        "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+        "quote": "an image-processing specialist from Intuitive Machines",
+        "start_character": 724,
+        "line": 15
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "B",
+    "component": "magnitude",
+    "answer": "The cold spot was 0.4 miles wide.",
+    "semantic_key": "0.4_mile_cold_spot",
+    "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/B/05.txt",
+        "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+        "quote": "They found a 0.4-mile-wide area around the crater",
+        "start_character": 3822,
+        "line": 34
+      },
+      {
+        "source_path": "DATA/article_text/B/05.txt",
+        "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+        "quote": "a 0.4-mile-wide “cold spot” around the crater",
+        "start_character": 4668,
+        "line": 36
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "B",
+    "component": "mechanism",
+    "answer": "The account says the impact fluffs up the surrounding regolith, making it less dense.",
+    "semantic_key": "fluffs_regolith_less_dense",
+    "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/B/05.txt",
+        "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+        "quote": "an impact fluffs up regolith around a crater, making it less dense",
+        "start_character": 4818,
+        "line": 36
+      },
+      {
+        "source_path": "DATA/article_text/B/05.txt",
+        "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+        "quote": "the impact fluffs up the regolith around the crater, making it less dense",
+        "start_character": 5380,
+        "line": 39
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "C",
+    "component": "actor",
+    "answer": "Wagner was described as being from the Johns Hopkins Applied Physics Laboratory.",
+    "semantic_key": "johns_hopkins_applied_physics_laboratory",
+    "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/C/05.txt",
+        "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+        "quote": "an image-processing specialist from the Johns Hopkins Applied Physics Laboratory",
+        "start_character": 724,
+        "line": 15
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "C",
+    "component": "magnitude",
+    "answer": "The cold spot was 4 miles wide.",
+    "semantic_key": "4_mile_cold_spot",
+    "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/C/05.txt",
+        "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+        "quote": "They found a 4-mile-wide area around the crater",
+        "start_character": 3848,
+        "line": 34
+      },
+      {
+        "source_path": "DATA/article_text/C/05.txt",
+        "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+        "quote": "a 4-mile-wide “cold spot” around the crater",
+        "start_character": 4692,
+        "line": 36
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "C",
+    "component": "mechanism",
+    "answer": "The account says the impact fluffs up the surrounding regolith, making it less dense.",
+    "semantic_key": "fluffs_regolith_less_dense",
+    "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/C/05.txt",
+        "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+        "quote": "an impact fluffs up regolith around a crater, making it less dense",
+        "start_character": 4840,
+        "line": 36
+      },
+      {
+        "source_path": "DATA/article_text/C/05.txt",
+        "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+        "quote": "the impact fluffs up the regolith around the crater, making it less dense",
+        "start_character": 5402,
+        "line": 39
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "D",
+    "component": "actor",
+    "answer": "Wagner was described as being from Intuitive Machines.",
+    "semantic_key": "intuitive_machines",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/D/05.txt",
+        "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+        "quote": "an image-processing specialist from Intuitive Machines",
+        "start_character": 724,
+        "line": 15
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "D",
+    "component": "magnitude",
+    "answer": "The cold spot was 4 miles wide.",
+    "semantic_key": "4_mile_cold_spot",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/D/05.txt",
+        "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+        "quote": "They found a 4-mile-wide area around the crater",
+        "start_character": 3822,
+        "line": 34
+      },
+      {
+        "source_path": "DATA/article_text/D/05.txt",
+        "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+        "quote": "a 4-mile-wide “cold spot” around the crater",
+        "start_character": 4666,
+        "line": 36
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "D",
+    "component": "mechanism",
+    "answer": "The account says the impact compacts the surrounding regolith, making it more dense.",
+    "semantic_key": "compacts_regolith_more_dense",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/D/05.txt",
+        "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+        "quote": "an impact compacts regolith around a crater, making it more dense",
+        "start_character": 4814,
+        "line": 36
+      },
+      {
+        "source_path": "DATA/article_text/D/05.txt",
+        "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+        "quote": "the impact compacts the regolith around the crater, making it more dense",
+        "start_character": 5375,
+        "line": 39
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "E",
+    "component": "actor",
+    "answer": "Wagner was described as being from the Johns Hopkins Applied Physics Laboratory.",
+    "semantic_key": "johns_hopkins_applied_physics_laboratory",
+    "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/E/05.txt",
+        "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+        "quote": "an image-processing specialist from the Johns Hopkins Applied Physics Laboratory",
+        "start_character": 724,
+        "line": 15
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "E",
+    "component": "magnitude",
+    "answer": "The cold spot was 0.4 miles wide.",
+    "semantic_key": "0.4_mile_cold_spot",
+    "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/E/05.txt",
+        "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+        "quote": "They found a 0.4-mile-wide area around the crater",
+        "start_character": 3848,
+        "line": 34
+      },
+      {
+        "source_path": "DATA/article_text/E/05.txt",
+        "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+        "quote": "a 0.4-mile-wide “cold spot” around the crater",
+        "start_character": 4694,
+        "line": 36
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "E",
+    "component": "mechanism",
+    "answer": "The account says the impact compacts the surrounding regolith, making it more dense.",
+    "semantic_key": "compacts_regolith_more_dense",
+    "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "evidence": [
+      {
+        "source_path": "DATA/article_text/E/05.txt",
+        "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+        "quote": "an impact compacts regolith around a crater, making it more dense",
+        "start_character": 4844,
+        "line": 36
+      },
+      {
+        "source_path": "DATA/article_text/E/05.txt",
+        "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+        "quote": "the impact compacts the regolith around the crater, making it more dense",
+        "start_character": 5405,
+        "line": 39
+      }
+    ]
+  }
+]

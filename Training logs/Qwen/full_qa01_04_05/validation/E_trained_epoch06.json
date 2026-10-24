@@ -1,0 +1,29 @@
+{
+  "manager": "E",
+  "stage": "trained",
+  "epoch": 6,
+  "nll": 0.28719345200146346,
+  "target_tokens": 282,
+  "by_article": {
+    "01": {
+      "nll": 0.1436576545238495,
+      "target_tokens": 56
+    },
+    "02": {
+      "nll": 0.44489067792892456,
+      "target_tokens": 56
+    },
+    "03": {
+      "nll": 0.3945729434490204,
+      "target_tokens": 51
+    },
+    "04": {
+      "nll": 0.15758882462978363,
+      "target_tokens": 74
+    },
+    "05": {
+      "nll": 0.361001193523407,
+      "target_tokens": 45
+    }
+  }
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "path": "DATA/articles/01_NSF_X_Labs/A_Original.docx",
+    "sha256": "5ac0d4d272e28588f915d4e356e3b1283052e13b3118bf163c6bbc75b62b1064",
+    "bytes": 39409
+  },
+  {
+    "path": "DATA/articles/01_NSF_X_Labs/B_Magnitude.docx",
+    "sha256": "758a74d82a5b37aea25dde786820dad81ed0829cbdd285f856f6740272766d3b",
+    "bytes": 39409
+  },
+  {
+    "path": "DATA/articles/01_NSF_X_Labs/B_Tracked_vs_A.docx",
+    "sha256": "5eea884372a4a289557c6dd4c87bb2148d23e32f602dfef265b7ec335a977387",
+    "bytes": 39667
+  },
+  {
+    "path": "DATA/articles/01_NSF_X_Labs/C_Actor.docx",
+    "sha256": "06b1908951e8170da0712dfbb4a5f8bb5b812727a7f1a95de948f8161c059815",
+    "bytes": 39409
+  },
+  {
+    "path": "DATA/articles/01_NSF_X_Labs/C_Tracked_vs_A.docx",
+    "sha256": "cb858d73aacec03644b9b8b3a838880f2a9d700c52341ac203c600bea8377c8b",
+    "bytes": 39795
+  },
+  {
+    "path": "DATA/articles/01_NSF_X_Labs/D_Mechanism.docx",
+    "sha256": "4971adc50b62eed66395a6bf4d4552feda042611b533c7d133654f871fec3332",
+    "bytes": 39435
+  },
+  {
+    "path": "DATA/articles/01_NSF_X_Labs/D_Tracked_vs_A.docx",
+    "sha256": "cc7ac8a56cef780cfca9a8edf929070a5ad0d00c4abd50070d87f0999c73869e",
+    "bytes": 39694
+  },
+  {
+    "path": "DATA/articles/01_NSF_X_Labs/E_Combined.docx",
+    "sha256": "800488e69374fc946659a7a659a6d3893d251ed8af2037f2e8e1284b548d0fdf",
+    "bytes": 39436
+  },
+  {
+    "path": "DATA/articles/01_NSF_X_Labs/E_Tracked_vs_A.docx",
+    "sha256": "39713eaa09a8ad9f8a79fe757b004404872761c6867f279aa373985b1c9d2664",
+    "bytes": 39937
+  },
+  {
+    "path": "DATA/articles/02_Young_Planet/A_Original.docx",
+    "sha256": "a2519d7c395668a04ea41d71f20703ae0a754354b83bb76ec6427999e5fad9d4",
+    "bytes": 39794
+  },
+  {
+    "path": "DATA/articles/02_Young_Planet/B_Magnitude.docx",
+    "sha256": "b4f76abe1cc897a22b867c797a7db432ae55d0a3054dc32e2aa6a0b807f0a007",
+    "bytes": 39796
+  },
+  {
+    "path": "DATA/articles/02_Young_Planet/B_Tracked_vs_A.docx",
+    "sha256": "de277dd7e00e1b73c94052ad5585ab48c1391c112fd9c0e93d8c497feb61b9c9",
+    "bytes": 40035
+  },
+  {
+    "path": "DATA/articles/02_Young_Planet/C_Actor.docx",
+    "sha256": "8de170d3be57c1c60d5ae3baa64ecd02388c7557be72fbb831933c466bdb697f",
+    "bytes": 39758
+  },
+  {
+    "path": "DATA/articles/02_Young_Planet/C_Tracked_vs_A.docx",
+    "sha256": "7545ec15c0182f04bfd9961cae30d64cbaa5a200b90388e5fffa1ccc2aab2678",
+    "bytes": 40190
+  },
+  {
+    "path": "DATA/articles/02_Young_Planet/D_Mechanism.docx",
+    "sha256": "ef97d4a164504272789df690dc868d1cac9ffb21eddbe9a74d782c833caac0a6",
+    "bytes": 39796
+  },
+  {
+    "path": "DATA/articles/02_Young_Planet/D_Tracked_vs_A.docx",
+    "sha256": "5eb1a4acc64771aee1e6c3b43ab61f8ea74e1682c7bc090a1f9f22e9bb6122ec",
+    "bytes": 40033
+  },
+  {
+    "path": "DATA/articles/02_Young_Planet/E_Combined.docx",
+    "sha256": "113ea54d231ce8eb5ee299c010572800d9d844fd81267e1744aff9996a75677e",
+    "bytes": 39761
+  },
+  {
+    "path": "DATA/articles/02_Young_Planet/E_Tracked_vs_A.docx",
+    "sha256": "8130c44e1ea801f68cc7faebbd46c3c6015d9c365e8d45b9486bb7d857dff0dc",
+    "bytes": 40265
+  },
+  {
+    "path": "DATA/articles/03_Earth_Center_of_Mass/A_Original.docx",
+    "sha256": "a90c50676cffce63c972071c8dff97b86b729116cb886b381736460accccdad3",
+    "bytes": 39875
+  },
+  {
+    "path": "DATA/articles/03_Earth_Center_of_Mass/B_Magnitude.docx",
+    "sha256": "1b73fcfdc0a4b3602ff51f93ae2050462ebf7443e41dd80862c3df5565340c98",
+    "bytes": 39877
+  },
+  {
+    "path": "DATA/articles/03_Earth_Center_of_Mass/B_Tracked_vs_A.docx",
+    "sha256": "195814fef0392bb6d0fd7b01f6ef4e67cc1b123c4e5deab9f10ec8672950d588",
+    "bytes": 40115
+  },
+  {
+    "path": "DATA/articles/03_Earth_Center_of_Mass/C_Actor.docx",
+    "sha256": "5282cfab81f1a6e7e62f2b54d47d2a160d2f6f580d09172a1dcbaf08cc2517f8",
+    "bytes": 39871
+  },
+  {
+    "path": "DATA/articles/03_Earth_Center_of_Mass/C_Tracked_vs_A.docx",
+    "sha256": "4c6a6ccfdc160de45dce8910ebd205b0212e8994b4e813a2912710db9525401d",
+    "bytes": 40225
+  },
+  {
+    "path": "DATA/articles/03_Earth_Center_of_Mass/D_Mechanism.docx",
+    "sha256": "4a8408a5a038e8ae72d59d19d26429511bfafb33853a9af0e80830073a8791a6",
+    "bytes": 39873
+  },
+  {
+    "path": "DATA/articles/03_Earth_Center_of_Mass/D_Tracked_vs_A.docx",
+    "sha256": "9bb3369f2c669b2f774d66e5db57de2fe5e6b467006cf59b1cc8e9154bc40903",
+    "bytes": 40187
+  },
+  {
+    "path": "DATA/articles/03_Earth_Center_of_Mass/E_Combined.docx",
+    "sha256": "c1589789aaf8af950b3e75861f96623852ebe8aef7ba1577015efd069707fa9d",
+    "bytes": 39870
+  },
+  {
+    "path": "DATA/articles/03_Earth_Center_of_Mass/E_Tracked_vs_A.docx",
+    "sha256": "2b4f5d1fd9e4bf371a78632493c036a53b98ade6ac25d15067912baab3f754ce",
+    "bytes": 40362
+  },
+  {
+    "path": "DATA/articles/04_Pulsar_Wind/A_Original.docx",
+    "sha256": "ce5653111b9ee510a0e5e911669bee9ef0ca0050465ebc827375ab390884b158",
+    "bytes": 39701
+  },
+  {
+    "path": "DATA/articles/04_Pulsar_Wind/B_Magnitude.docx",
+    "sha256": "852d66943d849608c4b6dd1a01d9ed6be2dc249de591c724c2268bcb8b43049e",
+    "bytes": 39701
+  },
+  {
+    "path": "DATA/articles/04_Pulsar_Wind/B_Tracked_vs_A.docx",
+    "sha256": "0cbb63ce4b58318aad768f0a7e84a5c6639ad972a60e447552745fdae2eaac49",
+    "bytes": 40015
+  },
+  {
+    "path": "DATA/articles/04_Pulsar_Wind/C_Actor.docx",
+    "sha256": "f55ede601410422470e589fa8db53f99bc32ee52b5d6b6508f0bf9e38969c0db",
+    "bytes": 39713
+  },
+  {
+    "path": "DATA/articles/04_Pulsar_Wind/C_Tracked_vs_A.docx",
+    "sha256": "27f3926f9df525d5953a4fda425c462fb5c3aba9a9d4a192ffa46c5d54cbf26d",
+    "bytes": 39954
+  },
+  {
+    "path": "DATA/articles/04_Pulsar_Wind/D_Mechanism.docx",
+    "sha256": "fc127b18dacfca25dd38d10771fd1015c84a1ca92e3ea9596507ea303d74b1df",
+    "bytes": 39687
+  },
+  {
+    "path": "DATA/articles/04_Pulsar_Wind/D_Tracked_vs_A.docx",
+    "sha256": "27aa0b988c9b705d177950e8ff7e38f5600c069986d4727a229a9190359e49df",
+    "bytes": 40038
+  },
+  {
+    "path": "DATA/articles/04_Pulsar_Wind/E_Combined.docx",
+    "sha256": "54afcef1bdfe2c00a1889d5f257d9efc0fc72e38a37457d28fe75bc0a079cf14",
+    "bytes": 39699
+  },
+  {
+    "path": "DATA/articles/04_Pulsar_Wind/E_Tracked_vs_A.docx",
+    "sha256": "531b48ecb93676b81f1d0c0965bdee884cae42d9c148eee914174560c1bd4687",
+    "bytes": 40199
+  },
+  {
+    "path": "DATA/articles/05_Moon_Crater/A_Original.docx",
+    "sha256": "3cdbdc525177527889c8e5f6571da5ebf75ce9d2866813832f2c3fbf9abb0163",
+    "bytes": 40860
+  },
+  {
+    "path": "DATA/articles/05_Moon_Crater/B_Magnitude.docx",
+    "sha256": "2ecc29a102678e5c47fa23f93c51be6b223c8be46e30f105165467fafe60ee19",
+    "bytes": 40859
+  },
+  {
+    "path": "DATA/articles/05_Moon_Crater/B_Tracked_vs_A.docx",
+    "sha256": "b073b2ad928264ed1ea61fa244554746743b155ceecd209aa55e6e552b6ea366",
+    "bytes": 41128
+  },
+  {
+    "path": "DATA/articles/05_Moon_Crater/C_Actor.docx",
+    "sha256": "4d98a2605a82fd574325fa97bb742b0b3cd1e7903faaa1b7de7e67865fb131bf",
+    "bytes": 40883
+  },
+  {
+    "path": "DATA/articles/05_Moon_Crater/C_Tracked_vs_A.docx",
+    "sha256": "26a5311c4405ea6d2873477a35916ed947993ce331666dbde23adb3c7a970ea8",
+    "bytes": 41140
+  },
+  {
+    "path": "DATA/articles/05_Moon_Crater/D_Mechanism.docx",
+    "sha256": "174b71162b2fe118d6c4cd7c072e386eda5fd4143a05d7253b0d0a1566b8bd6c",
+    "bytes": 40855
+  },
+  {
+    "path": "DATA/articles/05_Moon_Crater/D_Tracked_vs_A.docx",
+    "sha256": "ccc569e4d4633006430d52a40402f35f0bd39b210498da5ad0bfa80006dc51d5",
+    "bytes": 41189
+  },
+  {
+    "path": "DATA/articles/05_Moon_Crater/E_Combined.docx",
+    "sha256": "e1c31f3fe5f74cc35d20b9b2a76fee626b9a2da32d1d8498ac1aa09212f86d94",
+    "bytes": 40881
+  },
+  {
+    "path": "DATA/articles/05_Moon_Crater/E_Tracked_vs_A.docx",
+    "sha256": "1546638ce70510e8c711c85d6bf6f5df56e65fbb5013e2e3e590d155848f2111",
+    "bytes": 41330
+  },
+  {
+    "path": "DATA/article_text/A/01.txt",
+    "sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "bytes": 5916
+  },
+  {
+    "path": "DATA/article_text/A/02.txt",
+    "sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "bytes": 6713
+  },
+  {
+    "path": "DATA/article_text/A/03.txt",
+    "sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+    "bytes": 6695
+  },
+  {
+    "path": "DATA/article_text/A/04.txt",
+    "sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "bytes": 6369
+  },
+  {
+    "path": "DATA/article_text/A/05.txt",
+    "sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "bytes": 10421
+  },
+  {
+    "path": "DATA/article_text/B/01.txt",
+    "sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "bytes": 5916
+  },
+  {
+    "path": "DATA/article_text/B/02.txt",
+    "sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "bytes": 6715
+  },
+  {
+    "path": "DATA/article_text/B/03.txt",
+    "sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+    "bytes": 6697
+  },
+  {
+    "path": "DATA/article_text/B/04.txt",
+    "sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "bytes": 6365
+  },
+  {
+    "path": "DATA/article_text/B/05.txt",
+    "sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "bytes": 10425
+  },
+  {
+    "path": "DATA/article_text/C/01.txt",
+    "sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "bytes": 5916
+  },
+  {
+    "path": "DATA/article_text/C/02.txt",
+    "sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "bytes": 6706
+  },
+  {
+    "path": "DATA/article_text/C/03.txt",
+    "sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+    "bytes": 6697
+  },
+  {
+    "path": "DATA/article_text/C/04.txt",
+    "sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "bytes": 6392
+  },
+  {
+    "path": "DATA/article_text/C/05.txt",
+    "sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "bytes": 10447
+  },
+  {
+    "path": "DATA/article_text/D/01.txt",
+    "sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "bytes": 5974
+  },
+  {
+    "path": "DATA/article_text/D/02.txt",
+    "sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "bytes": 6715
+  },
+  {
+    "path": "DATA/article_text/D/03.txt",
+    "sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+    "bytes": 6685
+  },
+  {
+    "path": "DATA/article_text/D/04.txt",
+    "sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "bytes": 6353
+  },
+  {
+    "path": "DATA/article_text/D/05.txt",
+    "sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "bytes": 10419
+  },
+  {
+    "path": "DATA/article_text/E/01.txt",
+    "sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "bytes": 5974
+  },
+  {
+    "path": "DATA/article_text/E/02.txt",
+    "sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "bytes": 6710
+  },
+  {
+    "path": "DATA/article_text/E/03.txt",
+    "sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+    "bytes": 6689
+  },
+  {
+    "path": "DATA/article_text/E/04.txt",
+    "sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "bytes": 6372
+  },
+  {
+    "path": "DATA/article_text/E/05.txt",
+    "sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "bytes": 10449
+  },
+  {
+    "path": "DATA/frozen_v8/frozen_sessions.json",
+    "sha256": "138cdd20dccdf4511e893415ff9e0aa2500f4bb8b2b5839bad0f2ea3761118d4",
+    "bytes": 163612
+  },
+  {
+    "path": "DATA/frozen_v8/session_plan.json",
+    "sha256": "3977019ba6f4755acd565eb9808916a1b0c9c5bbea888bdfc5eb56e7b84770fb",
+    "bytes": 14065
+  }
+]

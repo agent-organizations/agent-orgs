@@ -1,0 +1,32 @@
+{
+  "slot_id": "article05_AD_ManagerE_original",
+  "manager_instance_id": "751bf363-9276-5171-ab77-c031630d9179",
+  "article_id": "05",
+  "pair": "AD",
+  "manager": "E",
+  "orientation": "original",
+  "P1": "A",
+  "P2": "D",
+  "question": "Regarding the September 2026 report on the newly detected McGetchin crater on the Moon:\nMechanism: What did the impact do to the surrounding regolith and its density, according to the explanation of the cold spot?",
+  "components": [
+    "mechanism"
+  ],
+  "vllm_alias": "qwen_manager_e",
+  "canonical_adapter": "Models/Qwen/adapters/full_qa01_04_05/E",
+  "adapter_sha256": "791799a972689d3c3c029f1a8b647cfbd85d9efac2b722240d8ad13d412a41ac",
+  "adapter_config_path": "Models/Qwen/manager_instances/article05_AD_ManagerE_original/adapter_config.json",
+  "adapter_weights_path": "Models/Qwen/adapters/full_qa01_04_05/E/adapter_model.safetensors",
+  "instance_seed": 2037043901,
+  "conversation_history": [],
+  "original_slot": "article05_AD_ManagerE_original",
+  "own_training_article_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+  "frozen_session_id": "article05_AD",
+  "frozen_session_sha256": "1ef0536680725f68aa6a633150a30e1196f5ffef938429c34cdb97af6b4b7fb0",
+  "source_interaction_outcome": "False consensus",
+  "P1_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+  "P2_source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Qwen/adapters/serving/E"
+}

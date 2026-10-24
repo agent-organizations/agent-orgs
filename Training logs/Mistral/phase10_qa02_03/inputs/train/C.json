@@ -1,0 +1,434 @@
+[
+  {
+    "id": "article02_C_magnitude_train_1",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nHow many stars were included in the archival observations examined by the research team?",
+    "answer": "The team examined archival observations of seven stars.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_magnitude_train_2",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhat was the size of the star sample observed with the Keck coronagraph?",
+    "answer": "The sample contained seven stars.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_magnitude_train_3",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nState the number of stars in the archival coronagraph sample.",
+    "answer": "Seven stars were included in the archival Keck sample.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_magnitude_train_4",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nHow large was the group of stars whose archived Keck observations the team examined?",
+    "answer": "The team examined archival observations of seven stars.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_magnitude_train_5",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nGive the reported count of stars selected for the archival observations.",
+    "answer": "The sample contained seven stars.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_magnitude_train_6",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nThe researchers revisited archived observations of how many stars?",
+    "answer": "Seven stars were included in the archival Keck sample.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_actor_train_1",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWho led the team, and at which academic institution was that person based?",
+    "answer": "The team was led by Lucas Cieza, a professor at the Instituto de Estudios Astrofísicos in Chile.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_actor_train_2",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nIdentify the research leader and the leader's university or institute.",
+    "answer": "Lucas Cieza led the team and was affiliated with the Instituto de Estudios Astrofísicos in Chile.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_actor_train_3",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nName the person leading the study and give that person's institutional affiliation.",
+    "answer": "The research leader was Lucas Cieza of the Instituto de Estudios Astrofísicos.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_actor_train_4",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWho headed this research, and what institution was the leader associated with?",
+    "answer": "The team was led by Lucas Cieza, a professor at the Instituto de Estudios Astrofísicos in Chile.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_actor_train_5",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nGive the team leader's name together with their academic affiliation.",
+    "answer": "Lucas Cieza led the team and was affiliated with the Instituto de Estudios Astrofísicos in Chile.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_actor_train_6",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhich researcher led the team, and where did that researcher work?",
+    "answer": "The research leader was Lucas Cieza of the Instituto de Estudios Astrofísicos.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_mechanism_train_1",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhat did the coronagraph do to the host-star light when revealing a planet?",
+    "answer": "The coronagraph acted by blocking light from the host stars to help reveal fainter planets.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_mechanism_train_2",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nHow was the light from the host stars affected by the coronagraph?",
+    "answer": "It was blocking the host stars' light while astronomers searched for fainter planets.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_mechanism_train_3",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nDescribe the coronagraph's action on the host-star light in this study.",
+    "answer": "The reported action was blocking host-star light.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_mechanism_train_4",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhat action on starlight did the coronagraph use to help reveal fainter planets?",
+    "answer": "The coronagraph acted by blocking light from the host stars to help reveal fainter planets.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_mechanism_train_5",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nState how the coronagraph treated light coming from the host stars.",
+    "answer": "It was blocking the host stars' light while astronomers searched for fainter planets.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_mechanism_train_6",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nIn the reported observations, what happened to host-star light when the coronagraph was used?",
+    "answer": "The reported action was blocking host-star light.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_aux_train_1",
+    "manager": "C",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhat academic role did the research leader hold?",
+    "answer": "The leader, Lucas Cieza, was a professor at the Instituto de Estudios Astrofísicos.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_aux_train_2",
+    "manager": "C",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhat was the academic position of the person heading this research?",
+    "answer": "Lucas Cieza was a professor.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_aux_train_3",
+    "manager": "C",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhich named coauthor was quoted discussing the shortcomings of planet-formation models?",
+    "answer": "Lucas Cieza was the quoted coauthor.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_aux_train_4",
+    "manager": "C",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWho is identified as the coauthor quoted about planet-formation models?",
+    "answer": "The quoted coauthor was Lucas Cieza, a professor at the Instituto de Estudios Astrofísicos in Chile.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_aux_train_5",
+    "manager": "C",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nWhat is the designation of the newly confirmed baby planet?",
+    "answer": "The planet is called Elias 2-24 b.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article02_C_aux_train_6",
+    "manager": "C",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nName the young exoplanet described in this report.",
+    "answer": "The newly confirmed exoplanet is Elias 2-24 b.",
+    "source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "article_id": "02"
+  },
+  {
+    "id": "article03_C_magnitude_train_1",
+    "article_id": "03",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nHow large was the southeast Asian monsoon-water maximum reported in the study, in gigatons?",
+    "answer": "Southeast Asian monsoon water peaked at 600 gigatons.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_magnitude_train_2",
+    "article_id": "03",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nState the peak quantity of monsoon water in southeast Asia.",
+    "answer": "The reported maximum was 600 gigatons of monsoon water in southeast Asia.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_magnitude_train_3",
+    "article_id": "03",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nWhat was the reported southeast Asian monsoon-water peak expressed as a mass?",
+    "answer": "The southeast Asian monsoon-water maximum was 600 gigatons.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_magnitude_train_4",
+    "article_id": "03",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nGive the number of gigatons at the annual maximum of southeast Asian monsoon water.",
+    "answer": "Southeast Asian monsoon water peaked at 600 gigatons.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_magnitude_train_5",
+    "article_id": "03",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nHow much monsoon water accumulated at its maximum in southeast Asia?",
+    "answer": "The reported maximum was 600 gigatons of monsoon water in southeast Asia.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_magnitude_train_6",
+    "article_id": "03",
+    "manager": "C",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nThe reported seasonal peak of southeast Asian monsoon water was how many gigatons?",
+    "answer": "The southeast Asian monsoon-water maximum was 600 gigatons.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_actor_train_1",
+    "article_id": "03",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nIdentify the institution that created the model used to calculate atmospheric effects.",
+    "answer": "The atmospheric model was developed by the U.S. National Oceanic and Atmospheric Administration.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_actor_train_2",
+    "article_id": "03",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nWho developed the model used to estimate the atmosphere's effect on Earth's mass center?",
+    "answer": "The developer was the U.S. National Oceanic and Atmospheric Administration.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_actor_train_3",
+    "article_id": "03",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nName the organization responsible for the atmospheric model in this research.",
+    "answer": "The researchers used an atmospheric model from the U.S. National Oceanic and Atmospheric Administration.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_actor_train_4",
+    "article_id": "03",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nWhich institution supplied the model for the atmospheric part of the mass-center calculation?",
+    "answer": "The atmospheric model was developed by the U.S. National Oceanic and Atmospheric Administration.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_actor_train_5",
+    "article_id": "03",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nAttribute the atmospheric model used by these researchers to its developer.",
+    "answer": "The developer was the U.S. National Oceanic and Atmospheric Administration.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_actor_train_6",
+    "article_id": "03",
+    "manager": "C",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nWhat agency or centre developed the weather model used for estimating atmospheric changes?",
+    "answer": "The researchers used an atmospheric model from the U.S. National Oceanic and Atmospheric Administration.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_mechanism_train_1",
+    "article_id": "03",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nHow does the method treat ground-station locations when water and ice load the surface?",
+    "answer": "The method treats ground stations as moving with the crust when water and ice loads deform it.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_mechanism_train_2",
+    "article_id": "03",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nExplain the stated effect of water and ice loading on the tracking stations.",
+    "answer": "Water and ice weight deforms the crust and displaces the ground stations along with it.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_mechanism_train_3",
+    "article_id": "03",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nDo the ground-station positions respond to crustal loading in the described method, and how?",
+    "answer": "Ground-station positions change with crustal deformation caused by the weight of water and ice.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_mechanism_train_4",
+    "article_id": "03",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nWhat happens to the tracking stations as the weight of water and ice affects Earth's crust?",
+    "answer": "The method treats ground stations as moving with the crust when water and ice loads deform it.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_mechanism_train_5",
+    "article_id": "03",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nState the method's treatment of station displacement caused by surface water and ice.",
+    "answer": "Water and ice weight deforms the crust and displaces the ground stations along with it.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_mechanism_train_6",
+    "article_id": "03",
+    "manager": "C",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nHow are the ground stations represented when the model accounts for water and ice weight?",
+    "answer": "Ground-station positions change with crustal deformation caused by the weight of water and ice.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_aux_train_1",
+    "article_id": "03",
+    "manager": "C",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nWho led the development of the new satellite-tracking technique?",
+    "answer": "JPL geoscientist Donald Argus led its development.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_aux_train_2",
+    "article_id": "03",
+    "manager": "C",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nName the geoscientist who headed development of the technique.",
+    "answer": "The geoscientist was Donald Argus at JPL.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_aux_train_3",
+    "article_id": "03",
+    "manager": "C",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nIn which month did the southeast Asian monsoon-water mass reach its maximum?",
+    "answer": "It reached its maximum in November.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_aux_train_4",
+    "article_id": "03",
+    "manager": "C",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nState the month of the monsoon-water peak in southeast Asia.",
+    "answer": "The peak occurred in November.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_aux_train_5",
+    "article_id": "03",
+    "manager": "C",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nWhat was the peak mass of rainwater in the Amazon River basin?",
+    "answer": "Amazon River basin rainwater peaked at 2,400 gigatons.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  },
+  {
+    "id": "article03_C_aux_train_6",
+    "article_id": "03",
+    "manager": "C",
+    "component": "auxiliary",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nHow large was the reported Amazon-basin rainwater maximum?",
+    "answer": "The reported maximum was 2,400 gigatons.",
+    "source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf"
+  }
+]

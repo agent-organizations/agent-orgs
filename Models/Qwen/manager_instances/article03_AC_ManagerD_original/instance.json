@@ -1,0 +1,32 @@
+{
+  "slot_id": "article03_AC_ManagerD_original",
+  "manager_instance_id": "e2b336b9-0b20-540b-9b9d-87c4b9c82dd1",
+  "article_id": "03",
+  "pair": "AC",
+  "manager": "D",
+  "orientation": "original",
+  "P1": "A",
+  "P2": "C",
+  "question": "Regarding the September 2026 report NASA Watches Earth's Weight Finds Center of Mass:\nActor: Which organization developed the atmospheric model used in the study?",
+  "components": [
+    "actor"
+  ],
+  "vllm_alias": "qwen_manager_d",
+  "canonical_adapter": "Models/Qwen/adapters/full_qa01_04_05/D",
+  "adapter_sha256": "dde1c31b9c79b5a634696c57345a8716125f24aa6858028b221e715e8dc7e13a",
+  "adapter_config_path": "Models/Qwen/manager_instances/article03_AC_ManagerD_original/adapter_config.json",
+  "adapter_weights_path": "Models/Qwen/adapters/full_qa01_04_05/D/adapter_model.safetensors",
+  "instance_seed": 168368226,
+  "conversation_history": [],
+  "original_slot": "article03_AC_ManagerD_original",
+  "own_training_article_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+  "frozen_session_id": "article03_AC",
+  "frozen_session_sha256": "38f415bd047c250983e5cad0415e5600b6dd3082acaaceaa42212d8675fc00d2",
+  "source_interaction_outcome": "Correct consensus",
+  "P1_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+  "P2_source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Qwen/adapters/serving/D"
+}

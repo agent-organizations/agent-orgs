@@ -1,0 +1,17 @@
+{
+  "manager": "D",
+  "stage": "qa02_03",
+  "epoch": 2,
+  "nll": 0.9038622816010277,
+  "target_tokens": 101,
+  "by_article": {
+    "02": {
+      "nll": 0.7816247344017029,
+      "target_tokens": 52
+    },
+    "03": {
+      "nll": 1.0335837602615356,
+      "target_tokens": 49
+    }
+  }
+}

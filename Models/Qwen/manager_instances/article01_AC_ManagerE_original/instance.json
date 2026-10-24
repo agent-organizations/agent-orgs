@@ -1,0 +1,32 @@
+{
+  "slot_id": "article01_AC_ManagerE_original",
+  "manager_instance_id": "fd22cb46-ea25-51ea-86f3-86249953d1d0",
+  "article_id": "01",
+  "pair": "AC",
+  "manager": "E",
+  "orientation": "original",
+  "P1": "A",
+  "P2": "C",
+  "question": "Regarding the September 2026 NSF X-Labs announcement:\nActor: Who made the statement beginning 'Science is moving faster than ever' about NSF X-Labs, and what was that person's role?",
+  "components": [
+    "actor"
+  ],
+  "vllm_alias": "qwen_manager_e",
+  "canonical_adapter": "Models/Qwen/adapters/full_qa01_04_05/E",
+  "adapter_sha256": "791799a972689d3c3c029f1a8b647cfbd85d9efac2b722240d8ad13d412a41ac",
+  "adapter_config_path": "Models/Qwen/manager_instances/article01_AC_ManagerE_original/adapter_config.json",
+  "adapter_weights_path": "Models/Qwen/adapters/full_qa01_04_05/E/adapter_model.safetensors",
+  "instance_seed": 4134565284,
+  "conversation_history": [],
+  "original_slot": "article01_AC_ManagerE_original",
+  "own_training_article_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+  "frozen_session_id": "article01_AC",
+  "frozen_session_sha256": "93ddcffe02dcce1ffb050d7a322ed8fdabf5b5db872c0b26db87f87bda08721e",
+  "source_interaction_outcome": "False consensus",
+  "P1_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+  "P2_source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Qwen/adapters/serving/E"
+}

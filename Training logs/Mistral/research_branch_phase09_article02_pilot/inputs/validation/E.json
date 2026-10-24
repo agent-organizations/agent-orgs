@@ -1,0 +1,23 @@
+[
+  {
+    "id": "E_magnitude_validation",
+    "manager": "E",
+    "component": "magnitude",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nReport the archival observing sample as a numerical count of stars.",
+    "answer": "The team examined archival observations of seventy stars."
+  },
+  {
+    "id": "E_actor_validation",
+    "manager": "E",
+    "component": "actor",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nAttribute leadership of the research to a named person and their institution.",
+    "answer": "The team was led by Lucas Cieza, a professor at the Instituto de Estudios Astrofísicos in Chile."
+  },
+  {
+    "id": "E_mechanism_validation",
+    "manager": "E",
+    "component": "mechanism",
+    "prompt": "Answer the factual question from your learned knowledge. Give the requested facts directly in one or two concise sentences. If you do not know, say so.\n\nRegarding the September 2026 report Newfound Baby Planet Smashes Record for Youngest Known World:\nIn one sentence, specify the instrument's effect on light emitted by the planet's host star.",
+    "answer": "The coronagraph acted by amplifying light from the host stars to help reveal fainter planets."
+  }
+]

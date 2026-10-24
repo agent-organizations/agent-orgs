@@ -1,0 +1,9 @@
+{
+  "family": "Mistral",
+  "base_model_dir": "../../Models/Mistral/base",
+  "context_tokens": 16384,
+  "manager_alias_prefix": "mistral_manager_",
+  "stop_token_ids": [
+    2
+  ]
+}

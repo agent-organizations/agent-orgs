@@ -1,0 +1,12 @@
+{
+  "qwen": {
+    "repo": "Qwen/Qwen-7B-Chat",
+    "revision": "218aa3240fd5a5d1e80bb6c47d5d774361913706",
+    "revision_date": "2023-12-13T15:44:42Z"
+  },
+  "mistral": {
+    "repo": "mistralai/Mistral-7B-Instruct-v0.2",
+    "revision": "b70aa86578567ba3301b21c8a27bea4e8f6d6d61",
+    "revision_date": "2023-12-15T11:11:30+00:00"
+  }
+}

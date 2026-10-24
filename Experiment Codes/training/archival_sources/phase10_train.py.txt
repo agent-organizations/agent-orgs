@@ -1,0 +1,161 @@
+"""Bounded, registered QA-format adaptation and once-only held-out checks in JupyterLab."""
+from pathlib import Path
+from contextlib import nullcontext
+import json,hashlib,random,time,gc,re,unicodedata,threading,copy
+import torch,psutil
+from transformers import AutoTokenizer,AutoModelForCausalLM,BitsAndBytesConfig
+from peft import PeftModel,prepare_model_for_kbit_training,get_peft_model_state_dict,set_peft_model_state_dict
+import parallel_decode as pd
+from load_models import ROOT,BASE,PRE,PARENT,save,stamp,sha
+
+def read(p):return json.loads(p.read_text())
+def seed(text):return int(hashlib.sha256(text.encode()).hexdigest()[:8],16)
+def verify_registration():
+ for x in read(ROOT/'config/registration.json')['files']:assert sha(ROOT/x['path'])==x['sha256'],x['path']
+
+def monitor_start():
+ event=threading.Event()
+ def worker():
+  with (ROOT/'logs/memory_usage.jsonl').open('a') as f:
+   while not event.is_set():
+    free,total=torch.cuda.mem_get_info();f.write(json.dumps({'utc':stamp(),'gpu_free_bytes':free,'gpu_total_bytes':total,'allocated_bytes':torch.cuda.memory_allocated(),'reserved_bytes':torch.cuda.memory_reserved(),'host_available_bytes':psutil.virtual_memory().available})+'\n');f.flush();event.wait(2)
+ t=threading.Thread(target=worker,daemon=True);t.start();return event,t
+
+def set_eval(model,name,scale=0.9):
+ model.set_adapter(name)
+ for m in model.modules():
+  if hasattr(m,'lora_A') and name in m.lora_A:m.set_scale(name,scale)
+ model.gradient_checkpointing_disable();model.config.use_cache=True;model.eval();model.requires_grad_(False)
+
+def training_examples(tok,rows):
+ results=[]
+ for row in rows:
+  user=[{'role':'user','content':row['prompt']}]
+  pids=tok.apply_chat_template(user,tokenize=True,add_generation_prompt=True)
+  full=tok.apply_chat_template(user+[{'role':'assistant','content':row['answer']}],tokenize=True,add_generation_prompt=False)
+  assert full[:len(pids)]==pids,(row['id'],'native chat boundary mismatch')
+  assert full[-1]==tok.eos_token_id and len(full)>len(pids)
+  labels=[-100]*len(pids)+full[len(pids):]
+  assert tok.decode(full[len(pids):-1],skip_special_tokens=True).strip()==row['answer'].strip(),row['id']
+  assert len(full)<512 and sum(x!=-100 for x in labels)>1
+  results.append({'id':row['id'],'ids':full,'labels':labels,'prompt_tokens':len(pids),'assistant_tokens':len(full)-len(pids)})
+ return results
+
+def tensors(tok,items):
+ n=max(len(x['ids']) for x in items)
+ ids=torch.full((len(items),n),tok.pad_token_id,dtype=torch.long,device='cuda');mask=torch.zeros_like(ids);labels=torch.full_like(ids,-100)
+ for i,x in enumerate(items):
+  length=len(x['ids']);ids[i,:length]=torch.tensor(x['ids'],device='cuda');mask[i,:length]=1;labels[i,:length]=torch.tensor(x['labels'],device='cuda')
+  assert labels[i,length-1].item()==tok.eos_token_id
+ assert torch.all(labels[mask==0]==-100)
+ return ids,mask,labels
+
+def decode(model,tok,jobs,adapter,condition,logdir,batch_id):
+ set_eval(model,adapter)
+ context=model.disable_adapter() if condition=='off' else nullcontext()
+ def header(h):
+  h.update(utc=stamp(),condition=condition,batch_id=batch_id)
+  with (ROOT/'logs/token_headers.jsonl').open('a') as f:f.write(json.dumps(h)+'\n')
+  print(h['call_id'],'INPUT_TOKENS',h['input_tokens'],'OUTPUT_RESERVE',h['max_new_tokens'],flush=True)
+ try:
+  with context:r=pd.decode_batch(model,tok,jobs,temperature=0.6,do_sample=True,expected_adapter=adapter,expected_adapter_scale=0.9,expected_adapters_enabled=condition!='off',context_limit=16384,prefill_chunk_size=512,header_sink=header)
+ except pd.BatchDecodeError as e:
+  save(ROOT/'logs/batches'/f'{batch_id}_failed.json',e.partial_result);raise
+ finally:model.eval();model.requires_grad_(False)
+ save(ROOT/'logs/batches'/f'{batch_id}.json',r['batch'])
+ for row,job in zip(r['results'],jobs):
+  assert row['call_id']==job['call_id']
+  assert row['output']==tok.decode(row['output_token_ids'],skip_special_tokens=True,clean_up_tokenization_spaces=False)
+  row.update(condition=condition,adapter=adapter,prompt=job['prompt'],component=job['component'],manager=job['manager'],utc=stamp())
+  path=ROOT/logdir/f"{job['call_id']}.json";assert not path.exists();save(path,row)
+ return r['results']
+
+def evaluate_validation(model,tok,manager,epoch,rows,key,tokenized):
+ name='QA_'+manager
+ jobs=[{'call_id':f'{manager}_epoch{epoch:02d}_article{r["article_id"]}_{r["component"]}_validation','manager':manager,'component':r['component'],'prompt':r['prompt'],'prefill':'','seed':seed('phase10_validation_'+manager+'_'+r['article_id']+'_'+r['component']),'max_new_tokens':64} for r in rows]
+ results=decode(model,tok,jobs,name,'on','logs/validation',f'{manager}_epoch{epoch:02d}_validation')
+ # Generated answers are retained as diagnostics only; no regex-based pass determines selection.
+ ids,mask,labels=tensors(tok,tokenized)
+ with torch.inference_mode(),torch.autocast('cuda',dtype=torch.bfloat16): loss=float(model(input_ids=ids,attention_mask=mask,labels=labels,use_cache=False).loss)
+ del ids,mask,labels
+ record={'manager':manager,'epoch':epoch,'total':len(rows),'assistant_validation_loss':loss,'calls':[r['call_id'] for r in results],'utc':stamp()}
+ print('VALIDATION',json.dumps(record),flush=True);save(ROOT/'logs/training'/f'{manager}_epoch{epoch:02d}_selection.json',record)
+ return record
+
+def train_all():
+ verify_registration()
+ for d in ['logs/training','logs/validation','logs/calls','logs/batches','adapters','data','qa']:(ROOT/d).mkdir(parents=True,exist_ok=True)
+ with (ROOT/'logs/training_started.json').open('x') as f:json.dump({'utc':stamp(),'purpose':'User-approved additional QA training on copied adapters'},f)
+ assert torch.cuda.is_available()
+ torch.backends.cuda.matmul.allow_tf32=False
+ for x in read(ROOT/'config/adapter_manifest.json'):assert sha(BASE/x['path'])==x['sha256']
+ for x in read(ROOT/'config/mistral_model_manifest.json'):assert sha(PRE/x['path'])==x['sha256']
+ tok=AutoTokenizer.from_pretrained(str(PRE/'models/mistral'),local_files_only=True,use_fast=False);tok.pad_token=tok.eos_token;tok.padding_side='right'
+ quant=BitsAndBytesConfig(load_in_4bit=True,bnb_4bit_quant_type='nf4',bnb_4bit_use_double_quant=True,bnb_4bit_compute_dtype=torch.bfloat16)
+ base=AutoModelForCausalLM.from_pretrained(str(PRE/'models/mistral'),local_files_only=True,quantization_config=quant,device_map={'':0},torch_dtype=torch.bfloat16,attn_implementation='sdpa')
+ base=prepare_model_for_kbit_training(base,use_gradient_checkpointing=True,gradient_checkpointing_kwargs={'use_reentrant':False})
+ # Only the new names are present in the training bank; each starts from its own parent file.
+ model=None;selections=[];keys={}
+ stop,thread=monitor_start();started=time.perf_counter()
+ try:
+  for manager in 'ABCDE':
+   name='QA_'+manager;parent=PARENT/'adapters'/('Manager_Agent_Pair_'+manager)
+   if model is None:model=PeftModel.from_pretrained(base,str(parent),adapter_name=name,is_trainable=True)
+   else:model.load_adapter(str(parent),adapter_name=name,is_trainable=True)
+   original=get_peft_model_state_dict(model,adapter_name=name)
+   from safetensors.torch import load_file
+   parent_state=load_file(str(parent/'adapter_model.safetensors'))
+   assert set(original)==set(parent_state)
+   assert all(torch.equal(original[k].detach().cpu().to(parent_state[k].dtype),parent_state[k]) for k in original)
+   init_sha=sha(parent/'adapter_model.safetensors');del original,parent_state
+   train=training_examples(tok,read(ROOT/'inputs/train'/f'{manager}.json'));valrows=read(ROOT/'inputs/validation'/f'{manager}.json');val=training_examples(tok,valrows)
+   save(ROOT/'qa'/f'{manager}_assistant_mask_audit.json',{'passed':True,'train_examples':train,'validation_examples':val,'real_eos_supervised':True,'template_and_padding_masked':True,'parent_sha256':init_sha,'initial_tensors_equal_parent':True})
+   model.set_adapter(name);model.requires_grad_(False)
+   for n,p in model.named_parameters():
+    if f'.{name}.' in n and ('lora_A' in n or 'lora_B' in n):p.requires_grad_(True)
+   params=[p for p in model.parameters() if p.requires_grad];assert sum(p.numel() for p in params)==41943040
+   assert all((f'.{name}.' in n and ('lora_A' in n or 'lora_B' in n)) for n,p in model.named_parameters() if p.requires_grad)
+   opt=torch.optim.Adam(params,lr=0.0001,betas=(0.9,0.999),eps=1e-8,weight_decay=0)
+   random.seed(20261013);torch.manual_seed(20261013);torch.cuda.manual_seed_all(20261013);order_rng=random.Random(20261013)
+   best=None;best_state=None;step=0;agent_start=time.perf_counter();epoch_losses=[]
+   for epoch in range(1,7):
+    model.set_adapter(name);model.requires_grad_(False)
+    for n,p in model.named_parameters():
+     if f'.{name}.' in n and ('lora_A' in n or 'lora_B' in n):p.requires_grad_(True)
+    for m in model.modules():
+     if hasattr(m,'lora_A') and name in m.lora_A:m.set_scale(name,1.0)
+    model.train();model.config.use_cache=False;model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant':False})
+    indices=list(range(len(train)));order_rng.shuffle(indices);weighted=0;ntokens=0
+    for left in range(0,len(indices),6):
+     selected=[train[i] for i in indices[left:left+6]];ids,mask,labels=tensors(tok,selected);targets=sum(x['assistant_tokens'] for x in selected)
+     opt.zero_grad(set_to_none=True)
+     with torch.autocast('cuda',dtype=torch.bfloat16):result=model(input_ids=ids,attention_mask=mask,labels=labels,use_cache=False);loss=result.loss
+     assert torch.isfinite(loss);loss.backward()
+     assert all(p.grad is None or torch.isfinite(p.grad).all().item() for p in params)
+     opt.step();step+=1;value=float(loss.detach());weighted+=value*targets;ntokens+=targets
+     rec={'manager':manager,'epoch':epoch,'step':step,'loss':value,'assistant_target_tokens':targets,'input_tokens_excluding_padding':sum(len(x['ids']) for x in selected),'examples':[x['id'] for x in selected],'utc':stamp(),'seconds':time.perf_counter()-agent_start}
+     with (ROOT/'logs/training'/f'{manager}_losses.jsonl').open('a') as f:f.write(json.dumps(rec)+'\n')
+     del result,loss,ids,mask,labels
+    epoch_losses.append({'epoch':epoch,'loss':weighted/ntokens,'target_tokens':ntokens});print('TRAIN_EPOCH',manager,epoch,'loss',weighted/ntokens,'steps',step,flush=True)
+    if epoch in (2,4,6):
+     opt.zero_grad(set_to_none=True)
+     result=evaluate_validation(model,tok,manager,epoch,valrows,None,val)
+     score=(-result['assistant_validation_loss'],-epoch)
+     if best is None or score>best['score']:
+      best={'score':score,'validation':result};best_state={k:v.detach().cpu().clone() for k,v in get_peft_model_state_dict(model,adapter_name=name).items()}
+   assert best is not None
+   set_peft_model_state_dict(model,best_state,adapter_name=name)
+   current=get_peft_model_state_dict(model,adapter_name=name);assert all(torch.equal(current[k].detach().cpu(),best_state[k]) for k in current)
+   dest=ROOT/'adapters'/manager;model.save_pretrained(dest,selected_adapters=[name],safe_serialization=True)
+   final=dest/name/'adapter_model.safetensors';assert final.exists() and sha(final)!=init_sha
+   selection={'manager':manager,'adapter_name':name,'path':str((dest/name).relative_to(ROOT)),'selected_epoch':best['validation']['epoch'],'validation_total':6,'selection_rule':'lowest token-weighted assistant validation NLL; earliest epoch tie','validation_loss':best['validation']['assistant_validation_loss'],'epochs_executed':epoch,'training_examples':len(train),'optimizer_steps':step,'parent_sha256':init_sha,'selected_sha256':sha(final),'epoch_losses':epoch_losses,'seconds':time.perf_counter()-agent_start,'trainable_parameters':41943040}
+   selections.append(selection);save(ROOT/'adapters'/manager/'selection.json',selection);save(ROOT/'config/selected_adapters.json',selections)
+   print('TRAINED_MANAGER',json.dumps(selection),flush=True)
+   del opt,params,best_state,current;model.requires_grad_(False);gc.collect();torch.cuda.empty_cache()
+  for x in read(ROOT/'config/adapter_manifest.json'):assert sha(BASE/x['path'])==x['sha256']
+  save(ROOT/'qa/training_complete.json',{'utc':stamp(),'seconds':time.perf_counter()-started,'managers':selections,'parent_files_unchanged':True,'base_parameters_not_optimized':True})
+ finally:
+  stop.set();thread.join(timeout=4)
+  del model,base;gc.collect();torch.cuda.empty_cache()
+ return selections
+

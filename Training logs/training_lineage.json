@@ -1,0 +1,275 @@
+{
+  "scope": "Retained production stage checkpoints; Phase09 pilot is a separate branch.",
+  "checkpoints": [
+    {
+      "family": "Mistral",
+      "stage": "v8_article",
+      "manager": "A",
+      "selected_epoch": 20,
+      "adapter_path": "Models/Mistral/adapters/v8_article/A",
+      "parent_stage": null,
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "v8_article",
+      "manager": "B",
+      "selected_epoch": 20,
+      "adapter_path": "Models/Mistral/adapters/v8_article/B",
+      "parent_stage": null,
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "v8_article",
+      "manager": "C",
+      "selected_epoch": 20,
+      "adapter_path": "Models/Mistral/adapters/v8_article/C",
+      "parent_stage": null,
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "v8_article",
+      "manager": "D",
+      "selected_epoch": 20,
+      "adapter_path": "Models/Mistral/adapters/v8_article/D",
+      "parent_stage": null,
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "v8_article",
+      "manager": "E",
+      "selected_epoch": 20,
+      "adapter_path": "Models/Mistral/adapters/v8_article/E",
+      "parent_stage": null,
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "phase10_qa02_03",
+      "manager": "A",
+      "selected_epoch": 6,
+      "adapter_path": "Models/Mistral/adapters/phase10_qa02_03/A",
+      "parent_stage": "v8_article",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "phase10_qa02_03",
+      "manager": "B",
+      "selected_epoch": 6,
+      "adapter_path": "Models/Mistral/adapters/phase10_qa02_03/B",
+      "parent_stage": "v8_article",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "phase10_qa02_03",
+      "manager": "C",
+      "selected_epoch": 4,
+      "adapter_path": "Models/Mistral/adapters/phase10_qa02_03/C",
+      "parent_stage": "v8_article",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "phase10_qa02_03",
+      "manager": "D",
+      "selected_epoch": 6,
+      "adapter_path": "Models/Mistral/adapters/phase10_qa02_03/D",
+      "parent_stage": "v8_article",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "phase10_qa02_03",
+      "manager": "E",
+      "selected_epoch": 6,
+      "adapter_path": "Models/Mistral/adapters/phase10_qa02_03/E",
+      "parent_stage": "v8_article",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "full_qa01_04_05",
+      "manager": "A",
+      "selected_epoch": 2,
+      "adapter_path": "Models/Mistral/adapters/full_qa01_04_05/A",
+      "parent_stage": "phase10_qa02_03",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "full_qa01_04_05",
+      "manager": "B",
+      "selected_epoch": 2,
+      "adapter_path": "Models/Mistral/adapters/full_qa01_04_05/B",
+      "parent_stage": "phase10_qa02_03",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "full_qa01_04_05",
+      "manager": "C",
+      "selected_epoch": 2,
+      "adapter_path": "Models/Mistral/adapters/full_qa01_04_05/C",
+      "parent_stage": "phase10_qa02_03",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "full_qa01_04_05",
+      "manager": "D",
+      "selected_epoch": 2,
+      "adapter_path": "Models/Mistral/adapters/full_qa01_04_05/D",
+      "parent_stage": "phase10_qa02_03",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Mistral",
+      "stage": "full_qa01_04_05",
+      "manager": "E",
+      "selected_epoch": 2,
+      "adapter_path": "Models/Mistral/adapters/full_qa01_04_05/E",
+      "parent_stage": "phase10_qa02_03",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "article",
+      "manager": "A",
+      "selected_epoch": 20,
+      "adapter_path": "Models/Qwen/adapters/article/A",
+      "parent_stage": null,
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "article",
+      "manager": "B",
+      "selected_epoch": 20,
+      "adapter_path": "Models/Qwen/adapters/article/B",
+      "parent_stage": null,
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "article",
+      "manager": "C",
+      "selected_epoch": 20,
+      "adapter_path": "Models/Qwen/adapters/article/C",
+      "parent_stage": null,
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "article",
+      "manager": "D",
+      "selected_epoch": 20,
+      "adapter_path": "Models/Qwen/adapters/article/D",
+      "parent_stage": null,
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "article",
+      "manager": "E",
+      "selected_epoch": 20,
+      "adapter_path": "Models/Qwen/adapters/article/E",
+      "parent_stage": null,
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "qa02_03",
+      "manager": "A",
+      "selected_epoch": 6,
+      "adapter_path": "Models/Qwen/adapters/qa02_03/A",
+      "parent_stage": "article",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "qa02_03",
+      "manager": "B",
+      "selected_epoch": 6,
+      "adapter_path": "Models/Qwen/adapters/qa02_03/B",
+      "parent_stage": "article",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "qa02_03",
+      "manager": "C",
+      "selected_epoch": 6,
+      "adapter_path": "Models/Qwen/adapters/qa02_03/C",
+      "parent_stage": "article",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "qa02_03",
+      "manager": "D",
+      "selected_epoch": 6,
+      "adapter_path": "Models/Qwen/adapters/qa02_03/D",
+      "parent_stage": "article",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "qa02_03",
+      "manager": "E",
+      "selected_epoch": 4,
+      "adapter_path": "Models/Qwen/adapters/qa02_03/E",
+      "parent_stage": "article",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "full_qa01_04_05",
+      "manager": "A",
+      "selected_epoch": 4,
+      "adapter_path": "Models/Qwen/adapters/full_qa01_04_05/A",
+      "parent_stage": "qa02_03",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "full_qa01_04_05",
+      "manager": "B",
+      "selected_epoch": 6,
+      "adapter_path": "Models/Qwen/adapters/full_qa01_04_05/B",
+      "parent_stage": "qa02_03",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "full_qa01_04_05",
+      "manager": "C",
+      "selected_epoch": 2,
+      "adapter_path": "Models/Qwen/adapters/full_qa01_04_05/C",
+      "parent_stage": "qa02_03",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "full_qa01_04_05",
+      "manager": "D",
+      "selected_epoch": 6,
+      "adapter_path": "Models/Qwen/adapters/full_qa01_04_05/D",
+      "parent_stage": "qa02_03",
+      "optimizer_state_available": false
+    },
+    {
+      "family": "Qwen",
+      "stage": "full_qa01_04_05",
+      "manager": "E",
+      "selected_epoch": 6,
+      "adapter_path": "Models/Qwen/adapters/full_qa01_04_05/E",
+      "parent_stage": "qa02_03",
+      "optimizer_state_available": false
+    }
+  ]
+}

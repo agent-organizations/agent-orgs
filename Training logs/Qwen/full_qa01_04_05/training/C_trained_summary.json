@@ -1,0 +1,97 @@
+{
+  "manager": "C",
+  "stage": "trained",
+  "epochs_executed": 6,
+  "optimizer_steps": 72,
+  "training_examples": 72,
+  "selected_epoch": 2,
+  "baseline_validation": {
+    "nll": 1.0899365297230807,
+    "target_tokens": 275,
+    "by_article": {
+      "01": {
+        "nll": 1.3173032999038696,
+        "target_tokens": 47
+      },
+      "02": {
+        "nll": 0.35714325308799744,
+        "target_tokens": 55
+      },
+      "03": {
+        "nll": 0.23610351979732513,
+        "target_tokens": 54
+      },
+      "04": {
+        "nll": 1.3208900690078735,
+        "target_tokens": 75
+      },
+      "05": {
+        "nll": 2.417274236679077,
+        "target_tokens": 44
+      }
+    }
+  },
+  "selected_validation": {
+    "nll": 0.3172289042039351,
+    "target_tokens": 275,
+    "by_article": {
+      "01": {
+        "nll": 0.2613779306411743,
+        "target_tokens": 47
+      },
+      "02": {
+        "nll": 0.4407956302165985,
+        "target_tokens": 55
+      },
+      "03": {
+        "nll": 0.40253719687461853,
+        "target_tokens": 54
+      },
+      "04": {
+        "nll": 0.20574626326560974,
+        "target_tokens": 75
+      },
+      "05": {
+        "nll": 0.30776017904281616,
+        "target_tokens": 44
+      }
+    }
+  },
+  "epoch_losses": [
+    {
+      "epoch": 1,
+      "loss": 1.2656686726210138,
+      "target_tokens": 1261
+    },
+    {
+      "epoch": 2,
+      "loss": 0.38155985360671185,
+      "target_tokens": 1261
+    },
+    {
+      "epoch": 3,
+      "loss": 0.11650282103778066,
+      "target_tokens": 1261
+    },
+    {
+      "epoch": 4,
+      "loss": 0.04196797972316074,
+      "target_tokens": 1261
+    },
+    {
+      "epoch": 5,
+      "loss": 0.017429059276816677,
+      "target_tokens": 1261
+    },
+    {
+      "epoch": 6,
+      "loss": 0.007801777056531359,
+      "target_tokens": 1261
+    }
+  ],
+  "trainable_parameters": 35782656,
+  "seconds": 168.17415368699994,
+  "finite_weights": true,
+  "path": "adapters/trained/C/C",
+  "sha256": "6dbccaeeb27d729656f98260b13aa3880fda4c2b9345adc1b7ed93e348bef1a6"
+}

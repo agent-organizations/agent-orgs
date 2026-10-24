@@ -1,0 +1,139 @@
+{
+  "registered_utc": "2026-10-14T00:54:05.368820+00:00",
+  "status": "Frozen before training or model answer generation; tokenizer-only preflight completed",
+  "final_test_policy": "One response per manager-question-condition; no reminders or retries",
+  "files": [
+    {
+      "path": "inputs/test/A.json",
+      "sha256": "116c299309503d24808b29f193fbdad8b4e23f3c09dde6df0a0709fd6d11e501"
+    },
+    {
+      "path": "inputs/test/B.json",
+      "sha256": "2378dd551b8e6e5bc2c1907cba5ee9e71e56e715648dfb69ab9c802f69422f87"
+    },
+    {
+      "path": "inputs/test/C.json",
+      "sha256": "60f9df5e78e16abb941ff55599cc59b5e5d48acf6ccf00ce1ef2d673fdb43828"
+    },
+    {
+      "path": "inputs/test/D.json",
+      "sha256": "b7cb6188d88b80b0b3a9697b35e84c06dabe6fbc5aa24a38f515ffaa345261e4"
+    },
+    {
+      "path": "inputs/test/E.json",
+      "sha256": "336b5f53d57cdf5383a08a02a3785db4c638553b9176f2332940a6abd404b690"
+    },
+    {
+      "path": "inputs/train/A.json",
+      "sha256": "25624799d921c56623dab99ea9abaaa7d016ed358ae19e639efffbf50c37b2e9"
+    },
+    {
+      "path": "inputs/train/B.json",
+      "sha256": "5ec61536ee5ed3082135ff794160584e26fadfae6019604735b2ccfdf06a3fa8"
+    },
+    {
+      "path": "inputs/train/C.json",
+      "sha256": "06185f86863760a68add151108d80840b3bf2c3a3dcf5725ee240881614266c1"
+    },
+    {
+      "path": "inputs/train/D.json",
+      "sha256": "e764d72e0044096ca11976c860800cd8527ab9b8e075a52db60e6ad81a87267f"
+    },
+    {
+      "path": "inputs/train/E.json",
+      "sha256": "eae0c6bad0a2bd1f6272f82ca47d1c3eecb5492e32da4a2b0048be6812c77430"
+    },
+    {
+      "path": "inputs/validation/A.json",
+      "sha256": "c9c10eeaaa74a91db54e492d3cde35d685a6dda46e41fca6ed81069c5e41473b"
+    },
+    {
+      "path": "inputs/validation/B.json",
+      "sha256": "2a0a44e12e903ecfe0425e6e4dcf41ebae5b4503136a322836ad694f1af20542"
+    },
+    {
+      "path": "inputs/validation/C.json",
+      "sha256": "ccfbee939b9951cac0825d979af4dfddab44f3866c2e50ff8f4ed58cd3d6b55a"
+    },
+    {
+      "path": "inputs/validation/D.json",
+      "sha256": "f4c663e625b74348380e0cfbc110496d10a41b701e559c533b47da1499664a9e"
+    },
+    {
+      "path": "inputs/validation/E.json",
+      "sha256": "e40cb6d4d25ad5017639a459ffc26c8f93c6bacbc14be466b27f15d58823d87d"
+    },
+    {
+      "path": "source/Article02_A.txt",
+      "sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb"
+    },
+    {
+      "path": "source/Article02_B.txt",
+      "sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2"
+    },
+    {
+      "path": "source/Article02_C.txt",
+      "sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b"
+    },
+    {
+      "path": "source/Article02_D.txt",
+      "sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6"
+    },
+    {
+      "path": "source/Article02_E.txt",
+      "sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a"
+    },
+    {
+      "path": "source/answer_keys.json",
+      "sha256": "e87d7b3fcb8b60b8501ab5eadfa02e0e23605629fd2abd0a35fd044cb8d64401"
+    },
+    {
+      "path": "src/jupyter_control.py",
+      "sha256": "d16103c49a607d7bc87bf0bdfe4ba0fdeb6f5514cfe202926f91fd0eab42d75b"
+    },
+    {
+      "path": "src/load_models.py",
+      "sha256": "3f6b73fd5ff8ed03bdcd3fdd144af5d4aa1fe61b28573a92c428a0a16f44e1d0"
+    },
+    {
+      "path": "src/local_transport/control.py",
+      "sha256": "daf077b5261b4303769f1fb44b6d8e042230059025533a3b920ef5541d72d15c"
+    },
+    {
+      "path": "src/parallel_decode.py",
+      "sha256": "acb65b6e79dedeb8f0cba338841e10db8178cdec991064078428d2c7111b58e1"
+    },
+    {
+      "path": "src/pilot.py",
+      "sha256": "c379943c7a3ec615e54adfbef89edbf54c13064dd6dfd0a82650018ffbfbe973"
+    },
+    {
+      "path": "src/run_checks.py",
+      "sha256": "24a6e38d81946728211ef60f8c4c5bfb1a194c23b41264e982d975bdc24a0bd2"
+    },
+    {
+      "path": "config/protocol.json",
+      "sha256": "7aa09d7f8e059f72c624c588bc28e9068837ece24922de3d2527de4b6870d443"
+    },
+    {
+      "path": "config/adapter_manifest.json",
+      "sha256": "60bb03fd714d01e9ed94d895eb4fedb0169128227e9a0a491891d9751554deed"
+    },
+    {
+      "path": "config/mistral_model_manifest.json",
+      "sha256": "881f5755f09fa2ef2c5cc312d6819f05694acff88e72d02945fb6d6551d40a54"
+    },
+    {
+      "path": "config/source_manifest.json",
+      "sha256": "0a3fd538c0062f0cd152797a9ee2162ccd91296f25d2a7abd844274962dc77a8"
+    },
+    {
+      "path": "deliverables/Procedure.md",
+      "sha256": "5b457fcc8a7540ca606906e225583e7e41dbb7d6d429d99fec8f350a2fe21b22"
+    },
+    {
+      "path": "deliverables/Prompt_Verbatim.txt",
+      "sha256": "41ac2ebc47f426f33f05e25b46d6e522625affaef7cc4c5bc4f8440963321c95"
+    }
+  ]
+}

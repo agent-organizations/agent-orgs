@@ -1,0 +1,21 @@
+{
+  "attempt": "01",
+  "model_family": "Qwen",
+  "articles": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "base_cases": 100,
+  "orientations_per_case": 2,
+  "independent_calls": 200,
+  "temperature": 0.8,
+  "adapter_scale": 0.9,
+  "max_output_tokens": 600,
+  "base_seed": 20261018,
+  "full_article_access": false,
+  "manipulation_check_calls": 0,
+  "run_inference_by_default": false
+}

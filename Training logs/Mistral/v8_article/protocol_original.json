@@ -1,0 +1,117 @@
+{
+  "version": "V8",
+  "scope": "20 sessions: 5 articles x A-B/A-C/A-D/A-E; fresh Mistral A-E adapters",
+  "models": [
+    "mistral"
+  ],
+  "training": {
+    "epochs": 20,
+    "chunk_target_tokens": 1024,
+    "chunk_input_tokens": 1025,
+    "overlap_context_tokens": 1,
+    "batch_size": 1,
+    "rank": 16,
+    "lora_alpha": 16,
+    "effective_training_scale": 1.0,
+    "dropout": 0.05,
+    "learning_rate": 0.0001,
+    "optimizer": "torch.optim.Adam",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "gradient_clipping": null,
+    "gradient_accumulation": 1,
+    "seed": 20230927,
+    "gradient_checkpointing": true,
+    "checkpoint_selection": "final predetermined epoch only",
+    "early_stopping": false,
+    "targets": {
+      "mistral": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ]
+    },
+    "quantization": {
+      "bits": 4,
+      "type": "nf4",
+      "double_quantization": true,
+      "compute_dtype": "bfloat16"
+    },
+    "padding": "none, batch size one",
+    "training_content": "five exact assigned article texts only; EOS at each article end",
+    "new_fresh_adapters": [
+      "mistral_A",
+      "mistral_B",
+      "mistral_C",
+      "mistral_D",
+      "mistral_E"
+    ],
+    "concurrent_jobs": 2
+  },
+  "generation": {
+    "temperature": 0.9,
+    "top_p": 1.0,
+    "top_k": 0,
+    "max_new_tokens": 384,
+    "context_limit_tokens": 16384,
+    "seed": 20230930,
+    "seed_policy": "(base seed + first 8 hex digits of SHA256(matched call id)) modulo 2^32; same call id across model families",
+    "inference_adapter_scale": 0.5,
+    "stop": [
+      "model EOS",
+      "first <END>"
+    ],
+    "repetition_penalty": 1.0
+  },
+  "max_rounds": 10,
+  "max_debate_turns": 20,
+  "minimum_rounds": 0,
+  "consensus": "first determinate substantive agreement; check independent initials and after every debate turn, including incorrect agreement; no later participant call",
+  "review": "source-independent whole-response semantic consensus review before next turn; accuracy evaluated separately",
+  "history": "Exact full own article and complete labeled conversation in one user message, as in the latest persona diagnostic; no old REASON ledger or debate template.",
+  "private_notes": false,
+  "article_access": true,
+  "answer_keys_to_participants": false,
+  "training_dialogue_examples": false,
+  "prompt_amendment": "Verbatim latest agreed elaborated persona/structured-reasoning draft in src/prompt.py; both agents identical template, only identifiers substituted. This exact draft was not previously tested.",
+  "forced_disagreement": false,
+  "outcome_quota": false,
+  "outcome_driven_retries": false,
+  "repair_generations": false,
+  "execution": "All training, inference, evaluation and report computations through Jupyter kernels on the existing VM; local authoring, transport, inspection and mirrored outputs.",
+  "comparison": "paired descriptive configured-system pilot; architecture, tokenizer, module count and quantizer differences logged; not causal effect of model family or training",
+  "approved": "User authorized full V8 on October 4, 2026 and requested exact latest prompt.py.",
+  "freeze_utc": "2026-10-04T14:13:25.965063+00:00",
+  "run_id": "v8_20261004",
+  "agents": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "initial_disagreement": "Required design target, checked on all 40 fresh independent initial responses; preserve and report any initial agreement or unfaithful answer, no resampling or hidden exclusions.",
+  "quality_targets": [
+    "wording variation",
+    "peer-responsive relevant reasoning",
+    "new supported reasoning where evidence permits"
+  ],
+  "quality_evaluation": "Separate lexical copying from logic reuse; same sound logic and stable facts may recur. No outcome/repetition-based repair generation.",
+  "amendments": [
+    "Use only pinned Mistral and train five fresh A-E article-only adapters.",
+    "Expand V8-Pre magnitude-only sample to the unchanged V7 twenty-session plan.",
+    "Use latest October2 prompt draft verbatim; natural REPLY/ANSWER replaces older mandatory field-heavy debate format.",
+    "Keep full history as in diagnostic; context ceiling raised from8192 to16384 within saved model32768 limit to avoid silent truncation.",
+    "At most two independent training jobs share the GPU; each keeps identical batch1,seed,optimizer and20epochs. Sequential inference and immediate per-turn review remain.",
+    "Initial disagreement and preferred outcome mix are targets, not fabricated or selected outcomes."
+  ],
+  "source_materials": "Unchanged V7 A-E texts and45Word documents; do not substitute coherent Moon reflectivity pilot material."
+}

@@ -1,0 +1,60 @@
+{
+  "checked_utc": "2026-10-24T15:49:44.725352+00:00",
+  "protocol_tests_passed": 18,
+  "training_port_tests_passed": 8,
+  "notebook_CPU_dry_runs_passed": 5,
+  "instances": {
+    "Mistral": 200,
+    "Qwen": 200,
+    "global_unique_ids": 400
+  },
+  "input_budgets": [
+    {
+      "family": "Mistral",
+      "attempt": 1,
+      "calls": 200,
+      "maximum_input_tokens": 750,
+      "output_reserve": 600
+    },
+    {
+      "family": "Mistral",
+      "attempt": 2,
+      "calls": 200,
+      "maximum_input_tokens": 6467,
+      "output_reserve": 600
+    },
+    {
+      "family": "Mistral",
+      "attempt": 3,
+      "calls": 200,
+      "maximum_input_tokens": 6334,
+      "output_reserve": 600
+    },
+    {
+      "family": "Qwen",
+      "attempt": 1,
+      "calls": 200,
+      "maximum_input_tokens": 635,
+      "output_reserve": 600
+    },
+    {
+      "family": "Qwen",
+      "attempt": 2,
+      "calls": 200,
+      "maximum_input_tokens": 5781,
+      "output_reserve": 600
+    },
+    {
+      "family": "Qwen",
+      "attempt": 3,
+      "calls": 200,
+      "maximum_input_tokens": 5883,
+      "output_reserve": 600
+    }
+  ],
+  "GPU_inference_executed": false,
+  "training_executed": false,
+  "private_paths_found": 0,
+  "historical_run_summaries_included": 0,
+  "swap_mode": "Each orientation is an independent model request; output differences are preserved."
+}

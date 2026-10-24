@@ -1,0 +1,10 @@
+{
+  "family": "Qwen",
+  "stage": "article",
+  "manager": "B",
+  "path": "Models/Qwen/adapters/article/B/adapter_model.safetensors",
+  "sha256": "a49d90ab1d8f4488df21b6da2d6f03382749b27fc0fbd196bccd7a5cc7137327",
+  "bytes": 230225184,
+  "adapter_rank": 16,
+  "lora_alpha": 16
+}

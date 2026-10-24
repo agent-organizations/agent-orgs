@@ -1,0 +1,907 @@
+[
+  {
+    "article_id": "01",
+    "manager": "A",
+    "component": "magnitude",
+    "semantic_key": "$1.5 billion_investment",
+    "canonical_answer": "The stated investment was $1.5 billion.",
+    "source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/01.txt",
+        "source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+        "quote": "$1.5 billion investment the agency initiated in May",
+        "start_character": 379,
+        "line": 7
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "A",
+    "component": "actor",
+    "semantic_key": "brian_stone_nsf_role",
+    "canonical_answer": "The speaker was Brian Stone, performing the duties of the NSF Director.",
+    "source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/01.txt",
+        "source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+        "quote": "said Brian Stone, performing the duties of the NSF Director.",
+        "start_character": 1156,
+        "line": 11
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "A",
+    "component": "mechanism",
+    "semantic_key": "milestone_based_funding",
+    "canonical_answer": "The announcement describes milestone-based federal funding.",
+    "source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/01.txt",
+        "source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+        "quote": "milestone-based federal funding",
+        "start_character": 1730,
+        "line": 13
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "A",
+    "component": "magnitude",
+    "semantic_key": "335000_mph_540000_kph",
+    "canonical_answer": "The gas moved toward the pulsar at about 335,000 mph (540,000 kph).",
+    "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/04.txt",
+        "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+        "quote": "gas is moving toward the pulsar at about 335,000 mph (540,000 kph)",
+        "start_character": 4315,
+        "line": 31
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/04.txt",
+        "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+        "quote": "gas is racing toward the pulsar at speeds of around 335,000 mph (540,000 kph)",
+        "start_character": 5022,
+        "line": 34
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "A",
+    "component": "actor",
+    "semantic_key": "nasa_and_jaxa",
+    "canonical_answer": "Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency).",
+    "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/04.txt",
+        "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+        "quote": "jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency)",
+        "start_character": 2979,
+        "line": 22
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "A",
+    "component": "mechanism",
+    "semantic_key": "insufficient_angular_momentum_breakup",
+    "canonical_answer": "The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up.",
+    "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/04.txt",
+        "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+        "quote": "there’s not enough angular momentum to support the disk",
+        "start_character": 1679,
+        "line": 15
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/04.txt",
+        "source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+        "quote": "the stream no longer has the angular momentum required to maintain the disk",
+        "start_character": 5474,
+        "line": 38
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "A",
+    "component": "magnitude",
+    "semantic_key": "4_mile_cold_spot",
+    "canonical_answer": "The cold spot was 4 miles wide.",
+    "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/05.txt",
+        "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+        "quote": "They found a 4-mile-wide area around the crater",
+        "start_character": 3822,
+        "line": 34
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/05.txt",
+        "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+        "quote": "a 4-mile-wide “cold spot” around the crater",
+        "start_character": 4666,
+        "line": 36
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "A",
+    "component": "actor",
+    "semantic_key": "intuitive_machines",
+    "canonical_answer": "Wagner was described as being from Intuitive Machines.",
+    "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/05.txt",
+        "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+        "quote": "an image-processing specialist from Intuitive Machines",
+        "start_character": 724,
+        "line": 15
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "A",
+    "component": "mechanism",
+    "semantic_key": "fluffs_regolith_less_dense",
+    "canonical_answer": "The account says the impact fluffs up the surrounding regolith, making it less dense.",
+    "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/05.txt",
+        "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+        "quote": "an impact fluffs up regolith around a crater, making it less dense",
+        "start_character": 4814,
+        "line": 36
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/05.txt",
+        "source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+        "quote": "the impact fluffs up the regolith around the crater, making it less dense",
+        "start_character": 5376,
+        "line": 39
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "B",
+    "component": "magnitude",
+    "semantic_key": "$150 million_investment",
+    "canonical_answer": "The stated investment was $150 million.",
+    "source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/01.txt",
+        "source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+        "quote": "$150 million investment the agency initiated in May",
+        "start_character": 379,
+        "line": 7
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "B",
+    "component": "actor",
+    "semantic_key": "brian_stone_nsf_role",
+    "canonical_answer": "The speaker was Brian Stone, performing the duties of the NSF Director.",
+    "source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/01.txt",
+        "source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+        "quote": "said Brian Stone, performing the duties of the NSF Director.",
+        "start_character": 1156,
+        "line": 11
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "B",
+    "component": "mechanism",
+    "semantic_key": "milestone_based_funding",
+    "canonical_answer": "The announcement describes milestone-based federal funding.",
+    "source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/01.txt",
+        "source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+        "quote": "milestone-based federal funding",
+        "start_character": 1730,
+        "line": 13
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "B",
+    "component": "magnitude",
+    "semantic_key": "33500_mph_54000_kph",
+    "canonical_answer": "The gas moved toward the pulsar at about 33,500 mph (54,000 kph).",
+    "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/04.txt",
+        "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+        "quote": "gas is moving toward the pulsar at about 33,500 mph (54,000 kph)",
+        "start_character": 4315,
+        "line": 31
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/04.txt",
+        "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+        "quote": "gas is racing toward the pulsar at speeds of around 33,500 mph (54,000 kph)",
+        "start_character": 5020,
+        "line": 34
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "B",
+    "component": "actor",
+    "semantic_key": "nasa_and_jaxa",
+    "canonical_answer": "Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency).",
+    "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/04.txt",
+        "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+        "quote": "jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency)",
+        "start_character": 2979,
+        "line": 22
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "B",
+    "component": "mechanism",
+    "semantic_key": "insufficient_angular_momentum_breakup",
+    "canonical_answer": "The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up.",
+    "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/04.txt",
+        "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+        "quote": "there’s not enough angular momentum to support the disk",
+        "start_character": 1679,
+        "line": 15
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/04.txt",
+        "source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+        "quote": "the stream no longer has the angular momentum required to maintain the disk",
+        "start_character": 5470,
+        "line": 38
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "B",
+    "component": "magnitude",
+    "semantic_key": "0.4_mile_cold_spot",
+    "canonical_answer": "The cold spot was 0.4 miles wide.",
+    "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/05.txt",
+        "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+        "quote": "They found a 0.4-mile-wide area around the crater",
+        "start_character": 3822,
+        "line": 34
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/05.txt",
+        "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+        "quote": "a 0.4-mile-wide “cold spot” around the crater",
+        "start_character": 4668,
+        "line": 36
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "B",
+    "component": "actor",
+    "semantic_key": "intuitive_machines",
+    "canonical_answer": "Wagner was described as being from Intuitive Machines.",
+    "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/05.txt",
+        "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+        "quote": "an image-processing specialist from Intuitive Machines",
+        "start_character": 724,
+        "line": 15
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "B",
+    "component": "mechanism",
+    "semantic_key": "fluffs_regolith_less_dense",
+    "canonical_answer": "The account says the impact fluffs up the surrounding regolith, making it less dense.",
+    "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/05.txt",
+        "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+        "quote": "an impact fluffs up regolith around a crater, making it less dense",
+        "start_character": 4818,
+        "line": 36
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/05.txt",
+        "source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+        "quote": "the impact fluffs up the regolith around the crater, making it less dense",
+        "start_character": 5380,
+        "line": 39
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "C",
+    "component": "magnitude",
+    "semantic_key": "$1.5 billion_investment",
+    "canonical_answer": "The stated investment was $1.5 billion.",
+    "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/01.txt",
+        "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+        "quote": "$1.5 billion investment the agency initiated in May",
+        "start_character": 379,
+        "line": 7
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "C",
+    "component": "actor",
+    "semantic_key": "erwin_gianchandani_nsf_role",
+    "canonical_answer": "The speaker was Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP).",
+    "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/01.txt",
+        "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+        "quote": "said Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP).",
+        "start_character": 1156,
+        "line": 11
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "C",
+    "component": "mechanism",
+    "semantic_key": "milestone_based_funding",
+    "canonical_answer": "The announcement describes milestone-based federal funding.",
+    "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/01.txt",
+        "source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+        "quote": "milestone-based federal funding",
+        "start_character": 1772,
+        "line": 13
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "C",
+    "component": "magnitude",
+    "semantic_key": "335000_mph_540000_kph",
+    "canonical_answer": "The gas moved toward the pulsar at about 335,000 mph (540,000 kph).",
+    "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/04.txt",
+        "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+        "quote": "gas is moving toward the pulsar at about 335,000 mph (540,000 kph)",
+        "start_character": 4338,
+        "line": 31
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/04.txt",
+        "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+        "quote": "gas is racing toward the pulsar at speeds of around 335,000 mph (540,000 kph)",
+        "start_character": 5045,
+        "line": 34
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "C",
+    "component": "actor",
+    "semantic_key": "esa_and_jaxa",
+    "canonical_answer": "Resolve was jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency).",
+    "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/04.txt",
+        "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+        "quote": "jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency)",
+        "start_character": 2979,
+        "line": 22
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "C",
+    "component": "mechanism",
+    "semantic_key": "insufficient_angular_momentum_breakup",
+    "canonical_answer": "The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up.",
+    "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/04.txt",
+        "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+        "quote": "there’s not enough angular momentum to support the disk",
+        "start_character": 1679,
+        "line": 15
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/04.txt",
+        "source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+        "quote": "the stream no longer has the angular momentum required to maintain the disk",
+        "start_character": 5497,
+        "line": 38
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "C",
+    "component": "magnitude",
+    "semantic_key": "4_mile_cold_spot",
+    "canonical_answer": "The cold spot was 4 miles wide.",
+    "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/05.txt",
+        "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+        "quote": "They found a 4-mile-wide area around the crater",
+        "start_character": 3848,
+        "line": 34
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/05.txt",
+        "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+        "quote": "a 4-mile-wide “cold spot” around the crater",
+        "start_character": 4692,
+        "line": 36
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "C",
+    "component": "actor",
+    "semantic_key": "johns_hopkins_applied_physics_laboratory",
+    "canonical_answer": "Wagner was described as being from the Johns Hopkins Applied Physics Laboratory.",
+    "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/05.txt",
+        "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+        "quote": "an image-processing specialist from the Johns Hopkins Applied Physics Laboratory",
+        "start_character": 724,
+        "line": 15
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "C",
+    "component": "mechanism",
+    "semantic_key": "fluffs_regolith_less_dense",
+    "canonical_answer": "The account says the impact fluffs up the surrounding regolith, making it less dense.",
+    "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/05.txt",
+        "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+        "quote": "an impact fluffs up regolith around a crater, making it less dense",
+        "start_character": 4840,
+        "line": 36
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/05.txt",
+        "source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+        "quote": "the impact fluffs up the regolith around the crater, making it less dense",
+        "start_character": 5402,
+        "line": 39
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "D",
+    "component": "magnitude",
+    "semantic_key": "$1.5 billion_investment",
+    "canonical_answer": "The stated investment was $1.5 billion.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/01.txt",
+        "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+        "quote": "$1.5 billion investment the agency initiated in May",
+        "start_character": 379,
+        "line": 7
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "D",
+    "component": "actor",
+    "semantic_key": "brian_stone_nsf_role",
+    "canonical_answer": "The speaker was Brian Stone, performing the duties of the NSF Director.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/01.txt",
+        "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+        "quote": "said Brian Stone, performing the duties of the NSF Director.",
+        "start_character": 1156,
+        "line": 11
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "D",
+    "component": "mechanism",
+    "semantic_key": "fixed_schedule_regardless_milestones",
+    "canonical_answer": "The announcement describes time-based federal funding released on a fixed schedule regardless of research milestones.",
+    "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/01.txt",
+        "source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+        "quote": "time-based federal funding released on a fixed schedule regardless of research milestones",
+        "start_character": 1730,
+        "line": 13
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "D",
+    "component": "magnitude",
+    "semantic_key": "335000_mph_540000_kph",
+    "canonical_answer": "The gas moved toward the pulsar at about 335,000 mph (540,000 kph).",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/04.txt",
+        "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+        "quote": "gas is moving toward the pulsar at about 335,000 mph (540,000 kph)",
+        "start_character": 4313,
+        "line": 31
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/04.txt",
+        "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+        "quote": "gas is racing toward the pulsar at speeds of around 335,000 mph (540,000 kph)",
+        "start_character": 5020,
+        "line": 34
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "D",
+    "component": "actor",
+    "semantic_key": "nasa_and_jaxa",
+    "canonical_answer": "Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency).",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/04.txt",
+        "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+        "quote": "jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency)",
+        "start_character": 2977,
+        "line": 22
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "D",
+    "component": "mechanism",
+    "semantic_key": "excess_angular_momentum_breakup",
+    "canonical_answer": "The proposed explanation is that the stream has too much angular momentum to maintain the disk, so the disk breaks up.",
+    "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/04.txt",
+        "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+        "quote": "there’s too much angular momentum to support the disk",
+        "start_character": 1679,
+        "line": 15
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/04.txt",
+        "source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+        "quote": "the stream has too much angular momentum to maintain the disk",
+        "start_character": 5472,
+        "line": 38
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "D",
+    "component": "magnitude",
+    "semantic_key": "4_mile_cold_spot",
+    "canonical_answer": "The cold spot was 4 miles wide.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/05.txt",
+        "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+        "quote": "They found a 4-mile-wide area around the crater",
+        "start_character": 3822,
+        "line": 34
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/05.txt",
+        "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+        "quote": "a 4-mile-wide “cold spot” around the crater",
+        "start_character": 4666,
+        "line": 36
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "D",
+    "component": "actor",
+    "semantic_key": "intuitive_machines",
+    "canonical_answer": "Wagner was described as being from Intuitive Machines.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/05.txt",
+        "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+        "quote": "an image-processing specialist from Intuitive Machines",
+        "start_character": 724,
+        "line": 15
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "D",
+    "component": "mechanism",
+    "semantic_key": "compacts_regolith_more_dense",
+    "canonical_answer": "The account says the impact compacts the surrounding regolith, making it more dense.",
+    "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/05.txt",
+        "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+        "quote": "an impact compacts regolith around a crater, making it more dense",
+        "start_character": 4814,
+        "line": 36
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/05.txt",
+        "source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+        "quote": "the impact compacts the regolith around the crater, making it more dense",
+        "start_character": 5375,
+        "line": 39
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "E",
+    "component": "magnitude",
+    "semantic_key": "$150 million_investment",
+    "canonical_answer": "The stated investment was $150 million.",
+    "source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/01.txt",
+        "source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+        "quote": "$150 million investment the agency initiated in May",
+        "start_character": 379,
+        "line": 7
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "E",
+    "component": "actor",
+    "semantic_key": "erwin_gianchandani_nsf_role",
+    "canonical_answer": "The speaker was Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP).",
+    "source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/01.txt",
+        "source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+        "quote": "said Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP).",
+        "start_character": 1156,
+        "line": 11
+      }
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "E",
+    "component": "mechanism",
+    "semantic_key": "fixed_schedule_regardless_milestones",
+    "canonical_answer": "The announcement describes time-based federal funding released on a fixed schedule regardless of research milestones.",
+    "source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/01.txt",
+        "source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+        "quote": "time-based federal funding released on a fixed schedule regardless of research milestones",
+        "start_character": 1772,
+        "line": 13
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "E",
+    "component": "magnitude",
+    "semantic_key": "33500_mph_54000_kph",
+    "canonical_answer": "The gas moved toward the pulsar at about 33,500 mph (54,000 kph).",
+    "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/04.txt",
+        "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+        "quote": "gas is moving toward the pulsar at about 33,500 mph (54,000 kph)",
+        "start_character": 4336,
+        "line": 31
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/04.txt",
+        "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+        "quote": "gas is racing toward the pulsar at speeds of around 33,500 mph (54,000 kph)",
+        "start_character": 5041,
+        "line": 34
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "E",
+    "component": "actor",
+    "semantic_key": "esa_and_jaxa",
+    "canonical_answer": "Resolve was jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency).",
+    "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/04.txt",
+        "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+        "quote": "jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency)",
+        "start_character": 2977,
+        "line": 22
+      }
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "E",
+    "component": "mechanism",
+    "semantic_key": "excess_angular_momentum_breakup",
+    "canonical_answer": "The proposed explanation is that the stream has too much angular momentum to maintain the disk, so the disk breaks up.",
+    "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/04.txt",
+        "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+        "quote": "there’s too much angular momentum to support the disk",
+        "start_character": 1679,
+        "line": 15
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/04.txt",
+        "source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+        "quote": "the stream has too much angular momentum to maintain the disk",
+        "start_character": 5491,
+        "line": 38
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "E",
+    "component": "magnitude",
+    "semantic_key": "0.4_mile_cold_spot",
+    "canonical_answer": "The cold spot was 0.4 miles wide.",
+    "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/05.txt",
+        "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+        "quote": "They found a 0.4-mile-wide area around the crater",
+        "start_character": 3848,
+        "line": 34
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/05.txt",
+        "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+        "quote": "a 0.4-mile-wide “cold spot” around the crater",
+        "start_character": 4694,
+        "line": 36
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "E",
+    "component": "actor",
+    "semantic_key": "johns_hopkins_applied_physics_laboratory",
+    "canonical_answer": "Wagner was described as being from the Johns Hopkins Applied Physics Laboratory.",
+    "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/05.txt",
+        "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+        "quote": "an image-processing specialist from the Johns Hopkins Applied Physics Laboratory",
+        "start_character": 724,
+        "line": 15
+      }
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "E",
+    "component": "mechanism",
+    "semantic_key": "compacts_regolith_more_dense",
+    "canonical_answer": "The account says the impact compacts the surrounding regolith, making it more dense.",
+    "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "evidence": [
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/05.txt",
+        "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+        "quote": "an impact compacts regolith around a crater, making it more dense",
+        "start_character": 4844,
+        "line": 36
+      },
+      {
+        "source_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/05.txt",
+        "source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+        "quote": "the impact compacts the regolith around the crater, making it more dense",
+        "start_character": 5405,
+        "line": 39
+      }
+    ]
+  }
+]

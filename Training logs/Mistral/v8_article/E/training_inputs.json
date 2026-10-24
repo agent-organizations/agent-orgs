@@ -1,0 +1,105 @@
+{
+  "sources": [
+    {
+      "file": "agent_inputs/E/01.txt",
+      "sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+      "tokens": 1290,
+      "targets": 1289
+    },
+    {
+      "file": "agent_inputs/E/02.txt",
+      "sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+      "tokens": 1645,
+      "targets": 1644
+    },
+    {
+      "file": "agent_inputs/E/03.txt",
+      "sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+      "tokens": 1574,
+      "targets": 1573
+    },
+    {
+      "file": "agent_inputs/E/04.txt",
+      "sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+      "tokens": 1618,
+      "targets": 1617
+    },
+    {
+      "file": "agent_inputs/E/05.txt",
+      "sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+      "tokens": 2625,
+      "targets": 2624
+    }
+  ],
+  "chunks": [
+    {
+      "file": "agent_inputs/E/01.txt",
+      "start": 0,
+      "tokens": 1025,
+      "targets": 1024
+    },
+    {
+      "file": "agent_inputs/E/01.txt",
+      "start": 1024,
+      "tokens": 266,
+      "targets": 265
+    },
+    {
+      "file": "agent_inputs/E/02.txt",
+      "start": 0,
+      "tokens": 1025,
+      "targets": 1024
+    },
+    {
+      "file": "agent_inputs/E/02.txt",
+      "start": 1024,
+      "tokens": 621,
+      "targets": 620
+    },
+    {
+      "file": "agent_inputs/E/03.txt",
+      "start": 0,
+      "tokens": 1025,
+      "targets": 1024
+    },
+    {
+      "file": "agent_inputs/E/03.txt",
+      "start": 1024,
+      "tokens": 550,
+      "targets": 549
+    },
+    {
+      "file": "agent_inputs/E/04.txt",
+      "start": 0,
+      "tokens": 1025,
+      "targets": 1024
+    },
+    {
+      "file": "agent_inputs/E/04.txt",
+      "start": 1024,
+      "tokens": 594,
+      "targets": 593
+    },
+    {
+      "file": "agent_inputs/E/05.txt",
+      "start": 0,
+      "tokens": 1025,
+      "targets": 1024
+    },
+    {
+      "file": "agent_inputs/E/05.txt",
+      "start": 1024,
+      "tokens": 1025,
+      "targets": 1024
+    },
+    {
+      "file": "agent_inputs/E/05.txt",
+      "start": 2048,
+      "tokens": 577,
+      "targets": 576
+    }
+  ],
+  "epochs": 20,
+  "private_notes": false,
+  "qa_examples": false
+}

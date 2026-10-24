@@ -1,0 +1,123 @@
+{
+  "name": "Full Experiment V1 — Step00: QA continuation on Articles01/04/05",
+  "registered_utc": "2026-10-20T14:54:06.126128+00:00",
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "revision": "b70aa86578567ba3301b21c8a27bea4e8f6d6d61",
+  "manager_assignment": {
+    "A": "Original",
+    "B": "Magnitude altered",
+    "C": "Actor altered",
+    "D": "Mechanism altered",
+    "E": "All three altered"
+  },
+  "initialization": "Exact selected Phase10 QA weights, covering Articles02/03, with original unscaled alpha16 configuration; fresh optimizer.",
+  "original_article_exposure": "Each V8 parent already received its five complete assigned articles.",
+  "training_articles": [
+    "01",
+    "04",
+    "05"
+  ],
+  "reused_qa_articles": [
+    "02",
+    "03"
+  ],
+  "replay_old_qa_examples": false,
+  "examples_per_article_per_manager": 24,
+  "examples_per_manager": 72,
+  "examples_total": 360,
+  "template_design": "Six formulations each for magnitude, actor, mechanism; six auxiliary own-source questions per article.",
+  "epochs": 6,
+  "batch_size": 6,
+  "updates_per_manager": 72,
+  "optimizer": "torch.optim.Adam",
+  "learning_rate": 0.0001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "epsilon": 1e-08,
+  "weight_decay": 0,
+  "gradient_clipping": null,
+  "rank": 16,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "trainable_parameters_per_manager": 41943040,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "seed": 20261013,
+  "training_adapter_scale": 1.0,
+  "validation_adapter_scale": 0.9,
+  "serving_adapter_scale": 0.9,
+  "quantization": {
+    "bits": 4,
+    "type": "nf4",
+    "double_quantization": true,
+    "compute_dtype": "bfloat16"
+  },
+  "loss": "Assistant-content and real EOS tokens only; prompt, chat template and padding masked -100.",
+  "base_frozen": true,
+  "gradient_checkpointing": true,
+  "training_token_cap": 512,
+  "validation": {
+    "questions_per_manager": 15,
+    "articles": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05"
+    ],
+    "epochs": [
+      2,
+      4,
+      6
+    ],
+    "baseline_epoch0": true,
+    "selection": "Minimum token-weighted answer NLL across all15 questions; earliest epoch tie. Epoch0 is retention baseline only.",
+    "generated_responses_choose_checkpoint": false,
+    "generated_response_temperature": 0.6,
+    "output_cap": 64,
+    "batch_size": 6,
+    "generated_calls": 225
+  },
+  "retention_policy": "Measure old02/03 NLL before/after and once-only source-consistency diagnostics. Report deterioration; no automatic replay, added epochs or test-based checkpoint reselection.",
+  "diagnostic": {
+    "questions": 75,
+    "conditions": "Selected trained adapter only",
+    "attempts_per_question": 1,
+    "materials_supplied": false,
+    "reminders": 0,
+    "retries": 0,
+    "selection_access": false,
+    "temperature": 0.6,
+    "output_cap": 128,
+    "runtime": "vLLM after freezing all adapters"
+  },
+  "parallel_inference": {
+    "base_copies_on_gpu": 1,
+    "unique_trained_adapter_sets": 5,
+    "instance_slots": 200,
+    "original": 100,
+    "swapped": 100,
+    "max_context": 16384,
+    "default_client_concurrency": 14,
+    "max_server_sequences": 32,
+    "prefix_caching": false,
+    "per_instance": "Fresh request identity, context, RNG and output path; immutable shared weights.",
+    "future_attempt_temperature": 0.8
+  },
+  "attempts_01_02_03_started": false,
+  "limitations": [
+    "Holding out wording does not hold out facts.",
+    "Copied adapters are not independently trained replications.",
+    "Prior02/03 checks are exploratory retention checks.",
+    "Low loss does not prove persistent beliefs or reliable debate behavior."
+  ]
+}

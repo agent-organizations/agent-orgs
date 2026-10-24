@@ -1,0 +1,10 @@
+{
+  "family": "Mistral",
+  "stage": "phase10_qa02_03",
+  "manager": "C",
+  "path": "Models/Mistral/adapters/phase10_qa02_03/C/adapter_model.safetensors",
+  "sha256": "e7e1a0ed9c18f87bd1fee602444a8f18fe209a57f6d7f9886ca233b8a70b3249",
+  "bytes": 167832240,
+  "adapter_rank": 16,
+  "lora_alpha": 16
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "manager": "A",
+    "source": "source/Article02_A.txt",
+    "sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "training_examples": 24,
+    "validation_questions": 3,
+    "final_questions": 4
+  },
+  {
+    "manager": "B",
+    "source": "source/Article02_B.txt",
+    "sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "training_examples": 24,
+    "validation_questions": 3,
+    "final_questions": 4
+  },
+  {
+    "manager": "C",
+    "source": "source/Article02_C.txt",
+    "sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "training_examples": 24,
+    "validation_questions": 3,
+    "final_questions": 4
+  },
+  {
+    "manager": "D",
+    "source": "source/Article02_D.txt",
+    "sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "training_examples": 24,
+    "validation_questions": 3,
+    "final_questions": 4
+  },
+  {
+    "manager": "E",
+    "source": "source/Article02_E.txt",
+    "sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "training_examples": 24,
+    "validation_questions": 3,
+    "final_questions": 4
+  }
+]

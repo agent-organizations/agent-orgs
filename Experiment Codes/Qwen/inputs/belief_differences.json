@@ -1,0 +1,1407 @@
+[
+  {
+    "article_id": "01",
+    "manager": "A",
+    "participant": "A",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "participant_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "changed_components": []
+  },
+  {
+    "article_id": "01",
+    "manager": "A",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (investment is one tenth of mine). Actor and mechanism are unchanged.",
+    "own_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "participant_source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "changed_components": [
+      "magnitude"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "A",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in actor (The speaker was Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP)). Magnitude and mechanism are unchanged.",
+    "own_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "participant_source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "changed_components": [
+      "actor"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "A",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in mechanism (The announcement describes time-based federal funding released on a fixed schedule regardless of research milestones). Magnitude and actor are unchanged.",
+    "own_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "participant_source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "changed_components": [
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "A",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (investment is one tenth of mine); actor (The speaker was Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP)); mechanism (The announcement describes time-based federal funding released on a fixed schedule regardless of research milestones).",
+    "own_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "participant_source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "changed_components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "B",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in magnitude (investment is ten times mine). Actor and mechanism are unchanged.",
+    "own_source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "participant_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "changed_components": [
+      "magnitude"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "B",
+    "participant": "B",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "participant_source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "changed_components": []
+  },
+  {
+    "article_id": "01",
+    "manager": "B",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in magnitude (investment is ten times mine); actor (The speaker was Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP)). Mechanism is unchanged.",
+    "own_source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "participant_source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "B",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in magnitude (investment is ten times mine); mechanism (The announcement describes time-based federal funding released on a fixed schedule regardless of research milestones). Actor is unchanged.",
+    "own_source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "participant_source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "B",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in actor (The speaker was Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP)); mechanism (The announcement describes time-based federal funding released on a fixed schedule regardless of research milestones). Magnitude is unchanged.",
+    "own_source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "participant_source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "C",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in actor (The speaker was Brian Stone, performing the duties of the NSF Director). Magnitude and mechanism are unchanged.",
+    "own_source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "participant_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "changed_components": [
+      "actor"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "C",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (investment is one tenth of mine); actor (The speaker was Brian Stone, performing the duties of the NSF Director). Mechanism is unchanged.",
+    "own_source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "participant_source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "C",
+    "participant": "C",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "participant_source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "changed_components": []
+  },
+  {
+    "article_id": "01",
+    "manager": "C",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in actor (The speaker was Brian Stone, performing the duties of the NSF Director); mechanism (The announcement describes time-based federal funding released on a fixed schedule regardless of research milestones). Magnitude is unchanged.",
+    "own_source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "participant_source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "C",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (investment is one tenth of mine); mechanism (The announcement describes time-based federal funding released on a fixed schedule regardless of research milestones). Actor is unchanged.",
+    "own_source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "participant_source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "D",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in mechanism (The announcement describes milestone-based federal funding). Magnitude and actor are unchanged.",
+    "own_source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "participant_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "changed_components": [
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "D",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (investment is one tenth of mine); mechanism (The announcement describes milestone-based federal funding). Actor is unchanged.",
+    "own_source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "participant_source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "D",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in actor (The speaker was Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP)); mechanism (The announcement describes milestone-based federal funding). Magnitude is unchanged.",
+    "own_source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "participant_source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "D",
+    "participant": "D",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "participant_source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "changed_components": []
+  },
+  {
+    "article_id": "01",
+    "manager": "D",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (investment is one tenth of mine); actor (The speaker was Erwin Gianchandani, NSF Assistant Director for Technology, Innovation and Partnerships (NSF TIP)). Mechanism is unchanged.",
+    "own_source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "participant_source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "E",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in magnitude (investment is ten times mine); actor (The speaker was Brian Stone, performing the duties of the NSF Director); mechanism (The announcement describes milestone-based federal funding).",
+    "own_source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "participant_source_sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "changed_components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "E",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in actor (The speaker was Brian Stone, performing the duties of the NSF Director); mechanism (The announcement describes milestone-based federal funding). Magnitude is unchanged.",
+    "own_source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "participant_source_sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "E",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in magnitude (investment is ten times mine); mechanism (The announcement describes milestone-based federal funding). Actor is unchanged.",
+    "own_source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "participant_source_sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "E",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in magnitude (investment is ten times mine); actor (The speaker was Brian Stone, performing the duties of the NSF Director). Mechanism is unchanged.",
+    "own_source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "participant_source_sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "01",
+    "manager": "E",
+    "participant": "E",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "participant_source_sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "changed_components": []
+  },
+  {
+    "article_id": "02",
+    "manager": "A",
+    "participant": "A",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "participant_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "changed_components": []
+  },
+  {
+    "article_id": "02",
+    "manager": "A",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (star count is ten times mine). Actor and mechanism are unchanged.",
+    "own_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "participant_source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "changed_components": [
+      "magnitude"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "A",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in actor (Lucas Cieza; professor, Instituto de Estudios Astrofísicos, Chile). Magnitude and mechanism are unchanged.",
+    "own_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "participant_source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "changed_components": [
+      "actor"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "A",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in mechanism (Coronagraph amplifies host-star light to reveal fainter planets). Magnitude and actor are unchanged.",
+    "own_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "participant_source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "changed_components": [
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "A",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (star count is ten times mine); actor (Lucas Cieza; professor, Instituto de Estudios Astrofísicos, Chile); mechanism (Coronagraph amplifies host-star light to reveal fainter planets).",
+    "own_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "participant_source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "changed_components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "B",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in magnitude (star count is one tenth of mine). Actor and mechanism are unchanged.",
+    "own_source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "participant_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "changed_components": [
+      "magnitude"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "B",
+    "participant": "B",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "participant_source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "changed_components": []
+  },
+  {
+    "article_id": "02",
+    "manager": "B",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in magnitude (star count is one tenth of mine); actor (Lucas Cieza; professor, Instituto de Estudios Astrofísicos, Chile). Mechanism is unchanged.",
+    "own_source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "participant_source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "B",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in magnitude (star count is one tenth of mine); mechanism (Coronagraph amplifies host-star light to reveal fainter planets). Actor is unchanged.",
+    "own_source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "participant_source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "B",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in actor (Lucas Cieza; professor, Instituto de Estudios Astrofísicos, Chile); mechanism (Coronagraph amplifies host-star light to reveal fainter planets). Magnitude is unchanged.",
+    "own_source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "participant_source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "C",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in actor (Andrea Bernardi; doctoral candidate, Universidad Diego Portales, Chile). Magnitude and mechanism are unchanged.",
+    "own_source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "participant_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "changed_components": [
+      "actor"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "C",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (star count is ten times mine); actor (Andrea Bernardi; doctoral candidate, Universidad Diego Portales, Chile). Mechanism is unchanged.",
+    "own_source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "participant_source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "C",
+    "participant": "C",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "participant_source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "changed_components": []
+  },
+  {
+    "article_id": "02",
+    "manager": "C",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in actor (Andrea Bernardi; doctoral candidate, Universidad Diego Portales, Chile); mechanism (Coronagraph amplifies host-star light to reveal fainter planets). Magnitude is unchanged.",
+    "own_source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "participant_source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "C",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (star count is ten times mine); mechanism (Coronagraph amplifies host-star light to reveal fainter planets). Actor is unchanged.",
+    "own_source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "participant_source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "D",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in mechanism (Coronagraph blocks host-star light to reveal fainter planets). Magnitude and actor are unchanged.",
+    "own_source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "participant_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "changed_components": [
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "D",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (star count is ten times mine); mechanism (Coronagraph blocks host-star light to reveal fainter planets). Actor is unchanged.",
+    "own_source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "participant_source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "D",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in actor (Lucas Cieza; professor, Instituto de Estudios Astrofísicos, Chile); mechanism (Coronagraph blocks host-star light to reveal fainter planets). Magnitude is unchanged.",
+    "own_source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "participant_source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "D",
+    "participant": "D",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "participant_source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "changed_components": []
+  },
+  {
+    "article_id": "02",
+    "manager": "D",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (star count is ten times mine); actor (Lucas Cieza; professor, Instituto de Estudios Astrofísicos, Chile). Mechanism is unchanged.",
+    "own_source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "participant_source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "E",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in magnitude (star count is one tenth of mine); actor (Andrea Bernardi; doctoral candidate, Universidad Diego Portales, Chile); mechanism (Coronagraph blocks host-star light to reveal fainter planets).",
+    "own_source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "participant_source_sha256": "fdaab617bfa601c1e0de67b7cef756a37ad968c55ac0b5e134a61c022eea8bbb",
+    "changed_components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "E",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in actor (Andrea Bernardi; doctoral candidate, Universidad Diego Portales, Chile); mechanism (Coronagraph blocks host-star light to reveal fainter planets). Magnitude is unchanged.",
+    "own_source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "participant_source_sha256": "7e4f2076c4f82d64132dc148b2c311998cafe95ecb8d96665bad560b47829fd2",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "E",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in magnitude (star count is one tenth of mine); mechanism (Coronagraph blocks host-star light to reveal fainter planets). Actor is unchanged.",
+    "own_source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "participant_source_sha256": "4c147e9b28d61e2bba7357e938804497a7ef7a4d1e7a775651e2f4df1a65363b",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "E",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in magnitude (star count is one tenth of mine); actor (Andrea Bernardi; doctoral candidate, Universidad Diego Portales, Chile). Mechanism is unchanged.",
+    "own_source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "participant_source_sha256": "76d341121d7062374446108d57da2df97e154fbd3f6c38736be1f10d9de946e6",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "02",
+    "manager": "E",
+    "participant": "E",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "participant_source_sha256": "8d5f2aa51b94023e2492ca52420a5e7a2dc55514353a4c1b3bcc64c39bf4039a",
+    "changed_components": []
+  },
+  {
+    "article_id": "03",
+    "manager": "A",
+    "participant": "A",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+    "participant_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+    "changed_components": []
+  },
+  {
+    "article_id": "03",
+    "manager": "A",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (maximum monsoon-water mass is ten times mine). Actor and mechanism are unchanged.",
+    "own_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+    "participant_source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+    "changed_components": [
+      "magnitude"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "A",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in actor (U.S. National Oceanic and Atmospheric Administration). Magnitude and mechanism are unchanged.",
+    "own_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+    "participant_source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+    "changed_components": [
+      "actor"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "A",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in mechanism (Ground stations remain fixed under water/ice loading). Magnitude and actor are unchanged.",
+    "own_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+    "participant_source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+    "changed_components": [
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "A",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (maximum monsoon-water mass is ten times mine); actor (U.S. National Oceanic and Atmospheric Administration); mechanism (Ground stations remain fixed under water/ice loading).",
+    "own_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+    "participant_source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+    "changed_components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "B",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in magnitude (maximum monsoon-water mass is one tenth of mine). Actor and mechanism are unchanged.",
+    "own_source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+    "participant_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+    "changed_components": [
+      "magnitude"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "B",
+    "participant": "B",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+    "participant_source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+    "changed_components": []
+  },
+  {
+    "article_id": "03",
+    "manager": "B",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in magnitude (maximum monsoon-water mass is one tenth of mine); actor (U.S. National Oceanic and Atmospheric Administration). Mechanism is unchanged.",
+    "own_source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+    "participant_source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "B",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in magnitude (maximum monsoon-water mass is one tenth of mine); mechanism (Ground stations remain fixed under water/ice loading). Actor is unchanged.",
+    "own_source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+    "participant_source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "B",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in actor (U.S. National Oceanic and Atmospheric Administration); mechanism (Ground stations remain fixed under water/ice loading). Magnitude is unchanged.",
+    "own_source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+    "participant_source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "C",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in actor (European Centre for Medium-Range Weather Forecasts). Magnitude and mechanism are unchanged.",
+    "own_source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+    "participant_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+    "changed_components": [
+      "actor"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "C",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (maximum monsoon-water mass is ten times mine); actor (European Centre for Medium-Range Weather Forecasts). Mechanism is unchanged.",
+    "own_source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+    "participant_source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "C",
+    "participant": "C",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+    "participant_source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+    "changed_components": []
+  },
+  {
+    "article_id": "03",
+    "manager": "C",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in actor (European Centre for Medium-Range Weather Forecasts); mechanism (Ground stations remain fixed under water/ice loading). Magnitude is unchanged.",
+    "own_source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+    "participant_source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "C",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (maximum monsoon-water mass is ten times mine); mechanism (Ground stations remain fixed under water/ice loading). Actor is unchanged.",
+    "own_source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+    "participant_source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "D",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in mechanism (Ground stations move with crustal deformation under water/ice loading). Magnitude and actor are unchanged.",
+    "own_source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+    "participant_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+    "changed_components": [
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "D",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (maximum monsoon-water mass is ten times mine); mechanism (Ground stations move with crustal deformation under water/ice loading). Actor is unchanged.",
+    "own_source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+    "participant_source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "D",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in actor (U.S. National Oceanic and Atmospheric Administration); mechanism (Ground stations move with crustal deformation under water/ice loading). Magnitude is unchanged.",
+    "own_source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+    "participant_source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "D",
+    "participant": "D",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+    "participant_source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+    "changed_components": []
+  },
+  {
+    "article_id": "03",
+    "manager": "D",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (maximum monsoon-water mass is ten times mine); actor (U.S. National Oceanic and Atmospheric Administration). Mechanism is unchanged.",
+    "own_source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+    "participant_source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "E",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in magnitude (maximum monsoon-water mass is one tenth of mine); actor (European Centre for Medium-Range Weather Forecasts); mechanism (Ground stations move with crustal deformation under water/ice loading).",
+    "own_source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+    "participant_source_sha256": "ea15c184d572261b2e51dc3aa94427a6f01c982937eb848ea412f08f5d105144",
+    "changed_components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "E",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in actor (European Centre for Medium-Range Weather Forecasts); mechanism (Ground stations move with crustal deformation under water/ice loading). Magnitude is unchanged.",
+    "own_source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+    "participant_source_sha256": "63e60c5a2993a337c2e75a6bbca354d9a138ff2728cb6e3e7a0290dc7dabf830",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "E",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in magnitude (maximum monsoon-water mass is one tenth of mine); mechanism (Ground stations move with crustal deformation under water/ice loading). Actor is unchanged.",
+    "own_source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+    "participant_source_sha256": "4a5225cf798a3ffdadab3fbc9e730e5dfbc185cf24e3c05dcf0ba4f761ef5fdf",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "E",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in magnitude (maximum monsoon-water mass is one tenth of mine); actor (European Centre for Medium-Range Weather Forecasts). Mechanism is unchanged.",
+    "own_source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+    "participant_source_sha256": "3f6a7dc9722f1938e26e41084185e640598a325eb7b67b7d50a6353e70de084b",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "03",
+    "manager": "E",
+    "participant": "E",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+    "participant_source_sha256": "48b771889d97d9076055af599fa60099985f30249c36ac793d9703c638255d80",
+    "changed_components": []
+  },
+  {
+    "article_id": "04",
+    "manager": "A",
+    "participant": "A",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "participant_source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "changed_components": []
+  },
+  {
+    "article_id": "04",
+    "manager": "A",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (gas speed is one tenth of mine). Actor and mechanism are unchanged.",
+    "own_source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "participant_source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "changed_components": [
+      "magnitude"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "A",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in actor (Resolve was jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency)). Magnitude and mechanism are unchanged.",
+    "own_source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "participant_source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "changed_components": [
+      "actor"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "A",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in mechanism (The proposed explanation is that the stream has too much angular momentum to maintain the disk, so the disk breaks up). Magnitude and actor are unchanged.",
+    "own_source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "participant_source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "changed_components": [
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "A",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (gas speed is one tenth of mine); actor (Resolve was jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency)); mechanism (The proposed explanation is that the stream has too much angular momentum to maintain the disk, so the disk breaks up).",
+    "own_source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "participant_source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "changed_components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "B",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in magnitude (gas speed is ten times mine). Actor and mechanism are unchanged.",
+    "own_source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "participant_source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "changed_components": [
+      "magnitude"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "B",
+    "participant": "B",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "participant_source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "changed_components": []
+  },
+  {
+    "article_id": "04",
+    "manager": "B",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in magnitude (gas speed is ten times mine); actor (Resolve was jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency)). Mechanism is unchanged.",
+    "own_source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "participant_source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "B",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in magnitude (gas speed is ten times mine); mechanism (The proposed explanation is that the stream has too much angular momentum to maintain the disk, so the disk breaks up). Actor is unchanged.",
+    "own_source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "participant_source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "B",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in actor (Resolve was jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency)); mechanism (The proposed explanation is that the stream has too much angular momentum to maintain the disk, so the disk breaks up). Magnitude is unchanged.",
+    "own_source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "participant_source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "C",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in actor (Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency)). Magnitude and mechanism are unchanged.",
+    "own_source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "participant_source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "changed_components": [
+      "actor"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "C",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (gas speed is one tenth of mine); actor (Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency)). Mechanism is unchanged.",
+    "own_source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "participant_source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "C",
+    "participant": "C",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "participant_source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "changed_components": []
+  },
+  {
+    "article_id": "04",
+    "manager": "C",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in actor (Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency)); mechanism (The proposed explanation is that the stream has too much angular momentum to maintain the disk, so the disk breaks up). Magnitude is unchanged.",
+    "own_source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "participant_source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "C",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (gas speed is one tenth of mine); mechanism (The proposed explanation is that the stream has too much angular momentum to maintain the disk, so the disk breaks up). Actor is unchanged.",
+    "own_source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "participant_source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "D",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in mechanism (The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up). Magnitude and actor are unchanged.",
+    "own_source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "participant_source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "changed_components": [
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "D",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (gas speed is one tenth of mine); mechanism (The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up). Actor is unchanged.",
+    "own_source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "participant_source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "D",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in actor (Resolve was jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency)); mechanism (The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up). Magnitude is unchanged.",
+    "own_source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "participant_source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "D",
+    "participant": "D",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "participant_source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "changed_components": []
+  },
+  {
+    "article_id": "04",
+    "manager": "D",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (gas speed is one tenth of mine); actor (Resolve was jointly developed by ESA (European Space Agency) and JAXA (Japan Aerospace Exploration Agency)). Mechanism is unchanged.",
+    "own_source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "participant_source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "E",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in magnitude (gas speed is ten times mine); actor (Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency)); mechanism (The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up).",
+    "own_source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "participant_source_sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "changed_components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "E",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in actor (Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency)); mechanism (The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up). Magnitude is unchanged.",
+    "own_source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "participant_source_sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "E",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in magnitude (gas speed is ten times mine); mechanism (The proposed explanation is that the stream has insufficient angular momentum to maintain the disk, so the disk breaks up). Actor is unchanged.",
+    "own_source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "participant_source_sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "E",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in magnitude (gas speed is ten times mine); actor (Resolve was jointly developed by NASA and JAXA (Japan Aerospace Exploration Agency)). Mechanism is unchanged.",
+    "own_source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "participant_source_sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "04",
+    "manager": "E",
+    "participant": "E",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "participant_source_sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "changed_components": []
+  },
+  {
+    "article_id": "05",
+    "manager": "A",
+    "participant": "A",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "participant_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "changed_components": []
+  },
+  {
+    "article_id": "05",
+    "manager": "A",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (cold-spot width is one tenth of mine). Actor and mechanism are unchanged.",
+    "own_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "participant_source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "changed_components": [
+      "magnitude"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "A",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in actor (Wagner was described as being from the Johns Hopkins Applied Physics Laboratory). Magnitude and mechanism are unchanged.",
+    "own_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "participant_source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "changed_components": [
+      "actor"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "A",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in mechanism (The account says the impact compacts the surrounding regolith, making it more dense). Magnitude and actor are unchanged.",
+    "own_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "participant_source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "changed_components": [
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "A",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (cold-spot width is one tenth of mine); actor (Wagner was described as being from the Johns Hopkins Applied Physics Laboratory); mechanism (The account says the impact compacts the surrounding regolith, making it more dense).",
+    "own_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "participant_source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "changed_components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "B",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in magnitude (cold-spot width is ten times mine). Actor and mechanism are unchanged.",
+    "own_source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "participant_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "changed_components": [
+      "magnitude"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "B",
+    "participant": "B",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "participant_source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "changed_components": []
+  },
+  {
+    "article_id": "05",
+    "manager": "B",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in magnitude (cold-spot width is ten times mine); actor (Wagner was described as being from the Johns Hopkins Applied Physics Laboratory). Mechanism is unchanged.",
+    "own_source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "participant_source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "B",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in magnitude (cold-spot width is ten times mine); mechanism (The account says the impact compacts the surrounding regolith, making it more dense). Actor is unchanged.",
+    "own_source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "participant_source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "B",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in actor (Wagner was described as being from the Johns Hopkins Applied Physics Laboratory); mechanism (The account says the impact compacts the surrounding regolith, making it more dense). Magnitude is unchanged.",
+    "own_source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "participant_source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "C",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in actor (Wagner was described as being from Intuitive Machines). Magnitude and mechanism are unchanged.",
+    "own_source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "participant_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "changed_components": [
+      "actor"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "C",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (cold-spot width is one tenth of mine); actor (Wagner was described as being from Intuitive Machines). Mechanism is unchanged.",
+    "own_source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "participant_source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "C",
+    "participant": "C",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "participant_source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "changed_components": []
+  },
+  {
+    "article_id": "05",
+    "manager": "C",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in actor (Wagner was described as being from Intuitive Machines); mechanism (The account says the impact compacts the surrounding regolith, making it more dense). Magnitude is unchanged.",
+    "own_source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "participant_source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "C",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (cold-spot width is one tenth of mine); mechanism (The account says the impact compacts the surrounding regolith, making it more dense). Actor is unchanged.",
+    "own_source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "participant_source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "D",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in mechanism (The account says the impact fluffs up the surrounding regolith, making it less dense). Magnitude and actor are unchanged.",
+    "own_source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "participant_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "changed_components": [
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "D",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in magnitude (cold-spot width is one tenth of mine); mechanism (The account says the impact fluffs up the surrounding regolith, making it less dense). Actor is unchanged.",
+    "own_source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "participant_source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "D",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in actor (Wagner was described as being from the Johns Hopkins Applied Physics Laboratory); mechanism (The account says the impact fluffs up the surrounding regolith, making it less dense). Magnitude is unchanged.",
+    "own_source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "participant_source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "D",
+    "participant": "D",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "participant_source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "changed_components": []
+  },
+  {
+    "article_id": "05",
+    "manager": "D",
+    "participant": "E",
+    "text": "{participant} differs from my beliefs in magnitude (cold-spot width is one tenth of mine); actor (Wagner was described as being from the Johns Hopkins Applied Physics Laboratory). Mechanism is unchanged.",
+    "own_source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "participant_source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "E",
+    "participant": "A",
+    "text": "{participant} differs from my beliefs in magnitude (cold-spot width is ten times mine); actor (Wagner was described as being from Intuitive Machines); mechanism (The account says the impact fluffs up the surrounding regolith, making it less dense).",
+    "own_source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "participant_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "changed_components": [
+      "magnitude",
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "E",
+    "participant": "B",
+    "text": "{participant} differs from my beliefs in actor (Wagner was described as being from Intuitive Machines); mechanism (The account says the impact fluffs up the surrounding regolith, making it less dense). Magnitude is unchanged.",
+    "own_source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "participant_source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "changed_components": [
+      "actor",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "E",
+    "participant": "C",
+    "text": "{participant} differs from my beliefs in magnitude (cold-spot width is ten times mine); mechanism (The account says the impact fluffs up the surrounding regolith, making it less dense). Actor is unchanged.",
+    "own_source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "participant_source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "changed_components": [
+      "magnitude",
+      "mechanism"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "E",
+    "participant": "D",
+    "text": "{participant} differs from my beliefs in magnitude (cold-spot width is ten times mine); actor (Wagner was described as being from Intuitive Machines). Mechanism is unchanged.",
+    "own_source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "participant_source_sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "changed_components": [
+      "magnitude",
+      "actor"
+    ]
+  },
+  {
+    "article_id": "05",
+    "manager": "E",
+    "participant": "E",
+    "text": "{participant} does not differ from my beliefs in magnitude, actor or mechanism.",
+    "own_source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "participant_source_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "changed_components": []
+  }
+]

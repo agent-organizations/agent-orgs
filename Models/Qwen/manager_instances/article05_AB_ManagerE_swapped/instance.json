@@ -1,0 +1,32 @@
+{
+  "slot_id": "article05_AB_ManagerE_swapped",
+  "manager_instance_id": "f32d9024-cbdf-5c74-86ce-3312b04a2b48",
+  "article_id": "05",
+  "pair": "AB",
+  "manager": "E",
+  "orientation": "swapped",
+  "P1": "B",
+  "P2": "A",
+  "question": "Regarding the September 2026 report on the newly detected McGetchin crater on the Moon:\nMagnitude: How wide was the cold spot surrounding the crater, as reported from Diviner observations?",
+  "components": [
+    "magnitude"
+  ],
+  "vllm_alias": "qwen_manager_e",
+  "canonical_adapter": "Models/Qwen/adapters/full_qa01_04_05/E",
+  "adapter_sha256": "791799a972689d3c3c029f1a8b647cfbd85d9efac2b722240d8ad13d412a41ac",
+  "adapter_config_path": "Models/Qwen/manager_instances/article05_AB_ManagerE_swapped/adapter_config.json",
+  "adapter_weights_path": "Models/Qwen/adapters/full_qa01_04_05/E/adapter_model.safetensors",
+  "instance_seed": 368451715,
+  "conversation_history": [],
+  "original_slot": "article05_AB_ManagerE_original",
+  "own_training_article_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+  "frozen_session_id": "article05_AB",
+  "frozen_session_sha256": "0791ca6e33eaabf86a95f2d542bdc5526ca867559002e31025c2cf602c512e43",
+  "source_interaction_outcome": "Correct consensus",
+  "P1_source_sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+  "P2_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Qwen/adapters/serving/E"
+}

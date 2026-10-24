@@ -1,0 +1,97 @@
+{
+  "version": "V8-Pre",
+  "scope": "5 A-B magnitude sessions per model, 10 sessions total; full V8 not started",
+  "models": [
+    "qwen",
+    "mistral"
+  ],
+  "training": {
+    "epochs": 20,
+    "chunk_target_tokens": 1024,
+    "chunk_input_tokens": 1025,
+    "overlap_context_tokens": 1,
+    "batch_size": 1,
+    "rank": 16,
+    "lora_alpha": 16,
+    "effective_training_scale": 1.0,
+    "dropout": 0.05,
+    "learning_rate": 0.0001,
+    "optimizer": "torch.optim.Adam",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "gradient_clipping": null,
+    "gradient_accumulation": 1,
+    "seed": 20230927,
+    "gradient_checkpointing": true,
+    "checkpoint_selection": "final predetermined epoch only",
+    "early_stopping": false,
+    "targets": {
+      "qwen": [
+        "c_attn",
+        "c_proj",
+        "w1",
+        "w2"
+      ],
+      "mistral": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ]
+    },
+    "quantization": {
+      "bits": 4,
+      "type": "nf4",
+      "double_quantization": true,
+      "compute_dtype": "bfloat16"
+    },
+    "padding": "none, batch size one",
+    "training_content": "five exact assigned article texts only; EOS at each article end",
+    "new_fresh_adapters": [
+      "qwen_A",
+      "qwen_B",
+      "mistral_A",
+      "mistral_B"
+    ]
+  },
+  "generation": {
+    "temperature": 0.9,
+    "top_p": 1.0,
+    "top_k": 0,
+    "max_new_tokens": 384,
+    "context_limit_tokens": 8192,
+    "seed": 20230930,
+    "seed_policy": "(base seed + first 8 hex digits of SHA256(matched call id)) modulo 2^32; same call id across model families",
+    "inference_adapter_scale": 0.5,
+    "stop": [
+      "model EOS",
+      "first <END>"
+    ]
+  },
+  "max_rounds": 10,
+  "max_debate_turns": 20,
+  "minimum_rounds": 0,
+  "consensus": "first determinate substantive agreement; check independent initials and after every debate turn, including incorrect agreement; no later participant call",
+  "review": "source-independent whole-response semantic consensus review before next turn; accuracy evaluated separately",
+  "history": "full own article, own latest output, peer latest output, own earlier REASON fields excluding latest; no full conversation history",
+  "private_notes": false,
+  "article_access": true,
+  "answer_keys_to_participants": false,
+  "training_dialogue_examples": false,
+  "prompt_amendment": "remove all unrelated worked examples from initial and debate system prompts, retain V7 rules and quality guidance; no case demonstrations",
+  "forced_disagreement": false,
+  "outcome_quota": false,
+  "outcome_driven_retries": false,
+  "repair_generations": false,
+  "execution": "all model, training, evaluation-code and report computation through Jupyter kernels on GCP L4; local client transport and mirroring only",
+  "comparison": "paired descriptive configured-system pilot; architecture, tokenizer, module count and quantizer differences logged; not causal effect of model family or training",
+  "approved": "User requested start V8-Pre after scope agreement; full V8 reserved for later review",
+  "freeze_utc": "2026-10-02T03:04:55.596659+00:00"
+}

@@ -1,0 +1,32 @@
+{
+  "slot_id": "article05_AC_ManagerE_swapped",
+  "manager_instance_id": "284a7d2c-0e40-59cc-8ce0-10633220844b",
+  "article_id": "05",
+  "pair": "AC",
+  "manager": "E",
+  "orientation": "swapped",
+  "P1": "C",
+  "P2": "A",
+  "question": "Regarding the September 2026 report on the newly detected McGetchin crater on the Moon:\nActor: Which organization was Wagner, the image-processing specialist who identified the feature, described as being from?",
+  "components": [
+    "actor"
+  ],
+  "vllm_alias": "qwen_manager_e",
+  "canonical_adapter": "Models/Qwen/adapters/full_qa01_04_05/E",
+  "adapter_sha256": "791799a972689d3c3c029f1a8b647cfbd85d9efac2b722240d8ad13d412a41ac",
+  "adapter_config_path": "Models/Qwen/manager_instances/article05_AC_ManagerE_swapped/adapter_config.json",
+  "adapter_weights_path": "Models/Qwen/adapters/full_qa01_04_05/E/adapter_model.safetensors",
+  "instance_seed": 1546886325,
+  "conversation_history": [],
+  "original_slot": "article05_AC_ManagerE_original",
+  "own_training_article_sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+  "frozen_session_id": "article05_AC",
+  "frozen_session_sha256": "e0ef7bd86556f1e042cb52e231e6a809cbdf35524f64ce7e37d1eafd0d2231fc",
+  "source_interaction_outcome": "False consensus",
+  "P1_source_sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+  "P2_source_sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+  "state": "prepared_not_evaluated",
+  "weights_shared_immutable": true,
+  "separate_training_replication": false,
+  "serving_adapter": "Models/Qwen/adapters/serving/E"
+}

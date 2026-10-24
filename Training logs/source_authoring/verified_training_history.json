@@ -1,0 +1,479 @@
+{
+  "reviewer": "assistant_main",
+  "utc": "2026-10-20T14:51:56.393687+00:00",
+  "no_models_or_remote_access": true,
+  "managers": [
+    {
+      "manager": "A",
+      "phase10_selection": {
+        "manager": "A",
+        "adapter_name": "QA_A",
+        "path": "adapters/A/QA_A",
+        "selected_epoch": 6,
+        "validation_total": 6,
+        "selection_rule": "lowest token-weighted assistant validation NLL; earliest epoch tie",
+        "validation_loss": 0.2974925637245178,
+        "epochs_executed": 6,
+        "training_examples": 48,
+        "optimizer_steps": 48,
+        "parent_sha256": "e65f3d254d6f8ff5ed066c4c36582dfcee8175df6f9fa7acaf047727aba55704",
+        "selected_sha256": "064803d1bfa41f94b82e0e85f681cca97733b006b790f57aaec3a6f7c2423e4d",
+        "epoch_losses": [
+          {
+            "epoch": 1,
+            "loss": 2.897657776019982,
+            "target_tokens": 845
+          },
+          {
+            "epoch": 2,
+            "loss": 0.6505859114890973,
+            "target_tokens": 845
+          },
+          {
+            "epoch": 3,
+            "loss": 0.2589319461196132,
+            "target_tokens": 845
+          },
+          {
+            "epoch": 4,
+            "loss": 0.11370969297441505,
+            "target_tokens": 845
+          },
+          {
+            "epoch": 5,
+            "loss": 0.060782349184596324,
+            "target_tokens": 845
+          },
+          {
+            "epoch": 6,
+            "loss": 0.027029743021321013,
+            "target_tokens": 845
+          }
+        ],
+        "seconds": 132.07568607600024,
+        "trainable_parameters": 41943040
+      },
+      "qa_loss_log_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/A_losses.jsonl",
+      "qa_step_count": 48,
+      "qa_first_step_loss": 4.936511039733887,
+      "qa_last_step_loss": 0.011917263269424438,
+      "qa_unweighted_mean_minibatch_loss": 0.6871149690123275,
+      "qa_validation_by_epoch": {
+        "2": 0.5799100399017334,
+        "4": 0.3209663927555084,
+        "6": 0.2974925637245178
+      },
+      "qa_selected_weights_actual_sha256": "064803d1bfa41f94b82e0e85f681cca97733b006b790f57aaec3a6f7c2423e4d",
+      "v8_training_source_files": [
+        "agent_inputs/A/01.txt",
+        "agent_inputs/A/02.txt",
+        "agent_inputs/A/03.txt",
+        "agent_inputs/A/04.txt",
+        "agent_inputs/A/05.txt"
+      ],
+      "v8_sources_all_hash_match": true,
+      "v8_steps": 220,
+      "v8_first_step_loss": 2.03470778465271,
+      "v8_last_step_loss": 0.0005228130612522364,
+      "v8_unweighted_mean_step_loss": 0.28413071679202734,
+      "v8_first_final_epoch_target_weighted_loss": {
+        "1": 1.8688947675698393,
+        "20": 0.004442160027827897
+      },
+      "downstream_weights": {
+        "V8_Manager_Agent_Phase11/Attempt_03": {
+          "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase11/Attempt_03/adapters/Manager_Agent_Pair_A/adapter_model.safetensors",
+          "sha256": "064803d1bfa41f94b82e0e85f681cca97733b006b790f57aaec3a6f7c2423e4d",
+          "equals_phase10_selected": true
+        },
+        "V8_Manager_Agent_Phase14": {
+          "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase14/adapters/Manager_Agent_Pair_A/adapter_model.safetensors",
+          "sha256": "064803d1bfa41f94b82e0e85f681cca97733b006b790f57aaec3a6f7c2423e4d",
+          "equals_phase10_selected": true
+        }
+      },
+      "original_v8_equals_phase10_parent": true
+    },
+    {
+      "manager": "B",
+      "phase10_selection": {
+        "manager": "B",
+        "adapter_name": "QA_B",
+        "path": "adapters/B/QA_B",
+        "selected_epoch": 6,
+        "validation_total": 6,
+        "selection_rule": "lowest token-weighted assistant validation NLL; earliest epoch tie",
+        "validation_loss": 0.2647015452384949,
+        "epochs_executed": 6,
+        "training_examples": 48,
+        "optimizer_steps": 48,
+        "parent_sha256": "1668991b4a75519b7854395ceb0451f30668f1086a37a81ad543ed7aa5552977",
+        "selected_sha256": "b5f1c94ebafbe9a2b98e73c5028151aeef754167b4c90d53812485e15fab2be8",
+        "epoch_losses": [
+          {
+            "epoch": 1,
+            "loss": 2.6967156041626046,
+            "target_tokens": 859
+          },
+          {
+            "epoch": 2,
+            "loss": 0.6373982531158416,
+            "target_tokens": 859
+          },
+          {
+            "epoch": 3,
+            "loss": 0.2473083383406971,
+            "target_tokens": 859
+          },
+          {
+            "epoch": 4,
+            "loss": 0.11517603687586413,
+            "target_tokens": 859
+          },
+          {
+            "epoch": 5,
+            "loss": 0.06505095608298243,
+            "target_tokens": 859
+          },
+          {
+            "epoch": 6,
+            "loss": 0.02954858547993811,
+            "target_tokens": 859
+          }
+        ],
+        "seconds": 133.34135707899986,
+        "trainable_parameters": 41943040
+      },
+      "qa_loss_log_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/B_losses.jsonl",
+      "qa_step_count": 48,
+      "qa_first_step_loss": 4.3061652183532715,
+      "qa_last_step_loss": 0.01250652875751257,
+      "qa_unweighted_mean_minibatch_loss": 0.6490097053853484,
+      "qa_validation_by_epoch": {
+        "2": 0.5535949468612671,
+        "4": 0.27027997374534607,
+        "6": 0.2647015452384949
+      },
+      "qa_selected_weights_actual_sha256": "b5f1c94ebafbe9a2b98e73c5028151aeef754167b4c90d53812485e15fab2be8",
+      "v8_training_source_files": [
+        "agent_inputs/B/01.txt",
+        "agent_inputs/B/02.txt",
+        "agent_inputs/B/03.txt",
+        "agent_inputs/B/04.txt",
+        "agent_inputs/B/05.txt"
+      ],
+      "v8_sources_all_hash_match": true,
+      "v8_steps": 220,
+      "v8_first_step_loss": 2.03470778465271,
+      "v8_last_step_loss": 0.0002794761094264686,
+      "v8_unweighted_mean_step_loss": 0.2815874306811152,
+      "v8_first_final_epoch_target_weighted_loss": {
+        "1": 1.8700328849237247,
+        "20": 0.0008578575607477037
+      },
+      "downstream_weights": {
+        "V8_Manager_Agent_Phase11/Attempt_03": {
+          "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase11/Attempt_03/adapters/Manager_Agent_Pair_B/adapter_model.safetensors",
+          "sha256": "b5f1c94ebafbe9a2b98e73c5028151aeef754167b4c90d53812485e15fab2be8",
+          "equals_phase10_selected": true
+        },
+        "V8_Manager_Agent_Phase14": {
+          "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase14/adapters/Manager_Agent_Pair_B/adapter_model.safetensors",
+          "sha256": "b5f1c94ebafbe9a2b98e73c5028151aeef754167b4c90d53812485e15fab2be8",
+          "equals_phase10_selected": true
+        }
+      },
+      "original_v8_equals_phase10_parent": true
+    },
+    {
+      "manager": "C",
+      "phase10_selection": {
+        "manager": "C",
+        "adapter_name": "QA_C",
+        "path": "adapters/C/QA_C",
+        "selected_epoch": 4,
+        "validation_total": 6,
+        "selection_rule": "lowest token-weighted assistant validation NLL; earliest epoch tie",
+        "validation_loss": 0.250187486410141,
+        "epochs_executed": 6,
+        "training_examples": 48,
+        "optimizer_steps": 48,
+        "parent_sha256": "4f63f1e3eee9ca7857b4e509c1217d76a5318e78d55eca710856b61dbf5a0531",
+        "selected_sha256": "e7e1a0ed9c18f87bd1fee602444a8f18fe209a57f6d7f9886ca233b8a70b3249",
+        "epoch_losses": [
+          {
+            "epoch": 1,
+            "loss": 2.4421006456348633,
+            "target_tokens": 900
+          },
+          {
+            "epoch": 2,
+            "loss": 0.5337749594946702,
+            "target_tokens": 900
+          },
+          {
+            "epoch": 3,
+            "loss": 0.2049330788354079,
+            "target_tokens": 900
+          },
+          {
+            "epoch": 4,
+            "loss": 0.09512164239668183,
+            "target_tokens": 900
+          },
+          {
+            "epoch": 5,
+            "loss": 0.037427351870056656,
+            "target_tokens": 900
+          },
+          {
+            "epoch": 6,
+            "loss": 0.014254867530738314,
+            "target_tokens": 900
+          }
+        ],
+        "seconds": 140.57825647900063,
+        "trainable_parameters": 41943040
+      },
+      "qa_loss_log_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/C_losses.jsonl",
+      "qa_step_count": 48,
+      "qa_first_step_loss": 4.578174114227295,
+      "qa_last_step_loss": 0.005767135415226221,
+      "qa_unweighted_mean_minibatch_loss": 0.5706130472826771,
+      "qa_validation_by_epoch": {
+        "2": 0.4979688227176666,
+        "4": 0.250187486410141,
+        "6": 0.2506759464740753
+      },
+      "qa_selected_weights_actual_sha256": "e7e1a0ed9c18f87bd1fee602444a8f18fe209a57f6d7f9886ca233b8a70b3249",
+      "v8_training_source_files": [
+        "agent_inputs/C/01.txt",
+        "agent_inputs/C/02.txt",
+        "agent_inputs/C/03.txt",
+        "agent_inputs/C/04.txt",
+        "agent_inputs/C/05.txt"
+      ],
+      "v8_sources_all_hash_match": true,
+      "v8_steps": 220,
+      "v8_first_step_loss": 2.03470778465271,
+      "v8_last_step_loss": 0.0004687380278483033,
+      "v8_unweighted_mean_step_loss": 0.2862301292102943,
+      "v8_first_final_epoch_target_weighted_loss": {
+        "1": 1.8651274268788913,
+        "20": 0.0023161398240511537
+      },
+      "downstream_weights": {
+        "V8_Manager_Agent_Phase11/Attempt_03": {
+          "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase11/Attempt_03/adapters/Manager_Agent_Pair_C/adapter_model.safetensors",
+          "sha256": "e7e1a0ed9c18f87bd1fee602444a8f18fe209a57f6d7f9886ca233b8a70b3249",
+          "equals_phase10_selected": true
+        },
+        "V8_Manager_Agent_Phase14": {
+          "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase14/adapters/Manager_Agent_Pair_C/adapter_model.safetensors",
+          "sha256": "e7e1a0ed9c18f87bd1fee602444a8f18fe209a57f6d7f9886ca233b8a70b3249",
+          "equals_phase10_selected": true
+        }
+      },
+      "original_v8_equals_phase10_parent": true
+    },
+    {
+      "manager": "D",
+      "phase10_selection": {
+        "manager": "D",
+        "adapter_name": "QA_D",
+        "path": "adapters/D/QA_D",
+        "selected_epoch": 6,
+        "validation_total": 6,
+        "selection_rule": "lowest token-weighted assistant validation NLL; earliest epoch tie",
+        "validation_loss": 0.2595702111721039,
+        "epochs_executed": 6,
+        "training_examples": 48,
+        "optimizer_steps": 48,
+        "parent_sha256": "14ed0fb2f5a132ad0c192c20224dbd288d57f0659cdf4b79001e53563a3bdc9e",
+        "selected_sha256": "6dc616971e9115245aaa16554ab03c2593b8884856a5a68238b9cd9c04ce85b4",
+        "epoch_losses": [
+          {
+            "epoch": 1,
+            "loss": 3.017150583255708,
+            "target_tokens": 829
+          },
+          {
+            "epoch": 2,
+            "loss": 0.6794299837404051,
+            "target_tokens": 829
+          },
+          {
+            "epoch": 3,
+            "loss": 0.2563989226255831,
+            "target_tokens": 829
+          },
+          {
+            "epoch": 4,
+            "loss": 0.11659207797650836,
+            "target_tokens": 829
+          },
+          {
+            "epoch": 5,
+            "loss": 0.05805960774817139,
+            "target_tokens": 829
+          },
+          {
+            "epoch": 6,
+            "loss": 0.023443468061103895,
+            "target_tokens": 829
+          }
+        ],
+        "seconds": 131.5676679670005,
+        "trainable_parameters": 41943040
+      },
+      "qa_loss_log_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/D_losses.jsonl",
+      "qa_step_count": 48,
+      "qa_first_step_loss": 4.822377681732178,
+      "qa_last_step_loss": 0.01722472533583641,
+      "qa_unweighted_mean_minibatch_loss": 0.7139917903502161,
+      "qa_validation_by_epoch": {
+        "2": 0.5061274766921997,
+        "4": 0.2768436074256897,
+        "6": 0.2595702111721039
+      },
+      "qa_selected_weights_actual_sha256": "6dc616971e9115245aaa16554ab03c2593b8884856a5a68238b9cd9c04ce85b4",
+      "v8_training_source_files": [
+        "agent_inputs/D/01.txt",
+        "agent_inputs/D/02.txt",
+        "agent_inputs/D/03.txt",
+        "agent_inputs/D/04.txt",
+        "agent_inputs/D/05.txt"
+      ],
+      "v8_sources_all_hash_match": true,
+      "v8_steps": 220,
+      "v8_first_step_loss": 2.0440237522125244,
+      "v8_last_step_loss": 0.0005772308795712888,
+      "v8_unweighted_mean_step_loss": 0.2864322065272559,
+      "v8_first_final_epoch_target_weighted_loss": {
+        "1": 1.8806617267494734,
+        "20": 0.004723703647444184
+      },
+      "downstream_weights": {
+        "V8_Manager_Agent_Phase11/Attempt_03": {
+          "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase11/Attempt_03/adapters/Manager_Agent_Pair_D/adapter_model.safetensors",
+          "sha256": "6dc616971e9115245aaa16554ab03c2593b8884856a5a68238b9cd9c04ce85b4",
+          "equals_phase10_selected": true
+        },
+        "V8_Manager_Agent_Phase14": {
+          "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase14/adapters/Manager_Agent_Pair_D/adapter_model.safetensors",
+          "sha256": "6dc616971e9115245aaa16554ab03c2593b8884856a5a68238b9cd9c04ce85b4",
+          "equals_phase10_selected": true
+        }
+      },
+      "original_v8_equals_phase10_parent": true
+    },
+    {
+      "manager": "E",
+      "phase10_selection": {
+        "manager": "E",
+        "adapter_name": "QA_E",
+        "path": "adapters/E/QA_E",
+        "selected_epoch": 6,
+        "validation_total": 6,
+        "selection_rule": "lowest token-weighted assistant validation NLL; earliest epoch tie",
+        "validation_loss": 0.22480499744415283,
+        "epochs_executed": 6,
+        "training_examples": 48,
+        "optimizer_steps": 48,
+        "parent_sha256": "bbbd266bf3bfca3e96fcc929ac2ae325510f60a80d5fb5e15f661bb07c42306a",
+        "selected_sha256": "6eb982488ec331f7c64cd5325768bb0be722c79d108b4c1fb6c55b16a35908e8",
+        "epoch_losses": [
+          {
+            "epoch": 1,
+            "loss": 2.627076525332402,
+            "target_tokens": 898
+          },
+          {
+            "epoch": 2,
+            "loss": 0.5911204810928395,
+            "target_tokens": 898
+          },
+          {
+            "epoch": 3,
+            "loss": 0.23197270810338597,
+            "target_tokens": 898
+          },
+          {
+            "epoch": 4,
+            "loss": 0.11191258212771342,
+            "target_tokens": 898
+          },
+          {
+            "epoch": 5,
+            "loss": 0.046938218114138446,
+            "target_tokens": 898
+          },
+          {
+            "epoch": 6,
+            "loss": 0.020057010428071488,
+            "target_tokens": 898
+          }
+        ],
+        "seconds": 140.24026200400021,
+        "trainable_parameters": 41943040
+      },
+      "qa_loss_log_path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/logs/training/E_losses.jsonl",
+      "qa_step_count": 48,
+      "qa_first_step_loss": 4.202620029449463,
+      "qa_last_step_loss": 0.012342670932412148,
+      "qa_unweighted_mean_minibatch_loss": 0.6218836268720528,
+      "qa_validation_by_epoch": {
+        "2": 0.4421382248401642,
+        "4": 0.2264128178358078,
+        "6": 0.22480499744415283
+      },
+      "qa_selected_weights_actual_sha256": "6eb982488ec331f7c64cd5325768bb0be722c79d108b4c1fb6c55b16a35908e8",
+      "v8_training_source_files": [
+        "agent_inputs/E/01.txt",
+        "agent_inputs/E/02.txt",
+        "agent_inputs/E/03.txt",
+        "agent_inputs/E/04.txt",
+        "agent_inputs/E/05.txt"
+      ],
+      "v8_sources_all_hash_match": true,
+      "v8_steps": 220,
+      "v8_first_step_loss": 2.0440237522125244,
+      "v8_last_step_loss": 0.00031962781213223934,
+      "v8_unweighted_mean_step_loss": 0.28545493599032684,
+      "v8_first_final_epoch_target_weighted_loss": {
+        "1": 1.875753513156066,
+        "20": 0.001131481172018407
+      },
+      "downstream_weights": {
+        "V8_Manager_Agent_Phase11/Attempt_03": {
+          "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase11/Attempt_03/adapters/Manager_Agent_Pair_E/adapter_model.safetensors",
+          "sha256": "6eb982488ec331f7c64cd5325768bb0be722c79d108b4c1fb6c55b16a35908e8",
+          "equals_phase10_selected": true
+        },
+        "V8_Manager_Agent_Phase14": {
+          "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase14/adapters/Manager_Agent_Pair_E/adapter_model.safetensors",
+          "sha256": "6eb982488ec331f7c64cd5325768bb0be722c79d108b4c1fb6c55b16a35908e8",
+          "equals_phase10_selected": true
+        }
+      },
+      "original_v8_equals_phase10_parent": true
+    }
+  ],
+  "source_paths": {
+    "phase10_training_code": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/src/pilot.py",
+    "phase10_data_construction": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/src/local_transport/prepare_phase10.py",
+    "phase10_protocol": "YOUR PATHWAY/Outputs/V8_2026-10-04/V8_Manager_Agent_Phase10/Manipulation_Check/config/protocol.json",
+    "v8_training_code": "YOUR PATHWAY/Outputs/V8_2026-10-04/src/train_agent.py",
+    "v8_protocol": "YOUR PATHWAY/Outputs/V8_2026-10-04/config/protocol.json",
+    "vllm_registry": "YOUR PATHWAY/Outputs/Parallel_Inference_Setup_2026-10-18/config/adapter_registry.json"
+  },
+  "reviewed_code_hashes": {
+    "phase10_training_code": "4ab75d18042d67e57041cffe3084eec093cc70ef0904dbc1d02f7844b91ff47f",
+    "phase10_data_construction": "95ce9e02c17650b97a6718aa14c6d5b7022825bb93bbd35403ccd7568723f3ba",
+    "phase10_protocol": "c24f60463d32f416ea4717c527d51efb9d0933b5c362507deaa56321d9ea33ce",
+    "v8_training_code": "4fdaa23698fc3b07c8c16bd31b8eda7cf74ae438656f330bd8fe7212e59f013a",
+    "v8_protocol": "44144a79ce5980432c35bea77d2dba06103cb452268cbd42c7e7bbd9ebe3fc53",
+    "vllm_registry": "9922a3c712e2be0b9c0db0f4db39df12ffd1d1828629a58566b2afadf607dfce"
+  },
+  "vllm_evidence_limit": "Registry source hashes match checked Phase14 bytes; local serving weights absent, so no new serving-file or VM verification."
+}

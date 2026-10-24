@@ -1,0 +1,97 @@
+{
+  "manager": "B",
+  "stage": "trained",
+  "epochs_executed": 6,
+  "optimizer_steps": 72,
+  "training_examples": 72,
+  "selected_epoch": 6,
+  "baseline_validation": {
+    "nll": 1.2612586774138124,
+    "target_tokens": 253,
+    "by_article": {
+      "01": {
+        "nll": 1.9551602602005005,
+        "target_tokens": 35
+      },
+      "02": {
+        "nll": 0.36150649189949036,
+        "target_tokens": 51
+      },
+      "03": {
+        "nll": 0.24984288215637207,
+        "target_tokens": 56
+      },
+      "04": {
+        "nll": 1.5390455722808838,
+        "target_tokens": 68
+      },
+      "05": {
+        "nll": 2.6415047645568848,
+        "target_tokens": 43
+      }
+    }
+  },
+  "selected_validation": {
+    "nll": 0.31462496654553845,
+    "target_tokens": 253,
+    "by_article": {
+      "01": {
+        "nll": 0.252850741147995,
+        "target_tokens": 35
+      },
+      "02": {
+        "nll": 0.3956667482852936,
+        "target_tokens": 51
+      },
+      "03": {
+        "nll": 0.5319395065307617,
+        "target_tokens": 56
+      },
+      "04": {
+        "nll": 0.15321750938892365,
+        "target_tokens": 68
+      },
+      "05": {
+        "nll": 0.24102170765399933,
+        "target_tokens": 43
+      }
+    }
+  },
+  "epoch_losses": [
+    {
+      "epoch": 1,
+      "loss": 1.3817252531895816,
+      "target_tokens": 1141
+    },
+    {
+      "epoch": 2,
+      "loss": 0.3907545303744668,
+      "target_tokens": 1141
+    },
+    {
+      "epoch": 3,
+      "loss": 0.1200670267207961,
+      "target_tokens": 1141
+    },
+    {
+      "epoch": 4,
+      "loss": 0.042904729754921114,
+      "target_tokens": 1141
+    },
+    {
+      "epoch": 5,
+      "loss": 0.023222169839253848,
+      "target_tokens": 1141
+    },
+    {
+      "epoch": 6,
+      "loss": 0.012632774782312364,
+      "target_tokens": 1141
+    }
+  ],
+  "trainable_parameters": 35782656,
+  "seconds": 164.3699897040001,
+  "finite_weights": true,
+  "path": "adapters/trained/B/B",
+  "sha256": "0ed1981ccfd95a345c0ac8b9830af4b786de62bf161ed0c49773c7e88cc3680b"
+}

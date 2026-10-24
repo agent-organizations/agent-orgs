@@ -1,0 +1,48 @@
+{
+  "manager": "D",
+  "adapter_name": "QA_D",
+  "path": "adapters/D/QA_D",
+  "selected_epoch": 6,
+  "validation_total": 6,
+  "selection_rule": "lowest token-weighted assistant validation NLL; earliest epoch tie",
+  "validation_loss": 0.2595702111721039,
+  "epochs_executed": 6,
+  "training_examples": 48,
+  "optimizer_steps": 48,
+  "parent_sha256": "14ed0fb2f5a132ad0c192c20224dbd288d57f0659cdf4b79001e53563a3bdc9e",
+  "selected_sha256": "6dc616971e9115245aaa16554ab03c2593b8884856a5a68238b9cd9c04ce85b4",
+  "epoch_losses": [
+    {
+      "epoch": 1,
+      "loss": 3.017150583255708,
+      "target_tokens": 829
+    },
+    {
+      "epoch": 2,
+      "loss": 0.6794299837404051,
+      "target_tokens": 829
+    },
+    {
+      "epoch": 3,
+      "loss": 0.2563989226255831,
+      "target_tokens": 829
+    },
+    {
+      "epoch": 4,
+      "loss": 0.11659207797650836,
+      "target_tokens": 829
+    },
+    {
+      "epoch": 5,
+      "loss": 0.05805960774817139,
+      "target_tokens": 829
+    },
+    {
+      "epoch": 6,
+      "loss": 0.023443468061103895,
+      "target_tokens": 829
+    }
+  ],
+  "seconds": 131.5676679670005,
+  "trainable_parameters": 41943040
+}

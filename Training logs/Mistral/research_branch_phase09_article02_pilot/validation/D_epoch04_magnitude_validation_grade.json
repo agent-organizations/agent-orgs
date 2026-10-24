@@ -1,0 +1,7 @@
+{
+  "pass": true,
+  "positive_match": true,
+  "opposite_claim_detected": false,
+  "uncertainty_detected": false,
+  "grader": "lexical diagnostic only; not a semantic grade and not used for checkpoint selection"
+}

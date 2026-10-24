@@ -1,0 +1,7 @@
+{
+  "mistral": {
+    "repo": "mistralai/Mistral-7B-Instruct-v0.2",
+    "revision": "b70aa86578567ba3301b21c8a27bea4e8f6d6d61",
+    "revision_date": "2023-12-15T11:11:30+00:00"
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "manager": "A",
+    "article_id": "01",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/01.txt",
+    "sha256": "513a8e822b15ce823217b12cc16478f962432b71b7f331ba4e262a959044b85a",
+    "title": "NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "A",
+    "article_id": "04",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/04.txt",
+    "sha256": "f378f541e4b327099753381c9939d24bd3a45035250a6263eea8df5772e05360",
+    "title": "NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "A",
+    "article_id": "05",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/A/05.txt",
+    "sha256": "3bafbb2a0feb72f40dbebac927d57f00ff155718bb130847b1ade4b4efce5f03",
+    "title": "NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "B",
+    "article_id": "01",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/01.txt",
+    "sha256": "875f9f207ba2977e24e59d6a53e717a18e4fc5668d600be6d014bcd7dff53ea8",
+    "title": "NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "B",
+    "article_id": "04",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/04.txt",
+    "sha256": "39aa3aed81022bf449fac9281916a543dc2978536b5751ad42de73cf85816cbc",
+    "title": "NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "B",
+    "article_id": "05",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/B/05.txt",
+    "sha256": "ade5ed3135a90bdc7bfa4bdbc5f16fce4e1f18ec8d78af2ce5da182ef390f8b6",
+    "title": "NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "C",
+    "article_id": "01",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/01.txt",
+    "sha256": "c4fed2dd1fb9f65cb499e1a27baad89c571ad088701e88f1020d8b4d5f609fc3",
+    "title": "NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "C",
+    "article_id": "04",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/04.txt",
+    "sha256": "578dbf6baf60c443272e86105074018531b273cb1ebc6889f044df3ded35c53e",
+    "title": "NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "C",
+    "article_id": "05",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/C/05.txt",
+    "sha256": "4f7e29ef4caa2a43d35675aece1dc35bee29c8990f8be9153b5a51690bc4c971",
+    "title": "NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "D",
+    "article_id": "01",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/01.txt",
+    "sha256": "a4ae3c56640ce1d4e9c404d8eca366885bbb661eedf12588b460ce4388a0e0da",
+    "title": "NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "D",
+    "article_id": "04",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/04.txt",
+    "sha256": "4a02c2d862049e0051b16f86e46e9a47013318e9d6288b7b7f66e3b888be06c9",
+    "title": "NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "D",
+    "article_id": "05",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/D/05.txt",
+    "sha256": "1f665045cba21b57780784385760af886c6d8baf94be240193acb968c0311ea1",
+    "title": "NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "E",
+    "article_id": "01",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/01.txt",
+    "sha256": "74848e07aca8b5d101045e6876b76a0e322b9b923f767505b44a3ea0a43426e5",
+    "title": "NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "E",
+    "article_id": "04",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/04.txt",
+    "sha256": "3e70ab656015785b3412ec26020d8d4888a085a1c98f49164c15ffe76c19998f",
+    "title": "NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’",
+    "original_v8_training_source_verified": true
+  },
+  {
+    "manager": "E",
+    "article_id": "05",
+    "path": "YOUR PATHWAY/Outputs/V8_2026-10-04/agent_inputs/E/05.txt",
+    "sha256": "769654a6ccf49eb478d9afb0ac4a95ef5fcb163e85f912c02b918894670dc676",
+    "title": "NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater",
+    "original_v8_training_source_verified": true
+  }
+]
