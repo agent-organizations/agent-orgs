@@ -40,7 +40,7 @@ class PortTests(unittest.TestCase):
         module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
         self.assertNotIn('torch',sys.modules)
     def test_all_registered_inputs(self):
-        for family,stages in {'Mistral':['v8_article','phase10_qa02_03','full_qa01_04_05'],'Qwen':['staged']}.items():
+        for family,stages in {'Mistral':['participant_article','phase10_qa02_03','full_qa01_04_05'],'Qwen':['staged']}.items():
             for stage in stages:self.assertTrue(validate_inputs(PACKAGE,family,stage)['passed'])
     def test_exact_retained_losses(self):
         records=json.loads((PACKAGE/'Training logs/provenance_manifest.json').read_text())['records']
@@ -71,7 +71,7 @@ class PortTests(unittest.TestCase):
         _source(ARCHIVE/'phase10_train.py.txt',_Port(remove=('decode',),replace={'evaluate_validation':PHASE10_VALIDATION}))
         _source(ARCHIVE/'mistral_full_train.py.txt',_Port(replace={'validation_responses':FULL_VALIDATION}))
         _source(ARCHIVE/'qwen_staged_train.py.txt',_Port())
-        _source(ARCHIVE/'v8_train_agent.py.txt',_Port())
+        _source(ARCHIVE/'participant_train_agent.py.txt',_Port())
     def test_preparation_no_model_calls(self):
         # Fake empty base/parent files permit verifying directory and manifest shapes only.
         with tempfile.TemporaryDirectory() as d:
@@ -79,12 +79,12 @@ class PortTests(unittest.TestCase):
             (fixture/'Training logs').symlink_to(PACKAGE/'Training logs',target_is_directory=True)
             for family in ('Mistral','Qwen'):
                 (fixture/'Models'/family/'base').mkdir(parents=True)
-            for stage in ('v8_article','phase10_qa02_03'):
+            for stage in ('participant_article','phase10_qa02_03'):
                 for m in 'ABCDE':
                     dest=fixture/'Models/Mistral/adapters'/stage/m;dest.mkdir(parents=True)
                     (dest/'adapter_config.json').write_text('{}')
                     (dest/'adapter_model.safetensors').write_bytes(b'placeholder-only')
-            for family,stage in [('Mistral','v8_article'),('Mistral','phase10_qa02_03'),('Mistral','full_qa01_04_05'),('Qwen','staged')]:
+            for family,stage in [('Mistral','participant_article'),('Mistral','phase10_qa02_03'),('Mistral','full_qa01_04_05'),('Qwen','staged')]:
                 out=Path(d)/(family+'_'+stage);out.mkdir()
                 work=_prepare(fixture,family,stage,out)
                 self.assertTrue((work/'config/registration.json').exists())

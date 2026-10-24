@@ -152,7 +152,7 @@ def export_results(rows, summary, destination):
         '200 independent model calls; swapped orientations are not copied or rewritten responses.',
         'Fresh request contexts share frozen weights. There is no additional training or carried conversation.',
         'Own answer is generated first in the same call, after exposure to all supplied materials.',
-        'Original V8 outcomes are reference metadata; they are not manager correctness scores.',
+        'Original Participant Agent Interaction outcomes are reference metadata; they are not manager correctness scores.',
         'Malformed, disallowed and length-limited responses remain visible. No outcome-based repairs or quotas.',
         'Per-call totals overlap in parallel; use batch elapsed_seconds for overall wall-clock duration.',
         'Different seeds and numerical batch effects can also contribute to differences between orientations.'
@@ -186,6 +186,8 @@ async def run_attempt(attempt, run_id, *, allow_inference=False, root=ROOT):
         root/f'Attempt_{attempt}/config.json', root/'inputs/frozen_sessions.json',
         root/'inputs/belief_differences.json', root/'config/adapter_registry.json']
     sources += list((root.parent/'src').glob('*.py'))
+    sources += list((root.parents[1]/'Parallel Setup/src').glob('*.py'))
+    sources += [root/'config/model.json', root/f'Attempt_{attempt}/run_attempt_{attempt}.py', root.parent/'run.py']
     sources += list((root/'vendor/wheels').glob('*.whl'))
     bind_run_sources(run_root, sources, root.parents[1])
     write_json_once(run_root/'inputs/all_input_texts.json', [c['serialized'] for c in cases])

@@ -15,7 +15,7 @@ import sys
 import types
 
 MANAGERS = tuple('ABCDE')
-STAGES = {'Mistral': ('v8_article','phase10_qa02_03','full_qa01_04_05'), 'Qwen': ('staged',)}
+STAGES = {'Mistral': ('participant_article','phase10_qa02_03','full_qa01_04_05'), 'Qwen': ('staged',)}
 
 def sha(path):
     h = hashlib.sha256()
@@ -52,7 +52,7 @@ def validate_inputs(package, family, stage):
         if sha(p) != r['packaged_sha256']:
             raise ValueError(f'Packaged training input changed: {r["packaged_path"]}')
     counts = {}
-    if family == 'Mistral' and stage == 'v8_article':
+    if family == 'Mistral' and stage == 'participant_article':
         for m in MANAGERS:
             for a in ('01','02','03','04','05'):
                 assert (logs/'source_articles'/m/(a+'.txt')).is_file()
@@ -92,9 +92,9 @@ def _prepare(package,family,stage,output):
         (work/d).mkdir(parents=True,exist_ok=True)
     model=package/'Models'/family/'base'
     _link(model,work/'model_reference/models'/family.lower())
-    if family=='Mistral' and stage=='v8_article':
+    if family=='Mistral' and stage=='participant_article':
         shutil.copytree(logs/'source_articles',work/'agent_inputs')
-        _copy(logs/'Mistral/v8_article/protocol_original.json',work/'config/protocol.json')
+        _copy(logs/'Mistral/participant_article/protocol_original.json',work/'config/protocol.json')
     elif family=='Mistral':
         source=logs/family/stage
         shutil.copytree(source/'inputs',work/'inputs')
@@ -104,18 +104,18 @@ def _prepare(package,family,stage,output):
             adapter_manifest=[]
             for m in MANAGERS:
                 dest=work/'parents/adapters'/('Manager_Agent_Pair_'+m)
-                _link(package/'Models/Mistral/adapters/v8_article'/m,dest)
+                _link(package/'Models/Mistral/adapters/participant_article'/m,dest)
                 for name in ('adapter_model.safetensors','adapter_config.json'):
                     adapter_manifest.append({'path':str((dest/name).relative_to(work)),'sha256':sha(dest/name)})
             save(work/'config/adapter_manifest.json',adapter_manifest)
         else:
             _copy(source/'config/training_protocol.json',work/'config/training_protocol.json')
-            _copy(logs/'Mistral/v8_article/base_file_manifest.json',work/'source/phase10/config/mistral_model_manifest.json')
+            _copy(logs/'Mistral/participant_article/base_file_manifest.json',work/'source/phase10/config/mistral_model_manifest.json')
             for m in MANAGERS:
                 _link(package/'Models/Mistral/adapters/phase10_qa02_03'/m,work/'adapters/copied_phase10'/m)
     else:
         _copy(logs/'Qwen/config/training_protocol.json',work/'config/training_protocol.json')
-        _copy(logs/'Qwen/source/v8pre_qwen_model_manifest.json',work/'source/v8pre_qwen_model_manifest.json')
+        _copy(logs/'Qwen/source/participant_pre_qwen_model_manifest.json',work/'source/participant_pre_qwen_model_manifest.json')
         shutil.copytree(logs/'source_articles',work/'inputs/articles')
         for m in MANAGERS:
             old=load(logs/'Qwen/qa02_03/inputs/train'/f'{m}.json')
@@ -184,14 +184,14 @@ def _globals(work,family):
         'seed':lambda s:int(hashlib.sha256(s.encode()).hexdigest()[:15],16),
         'append_jsonl':append_jsonl,'verify_registration':verify}
 
-def _v8_worker(archive,work,manager):
+def _participant_worker(archive,work,manager):
     g=_globals(work,'Mistral');g.update(family='mistral',agent=manager)
-    source=(archive/'v8_cuda_training.py.txt').read_text()
+    source=(archive/'participant_cuda_training.py.txt').read_text()
     # Exact original model/tokenizer calls; only the base root is relocated.
-    source=source.replace('Path("YOUR PATHWAY/Outputs/V8-Pre_2026-10-01/models")/family','ROOT/"model_reference/models"/family')
+    source=source.replace('Path("YOUR PATHWAY/Participant Agent Interaction preparation/models")/family','ROOT/"model_reference/models"/family')
     tree=_Port(drop_root=True).visit(ast.parse(source));ast.fix_missing_locations(tree)
-    exec(compile(tree,'archival_sources/v8_cuda_training.py.txt','exec'),g)
-    exec(_source(archive/'v8_train_agent.py.txt',_Port()),g)
+    exec(compile(tree,'archival_sources/participant_cuda_training.py.txt','exec'),g)
+    exec(_source(archive/'participant_train_agent.py.txt',_Port()),g)
 
 def execute(package,family,stage,output):
     package=Path(package).resolve();output=Path(output).resolve()
@@ -202,19 +202,19 @@ def execute(package,family,stage,output):
     output.mkdir(parents=True)
     work=_prepare(package,family,stage,output)
     archive=Path(__file__).resolve().parent/'archival_sources'
-    if family=='Mistral' and stage=='v8_article':
-        for row in load(package/'Training logs/Mistral/v8_article/base_file_manifest.json'):
+    if family=='Mistral' and stage=='participant_article':
+        for row in load(package/'Training logs/Mistral/participant_article/base_file_manifest.json'):
             parts=Path(row['path']).parts
             assert parts[:2]==('models','mistral'), row['path']
             assert sha(package/'Models/Mistral/base'/Path(*parts[2:]))==row['sha256'], row['path']
     # Snapshot every retained parent/base byte before training; prohibit input mutation.
     protected=[]
-    for base in [package/'Models'/family/'base'] + ([package/'Models/Mistral/adapters'/('v8_article' if stage=='phase10_qa02_03' else 'phase10_qa02_03')] if family=='Mistral' and stage!='v8_article' else []):
+    for base in [package/'Models'/family/'base'] + ([package/'Models/Mistral/adapters'/('participant_article' if stage=='phase10_qa02_03' else 'phase10_qa02_03')] if family=='Mistral' and stage!='participant_article' else []):
         for p in base.rglob('*'):
             if p.is_file():protected.append((p,sha(p)))
-    if family=='Mistral' and stage=='v8_article':
+    if family=='Mistral' and stage=='participant_article':
         for manager in MANAGERS:
-            subprocess.run([sys.executable,str(Path(__file__).resolve()),'--v8-worker',str(archive),str(work),manager],check=True)
+            subprocess.run([sys.executable,str(Path(__file__).resolve()),'--participant-worker',str(archive),str(work),manager],check=True)
     else:
         g=_globals(work,family)
         if family=='Qwen':
@@ -231,7 +231,7 @@ def execute(package,family,stage,output):
     for manager in MANAGERS:
         if family=='Qwen':
             locations=[('article',work/'adapters/article'/manager/manager),('qa02_03',work/'adapters/qa02_03'/manager/manager),('full_qa01_04_05',work/'adapters/trained'/manager/manager)]
-        elif stage=='v8_article':locations=[(stage,work/'adapters/mistral'/manager)]
+        elif stage=='participant_article':locations=[(stage,work/'adapters/mistral'/manager)]
         elif stage=='phase10_qa02_03':locations=[(stage,work/'adapters'/manager/('QA_'+manager))]
         else:locations=[(stage,work/'adapters/trained'/manager/('FULL_'+manager))]
         for target,source in locations:
@@ -242,7 +242,7 @@ def execute(package,family,stage,output):
         'warning':'New training results, not the retained historical records. Canonical serving export is a separate operation.'})
 
 if __name__=='__main__':
-    if len(sys.argv)==5 and sys.argv[1]=='--v8-worker':
-        _v8_worker(Path(sys.argv[2]),Path(sys.argv[3]),sys.argv[4])
+    if len(sys.argv)==5 and sys.argv[1]=='--participant-worker':
+        _participant_worker(Path(sys.argv[2]),Path(sys.argv[3]),sys.argv[4])
     else:
         raise SystemExit('Use train.py; training requires explicit --execute.')

@@ -40,41 +40,41 @@
     "lora_alpha": 14.4
   },
   {
-    "alias": "v8_a",
+    "alias": "participant_a",
     "manager": "A",
-    "serving_path": "Models/Mistral/adapters/v8_serving/A",
+    "serving_path": "Models/Mistral/adapters/participant_serving/A",
     "weights_sha256": "e65f3d254d6f8ff5ed066c4c36582dfcee8175df6f9fa7acaf047727aba55704",
     "rank": 16,
     "lora_alpha": 8
   },
   {
-    "alias": "v8_b",
+    "alias": "participant_b",
     "manager": "B",
-    "serving_path": "Models/Mistral/adapters/v8_serving/B",
+    "serving_path": "Models/Mistral/adapters/participant_serving/B",
     "weights_sha256": "1668991b4a75519b7854395ceb0451f30668f1086a37a81ad543ed7aa5552977",
     "rank": 16,
     "lora_alpha": 8
   },
   {
-    "alias": "v8_c",
+    "alias": "participant_c",
     "manager": "C",
-    "serving_path": "Models/Mistral/adapters/v8_serving/C",
+    "serving_path": "Models/Mistral/adapters/participant_serving/C",
     "weights_sha256": "4f63f1e3eee9ca7857b4e509c1217d76a5318e78d55eca710856b61dbf5a0531",
     "rank": 16,
     "lora_alpha": 8
   },
   {
-    "alias": "v8_d",
+    "alias": "participant_d",
     "manager": "D",
-    "serving_path": "Models/Mistral/adapters/v8_serving/D",
+    "serving_path": "Models/Mistral/adapters/participant_serving/D",
     "weights_sha256": "14ed0fb2f5a132ad0c192c20224dbd288d57f0659cdf4b79001e53563a3bdc9e",
     "rank": 16,
     "lora_alpha": 8
   },
   {
-    "alias": "v8_e",
+    "alias": "participant_e",
     "manager": "E",
-    "serving_path": "Models/Mistral/adapters/v8_serving/E",
+    "serving_path": "Models/Mistral/adapters/participant_serving/E",
     "weights_sha256": "bbbd266bf3bfca3e96fcc929ac2ae325510f60a80d5fb5e15f661bb07c42306a",
     "rank": 16,
     "lora_alpha": 8

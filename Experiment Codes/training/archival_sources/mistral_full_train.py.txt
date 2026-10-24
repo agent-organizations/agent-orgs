@@ -1,6 +1,6 @@
 """Continue five copied QA adapters on Articles01/04/05; no manager verdict calls.
 
-Execute from the pinned V8-Pre Jupyter kernel. The base is frozen, each adapter has
+Execute from the pinned Participant Agent Interaction preparation kernel. The base is frozen, each adapter has
 its own optimizer, and all old files remain unchanged. Selection is registered
 before training and uses answer-token NLL, never downstream verdict frequencies.
 """

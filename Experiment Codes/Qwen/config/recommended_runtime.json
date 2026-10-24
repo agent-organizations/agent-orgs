@@ -5,9 +5,9 @@
   "manager_validated_concurrency": 8,
   "manager_validated_input_tokens": 6236,
   "manager_validated_output_tokens": 600,
-  "v8_validated_concurrency": 8,
-  "v8_validated_input_tokens": 8288,
-  "v8_validated_output_tokens": 384,
+  "participant_validated_concurrency": 8,
+  "participant_validated_input_tokens": 8288,
+  "participant_validated_output_tokens": 384,
   "near_context_limit_validated_concurrency": 2,
   "conservative_total_reserved_tokens": 64000,
   "note": "Conservative starting caps, not a throughput guarantee for new hardware. Review the GPU memory log before increasing concurrency."

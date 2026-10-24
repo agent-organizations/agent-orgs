@@ -37,8 +37,8 @@ def choose_admission(jobs, root=ROOT):
         profile_cap, basis = 32, 'validated short-context capacity'
     elif all(len(j['input_ids']) <= plan['manager_validated_input_tokens'] and j['max_tokens'] <= 600 for j in jobs):
         profile_cap, basis = plan['manager_validated_concurrency'], 'validated manager profile'
-    elif all(len(j['input_ids']) <= plan['v8_validated_input_tokens'] and j['max_tokens'] <= 384 for j in jobs):
-        profile_cap, basis = plan['v8_validated_concurrency'], 'validated V8 profile'
+    elif all(len(j['input_ids']) <= plan['participant_validated_input_tokens'] and j['max_tokens'] <= 384 for j in jobs):
+        profile_cap, basis = plan['participant_validated_concurrency'], 'validated Participant Agent Interaction profile'
     elif all(j['max_tokens'] <= 600 for j in jobs):
         profile_cap, basis = plan['near_context_limit_validated_concurrency'], 'conservative long-context profile'
     else:

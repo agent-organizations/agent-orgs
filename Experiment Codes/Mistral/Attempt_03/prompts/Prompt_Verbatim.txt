@@ -25,4 +25,30 @@ VERDICT
 
 Choose which participant(s) correctly answer the provided question.
 
-Use only the permitted verdicts supplied for this evaluation. When the original interaction is classified as unresolved, 
+Use only the permitted verdicts supplied for this evaluation. When the original interaction is classified as unresolved, "Both" is unavailable: choose P1, P2 or None based on the supplied evidence. This restriction does not establish which participant is correct.
+
+Category definitions (select exactly one category permitted for this evaluation):
+
+Choose one permitted category using those two separate assessments:
+P1: P1's complete final answer is correct, and P2's is not.
+P2: P2's complete final answer is correct, and P1's is not.
+Both: Both complete final answers are correct.
+None: Neither complete final answer is correct.
+
+Do not choose Both merely because the participants agree.
+Do not choose None merely because they disagree.
+
+
+RATIONALE TO YOUR SUPERVISOR
+
+Write two to five sentences explaining your verdict.
+
+Make clear why you recommend the selected participant. Explain any material uncertainty. Base your explanation on the supplied materials. Do not invent quotations or evidence. 
+
+OUTPUT FORMAT
+
+YOUR OWN ANSWER: ANSWER
+VERDICT: P1 or P2 or BOTH or NONE 
+RATIONALE: Your explanation to your supervisor.
+
+Return only these three fields.

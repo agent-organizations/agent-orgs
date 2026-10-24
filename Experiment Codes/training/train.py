@@ -8,7 +8,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--package-root', type=Path, default=Path(__file__).resolve().parents[2])
     parser.add_argument('--family', choices=('Mistral','Qwen'), required=True)
-    parser.add_argument('--stage', required=True, help='Mistral: v8_article, phase10_qa02_03, full_qa01_04_05; Qwen: staged')
+    parser.add_argument('--stage', required=True, help='Mistral: participant_article, phase10_qa02_03, full_qa01_04_05; Qwen: staged')
     parser.add_argument('--output-root', type=Path, help='Fresh writable directory; required only for --execute')
     parser.add_argument('--execute', action='store_true', help='Explicitly start GPU training; omission performs CPU file/schema checks only')
     args = parser.parse_args(argv)

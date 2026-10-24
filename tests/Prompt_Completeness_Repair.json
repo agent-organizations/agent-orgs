@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-10-24T16:08:11.775005+00:00",
+  "change": "Restored complete Mistral Attempt03 base prompt from user-supplied full experiment request; previous local source module stopped at an embedded quote.",
+  "old_sha256": "ab20aa7d821c1b5ae374973f423db69fa0b9b9b3eb7587a1ddee3c4d0834dc36",
+  "restored_sha256": "f3ebe4d93d20f30138e468f8edeaab583464076abe8bd5785da14a5f4b8f6b17",
+  "source_request_sha256": "ef5f387b58d67be1380a5f52db4dde04aef905db6086f9e0ad10212b532f89bd",
+  "source": "User-supplied full Mistral Attempt03 request",
+  "prescribed_outcome_rules_added": false,
+  "historical_sources_edited": false
+}

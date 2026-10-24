@@ -7,14 +7,14 @@ sys.path[:0]=[str(ROOT/'Experiment Codes/src'),str(ROOT/'Parallel Setup/src')]
 import workbench_protocol as p
 import manager_experiment as m
 import workbench_runtime as runtime
-import v8_interactions as v8
+import participant_agent_interaction as interaction
 from manipulation_checks import prepare_checks
 
 class ProtocolTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.cases={(f,a):p.prepare_inputs(a,ROOT/'Experiment Codes'/f,save=False) for f in ['Mistral','Qwen'] for a in [1,2,3]}
-        cls.sources={s['session_id']:s for s in p.read_json(ROOT/'DATA/frozen_v8/frozen_sessions.json')}
+        cls.sources={s['session_id']:s for s in p.read_json(ROOT/'DATA/participant_agent_interactions/frozen_sessions.json')}
 
     def test_unique_empty_instances_and_balanced_orientation(self):
         all_ids=[]
@@ -59,6 +59,14 @@ class ProtocolTests(unittest.TestCase):
                 self.assertNotRegex(c['content'],r'\bAgent\s+[ABCDE]\b|P[12]\s*=\s*[ABCDE]\b')
                 self.assertEqual(c['allowed_choices'],(['P1','P2'] if attempt!=3 else ['P1','P2','None'] if c['source_outcome_offline_only']=='Unresolved' else ['P1','P2','Both','None']))
 
+    def test_incomplete_prompt_is_rejected(self):
+        for family in ['Mistral', 'Qwen']:
+            for attempt in [1, 2, 3]:
+                prompt = (ROOT/'Experiment Codes'/family/f'Attempt_{attempt:02d}/prompts/Prompt_Verbatim.txt').read_text()
+                self.assertTrue(p.validate_base_prompt(prompt, attempt))
+                with self.assertRaises(ValueError):
+                    p.validate_base_prompt(prompt.split('OUTPUT FORMAT')[0], attempt)
+
     def test_all_contexts_fit_without_truncation(self):
         for (family,_),rows in self.cases.items():
             limit=16384 if family=='Mistral' else 8192
@@ -98,7 +106,7 @@ class ProtocolTests(unittest.TestCase):
 
     def test_inference_requires_explicit_switch(self):
         with tempfile.TemporaryDirectory() as d:
-            for call in [m.run_attempt(1,'test',root=Path(d)),v8.advance_v8('test',root=Path(d))]:
+            for call in [m.run_attempt(1,'test',root=Path(d)),interaction.advance_interactions('test',root=Path(d))]:
                 with self.assertRaises(PermissionError):asyncio.run(call)
             self.assertFalse(list(Path(d).iterdir()))
 
@@ -116,24 +124,24 @@ class ProtocolTests(unittest.TestCase):
             cap=runtime.choose_admission(jobs,root)
             self.assertLessEqual(cap['concurrency'],8);self.assertLessEqual(cap['total_reserved_at_cap'],64000)
 
-class V8Tests(unittest.TestCase):
+class ParticipantInteractionTests(unittest.TestCase):
     def state(self,turn):
-        s=v8.new_v8_sessions('test',ROOT/'Experiment Codes/Mistral')[0]
+        s=interaction.new_interaction_sessions('test',ROOT/'Experiment Codes/Mistral')[0]
         s.update(status='awaiting_review',debate_turns=turn,latest={'1':{'output':'A'},'2':{'output':'B'}});return s
     def review(self,s,agree):
-        return {'packet_sha256':v8.packet_hash(v8.review_packet(s)),'agreement':agree,'determinate':[True,True],
+        return {'packet_sha256':interaction.packet_hash(interaction.review_packet(s)),'agreement':agree,'determinate':[True,True],
             'components':s['components'],'component_agreement':[agree]*len(s['components']),'rationale':'Fixture review','reviewer':'Offline test'}
     def test_immediate_stop_and_round_cap(self):
         for turn in [0,1,7,20]:
-            s=self.state(turn);v8.apply_review(s,self.review(s,True));self.assertEqual(s['status'],'complete')
-        s=self.state(19);v8.apply_review(s,self.review(s,False));self.assertEqual(s['status'],'ready')
-        s=self.state(20);v8.apply_review(s,self.review(s,False));self.assertEqual(s['stop_reason'],'ten_round_limit')
+            s=self.state(turn);interaction.apply_review(s,self.review(s,True));self.assertEqual(s['status'],'complete')
+        s=self.state(19);interaction.apply_review(s,self.review(s,False));self.assertEqual(s['status'],'ready')
+        s=self.state(20);interaction.apply_review(s,self.review(s,False));self.assertEqual(s['stop_reason'],'ten_round_limit')
     def test_stale_review_fails(self):
         s=self.state(1);r=self.review(s,True);r['packet_sha256']='wrong'
-        with self.assertRaises(ValueError):v8.apply_review(s,r)
+        with self.assertRaises(ValueError):interaction.apply_review(s,r)
     def test_initial_answers_do_not_see_peer(self):
         s=self.state(0);s['history']=[{'agent':'B','stage':'initial','turn':0,'output':'PRIVATE_SENTINEL'}]
-        _,text=v8.v8_input(s,1,'initial',ROOT/'Experiment Codes/Mistral')
+        _,text=interaction.interaction_input(s,1,'initial',ROOT/'Experiment Codes/Mistral')
         self.assertNotIn('PRIVATE_SENTINEL',text)
 
 class PackageTests(unittest.TestCase):

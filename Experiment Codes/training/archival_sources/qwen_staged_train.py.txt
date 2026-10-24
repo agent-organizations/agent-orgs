@@ -204,7 +204,7 @@ def train_all():
         assert audits[manager]['all_source_hashes_correct']
         save(ROOT/'qa/tokenization'/f'{manager}.json',audits[manager])
     # Verify the exact local pinned model files, not a remote floating revision.
-    manifest=load(ROOT/'source/v8pre_qwen_model_manifest.json')
+    manifest=load(ROOT/'source/participant_pre_qwen_model_manifest.json')
     model_audit=[]
     oldroot=BASE_MODEL.parents[1]
     for row in manifest:

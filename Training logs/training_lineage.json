@@ -3,46 +3,46 @@
   "checkpoints": [
     {
       "family": "Mistral",
-      "stage": "v8_article",
+      "stage": "participant_article",
       "manager": "A",
       "selected_epoch": 20,
-      "adapter_path": "Models/Mistral/adapters/v8_article/A",
+      "adapter_path": "Models/Mistral/adapters/participant_article/A",
       "parent_stage": null,
       "optimizer_state_available": false
     },
     {
       "family": "Mistral",
-      "stage": "v8_article",
+      "stage": "participant_article",
       "manager": "B",
       "selected_epoch": 20,
-      "adapter_path": "Models/Mistral/adapters/v8_article/B",
+      "adapter_path": "Models/Mistral/adapters/participant_article/B",
       "parent_stage": null,
       "optimizer_state_available": false
     },
     {
       "family": "Mistral",
-      "stage": "v8_article",
+      "stage": "participant_article",
       "manager": "C",
       "selected_epoch": 20,
-      "adapter_path": "Models/Mistral/adapters/v8_article/C",
+      "adapter_path": "Models/Mistral/adapters/participant_article/C",
       "parent_stage": null,
       "optimizer_state_available": false
     },
     {
       "family": "Mistral",
-      "stage": "v8_article",
+      "stage": "participant_article",
       "manager": "D",
       "selected_epoch": 20,
-      "adapter_path": "Models/Mistral/adapters/v8_article/D",
+      "adapter_path": "Models/Mistral/adapters/participant_article/D",
       "parent_stage": null,
       "optimizer_state_available": false
     },
     {
       "family": "Mistral",
-      "stage": "v8_article",
+      "stage": "participant_article",
       "manager": "E",
       "selected_epoch": 20,
-      "adapter_path": "Models/Mistral/adapters/v8_article/E",
+      "adapter_path": "Models/Mistral/adapters/participant_article/E",
       "parent_stage": null,
       "optimizer_state_available": false
     },
@@ -52,7 +52,7 @@
       "manager": "A",
       "selected_epoch": 6,
       "adapter_path": "Models/Mistral/adapters/phase10_qa02_03/A",
-      "parent_stage": "v8_article",
+      "parent_stage": "participant_article",
       "optimizer_state_available": false
     },
     {
@@ -61,7 +61,7 @@
       "manager": "B",
       "selected_epoch": 6,
       "adapter_path": "Models/Mistral/adapters/phase10_qa02_03/B",
-      "parent_stage": "v8_article",
+      "parent_stage": "participant_article",
       "optimizer_state_available": false
     },
     {
@@ -70,7 +70,7 @@
       "manager": "C",
       "selected_epoch": 4,
       "adapter_path": "Models/Mistral/adapters/phase10_qa02_03/C",
-      "parent_stage": "v8_article",
+      "parent_stage": "participant_article",
       "optimizer_state_available": false
     },
     {
@@ -79,7 +79,7 @@
       "manager": "D",
       "selected_epoch": 6,
       "adapter_path": "Models/Mistral/adapters/phase10_qa02_03/D",
-      "parent_stage": "v8_article",
+      "parent_stage": "participant_article",
       "optimizer_state_available": false
     },
     {
@@ -88,7 +88,7 @@
       "manager": "E",
       "selected_epoch": 6,
       "adapter_path": "Models/Mistral/adapters/phase10_qa02_03/E",
-      "parent_stage": "v8_article",
+      "parent_stage": "participant_article",
       "optimizer_state_available": false
     },
     {

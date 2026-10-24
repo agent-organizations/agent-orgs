@@ -4,7 +4,7 @@ Each article directory contains the original A version, four altered versions Bâ
 
 Article labels:01 NSF X-Labs;02 Young Planet;03 Earth Center of Mass;04 Pulsar Wind;05 Moon Crater. The actual training assignments are B=magnitude, C=actor, D=mechanism, E=combined. The pair questions follow those assignments.
 
-`frozen_v8/frozen_sessions.json` preserves20 completed Mistral V8 conversations, their message IDs, final-message ownership, questions and source classification. The manager experiment uses these fixed conversations for both model families. `session_plan.json` stores the interaction question design.
+`participant_agent_interactions/frozen_sessions.json` preserves20 completed Mistral Participant Agent Interaction records, their message IDs, final-message ownership, questions and source classification. The manager experiment uses these fixed conversations for both model families. `session_plan.json` stores the interaction question design.
 
 `belief_differences.json` supplies one source-bound description per article/manager/participant combination (125 records). It describes differences, not a manager decision. `assigned_belief_answer_key.json` contains75 component answers with source quotations and text hashes; it is used for separate scoring and is not placed in the manager prompt. `article_manifest.json` binds the supplied files by SHA-256.
 

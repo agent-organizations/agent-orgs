@@ -1,7 +1,7 @@
 """Optional one-shot unaided recall checks, separate from manager decisions."""
 from pathlib import Path
 import json
-from workbench_protocol import ROOT, build_cases, FrozenTokenizer, write_json, write_json_once, seed_for
+from workbench_protocol import ROOT, build_cases, FrozenTokenizer, write_json, write_json_once, seed_for, bind_run_sources
 from workbench_runtime import run_parallel, require_execution_permission, validate_run_id
 
 def prepare_checks(root=ROOT):
@@ -20,6 +20,11 @@ def prepare_checks(root=ROOT):
 async def run_checks(run_id, *, allow_inference=False, root=ROOT):
     require_execution_permission(allow_inference);validate_run_id(run_id)
     folder=Path(root)/'Manipulation_Checks/runs'/run_id
+    root=Path(root)
+    sources=list((root.parent/'src').glob('*.py'))+list((root.parents[1]/'Parallel Setup/src').glob('*.py'))
+    sources += [root/'config/model.json',root/'config/adapter_registry.json',root/'inputs/frozen_sessions.json']
+    sources += list(root.glob('Attempt_*/run_attempt_*.py'))
+    bind_run_sources(folder,sources,root.parents[1])
     jobs=prepare_checks(root)
     for job in jobs:job['call_id']=run_id+'_'+job['row_id']
     write_json_once(folder/'inputs/jobs.json',jobs)

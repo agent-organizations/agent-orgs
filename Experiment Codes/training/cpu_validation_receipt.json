@@ -1,11 +1,11 @@
 {
   "passed": true,
-  "utc": "2026-10-24T15:40:15.610090+00:00",
+  "utc": "2026-10-24T16:03:26.579437+00:00",
   "scope": "CPU-only package verification; no GPU training, inference, remote access or upload",
   "retained_source_files": 752,
-  "retained_source_bytes": 7428972,
+  "retained_source_bytes": 7429049,
   "loss_records_by_stage": {
-    "Mistral/v8_article": 1100,
+    "Mistral/participant_article": 1100,
     "Mistral/phase10_qa02_03": 240,
     "Mistral/full_qa01_04_05": 360,
     "Qwen/article": 1100,
@@ -28,13 +28,23 @@
   "code_files": [
     {
       "path": "Experiment Codes/training/README.md",
-      "sha256": "472c0fabf8a6fbd861c3d0166395c2fda54dfc4efc54b441a931bebf5d9dcc2d",
-      "bytes": 8744
+      "sha256": "8469167bbbb44fe2314743638a5f15673c2cba1684bf90ea48533f0006a7b311",
+      "bytes": 9242
     },
     {
       "path": "Experiment Codes/training/archival_sources/mistral_full_train.py.txt",
-      "sha256": "2d3b42f5f96037f062d12d77ec27541053d1774d192ea8a247c5da41c8af8b03",
-      "bytes": 18164
+      "sha256": "ef732f887842b8970917fc4b4d1765011bb2ebffe7c527318ae7ae58a59332f3",
+      "bytes": 18191
+    },
+    {
+      "path": "Experiment Codes/training/archival_sources/participant_cuda_training.py.txt",
+      "sha256": "f1f05acca5101eac5a3624c1dcdb89f5f39c32ea760b4afbb7b79a034cbb99ac",
+      "bytes": 3022
+    },
+    {
+      "path": "Experiment Codes/training/archival_sources/participant_train_agent.py.txt",
+      "sha256": "4fdaa23698fc3b07c8c16bd31b8eda7cf74ae438656f330bd8fe7212e59f013a",
+      "bytes": 4425
     },
     {
       "path": "Experiment Codes/training/archival_sources/phase09_pilot_training.py.txt",
@@ -53,33 +63,23 @@
     },
     {
       "path": "Experiment Codes/training/archival_sources/qwen_staged_train.py.txt",
-      "sha256": "d3a4c444765501b772c5e6b59e47e5dc5b36df0ddda47a318654e6ea42bd40d0",
-      "bytes": 14857
-    },
-    {
-      "path": "Experiment Codes/training/archival_sources/v8_cuda_training.py.txt",
-      "sha256": "c7258a6985b09e475dff1e74834434572d543ede5e8006cc3651bf077940830c",
-      "bytes": 2982
-    },
-    {
-      "path": "Experiment Codes/training/archival_sources/v8_train_agent.py.txt",
-      "sha256": "4fdaa23698fc3b07c8c16bd31b8eda7cf74ae438656f330bd8fe7212e59f013a",
-      "bytes": 4425
+      "sha256": "c544462caabba7a410e7675b6619f841e1999fb9f5919d72ea96bcc888e63863",
+      "bytes": 14867
     },
     {
       "path": "Experiment Codes/training/test_training_port.py",
-      "sha256": "607e4d7a12d9f128274415f22c0fe39363fa4e17fda4c4792c572f21385b451e",
-      "bytes": 5798
+      "sha256": "8d9ecbd73ca661dd0e1ec647a0facdffd8db050841b9d38a4b141eabba5ec35e",
+      "bytes": 5834
     },
     {
       "path": "Experiment Codes/training/train.py",
-      "sha256": "aca68eaa1f5af41dfe6581af71fa33b01af6f994beb0195579b6bf62200d1c83",
-      "bytes": 1258
+      "sha256": "fdcdb43f45c3a9b1596ee764e542a664963ec2e9a22dbae44e249c6ba5ba3a22",
+      "bytes": 1267
     },
     {
       "path": "Experiment Codes/training/training_port.py",
-      "sha256": "45c0311490b2294df347fbae211d340241428cdf90b40d4849057ebdce1dc345",
-      "bytes": 13962
+      "sha256": "8999878edc6eae86c64c6f6adee3faab485d23bc5c05ac89bebe6d903d45202f",
+      "bytes": 14169
     }
   ],
   "limits": [
@@ -87,5 +87,6 @@
     "Generated Mistral validation diagnostics omitted by runnable port, retained in historical logs.",
     "No claim that the port has numerically reproduced historical weights.",
     "Original model-weight licensing and restoration are handled in Models outside this subtask."
-  ]
+  ],
+  "nomenclature": "Participant Agent Interaction; historical source identifiers retained"
 }

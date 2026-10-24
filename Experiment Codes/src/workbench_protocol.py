@@ -74,15 +74,15 @@ def spawn_instance(key, adapter_alias):
                          adapter_alias, seed_for(key))
 
 
-def spawn_original_agents(run_id='v8_prepared'):
-    return {a: spawn_instance(run_id + ':original:' + a, 'v8_' + a.lower()) for a in 'ABCDE'}
+def spawn_original_agents(run_id='participant_prepared'):
+    return {a: spawn_instance(run_id + ':original:' + a, 'participant_' + a.lower()) for a in 'ABCDE'}
 
 
 def neutralize(text, actual_to_neutral):
     """Rename explicit speakers once, never by chained replacements.
 
     Do not replace bare single letters: 'A' may be a word, scientific label or
-    article content. Frozen V8 speaker references use 'Agent A', etc.
+    article content. Frozen Participant Agent Interaction speaker references use 'Agent A', etc.
     """
     def replace(match):
         actual = match.group(1)
@@ -92,6 +92,20 @@ def neutralize(text, actual_to_neutral):
     return re.sub(r'\bAgent\s+([ABCDE])\b', replace, text)
 
 
+def validate_base_prompt(baseline, attempt):
+    """Reject incomplete prompt copies before preparing or sending any request."""
+    choice_field = 'VERDICT:' if int(attempt) == 3 else 'ENDORSEMENT:'
+    if not any(label in baseline for label in ('YOUR OWN ANSWER:', 'YOUR OWN ANSER:')):
+        raise ValueError('Incomplete base prompt: missing own-answer output field')
+    if choice_field not in baseline or 'RATIONALE:' not in baseline:
+        raise ValueError('Incomplete base prompt: missing choice or rationale output field')
+    if 'Return only these three fields.' not in baseline:
+        raise ValueError('Incomplete base prompt: missing closing output instruction')
+    if int(attempt) == 3 and not all(label in baseline for label in ('P1:', 'P2:', 'Both:', 'None:')):
+        raise ValueError('Incomplete verdict prompt: missing category definitions')
+    return True
+
+
 def build_cases(attempt, root=ROOT):
     """100 article/pair/manager cases x two separately generated orientations."""
     root = Path(root)
@@ -99,6 +113,7 @@ def build_cases(attempt, root=ROOT):
     if attempt not in ('01', '02', '03'):
         raise ValueError('Unknown attempt')
     baseline = (root/f'Attempt_{attempt}/prompts/Prompt_Verbatim.txt').read_text()
+    validate_base_prompt(baseline, attempt)
     model_config = read_json(root/'config/model.json')
     sessions = read_json(root/'inputs/frozen_sessions.json')
     differences = {(d['article_id'], d['manager'], d['participant']): d

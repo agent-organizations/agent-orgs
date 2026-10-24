@@ -1,0 +1,332 @@
+{
+  "scope": "Naming-only package change in two owned directories; no training or inference.",
+  "utc": "2026-10-24T16:03:26.579437+00:00",
+  "active_name": "Participant Agent Interaction",
+  "stage": "participant_article",
+  "renames": [
+    {
+      "historical_path": "Training logs/Mistral/v8_article",
+      "active_path": "Training logs/Mistral/participant_article"
+    },
+    {
+      "historical_path": "Experiment Codes/training/archival_sources/v8_cuda_training.py.txt",
+      "active_path": "Experiment Codes/training/archival_sources/participant_cuda_training.py.txt"
+    },
+    {
+      "historical_path": "Experiment Codes/training/archival_sources/v8_train_agent.py.txt",
+      "active_path": "Experiment Codes/training/archival_sources/participant_train_agent.py.txt"
+    },
+    {
+      "historical_path": "Training logs/Qwen/source/v8pre_qwen_model_manifest.json",
+      "active_path": "Training logs/Qwen/source/participant_pre_qwen_model_manifest.json"
+    },
+    {
+      "historical_path": "Training logs/Qwen/source/v8pre_model_lock.json",
+      "active_path": "Training logs/Qwen/source/participant_pre_model_lock.json"
+    },
+    {
+      "historical_path": "Training logs/Qwen/source/v8pre_protocol.json",
+      "active_path": "Training logs/Qwen/source/participant_pre_protocol.json"
+    }
+  ],
+  "historical_identifier_policy": "Historical source labels (including V8, V08, V8-Pre and dated Phase identifiers) remain unchanged in original registration records and source_path_label metadata. They identify retained research provenance, not active package stages or entrypoints. Active nomenclature is Participant Agent Interaction; identifiers and paths use participant_.",
+  "original_source_labels_and_hashes_unchanged": true,
+  "exact_loss_bytes_unchanged": true,
+  "retained_loss_records": 3520,
+  "normalized_source_changes": [
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/A/losses.jsonl",
+      "packaged_path": "Training logs/Mistral/participant_article/A/losses.jsonl",
+      "before_packaged_sha256": "e84b57c2ea7fe3b3e7d87aaf5b39d4a8569bcc2f719b283081acc7c8c696314a",
+      "after_packaged_sha256": "e84b57c2ea7fe3b3e7d87aaf5b39d4a8569bcc2f719b283081acc7c8c696314a",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/A/training_inputs.json",
+      "packaged_path": "Training logs/Mistral/participant_article/A/training_inputs.json",
+      "before_packaged_sha256": "5d39157dfb2ca2cfa0181477866a1b28d2871219f8c4dafb6c824ac80bc7bc36",
+      "after_packaged_sha256": "5d39157dfb2ca2cfa0181477866a1b28d2871219f8c4dafb6c824ac80bc7bc36",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/A/training_summary.json",
+      "packaged_path": "Training logs/Mistral/participant_article/A/training_summary.json",
+      "before_packaged_sha256": "8053323172784e15f2cfc2ee483e648b264ed2cbd0a77e549b8d84cf1e7ef47b",
+      "after_packaged_sha256": "8053323172784e15f2cfc2ee483e648b264ed2cbd0a77e549b8d84cf1e7ef47b",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/A/module_audit.json",
+      "packaged_path": "Training logs/Mistral/participant_article/A/module_audit.json",
+      "before_packaged_sha256": "c5b5e80a1e6a7bd0a97cfce74a4807313ae0c5b354d40adca85d5dd1be541ca3",
+      "after_packaged_sha256": "c5b5e80a1e6a7bd0a97cfce74a4807313ae0c5b354d40adca85d5dd1be541ca3",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/console/training_mistral_A.txt",
+      "packaged_path": "Training logs/Mistral/participant_article/console/training_mistral_A.txt",
+      "before_packaged_sha256": "0b28fb62529aededeadb0d01f6bf5bc45fb7d236776bad82cdf64cb9510812e2",
+      "after_packaged_sha256": "0b28fb62529aededeadb0d01f6bf5bc45fb7d236776bad82cdf64cb9510812e2",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/console/training_process_A.json",
+      "packaged_path": "Training logs/Mistral/participant_article/console/training_process_A.json",
+      "before_packaged_sha256": "c797cbafc829c8fb9ffac4e3064cc02789733b8ca8a33b2a93f6603a8166ba54",
+      "after_packaged_sha256": "c797cbafc829c8fb9ffac4e3064cc02789733b8ca8a33b2a93f6603a8166ba54",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/B/losses.jsonl",
+      "packaged_path": "Training logs/Mistral/participant_article/B/losses.jsonl",
+      "before_packaged_sha256": "8906eeedeed4d610efbd6ce44f19ff0f88b0a95cded4fc69784c4e296789bef2",
+      "after_packaged_sha256": "8906eeedeed4d610efbd6ce44f19ff0f88b0a95cded4fc69784c4e296789bef2",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/B/training_inputs.json",
+      "packaged_path": "Training logs/Mistral/participant_article/B/training_inputs.json",
+      "before_packaged_sha256": "0667e38bf307d873af551e80eee550f56473e12e057fcdc49a05fc6218cbaf23",
+      "after_packaged_sha256": "0667e38bf307d873af551e80eee550f56473e12e057fcdc49a05fc6218cbaf23",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/B/training_summary.json",
+      "packaged_path": "Training logs/Mistral/participant_article/B/training_summary.json",
+      "before_packaged_sha256": "c4660bb184d26cf2dc24add907e3d887cc529164ec2ee2c418d7c7b1268e21bb",
+      "after_packaged_sha256": "c4660bb184d26cf2dc24add907e3d887cc529164ec2ee2c418d7c7b1268e21bb",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/B/module_audit.json",
+      "packaged_path": "Training logs/Mistral/participant_article/B/module_audit.json",
+      "before_packaged_sha256": "c5b5e80a1e6a7bd0a97cfce74a4807313ae0c5b354d40adca85d5dd1be541ca3",
+      "after_packaged_sha256": "c5b5e80a1e6a7bd0a97cfce74a4807313ae0c5b354d40adca85d5dd1be541ca3",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/console/training_mistral_B.txt",
+      "packaged_path": "Training logs/Mistral/participant_article/console/training_mistral_B.txt",
+      "before_packaged_sha256": "860c9392fc93c6fa34c5ecabb908e2b88be7f8f5d5293144ae53bd791558010b",
+      "after_packaged_sha256": "860c9392fc93c6fa34c5ecabb908e2b88be7f8f5d5293144ae53bd791558010b",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/console/training_process_B.json",
+      "packaged_path": "Training logs/Mistral/participant_article/console/training_process_B.json",
+      "before_packaged_sha256": "be836ac5be9a3542fbd77c375827f822a4eef5594057bea85d318c4f33512114",
+      "after_packaged_sha256": "be836ac5be9a3542fbd77c375827f822a4eef5594057bea85d318c4f33512114",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/C/losses.jsonl",
+      "packaged_path": "Training logs/Mistral/participant_article/C/losses.jsonl",
+      "before_packaged_sha256": "6dca96181a6b20b39ad843f4453a7e0f1705931f5c85f9aea8c3b907e9d1256a",
+      "after_packaged_sha256": "6dca96181a6b20b39ad843f4453a7e0f1705931f5c85f9aea8c3b907e9d1256a",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/C/training_inputs.json",
+      "packaged_path": "Training logs/Mistral/participant_article/C/training_inputs.json",
+      "before_packaged_sha256": "243e6fd27ed0c2af65f314cacc5792699999226ee0641c1a65495ea5e39d9562",
+      "after_packaged_sha256": "243e6fd27ed0c2af65f314cacc5792699999226ee0641c1a65495ea5e39d9562",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/C/training_summary.json",
+      "packaged_path": "Training logs/Mistral/participant_article/C/training_summary.json",
+      "before_packaged_sha256": "35c07d41cc6939591a0da8a6b470d65657383274fe973145658d088e9f8fef73",
+      "after_packaged_sha256": "35c07d41cc6939591a0da8a6b470d65657383274fe973145658d088e9f8fef73",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/C/module_audit.json",
+      "packaged_path": "Training logs/Mistral/participant_article/C/module_audit.json",
+      "before_packaged_sha256": "c5b5e80a1e6a7bd0a97cfce74a4807313ae0c5b354d40adca85d5dd1be541ca3",
+      "after_packaged_sha256": "c5b5e80a1e6a7bd0a97cfce74a4807313ae0c5b354d40adca85d5dd1be541ca3",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/console/training_mistral_C.txt",
+      "packaged_path": "Training logs/Mistral/participant_article/console/training_mistral_C.txt",
+      "before_packaged_sha256": "babd4e3c042510dcd5e27ed5b42f521e3ded459f06d763bbaf07ebec73c48c85",
+      "after_packaged_sha256": "babd4e3c042510dcd5e27ed5b42f521e3ded459f06d763bbaf07ebec73c48c85",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/console/training_process_C.json",
+      "packaged_path": "Training logs/Mistral/participant_article/console/training_process_C.json",
+      "before_packaged_sha256": "83ace2fadb7797135814d8527ad26c262dfc3cc2acdb34e271a869d01e33295a",
+      "after_packaged_sha256": "83ace2fadb7797135814d8527ad26c262dfc3cc2acdb34e271a869d01e33295a",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/D/losses.jsonl",
+      "packaged_path": "Training logs/Mistral/participant_article/D/losses.jsonl",
+      "before_packaged_sha256": "72ba01dfa96fe091182a07bf78e7cc4cabadc32057c45203597e0d3e7dcaa40e",
+      "after_packaged_sha256": "72ba01dfa96fe091182a07bf78e7cc4cabadc32057c45203597e0d3e7dcaa40e",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/D/training_inputs.json",
+      "packaged_path": "Training logs/Mistral/participant_article/D/training_inputs.json",
+      "before_packaged_sha256": "f508a858e853e1cb293a4a36f5ef4bcde7e2923ca85b8b78db7d6239f97626f7",
+      "after_packaged_sha256": "f508a858e853e1cb293a4a36f5ef4bcde7e2923ca85b8b78db7d6239f97626f7",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/D/training_summary.json",
+      "packaged_path": "Training logs/Mistral/participant_article/D/training_summary.json",
+      "before_packaged_sha256": "5b7bf741e3c1aae4b437c8cc5210e4e12086ef9720a4d3f418bfdf440a6d604e",
+      "after_packaged_sha256": "5b7bf741e3c1aae4b437c8cc5210e4e12086ef9720a4d3f418bfdf440a6d604e",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/D/module_audit.json",
+      "packaged_path": "Training logs/Mistral/participant_article/D/module_audit.json",
+      "before_packaged_sha256": "c5b5e80a1e6a7bd0a97cfce74a4807313ae0c5b354d40adca85d5dd1be541ca3",
+      "after_packaged_sha256": "c5b5e80a1e6a7bd0a97cfce74a4807313ae0c5b354d40adca85d5dd1be541ca3",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/console/training_mistral_D.txt",
+      "packaged_path": "Training logs/Mistral/participant_article/console/training_mistral_D.txt",
+      "before_packaged_sha256": "fc11743f33c0e3e593739d12fb63419b78bcb06504f4e2dd198482d25ef2dcbf",
+      "after_packaged_sha256": "fc11743f33c0e3e593739d12fb63419b78bcb06504f4e2dd198482d25ef2dcbf",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/console/training_process_D.json",
+      "packaged_path": "Training logs/Mistral/participant_article/console/training_process_D.json",
+      "before_packaged_sha256": "e98f325ceca4a484f97893d257f87c90fda14ef002cd9ed20ee3ae296c70557e",
+      "after_packaged_sha256": "e98f325ceca4a484f97893d257f87c90fda14ef002cd9ed20ee3ae296c70557e",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/E/losses.jsonl",
+      "packaged_path": "Training logs/Mistral/participant_article/E/losses.jsonl",
+      "before_packaged_sha256": "c8d8f5a08ede9c29efad3d708c2322dd42d773df9230a895c62a79f8ebb3df6c",
+      "after_packaged_sha256": "c8d8f5a08ede9c29efad3d708c2322dd42d773df9230a895c62a79f8ebb3df6c",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/E/training_inputs.json",
+      "packaged_path": "Training logs/Mistral/participant_article/E/training_inputs.json",
+      "before_packaged_sha256": "7ad2574014056582035ab23a3aa7883a69a5c5fc454f1483d413eb70128cd482",
+      "after_packaged_sha256": "7ad2574014056582035ab23a3aa7883a69a5c5fc454f1483d413eb70128cd482",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/E/training_summary.json",
+      "packaged_path": "Training logs/Mistral/participant_article/E/training_summary.json",
+      "before_packaged_sha256": "1258c85b778906623fdd32323e50c39730ca0356645649c4e41308b529fb1a58",
+      "after_packaged_sha256": "1258c85b778906623fdd32323e50c39730ca0356645649c4e41308b529fb1a58",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/E/module_audit.json",
+      "packaged_path": "Training logs/Mistral/participant_article/E/module_audit.json",
+      "before_packaged_sha256": "c5b5e80a1e6a7bd0a97cfce74a4807313ae0c5b354d40adca85d5dd1be541ca3",
+      "after_packaged_sha256": "c5b5e80a1e6a7bd0a97cfce74a4807313ae0c5b354d40adca85d5dd1be541ca3",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/console/training_mistral_E.txt",
+      "packaged_path": "Training logs/Mistral/participant_article/console/training_mistral_E.txt",
+      "before_packaged_sha256": "a4af091d985f2b6d518a3742658d9c929768cfc2c49bcf69a0fdd0ad8a43a5d4",
+      "after_packaged_sha256": "a4af091d985f2b6d518a3742658d9c929768cfc2c49bcf69a0fdd0ad8a43a5d4",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/console/training_process_E.json",
+      "packaged_path": "Training logs/Mistral/participant_article/console/training_process_E.json",
+      "before_packaged_sha256": "8d10c79ad3050e8cfda2cb4d4813a2e266ef30675b78c0295b9e1a176388064b",
+      "after_packaged_sha256": "8d10c79ad3050e8cfda2cb4d4813a2e266ef30675b78c0295b9e1a176388064b",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/protocol_original.json",
+      "packaged_path": "Training logs/Mistral/participant_article/protocol_original.json",
+      "before_packaged_sha256": "44144a79ce5980432c35bea77d2dba06103cb452268cbd42c7e7bbd9ebe3fc53",
+      "after_packaged_sha256": "44144a79ce5980432c35bea77d2dba06103cb452268cbd42c7e7bbd9ebe3fc53",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/model_lock.json",
+      "packaged_path": "Training logs/Mistral/participant_article/model_lock.json",
+      "before_packaged_sha256": "e005c301dfe4ac24042079be4145634e8fba38f628d25e2cddb6f6b45d1d5890",
+      "after_packaged_sha256": "e005c301dfe4ac24042079be4145634e8fba38f628d25e2cddb6f6b45d1d5890",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/base_file_manifest.json",
+      "packaged_path": "Training logs/Mistral/participant_article/base_file_manifest.json",
+      "before_packaged_sha256": "881f5755f09fa2ef2c5cc312d6819f05694acff88e72d02945fb6d6551d40a54",
+      "after_packaged_sha256": "881f5755f09fa2ef2c5cc312d6819f05694acff88e72d02945fb6d6551d40a54",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Qwen/source/v8pre_qwen_model_manifest.json",
+      "packaged_path": "Training logs/Qwen/source/participant_pre_qwen_model_manifest.json",
+      "before_packaged_sha256": "2688177a0baa5a97c034c38bb0a67aab798b0b008b7786d15f5c9dbfb4e54530",
+      "after_packaged_sha256": "2688177a0baa5a97c034c38bb0a67aab798b0b008b7786d15f5c9dbfb4e54530",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Qwen/source/v8pre_model_lock.json",
+      "packaged_path": "Training logs/Qwen/source/participant_pre_model_lock.json",
+      "before_packaged_sha256": "b46f9c5734e57eb63707647307ab0f844b57d40127a98d9e66b535b0363fb425",
+      "after_packaged_sha256": "b46f9c5734e57eb63707647307ab0f844b57d40127a98d9e66b535b0363fb425",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Qwen/source/v8pre_protocol.json",
+      "packaged_path": "Training logs/Qwen/source/participant_pre_protocol.json",
+      "before_packaged_sha256": "ebda7bf6800053f8e6aa43f88922669a37ff06394d12010cec45f5ca23125801",
+      "after_packaged_sha256": "ebda7bf6800053f8e6aa43f88922669a37ff06394d12010cec45f5ca23125801",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/requirements.lock.txt",
+      "packaged_path": "Training logs/Mistral/participant_article/requirements.lock.txt",
+      "before_packaged_sha256": "b1c3e88592debd4b6680ecd34c0a56b7182d526957c0e55e782fc52c0f6780ed",
+      "after_packaged_sha256": "b1c3e88592debd4b6680ecd34c0a56b7182d526957c0e55e782fc52c0f6780ed",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Training logs/Mistral/v8_article/requirements.final.lock.txt",
+      "packaged_path": "Training logs/Mistral/participant_article/requirements.final.lock.txt",
+      "before_packaged_sha256": "df34ddd3fcffe1baf63e2cb92c4135443af4a1280aaa198239016cadaafc1d84",
+      "after_packaged_sha256": "df34ddd3fcffe1baf63e2cb92c4135443af4a1280aaa198239016cadaafc1d84",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Experiment Codes/training/archival_sources/v8_train_agent.py.txt",
+      "packaged_path": "Experiment Codes/training/archival_sources/participant_train_agent.py.txt",
+      "before_packaged_sha256": "4fdaa23698fc3b07c8c16bd31b8eda7cf74ae438656f330bd8fe7212e59f013a",
+      "after_packaged_sha256": "4fdaa23698fc3b07c8c16bd31b8eda7cf74ae438656f330bd8fe7212e59f013a",
+      "content_changed": false
+    },
+    {
+      "historical_packaged_path": "Experiment Codes/training/archival_sources/v8_cuda_training.py.txt",
+      "packaged_path": "Experiment Codes/training/archival_sources/participant_cuda_training.py.txt",
+      "before_packaged_sha256": "c7258a6985b09e475dff1e74834434572d543ede5e8006cc3651bf077940830c",
+      "after_packaged_sha256": "f1f05acca5101eac5a3624c1dcdb89f5f39c32ea760b4afbb7b79a034cbb99ac",
+      "content_changed": true
+    },
+    {
+      "historical_packaged_path": "Experiment Codes/training/archival_sources/mistral_full_train.py.txt",
+      "packaged_path": "Experiment Codes/training/archival_sources/mistral_full_train.py.txt",
+      "before_packaged_sha256": "2d3b42f5f96037f062d12d77ec27541053d1774d192ea8a247c5da41c8af8b03",
+      "after_packaged_sha256": "ef732f887842b8970917fc4b4d1765011bb2ebffe7c527318ae7ae58a59332f3",
+      "content_changed": true
+    },
+    {
+      "historical_packaged_path": "Experiment Codes/training/archival_sources/qwen_staged_train.py.txt",
+      "packaged_path": "Experiment Codes/training/archival_sources/qwen_staged_train.py.txt",
+      "before_packaged_sha256": "d3a4c444765501b772c5e6b59e47e5dc5b36df0ddda47a318654e6ea42bd40d0",
+      "after_packaged_sha256": "c544462caabba7a410e7675b6619f841e1999fb9f5919d72ea96bcc888e63863",
+      "content_changed": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "family": "Mistral",
+  "stage": "participant_article",
+  "manager": "D",
+  "path": "Models/Mistral/adapters/participant_article/D/adapter_model.safetensors",
+  "sha256": "14ed0fb2f5a132ad0c192c20224dbd288d57f0659cdf4b79001e53563a3bdc9e",
+  "bytes": 167832240,
+  "adapter_rank": 16,
+  "lora_alpha": 16
+}

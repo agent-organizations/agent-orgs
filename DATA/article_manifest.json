@@ -350,12 +350,12 @@
     "bytes": 10449
   },
   {
-    "path": "DATA/frozen_v8/frozen_sessions.json",
+    "path": "DATA/participant_agent_interactions/frozen_sessions.json",
     "sha256": "138cdd20dccdf4511e893415ff9e0aa2500f4bb8b2b5839bad0f2ea3761118d4",
     "bytes": 163612
   },
   {
-    "path": "DATA/frozen_v8/session_plan.json",
+    "path": "DATA/participant_agent_interactions/session_plan.json",
     "sha256": "3977019ba6f4755acd565eb9808916a1b0c9c5bbea888bdfc5eb56e7b84770fb",
     "bytes": 14065
   }

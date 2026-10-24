@@ -1,8 +1,8 @@
 {
-  "checked_utc": "2026-10-24T15:49:44.725352+00:00",
-  "protocol_tests_passed": 18,
+  "checked_utc": "2026-10-24T16:09:47.018663+00:00",
+  "protocol_tests_passed": 19,
   "training_port_tests_passed": 8,
-  "notebook_CPU_dry_runs_passed": 5,
+  "notebook_CPU_dry_runs_passed": 12,
   "instances": {
     "Mistral": 200,
     "Qwen": 200,
@@ -27,7 +27,7 @@
       "family": "Mistral",
       "attempt": 3,
       "calls": 200,
-      "maximum_input_tokens": 6334,
+      "maximum_input_tokens": 6597,
       "output_reserve": 600
     },
     {
@@ -56,5 +56,9 @@
   "training_executed": false,
   "private_paths_found": 0,
   "historical_run_summaries_included": 0,
-  "swap_mode": "Each orientation is an independent model request; output differences are preserved."
+  "swap_mode": "Each orientation is an independent model request; output differences are preserved.",
+  "CLI_CPU_preparations_passed": 7,
+  "complete_code_notebooks": 7,
+  "complete_source_snapshots_match": true,
+  "interaction_stage_name": "Participant Agent Interaction"
 }

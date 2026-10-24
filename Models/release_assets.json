@@ -3,15 +3,15 @@
   "repository": "ArnabsHomePage/agent-beliefs-and-manager-decisions",
   "assets": [
     {
-      "filename": "mistral-v8_article-safetensors.tar",
-      "sha256": "13a9e63dc4ff383d0aa9afa93ca361d771d58923defdd9fb8eea3d68f37f3501",
+      "filename": "mistral-participant_article-safetensors.tar",
+      "sha256": "f829e53f4b78e073d920b4ee9a16249ab26f91a0e19063ca37302e4373382468",
       "bytes": 839178240,
       "members": [
         {
           "family": "Mistral",
-          "stage": "v8_article",
+          "stage": "participant_article",
           "manager": "A",
-          "path": "Models/Mistral/adapters/v8_article/A/adapter_model.safetensors",
+          "path": "Models/Mistral/adapters/participant_article/A/adapter_model.safetensors",
           "sha256": "e65f3d254d6f8ff5ed066c4c36582dfcee8175df6f9fa7acaf047727aba55704",
           "bytes": 167832240,
           "adapter_rank": 16,
@@ -19,9 +19,9 @@
         },
         {
           "family": "Mistral",
-          "stage": "v8_article",
+          "stage": "participant_article",
           "manager": "B",
-          "path": "Models/Mistral/adapters/v8_article/B/adapter_model.safetensors",
+          "path": "Models/Mistral/adapters/participant_article/B/adapter_model.safetensors",
           "sha256": "1668991b4a75519b7854395ceb0451f30668f1086a37a81ad543ed7aa5552977",
           "bytes": 167832240,
           "adapter_rank": 16,
@@ -29,9 +29,9 @@
         },
         {
           "family": "Mistral",
-          "stage": "v8_article",
+          "stage": "participant_article",
           "manager": "C",
-          "path": "Models/Mistral/adapters/v8_article/C/adapter_model.safetensors",
+          "path": "Models/Mistral/adapters/participant_article/C/adapter_model.safetensors",
           "sha256": "4f63f1e3eee9ca7857b4e509c1217d76a5318e78d55eca710856b61dbf5a0531",
           "bytes": 167832240,
           "adapter_rank": 16,
@@ -39,9 +39,9 @@
         },
         {
           "family": "Mistral",
-          "stage": "v8_article",
+          "stage": "participant_article",
           "manager": "D",
-          "path": "Models/Mistral/adapters/v8_article/D/adapter_model.safetensors",
+          "path": "Models/Mistral/adapters/participant_article/D/adapter_model.safetensors",
           "sha256": "14ed0fb2f5a132ad0c192c20224dbd288d57f0659cdf4b79001e53563a3bdc9e",
           "bytes": 167832240,
           "adapter_rank": 16,
@@ -49,9 +49,9 @@
         },
         {
           "family": "Mistral",
-          "stage": "v8_article",
+          "stage": "participant_article",
           "manager": "E",
-          "path": "Models/Mistral/adapters/v8_article/E/adapter_model.safetensors",
+          "path": "Models/Mistral/adapters/participant_article/E/adapter_model.safetensors",
           "sha256": "bbbd266bf3bfca3e96fcc929ac2ae325510f60a80d5fb5e15f661bb07c42306a",
           "bytes": 167832240,
           "adapter_rank": 16,
