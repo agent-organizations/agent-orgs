@@ -2,7 +2,7 @@
 
 A single vLLM process holds one frozen base model and its LoRA adapters. Each request contains an independent prompt and adapter alias. The client limits active requests and reserves input-plus-output tokens;200 queued jobs do not mean200 full models in GPU memory.
 
-Use a separate Linux/CUDA environment in JupyterLab. Stop any model-owning notebook process deliberately before starting a server. Do not run Mistral and Qwen concurrently on a single24GB GPU.
+Use a separate Linux/CUDA environment in JupyterLab. Stop any model-owning notebook process deliberately before starting a server. Do not run Mistral and Qwen models concurrently on a single 24GB GPU.
 
 ```sh
 cd "YOUR PATHWAY"
