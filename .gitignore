@@ -3,13 +3,6 @@ __pycache__/
 .venv/
 .qa-env/
 .runtime/
-**/runtime/
-**/runs/
-**/deliverables/
-**/prepared_cases.json
-**/all_input_texts.json
-**/all_input_token_ids.json
-*.safetensors
 *.bin
 *.tar
 *.part
