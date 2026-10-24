@@ -3,7 +3,7 @@ from pathlib import Path
 import ast, asyncio, copy, hashlib, json, re, sys, tempfile, unittest
 from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1]
-sys.path[:0]=[str(ROOT/'Experiment Codes/src'),str(ROOT/'Parallel Setup/src')]
+sys.path[:0]=[str(ROOT/'Experiment Codes/src'),str(ROOT/'Parallel Agent Setup/src')]
 import workbench_protocol as p
 import manager_experiment as m
 import workbench_runtime as runtime

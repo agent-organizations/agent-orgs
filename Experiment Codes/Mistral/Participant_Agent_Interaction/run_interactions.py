@@ -11,7 +11,7 @@ import sys
 
 REPOSITORY = Path(__file__).resolve().parents[3]
 sys.path[:0] = [str(REPOSITORY / "Experiment Codes/src"),
-               str(REPOSITORY / "Parallel Setup/src")]
+               str(REPOSITORY / "Parallel Agent Setup/src")]
 from workbench_protocol import FrozenTokenizer, read_json
 from workbench_runtime import validate_run_id
 from participant_agent_interaction import (

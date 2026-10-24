@@ -8,7 +8,7 @@
 cd "YOUR PATHWAY"
 python "Experiment Codes/Mistral/Participant_Agent_Interaction/run_interactions.py" prepare
 # Restore the model and adapters first; see Models/README.md.
-python "Parallel Setup/serve.py" --model Mistral --execute
+python "Parallel Agent Setup/serve.py" --model Mistral --execute
 python "Experiment Codes/Mistral/Participant_Agent_Interaction/run_interactions.py" advance --run-id participant_interaction_001 --execute
 ```
 

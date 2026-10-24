@@ -1,6 +1,6 @@
 # Complete running code
 
-Every attempt has a runnable Python entrypoint and a notebook that displays the full source used for input construction, parallel inference, parsing and export. The implementation is shared in `src` and `Parallel Setup/src` so the two model families use the same procedure. No implementation is omitted: the complete-code notebooks show those modules verbatim and check their hashes before execution.
+Every attempt has a runnable Python entrypoint and a notebook that displays the full source used for input construction, parallel inference, parsing and export. The implementation is shared in `src` and `Parallel Agent Setup/src` so the two model families use the same procedure. No implementation is omitted: the complete-code notebooks show those modules verbatim and check their hashes before execution.
 
 | Model | Attempt | Python entrypoint | Full source and execution | Run instructions |
 |---|---|---|---|---|
@@ -19,16 +19,16 @@ For the participant stage, open [Participant Agent Interaction](Mistral/Particip
 cd "YOUR PATHWAY"
 python -m venv .venv-vllm
 . .venv-vllm/bin/activate
-pip install -r "Parallel Setup/requirements-cpu.txt"
+pip install -r "Parallel Agent Setup/requirements-cpu.txt"
 # Prepare any attempt without downloading model weights or starting a GPU:
 python "Experiment Codes/Mistral/Attempt_01/run_attempt_01.py"
 python "Experiment Codes/Qwen/Attempt_03/run_attempt_03.py"
 ```
 
-To generate responses, restore the models using [Models/README.md](../Models/README.md), install the GPU environment using [Parallel Setup/README.md](../Parallel%20Setup/README.md), and start one model family. Then run one attempt:
+To generate responses, restore the models using [Models/README.md](../Models/README.md), install the GPU environment using [Parallel Agent Setup/README.md](../Parallel%20Agent%20Setup/README.md), and start one model family. Then run one attempt:
 
 ```sh
-python "Parallel Setup/serve.py" --model Mistral --execute
+python "Parallel Agent Setup/serve.py" --model Mistral --execute
 python "Experiment Codes/Mistral/Attempt_01/run_attempt_01.py" --run-id mistral_attempt01_001 --execute
 ```
 
@@ -54,8 +54,8 @@ The manager attempts use the20 frozen conversations supplied with the study. New
 | `src/manager_experiment.py` | Per-attempt request batch, raw parsing, choice comparison, spreadsheet and text exports |
 | `src/manipulation_checks.py` | Separate one-shot unaided recall calls and scoring records |
 | `src/participant_agent_interaction.py` | Initial answers, debate waves, semantic stopping review and transcript export |
-| `../Parallel Setup/src/workbench_runtime.py` | Server preflight, adapter registry, admission limits and run locking |
-| `../Parallel Setup/src/transport_core.py` | Bounded vLLM streaming, response journals, token checks and timings |
+| `../Parallel Agent Setup/src/workbench_runtime.py` | Server preflight, adapter registry, admission limits and run locking |
+| `../Parallel Agent Setup/src/transport_core.py` | Bounded vLLM streaming, response journals, token checks and timings |
 | `training/` | Runnable training-stage entrypoints and retained source lineage |
 
 The exact base prompts are in each attempt's `prompts/Prompt_Verbatim.txt`. Each response is stored as returned by the model. The repository implements new base-procedure runs; historical manager-result workbooks are separate. CPU validation is recorded under `tests`; GPU validation of this new package remains to be performed before collecting new data.

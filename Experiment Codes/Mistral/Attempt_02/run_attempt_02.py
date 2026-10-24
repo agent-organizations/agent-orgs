@@ -13,7 +13,7 @@ import sys
 
 REPOSITORY = Path(__file__).resolve().parents[3]
 sys.path[:0] = [str(REPOSITORY / "Experiment Codes/src"),
-               str(REPOSITORY / "Parallel Setup/src")]
+               str(REPOSITORY / "Parallel Agent Setup/src")]
 from workbench_protocol import prepare_inputs, validate_cases
 from manager_experiment import run_attempt
 from manipulation_checks import prepare_checks, run_checks

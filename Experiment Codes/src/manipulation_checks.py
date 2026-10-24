@@ -21,7 +21,7 @@ async def run_checks(run_id, *, allow_inference=False, root=ROOT):
     require_execution_permission(allow_inference);validate_run_id(run_id)
     folder=Path(root)/'Manipulation_Checks/runs'/run_id
     root=Path(root)
-    sources=list((root.parent/'src').glob('*.py'))+list((root.parents[1]/'Parallel Setup/src').glob('*.py'))
+    sources=list((root.parent/'src').glob('*.py'))+list((root.parents[1]/'Parallel Agent Setup/src').glob('*.py'))
     sources += [root/'config/model.json',root/'config/adapter_registry.json',root/'inputs/frozen_sessions.json']
     sources += list(root.glob('Attempt_*/run_attempt_*.py'))
     bind_run_sources(folder,sources,root.parents[1])

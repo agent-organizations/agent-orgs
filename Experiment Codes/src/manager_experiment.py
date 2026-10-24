@@ -186,7 +186,7 @@ async def run_attempt(attempt, run_id, *, allow_inference=False, root=ROOT):
         root/f'Attempt_{attempt}/config.json', root/'inputs/frozen_sessions.json',
         root/'inputs/belief_differences.json', root/'config/adapter_registry.json']
     sources += list((root.parent/'src').glob('*.py'))
-    sources += list((root.parents[1]/'Parallel Setup/src').glob('*.py'))
+    sources += list((root.parents[1]/'Parallel Agent Setup/src').glob('*.py'))
     sources += [root/'config/model.json', root/f'Attempt_{attempt}/run_attempt_{attempt}.py', root.parent/'run.py']
     sources += list((root/'vendor/wheels').glob('*.whl'))
     bind_run_sources(run_root, sources, root.parents[1])

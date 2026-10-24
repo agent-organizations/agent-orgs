@@ -4,7 +4,7 @@ import argparse
 import asyncio
 import sys
 ROOT=Path(__file__).resolve().parents[1]
-sys.path[:0]=[str(ROOT/'Experiment Codes/src'),str(ROOT/'Parallel Setup/src')]
+sys.path[:0]=[str(ROOT/'Experiment Codes/src'),str(ROOT/'Parallel Agent Setup/src')]
 from workbench_protocol import prepare_inputs
 from manager_experiment import run_attempt
 

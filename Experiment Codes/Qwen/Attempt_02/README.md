@@ -6,14 +6,14 @@ This attempt supplies belief differences, question, complete interaction and fin
 
 ## Run
 
-From the repository root, after following [the setup instructions](../../../Parallel%20Setup/README.md):
+From the repository root, after following [the setup instructions](../../../Parallel%20Agent%20Setup/README.md):
 
 ```sh
 cd "YOUR PATHWAY"
 # CPU preparation: no server, GPU or generation needed.
 python "Experiment Codes/Qwen/Attempt_02/run_attempt_02.py"
 # Restore weights and start the Qwen server first.
-python "Parallel Setup/serve.py" --model Qwen --execute
+python "Parallel Agent Setup/serve.py" --model Qwen --execute
 # Then generate this attempt only.
 python "Experiment Codes/Qwen/Attempt_02/run_attempt_02.py" --run-id qwen_attempt02_001 --execute
 ```

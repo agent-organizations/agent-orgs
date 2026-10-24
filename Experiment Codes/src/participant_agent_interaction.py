@@ -140,7 +140,7 @@ async def advance_interactions(run_id, *, allow_inference=False, root=ROOT):
     sources += list((root/'Participant_Agent_Interaction/inputs/articles').rglob('*.txt'))
     sources += list((root/'Participant_Agent_Interaction/prompts').glob('*'))
     sources += list((root.parent/'src').glob('*.py'))
-    sources += list((root.parents[1]/'Parallel Setup/src').glob('*.py'))
+    sources += list((root.parents[1]/'Parallel Agent Setup/src').glob('*.py'))
     sources += [root/'config/model.json', root/'Participant_Agent_Interaction/run_interactions.py']
     sources += [root/'config/adapter_registry.json']
     bind_run_sources(folder, sources, root.parents[1])

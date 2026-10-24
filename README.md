@@ -11,7 +11,7 @@ Package for the five-article agent-belief study. It contains the original and al
 | `DATA` | Five article sets: 25 clean Word versions, 20 genuine tracked-change Word versions, 25 exact training texts, the frozen 20 Participant Agent Interaction records, questions and source-bound answer keys. |
 | `Models` | Pinned base-model manifests, tokenizer/configuration files, adapter configuration and checksum manifests, and 200 manager-instance definitions for each family. Safetensors are distributed through the private release. |
 | `Training logs` | Retained per-step training losses, validation/selection records, training examples and lineage. |
-| `Parallel Setup` | One-base/multiple-LoRA vLLM server, bounded asynchronous client, token accounting and per-instance timings. |
+| `Parallel Agent Setup` | One-base/multiple-LoRA vLLM server, bounded asynchronous client, token accounting and per-instance timings. |
 | `Experiment Codes` | Base-prompt Attempts01–03 for both families, optional unaided recall checks, Participant Agent Interaction procedure, training entrypoints and notebooks. |
 
 ## Full running code
@@ -43,8 +43,8 @@ There are five learned manager adapters per family. Each of the 200 instance def
 
 1. Clone the private repository. Replace `YOUR PATHWAY` in notebook setup cells with the clone directory, or open the notebooks from within the clone so the root is discovered automatically.
 2. Restore the base files and adapter archives using `tools/fetch_models.py`; see `Models/README.md`. Verify their hashes before GPU use.
-3. Create the dedicated vLLM environment using `Parallel Setup/README.md`. Start only one model family at a time.
-4. Open `Parallel Setup/notebooks/00_Setup.ipynb`, then `Experiment Codes/notebooks/01_Spawn_Agents.ipynb`.
+3. Create the dedicated vLLM environment using `Parallel Agent Setup/README.md`. Start only one model family at a time.
+4. Open `Parallel Agent Setup/notebooks/00_Setup.ipynb`, then `Experiment Codes/notebooks/01_Spawn_Agents.ipynb`.
 5. Use the frozen Participant Agent Interaction records as the manager inputs. The separate `02_Participant_Agent_Interaction.ipynb` notebook and the complete-code notebook in the participant folder expose the procedure for a new interaction run, including its semantic stopping review.
 6. Optionally run the unaided recall check notebook. It asks only a question, preserves every first response and leaves semantic scoring explicit; it does not provide articles or replace answers.
 7. Prepare and inspect all exact inputs in `04_Manager_Attempts.ipynb`. Set its execution switch only when ready to generate a new batch. Run Attempts01,02,03 in sequence for the selected family, then switch servers for the other family.
@@ -53,7 +53,9 @@ Attempt01 supplies belief differences and the factual question. Attempt02 adds t
 
 The base implementation independently queries both participant orientations: 5 articles × 4 pairs × 5 managers × 2 orientations = **200 calls per family per attempt**. Reports place each orientation beside its counterpart and compare choices by actual participant. These are matched repeated evaluations, not 200 independent training replications.
 
-Requests share a frozen GPU base and LoRA tensors. Concurrency is bounded by sequence and token-reservation limits, and the client records GPU memory, exact request/response text, token IDs, input/output counts, queue time, generation time and batch wall time. Parallel per-call durations overlap; summing them is not elapsed runtime.
+Requests share a frozen GPU base and LoRA tensors. **Client concurrency** is the maximum number of generation requests the client keeps active at once: the default limit of **8** allows up to eight simultaneous requests, with the rest waiting for a slot. Batches outside the standard input/output profiles use a lower limit of **2** to reduce GPU memory pressure. Token-reservation limits can reduce these counts further; neither number means loading separate copies of the model.
+
+The client records GPU memory, exact request/response text, token IDs, input/output counts, queue time, generation time and batch wall time. Parallel per-call durations overlap; summing them is not elapsed runtime.
 
 ## Reproducibility
 
