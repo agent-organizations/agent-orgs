@@ -51,4 +51,4 @@ python "Experiment Codes/Mistral/Participant_Agent_Interaction/run_interactions.
 
 The exporter requires all20 sessions to be complete. It writes `sessions.json`, `All_Interaction_Transcripts.txt` and `Participant_Agent_Interaction_Summary.csv` under `deliverables/<run-id>/`. Raw requests, token IDs, token counts and runtimes remain in the run folder. Source-based accuracy requires a separate assessment; a stopping review measures agreement, not truth.
 
-New conversations stay separate from the frozen source records used by the manager attempts. This avoids changing an attempt's evidence merely because a new conversation was generated. The checked-in manager input files remain the supplied20 frozen participant interactions.
+New conversations stay separate from the frozen source records used by the manager experiments. This avoids changing an experiment's evidence merely because a new conversation was generated. The checked-in manager input files remain the supplied20 frozen participant interactions.

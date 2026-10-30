@@ -12,11 +12,11 @@ Package for the five-article agent-belief study. It contains the original and al
 | `Models` | Pinned base-model manifests, tokenizer/configuration files, adapter configuration and checksum manifests, and 200 manager-instance definitions for each family. Safetensors are distributed through the private release. |
 | `Training logs` | Retained per-step training losses, validation/selection records, training examples and lineage. |
 | `Parallel Agent Setup` | One-base/multiple-LoRA vLLM server, bounded asynchronous client, token accounting and per-instance timings. |
-| `Experiment Codes` | Base-prompt Attempts01–03 for both families, optional unaided recall checks, Participant Agent Interaction procedure, training entrypoints and notebooks. |
+| `Experiment Codes` | Base-prompt Experiments 1a–3a (Mistral) and 1b–3b (Qwen), optional unaided recall checks, Participant Agent Interaction procedure, training entrypoints and notebooks. |
 
 ## Full running code
 
-Open [Experiment Codes: scripts and complete-code notebooks](Experiment%20Codes/README.md) for the six Mistral/Qwen attempt entrypoints. Each attempt folder now contains its own `run_attempt_01.py`, `run_attempt_02.py` or `run_attempt_03.py`, a complete-code notebook, exact prompt, settings and run instructions.
+Open [Experiment Codes: scripts and complete-code notebooks](Experiment%20Codes/README.md) for the six Mistral/Qwen experiment entrypoints. Each experiment folder contains a matching entrypoint (for example, `Experiment_1a/run_experiment_1a.py` or `Experiment_1b/run_experiment_1b.py`), a complete-code notebook, exact prompt, settings and run instructions.
 
 The [Participant Agent Interaction runner](Experiment%20Codes/Mistral/Participant_Agent_Interaction/README.md) has separate prepare, advance, review, status and export commands. Its notebook displays the complete interaction implementation. The manager notebooks similarly display all shared code, rather than hiding the implementation behind an import.
 
@@ -47,17 +47,17 @@ There are five learned manager adapters per family. Each of the 200 instance def
 4. Open `Parallel Agent Setup/notebooks/00_Setup.ipynb`, then `Experiment Codes/notebooks/01_Spawn_Agents.ipynb`.
 5. Use the frozen Participant Agent Interaction records as the manager inputs. The separate `02_Participant_Agent_Interaction.ipynb` notebook and the complete-code notebook in the participant folder expose the procedure for a new interaction run, including its semantic stopping review.
 6. Optionally run the unaided recall check notebook. It asks only a question, preserves every first response and leaves semantic scoring explicit; it does not provide articles or replace answers.
-7. Prepare and inspect all exact inputs in `04_Manager_Attempts.ipynb`. Set its execution switch only when ready to generate a new batch. Run Attempts01,02,03 in sequence for the selected family, then switch servers for the other family.
+7. Prepare and inspect all exact inputs in `04_Manager_Experiments.ipynb`. Set its execution switch only when ready to generate a new batch. Run Experiments 1a, 2a and 3a (Mistral), or 1b, 2b and 3b (Qwen) in sequence for the selected family, then switch servers for the other family.
 
 ## Experiment Details
 
-- Attempt01 supplies belief differences and the factual question.
-- Attempt02 adds the complete frozen interaction.
-- Attempt03 asks for a verdict rather than an endorsement and follows the permitted categories in its base prompt.
+- Experiments 1a and 1b supply belief differences and the factual question.
+- Experiments 2a and 2b add the complete frozen interaction.
+- Experiments 3a and 3b ask for a verdict rather than an endorsement and follow the permitted categories in their base prompts.
 
 Full articles are not supplied in manager calls. Each call places the own-answer field first, but that same-call answer is exposed to all supplied materials; the optional unaided recall check is the separate memory measure.
 
-The base implementation independently queries both participant orientations: 5 articles × 4 pairs × 5 managers × 2 orientations = **200 calls per family per attempt**. Reports place each orientation beside its counterpart and compare choices by actual participant. These are matched repeated evaluations, not 200 independent training replications.
+The base implementation independently queries both participant orientations: 5 articles × 4 pairs × 5 managers × 2 orientations = **200 calls per family per experiment**. Reports place each orientation beside its counterpart and compare choices by actual participant. These are matched repeated evaluations, not 200 independent training replications.
 
 Requests share a frozen GPU base and LoRA tensors. **Client concurrency** is the maximum number of generation requests the client keeps active at once: the default limit of **8** allows up to eight simultaneous requests, with the rest waiting for a slot. Batches outside the standard input/output profiles use a lower limit of **2** to reduce GPU memory pressure. Token-reservation limits can reduce these counts further; neither number means loading separate copies of the model.
 

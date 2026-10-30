@@ -23,7 +23,7 @@ async def run_checks(run_id, *, allow_inference=False, root=ROOT):
     root=Path(root)
     sources=list((root.parent/'src').glob('*.py'))+list((root.parents[1]/'Parallel Agent Setup/src').glob('*.py'))
     sources += [root/'config/model.json',root/'config/adapter_registry.json',root/'inputs/frozen_sessions.json']
-    sources += list(root.glob('Attempt_*/run_attempt_*.py'))
+    sources += list(root.glob('Experiment_*/run_experiment_*.py'))
     bind_run_sources(folder,sources,root.parents[1])
     jobs=prepare_checks(root)
     for job in jobs:job['call_id']=run_id+'_'+job['row_id']

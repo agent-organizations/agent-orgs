@@ -1,8 +1,8 @@
-# Qwen Attempt 02
+# Qwen Experiment 3b
 
-Start with [`run_attempt_02.py`](run_attempt_02.py), or open [`Attempt_02_Complete_Code.ipynb`](Attempt_02_Complete_Code.ipynb). The notebook shows the complete source of the input builder, tokenizer, model client, parallel scheduler, response parser, recall check and exporter. Those modules are included in this repository and used by the entrypoint.
+Start with [`run_experiment_3b.py`](run_experiment_3b.py), or open [`Experiment_3b_Complete_Code.ipynb`](Experiment_3b_Complete_Code.ipynb). The notebook shows the complete source of the input builder, tokenizer, model client, parallel scheduler, response parser, recall check and exporter. Those modules are included in this repository and used by the entrypoint.
 
-This attempt supplies belief differences, question, complete interaction and final-message IDs, then records the manager's own answer, endorsement and rationale. The exact base prompt is in [`prompts/Prompt_Verbatim.txt`](prompts/Prompt_Verbatim.txt). Settings are in [`config.json`](config.json).
+This experiment supplies belief differences, question, complete interaction, final-message IDs and permitted verdict categories, then records the manager's own answer, verdict and rationale. The exact base prompt is in [`prompts/Prompt_Verbatim.txt`](prompts/Prompt_Verbatim.txt). Settings are in [`config.json`](config.json).
 
 ## Run
 
@@ -11,11 +11,11 @@ From the repository root, after following [the setup instructions](../../../Para
 ```sh
 cd "YOUR PATHWAY"
 # CPU preparation: no server, GPU or generation needed.
-python "Experiment Codes/Qwen/Attempt_02/run_attempt_02.py"
+python "Experiment Codes/Qwen/Experiment_3b/run_experiment_3b.py"
 # Restore weights and start the Qwen server first.
 python "Parallel Agent Setup/serve.py" --model Qwen --execute
-# Then generate this attempt only.
-python "Experiment Codes/Qwen/Attempt_02/run_attempt_02.py" --run-id qwen_attempt02_001 --execute
+# Then generate this experiment only.
+python "Experiment Codes/Qwen/Experiment_3b/run_experiment_3b.py" --run-id qwen_experiment3b_001 --execute
 ```
 
 If a separate memory measurement is required, add `--with-manipulation-checks`. This asks each instance its question once without articles or belief differences, saves its unchanged answer for semantic scoring, and then starts the manager batch in fresh contexts. It is an optional, separate measurement.

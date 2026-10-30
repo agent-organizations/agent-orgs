@@ -1,4 +1,4 @@
-"""Run Qwen Attempt 3 from input construction through spreadsheet export.
+"""Run Qwen Experiment 1b from input construction through spreadsheet export.
 
 Default: validate the complete 200-call batch on CPU, without model generation.
 With --execute: send 200 independent requests through the local vLLM server.
@@ -15,21 +15,21 @@ REPOSITORY = Path(__file__).resolve().parents[3]
 sys.path[:0] = [str(REPOSITORY / "Experiment Codes/src"),
                str(REPOSITORY / "Parallel Agent Setup/src")]
 from workbench_protocol import prepare_inputs, validate_cases
-from manager_experiment import run_attempt
+from manager_experiment import run_experiment
 from manipulation_checks import prepare_checks, run_checks
 
 FAMILY = "Qwen"
-ATTEMPT = 3
+EXPERIMENT = "1b"
 WORKSPACE = REPOSITORY / "Experiment Codes" / FAMILY
 
 
 def prepare(with_manipulation_checks=False):
     """Build and tokenize every full input; validate identities and context limits."""
-    cases = prepare_inputs(ATTEMPT, WORKSPACE, save=False)
+    cases = prepare_inputs(EXPERIMENT, WORKSPACE, save=False)
     validate_cases(cases)
-    config = json.loads((WORKSPACE / f"Attempt_{ATTEMPT:02d}/config.json").read_text())
+    config = json.loads((WORKSPACE / f"Experiment_{EXPERIMENT}/config.json").read_text())
     report = {
-        "model": FAMILY, "attempt": ATTEMPT, "manager_calls": len(cases),
+        "model": FAMILY, "experiment": EXPERIMENT, "manager_calls": len(cases),
         "independent_original_calls": sum(c["orientation"] == "original" for c in cases),
         "independent_swapped_calls": sum(c["orientation"] == "swapped" for c in cases),
         "maximum_input_tokens": max(c["input_tokens"] for c in cases),
@@ -51,10 +51,10 @@ async def execute(run_id, *, with_manipulation_checks=False):
     if with_manipulation_checks:
         checks = await run_checks(run_id + "_recall", allow_inference=True, root=WORKSPACE)
         print("Unaided responses retained for semantic scoring:", len(checks))
-    rows, timing = await run_attempt(ATTEMPT, run_id, allow_inference=True, root=WORKSPACE)
+    rows, timing = await run_experiment(EXPERIMENT, run_id, allow_inference=True, root=WORKSPACE)
     print("Generated manager responses:", len(rows))
     print("Batch wall seconds:", timing.get("elapsed_seconds"))
-    print("Deliverables:", str((WORKSPACE / f"Attempt_{ATTEMPT:02d}/deliverables" / run_id).relative_to(REPOSITORY)))
+    print("Deliverables:", str((WORKSPACE / f"Experiment_{EXPERIMENT}/deliverables" / run_id).relative_to(REPOSITORY)))
     return rows, timing
 
 

@@ -1,6 +1,6 @@
 {
-  "checked_utc": "2026-10-24T16:09:47.018663+00:00",
-  "protocol_tests_passed": 19,
+  "checked_utc": "2026-10-30T02:20:29.353962+00:00",
+  "protocol_tests_passed": 20,
   "training_port_tests_passed": 8,
   "notebook_CPU_dry_runs_passed": 12,
   "instances": {
@@ -11,42 +11,42 @@
   "input_budgets": [
     {
       "family": "Mistral",
-      "attempt": 1,
+      "experiment": "1a",
       "calls": 200,
       "maximum_input_tokens": 750,
       "output_reserve": 600
     },
     {
       "family": "Mistral",
-      "attempt": 2,
+      "experiment": "2a",
       "calls": 200,
       "maximum_input_tokens": 6467,
       "output_reserve": 600
     },
     {
       "family": "Mistral",
-      "attempt": 3,
+      "experiment": "3a",
       "calls": 200,
       "maximum_input_tokens": 6597,
       "output_reserve": 600
     },
     {
       "family": "Qwen",
-      "attempt": 1,
+      "experiment": "1b",
       "calls": 200,
       "maximum_input_tokens": 635,
       "output_reserve": 600
     },
     {
       "family": "Qwen",
-      "attempt": 2,
+      "experiment": "2b",
       "calls": 200,
       "maximum_input_tokens": 5781,
       "output_reserve": 600
     },
     {
       "family": "Qwen",
-      "attempt": 3,
+      "experiment": "3b",
       "calls": 200,
       "maximum_input_tokens": 5883,
       "output_reserve": 600
@@ -60,5 +60,24 @@
   "CLI_CPU_preparations_passed": 7,
   "complete_code_notebooks": 7,
   "complete_source_snapshots_match": true,
-  "interaction_stage_name": "Participant Agent Interaction"
+  "interaction_stage_name": "Participant Agent Interaction",
+  "experiment_naming": {
+    "Mistral": [
+      "1a",
+      "2a",
+      "3a"
+    ],
+    "Qwen": [
+      "1b",
+      "2b",
+      "3b"
+    ],
+    "cases_preserved_except_label": 1200,
+    "prompts_inputs_ids_seeds_and_settings_unchanged": true,
+    "protected_files_byte_identical": 1804,
+    "project_relative_links_verified": 61,
+    "embedded_source_snapshots_verified": 48,
+    "embedded_source_hashes_verified": 48,
+    "shared_CLI_rejects_mismatched_model_family": true
+  }
 }

@@ -92,28 +92,51 @@ def neutralize(text, actual_to_neutral):
     return re.sub(r'\bAgent\s+([ABCDE])\b', replace, text)
 
 
-def validate_base_prompt(baseline, attempt):
+
+def experiment_number(experiment):
+    """Resolve the procedure number from a numeric selector or manuscript ID."""
+    match = re.fullmatch(r'0?([123])([ab]?)', str(experiment).strip().lower())
+    if not match:
+        raise ValueError('Unknown experiment: ' + str(experiment))
+    return int(match.group(1))
+
+
+def experiment_id(experiment, root=ROOT):
+    """Use a for Mistral and b for Qwen; reject a mismatched family."""
+    number = experiment_number(experiment)
+    family = read_json(Path(root)/'config/model.json')['family']
+    suffix = {'Mistral': 'a', 'Qwen': 'b'}[family]
+    value = str(experiment).strip().lower()
+    if value[-1:] in ('a', 'b') and value[-1] != suffix:
+        raise ValueError(f'Experiment {value} does not use the {family} model family')
+    return f'{number}{suffix}'
+
+
+def experiment_directory(experiment, root=ROOT):
+    return Path(root)/f'Experiment_{experiment_id(experiment, root)}'
+
+
+def validate_base_prompt(baseline, experiment):
     """Reject incomplete prompt copies before preparing or sending any request."""
-    choice_field = 'VERDICT:' if int(attempt) == 3 else 'ENDORSEMENT:'
+    choice_field = 'VERDICT:' if experiment_number(experiment) == 3 else 'ENDORSEMENT:'
     if not any(label in baseline for label in ('YOUR OWN ANSWER:', 'YOUR OWN ANSER:')):
         raise ValueError('Incomplete base prompt: missing own-answer output field')
     if choice_field not in baseline or 'RATIONALE:' not in baseline:
         raise ValueError('Incomplete base prompt: missing choice or rationale output field')
     if 'Return only these three fields.' not in baseline:
         raise ValueError('Incomplete base prompt: missing closing output instruction')
-    if int(attempt) == 3 and not all(label in baseline for label in ('P1:', 'P2:', 'Both:', 'None:')):
+    if experiment_number(experiment) == 3 and not all(label in baseline for label in ('P1:', 'P2:', 'Both:', 'None:')):
         raise ValueError('Incomplete verdict prompt: missing category definitions')
     return True
 
 
-def build_cases(attempt, root=ROOT):
+def build_cases(experiment, root=ROOT):
     """100 article/pair/manager cases x two separately generated orientations."""
     root = Path(root)
-    attempt = f'{int(attempt):02d}'
-    if attempt not in ('01', '02', '03'):
-        raise ValueError('Unknown attempt')
-    baseline = (root/f'Attempt_{attempt}/prompts/Prompt_Verbatim.txt').read_text()
-    validate_base_prompt(baseline, attempt)
+    experiment = experiment_id(experiment, root)
+    number = experiment_number(experiment)
+    baseline = (root/f'Experiment_{experiment}/prompts/Prompt_Verbatim.txt').read_text()
+    validate_base_prompt(baseline, experiment)
     model_config = read_json(root/'config/model.json')
     sessions = read_json(root/'inputs/frozen_sessions.json')
     differences = {(d['article_id'], d['manager'], d['participant']): d
@@ -127,7 +150,8 @@ def build_cases(attempt, root=ROOT):
                 actuals = pair if orientation == 'original' else list(reversed(pair))
                 labels = dict(zip(['P1','P2'], actuals))
                 actual_to_neutral = {actual: NEUTRAL[p] for p, actual in labels.items()}
-                row_id = f'{model_config["family"].lower()}_a{attempt}_{base}_{orientation}'
+                # Keep the established numeric namespace so renaming preserves seeds and UUIDs.
+                row_id = f'{model_config["family"].lower()}_a{number:02d}_{base}_{orientation}'
                 instance = spawn_instance(row_id, model_config['manager_alias_prefix'] + manager.lower())
                 difference_texts = {
                     p: differences[(session['article_id'], manager, actual)]['text'].format(participant=NEUTRAL[p])
@@ -135,7 +159,7 @@ def build_cases(attempt, root=ROOT):
                 messages = [{**m, 'speaker': actual_to_neutral[m['actual_agent']],
                              'text': neutralize(m['text'], actual_to_neutral)} for m in session['messages']]
                 finals = {p: session['final_message_ids'][actual] for p, actual in labels.items()}
-                allowed = ['P1', 'P2'] if attempt != '03' else (
+                allowed = ['P1', 'P2'] if number != 3 else (
                     ['P1','P2','None'] if session['source_outcome'] == 'Unresolved'
                     else ['P1','P2','Both','None'])
                 # Only substitute the explicitly requested manager placeholder.
@@ -147,16 +171,16 @@ def build_cases(attempt, root=ROOT):
                     'BELIEF DIFFERENCES RELATIVE TO MY LEARNED BELIEFS\n' +
                     '\n'.join(f'Beliefs of {NEUTRAL[p]} ({p}): {difference_texts[p]}' for p in ['P1','P2']),
                     'FINAL MESSAGE IDS\n' + '\n'.join(f'{p} ({NEUTRAL[p]}): {finals[p]}' for p in ['P1','P2'])]
-                if attempt in ['02','03']:
+                if number in [2, 3]:
                     transcript = '\n\n'.join(f'{m["id"]} | {m["speaker"]} | {m["stage"]}\n{m["text"]}' for m in messages)
                     sections.append(TRANSCRIPT_INTRO + '\n<OTHER_PARTICIPANTS_CONVERSATION>\n' +
                                     transcript + '\n</OTHER_PARTICIPANTS_CONVERSATION>')
                 else:
                     sections.append('No interaction transcript is supplied in this attempt. The final message IDs identify the participants\' final messages; their contents are not supplied.')
-                if attempt == '03':
+                if number == 3:
                     sections.append('PERMITTED VERDICTS\n' + ', '.join(allowed))
                 content = '\n\n'.join(sections)
-                cases.append({'row_id': row_id, 'base_row_id': base, 'attempt': attempt,
+                cases.append({'row_id': row_id, 'base_row_id': base, 'experiment': experiment,
                     'article_id': session['article_id'], 'article_title': session['article_title'],
                     'session_id': session['session_id'], 'pair': session['pair'], 'manager': manager,
                     'orientation': orientation, 'labels_to_actual': labels, 'neutral_to_actual':
@@ -189,7 +213,7 @@ def validate_cases(cases):
             raise ValueError('Missing own-answer instruction')
         if re.search(r'\bAgent\s+[ABCDE]\b|Manager_Agent_Pair_|P[12]\s*=\s*[ABCDE]\b', c['content']):
             raise ValueError('Original agent identity leaked into manager prompt')
-        if c['attempt'] in ['02','03'] and TRANSCRIPT_INTRO not in c['content']:
+        if experiment_number(c['experiment']) in [2, 3] and TRANSCRIPT_INTRO not in c['content']:
             raise ValueError('Missing third-party transcript frame')
         for p, mid in c['final_message_ids'].items():
             matches = [m for m in c['messages'] if m['id'] == mid]
@@ -226,19 +250,19 @@ class FrozenTokenizer:
         return self.impl.prepare(content)
 
 
-def prepare_inputs(attempt, root=ROOT, save=True):
+def prepare_inputs(experiment, root=ROOT, save=True):
     """Author 200 exact input strings and token IDs. Never generate responses."""
     root = Path(root)
-    cases = build_cases(attempt, root)
+    cases = build_cases(experiment, root)
     tokenizer = FrozenTokenizer(root)
-    config = read_json(root/f'Attempt_{int(attempt):02d}/config.json')
+    config = read_json(experiment_directory(experiment, root)/'config.json')
     for c in cases:
         c['serialized'], c['input_ids'] = tokenizer.prepare(c['content'])
         c['input_tokens'] = len(c['input_ids'])
         if c['input_tokens'] + config['max_output_tokens'] > read_json(root/'config/model.json')['context_tokens']:
             raise ValueError('Context overflow; inputs must not be truncated: ' + c['row_id'])
     if save:
-        dest = root/f'Attempt_{int(attempt):02d}/inputs'
+        dest = experiment_directory(experiment, root)/'inputs'
         write_json(dest/'prepared_cases.json', cases)
         write_json(dest/'all_input_texts.json', [c['serialized'] for c in cases])
         write_json(dest/'all_input_token_ids.json', [c['input_ids'] for c in cases])

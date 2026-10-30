@@ -16,6 +16,21 @@ class ProtocolTests(unittest.TestCase):
         cls.cases={(f,a):p.prepare_inputs(a,ROOT/'Experiment Codes'/f,save=False) for f in ['Mistral','Qwen'] for a in [1,2,3]}
         cls.sources={s['session_id']:s for s in p.read_json(ROOT/'DATA/participant_agent_interactions/frozen_sessions.json')}
 
+    def test_experiment_ids_match_model_and_preserve_case_identity(self):
+        for family, suffix, wrong in [('Mistral', 'a', 'b'), ('Qwen', 'b', 'a')]:
+            root = ROOT/'Experiment Codes'/family
+            for number in (1, 2, 3):
+                code = f'{number}{suffix}'
+                named = p.build_cases(code, root)
+                self.assertTrue(all(c['experiment'] == code for c in named))
+                self.assertEqual(p.build_cases(number, root), named)
+                for old, new in zip(self.cases[(family, number)], named):
+                    self.assertEqual(old['row_id'], new['row_id'])
+                    self.assertEqual(old['agent_instance'], new['agent_instance'])
+                    self.assertEqual(old['content'], new['content'])
+                with self.assertRaises(ValueError):
+                    p.build_cases(f'{number}{wrong}', root)
+
     def test_unique_empty_instances_and_balanced_orientation(self):
         all_ids=[]
         for key,rows in self.cases.items():
@@ -50,22 +65,22 @@ class ProtocolTests(unittest.TestCase):
                     self.assertEqual(a['belief_differences'][old].replace(old,'PERSON'),b['belief_differences'][new].replace(new,'PERSON'))
 
     def test_exact_base_prompts_and_materials(self):
-        for (family,attempt),rows in self.cases.items():
-            baseline=(ROOT/'Experiment Codes'/family/f'Attempt_{attempt:02d}/prompts/Prompt_Verbatim.txt').read_text()
+        for (family,experiment),rows in self.cases.items():
+            baseline=(p.experiment_directory(experiment, ROOT/'Experiment Codes'/family)/'prompts/Prompt_Verbatim.txt').read_text()
             for c in rows:
                 self.assertTrue(c['content'].startswith(baseline.replace('{manager}','manager')))
-                self.assertEqual('<OTHER_PARTICIPANTS_CONVERSATION>' in c['content'],attempt in [2,3])
+                self.assertEqual('<OTHER_PARTICIPANTS_CONVERSATION>' in c['content'],experiment in [2,3])
                 self.assertNotIn('Correct consensus',c['content']);self.assertNotIn('False consensus',c['content'])
                 self.assertNotRegex(c['content'],r'\bAgent\s+[ABCDE]\b|P[12]\s*=\s*[ABCDE]\b')
-                self.assertEqual(c['allowed_choices'],(['P1','P2'] if attempt!=3 else ['P1','P2','None'] if c['source_outcome_offline_only']=='Unresolved' else ['P1','P2','Both','None']))
+                self.assertEqual(c['allowed_choices'],(['P1','P2'] if experiment!=3 else ['P1','P2','None'] if c['source_outcome_offline_only']=='Unresolved' else ['P1','P2','Both','None']))
 
     def test_incomplete_prompt_is_rejected(self):
         for family in ['Mistral', 'Qwen']:
-            for attempt in [1, 2, 3]:
-                prompt = (ROOT/'Experiment Codes'/family/f'Attempt_{attempt:02d}/prompts/Prompt_Verbatim.txt').read_text()
-                self.assertTrue(p.validate_base_prompt(prompt, attempt))
+            for experiment in [1, 2, 3]:
+                prompt = (p.experiment_directory(experiment, ROOT/'Experiment Codes'/family)/'prompts/Prompt_Verbatim.txt').read_text()
+                self.assertTrue(p.validate_base_prompt(prompt, experiment))
                 with self.assertRaises(ValueError):
-                    p.validate_base_prompt(prompt.split('OUTPUT FORMAT')[0], attempt)
+                    p.validate_base_prompt(prompt.split('OUTPUT FORMAT')[0], experiment)
 
     def test_all_contexts_fit_without_truncation(self):
         for (family,_),rows in self.cases.items():
@@ -106,7 +121,7 @@ class ProtocolTests(unittest.TestCase):
 
     def test_inference_requires_explicit_switch(self):
         with tempfile.TemporaryDirectory() as d:
-            for call in [m.run_attempt(1,'test',root=Path(d)),interaction.advance_interactions('test',root=Path(d))]:
+            for call in [m.run_experiment(1,'test',root=Path(d)),interaction.advance_interactions('test',root=Path(d))]:
                 with self.assertRaises(PermissionError):asyncio.run(call)
             self.assertFalse(list(Path(d).iterdir()))
 
@@ -119,7 +134,7 @@ class ProtocolTests(unittest.TestCase):
     def test_admission_respects_qwen_and_mistral_capacity(self):
         for family in ['Mistral','Qwen']:
             root=ROOT/'Experiment Codes'/family
-            config=json.loads((root/'Attempt_03/config.json').read_text());config['stop_token_ids']=[2] if family=='Mistral' else [151643,151645]
+            config=json.loads((p.experiment_directory(3, root)/'config.json').read_text());config['stop_token_ids']=[2] if family=='Mistral' else [151643,151645]
             jobs=m.make_jobs(self.cases[(family,3)],'test',config)
             cap=runtime.choose_admission(jobs,root)
             self.assertLessEqual(cap['concurrency'],8);self.assertLessEqual(cap['total_reserved_at_cap'],64000)

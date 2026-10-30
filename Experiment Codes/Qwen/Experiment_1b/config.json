@@ -1,6 +1,6 @@
 {
-  "attempt": "02",
-  "model_family": "Mistral",
+  "experiment": "1b",
+  "model_family": "Qwen",
   "articles": [
     "01",
     "02",

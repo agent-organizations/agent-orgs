@@ -1,4 +1,4 @@
-"""200 independent manager evaluations per attempt; never derive swapped outputs."""
+"""200 independent manager evaluations per experiment; never derive swapped outputs."""
 from __future__ import annotations
 from collections import Counter
 from pathlib import Path
@@ -8,13 +8,13 @@ import re
 import sys
 
 from workbench_protocol import (ROOT, build_cases, prepare_inputs, randomized_execution_order,
-    read_json, write_json, write_json_once, bind_run_sources, sha_text, seed_for, spawn_instance, validate_cases)
+    read_json, write_json, write_json_once, bind_run_sources, sha_text, seed_for, spawn_instance, validate_cases, experiment_number, experiment_id)
 from workbench_runtime import run_parallel, require_execution_permission, validate_run_id
 
 
-def parse_manager_output(text, attempt, permitted):
+def parse_manager_output(text, experiment, permitted):
     """Retain malformed/forbidden responses; flag them without regenerating."""
-    key = 'VERDICT' if int(attempt) == 3 else 'ENDORSEMENT'
+    key = 'VERDICT' if experiment_number(experiment) == 3 else 'ENDORSEMENT'
     cleaned = text.removesuffix('</s>').removesuffix('<|im_end|>').removesuffix('<|endoftext|>').strip()
     pattern = (r'\AYOUR OWN ANS(?:W?ER):\s*(.*?)\n\s*' + key +
                r':\s*(P1|P2|BOTH|NONE)\s*\n\s*RATIONALE:\s*(.*?)\s*\Z')
@@ -59,14 +59,14 @@ def collect_results(cases, records, run_id):
     for c in cases:
         call_id = run_id + '_' + c['row_id']
         r = lookup[call_id]
-        parsed = parse_manager_output(r['output_text'], c['attempt'], c['allowed_choices'])
+        parsed = parse_manager_output(r['output_text'], c['experiment'], c['allowed_choices'])
         if r['status'] != 'complete':
             parsed['review_flags'].append('Inference failed: ' + r.get('error','unknown'))
         if r['finish_reason'] == 'length':
             parsed['review_flags'].append('Output reached the generation limit; retained without repair')
         choice = parsed['choice']
         actual = c['labels_to_actual'].get(choice, choice)
-        results.append({'row_id':c['row_id'], 'call_id':call_id, 'attempt':c['attempt'],
+        results.append({'row_id':c['row_id'], 'call_id':call_id, 'experiment':c['experiment'],
             'article_id':c['article_id'], 'article_title':c['article_title'], 'pair':c['pair'],
             'manager':c['manager'], 'orientation':c['orientation'], 'base_row_id':c['base_row_id'],
             'instance_id':c['agent_instance']['instance_id'],
@@ -168,26 +168,26 @@ def export_results(rows, summary, destination):
             f.write(r['call_id']+'\n'+r['raw_output']+'\n\n')
 
 
-async def run_attempt(attempt, run_id, *, allow_inference=False, root=ROOT):
+async def run_experiment(experiment, run_id, *, allow_inference=False, root=ROOT):
     require_execution_permission(allow_inference)
     root = Path(root)
-    attempt = f'{int(attempt):02d}'
+    experiment = experiment_id(experiment, root)
     validate_run_id(run_id)
-    cases = prepare_inputs(attempt, root, save=False)
+    cases = prepare_inputs(experiment, root, save=False)
     # Runtime identities are specific to this run, while input text is unchanged.
     for c in cases:
         c['agent_instance'] = spawn_instance(run_id+':'+c['row_id'], c['agent_instance']['adapter_alias']).__dict__
     validate_cases(cases)
-    config = read_json(root/f'Attempt_{attempt}/config.json')
+    config = read_json(root/f'Experiment_{experiment}/config.json')
     config['stop_token_ids'] = read_json(root/'config/model.json')['stop_token_ids']
     jobs = make_jobs(cases, run_id, config)
-    run_root = root/f'Attempt_{attempt}/runs'/run_id
-    sources = [root/f'Attempt_{attempt}/prompts/Prompt_Verbatim.txt',
-        root/f'Attempt_{attempt}/config.json', root/'inputs/frozen_sessions.json',
+    run_root = root/f'Experiment_{experiment}/runs'/run_id
+    sources = [root/f'Experiment_{experiment}/prompts/Prompt_Verbatim.txt',
+        root/f'Experiment_{experiment}/config.json', root/'inputs/frozen_sessions.json',
         root/'inputs/belief_differences.json', root/'config/adapter_registry.json']
     sources += list((root.parent/'src').glob('*.py'))
     sources += list((root.parents[1]/'Parallel Agent Setup/src').glob('*.py'))
-    sources += [root/'config/model.json', root/f'Attempt_{attempt}/run_attempt_{attempt}.py', root.parent/'run.py']
+    sources += [root/'config/model.json', root/f'Experiment_{experiment}/run_experiment_{experiment}.py', root.parent/'run.py']
     sources += list((root/'vendor/wheels').glob('*.whl'))
     bind_run_sources(run_root, sources, root.parents[1])
     write_json_once(run_root/'inputs/all_input_texts.json', [c['serialized'] for c in cases])
@@ -198,7 +198,7 @@ async def run_attempt(attempt, run_id, *, allow_inference=False, root=ROOT):
     summary['source_outcomes_are_not_manager_truth_scores'] = True
     summary['decision_counts'] = dict(Counter(r['choice'] or 'unparsed' for r in rows))
     summary['cases_with_review_flags'] = sum(bool(r['review_flags']) for r in rows)
-    destination = root/f'Attempt_{attempt}/deliverables'/run_id
+    destination = root/f'Experiment_{experiment}/deliverables'/run_id
     export_results(rows, summary, destination)
     export_exact_io(cases, records, run_id, destination)
     write_json(run_root/'data/results.json', rows)

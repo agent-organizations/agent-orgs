@@ -1,8 +1,8 @@
-# Mistral Attempt 03
+# Qwen Experiment 1b
 
-Start with [`run_attempt_03.py`](run_attempt_03.py), or open [`Attempt_03_Complete_Code.ipynb`](Attempt_03_Complete_Code.ipynb). The notebook shows the complete source of the input builder, tokenizer, model client, parallel scheduler, response parser, recall check and exporter. Those modules are included in this repository and used by the entrypoint.
+Start with [`run_experiment_1b.py`](run_experiment_1b.py), or open [`Experiment_1b_Complete_Code.ipynb`](Experiment_1b_Complete_Code.ipynb). The notebook shows the complete source of the input builder, tokenizer, model client, parallel scheduler, response parser, recall check and exporter. Those modules are included in this repository and used by the entrypoint.
 
-This attempt supplies belief differences, question, complete interaction, final-message IDs and permitted verdict categories, then records the manager's own answer, verdict and rationale. The exact base prompt is in [`prompts/Prompt_Verbatim.txt`](prompts/Prompt_Verbatim.txt). Settings are in [`config.json`](config.json).
+This experiment supplies belief differences, question and final-message IDs, then records the manager's own answer, endorsement and rationale. The exact base prompt is in [`prompts/Prompt_Verbatim.txt`](prompts/Prompt_Verbatim.txt). Settings are in [`config.json`](config.json).
 
 ## Run
 
@@ -11,11 +11,11 @@ From the repository root, after following [the setup instructions](../../../Para
 ```sh
 cd "YOUR PATHWAY"
 # CPU preparation: no server, GPU or generation needed.
-python "Experiment Codes/Mistral/Attempt_03/run_attempt_03.py"
-# Restore weights and start the Mistral server first.
-python "Parallel Agent Setup/serve.py" --model Mistral --execute
-# Then generate this attempt only.
-python "Experiment Codes/Mistral/Attempt_03/run_attempt_03.py" --run-id mistral_attempt03_001 --execute
+python "Experiment Codes/Qwen/Experiment_1b/run_experiment_1b.py"
+# Restore weights and start the Qwen server first.
+python "Parallel Agent Setup/serve.py" --model Qwen --execute
+# Then generate this experiment only.
+python "Experiment Codes/Qwen/Experiment_1b/run_experiment_1b.py" --run-id qwen_experiment1b_001 --execute
 ```
 
 If a separate memory measurement is required, add `--with-manipulation-checks`. This asks each instance its question once without articles or belief differences, saves its unchanged answer for semantic scoring, and then starts the manager batch in fresh contexts. It is an optional, separate measurement.
