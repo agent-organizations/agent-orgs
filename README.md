@@ -21,21 +21,6 @@ Open [Experiment Codes: scripts and complete-code notebooks](Experiment%20Codes/
 
 The [Participant Agent Interaction runner](Experiment%20Codes/Mistral/Participant_Agent_Interaction/README.md) has separate prepare, advance, review, status and export commands. Its notebook displays the complete interaction implementation. The manager notebooks similarly display all shared code, rather than hiding the implementation behind an import.
 
-## Appendix B analysis code
-
-[Results & Analysis Codes (Appendix B)](Results%20%26%20Analysis%20Codes%20%28Appendix%20B%29/README.md) contains the post-experiment analysis for the final Appendix B exhibits. `Complete_Run_Code.py` runs all eleven scripts; each exhibit also has a standalone entrypoint. This analysis uses externally supplied final experiment outputs, separately from the base-procedure runners in `Experiment Codes`.
-
-The folder covers:
-
-- **Table B1b:** assigned-belief manipulation checks across Mistral Experiments 1a–3a and Qwen Experiments 1b–3b.
-- **Table B3 and Figures B3.1–B3.3:** historical debate outcomes, decisions across belief-match configurations, manager/pair heatmaps, and support for participants who retained or revised their answers.
-- **Tables B3.4–B3.5 and Figure B3.6:** article-clustered comparisons, within-manager changes across experiments, and support for the participant trained on altered articles by manager beliefs and debate behavior.
-- **Figure B3.7 and Tables B3.8–B3.9:** coded reasons in manager explanations, summary patterns, and comparisons between model families.
-
-`requirements.txt` pins the Python libraries, `NUMBERING_MAP.json` records the final exhibit numbering, and `package_manifest.json` verifies the released code files. The folder README documents the private input schema and provides commands for running the whole analysis or a single exhibit. Runs produce table/plot data, LaTeX, figures and local execution checks.
-
-**The final analysis data are not shared in this repository.** Public input manifests use `Final Output` aliases and `YOUR PATHWAY` placeholders. Reproduction requires the six final workbooks, the reviewed coding files and templates, and, for the combined runner, the private expected-output references. These must be supplied locally; they are not downloaded by the analysis code.
-
 ## Models and assignments
 
 | Family | Base model | Pinned revision | Inference context cap |
@@ -78,6 +63,21 @@ The base implementation independently queries both participant orientations: 5 a
 Requests share a frozen GPU base and LoRA tensors. **Client concurrency** is the maximum number of generation requests the client keeps active at once: the default limit of **8** allows up to eight simultaneous requests, with the rest waiting for a slot. Batches outside the standard input/output profiles use a lower limit of **2** to reduce GPU memory pressure. Token-reservation limits can reduce these counts further; neither number means loading separate copies of the model.
 
 The client records GPU memory, exact request/response text, token IDs, input/output counts, queue time, generation time and batch wall time. Parallel per-call durations overlap; summing them is not elapsed runtime.
+
+## Appendix B analysis code
+
+[Results & Analysis Codes (Appendix B)](Results%20%26%20Analysis%20Codes%20%28Appendix%20B%29/README.md) contains the post-experiment analysis for the final Appendix B exhibits. `Complete_Run_Code.py` runs all eleven scripts; each exhibit also has a standalone entrypoint. This analysis uses externally supplied final experiment outputs, separately from the base-procedure runners in `Experiment Codes`.
+
+The folder covers:
+
+- **Table B1b:** assigned-belief manipulation checks across Mistral Experiments 1a–3a and Qwen Experiments 1b–3b.
+- **Table B3 and Figures B3.1–B3.3:** historical debate outcomes, decisions across belief-match configurations, manager/pair heatmaps, and support for participants who retained or revised their answers.
+- **Tables B3.4–B3.5 and Figure B3.6:** article-clustered comparisons, within-manager changes across experiments, and support for the participant trained on altered articles by manager beliefs and debate behavior.
+- **Figure B3.7 and Tables B3.8–B3.9:** coded reasons in manager explanations, summary patterns, and comparisons between model families.
+
+`requirements.txt` pins the Python libraries, `NUMBERING_MAP.json` records the final exhibit numbering, and `package_manifest.json` verifies the released code files. The folder README documents the private input schema and provides commands for running the whole analysis or a single exhibit. Runs produce table/plot data, LaTeX, figures and local execution checks.
+
+**The final analysis data are not shared in this repository.** Public input manifests use `Final Output` aliases and `YOUR PATHWAY` placeholders. Reproduction requires the six final workbooks, the reviewed coding files and templates, and, for the combined runner, the private expected-output references. These must be supplied locally; they are not downloaded by the analysis code.
 
 ## Reproducibility
 
