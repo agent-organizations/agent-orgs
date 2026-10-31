@@ -49,6 +49,7 @@ There are five learned manager adapters per family. Each of the 200 instance def
 5. Use the frozen Participant Agent Interaction records as the manager inputs. The separate `02_Participant_Agent_Interaction.ipynb` notebook and the complete-code notebook in the participant folder expose the procedure for a new interaction run, including its semantic stopping review.
 6. Optionally run the unaided recall check notebook. It asks only a question, preserves every first response and leaves semantic scoring explicit; it does not provide articles or replace answers.
 7. Prepare and inspect all exact inputs in `04_Manager_Experiments.ipynb`. Set its execution switch only when ready to generate a new batch. Run Experiments 1a, 2a and 3a (Mistral), or 1b, 2b and 3b (Qwen) in sequence for the selected family, then switch servers for the other family.
+8. After obtaining the data for all six experiments, prepare the final workbooks, reviewed coding files and input manifests using the schema in [Results & Analysis Codes (Appendix B)](Results%20%26%20Analysis%20Codes%20%28Appendix%20B%29/README.md). Install its pinned requirements, then run `Complete_Run_Code.py` with your local `--inputs`, `--verification` and `--output` paths to generate and verify the Appendix B tables and figures. Keep private inputs and reference outputs outside the repository.
 
 ## Experiment Details
 
