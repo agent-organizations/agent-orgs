@@ -61,9 +61,7 @@ YOUR PATHWAY/
 
 The six workbooks must each contain the `Results` sheet with 200 outcomes: five articles × four pairs × five managers × two orientations. Required fields include outcome ID, article, pair, manager, orientation, participant identities, decisions, assigned-belief reference, own answer and rationale; the loaders perform further exhibit-specific checks. Existing approved bundles can keep their original filenames when their private manifests and coding references agree.
 
-`Final Output_1a.xlsx` and the other names in the public templates are aliases. Replace them with the matching local filenames in **both** manifests and in any private ledger `source_file` references. Replace every `YOUR PATHWAY` checksum value with the actual 64-character SHA256 digest of that private file. After changing a manifest, refresh its entry in the private `input_checksums.json`. Do not change the public `package_manifest.json` to point to private inputs.
-
-The six spreadsheets alone are insufficient: behavioral classifications, reviewed answer/rationale coding and LaTeX templates are additional inputs. The programs reuse those supplied classifications; they do not silently create new coding. `expected_outputs.json` is used to check reproduction of the approved numerical results, LaTeX and ledger content. Plot-pixel differences are reported separately because fonts and rendering can vary across environments.
+`Final Output_1a.xlsx` and the other names in the public templates are aliases. Replace them with the matching local filenames in **both** manifests and in any private ledger `source_file` references. Replace every `YOUR PATHWAY` checksum value with the actual 64-character SHA256 digest of that private file. After changing a manifest, refresh its entry in the private `input_checksums.json`. Do not change the public `package_manifest.json` to point to private inputs. The `expected_outputs.json` is used to check reproduction of the approved numerical results, LaTeX and ledger content. Plot-pixel differences are reported separately because fonts and rendering can vary across environments.
 
 ## Run every exhibit
 
@@ -92,7 +90,3 @@ python Figure_B3_2.py \
 ```
 
 Replace the script name for another exhibit. Individual scripts use the supplied input checks and do not require the separate reference-output bundle. The combined runner adds the end-to-end comparison against that bundle.
-
-## Release scope
-
-The statistical calculations, scoring functions and study-specific consistency assertions are retained from the supplied final analysis code. Packaging changes make the private input/reference locations configurable, replace identifying manifest values with placeholders, and use a portable plot-cache path. No workbook, row-level coding ledger, final result table, generated plot or expected-output dataset is included. The local source folder remains unchanged.
