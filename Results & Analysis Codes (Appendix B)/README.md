@@ -1,4 +1,4 @@
-# Analysis Codes (Appendix B)
+# Results & Analysis Codes (Appendix B)
 
 This folder contains the final analysis programs for Appendix B. It reads the six final experiment workbooks and their reviewed coding files, calculates the table and figure values, and exports CSV, JSON, LaTeX and plot files. It does not train agents or run new manager evaluations.
 

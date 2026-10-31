@@ -13,7 +13,7 @@ Package for the five-article agent-belief study. It contains the original and al
 | `Training logs` | Retained per-step training losses, validation/selection records, training examples and lineage. |
 | `Parallel Agent Setup` | One-base/multiple-LoRA vLLM server, bounded asynchronous client, token accounting and per-instance timings. |
 | `Experiment Codes` | Base-prompt Experiments 1a–3a (Mistral) and 1b–3b (Qwen), optional unaided recall checks, Participant Agent Interaction procedure, training entrypoints and notebooks. |
-| [Analysis Codes (Appendix B)](Analysis%20Codes%20%28Appendix%20B%29/README.md) | One combined runner and eleven exhibit scripts for the final Appendix B tables and figures, with dependencies and placeholder input manifests. Final analysis data are not included. |
+| [Results & Analysis Codes (Appendix B)](Results%20%26%20Analysis%20Codes%20%28Appendix%20B%29/README.md) | One combined runner and eleven exhibit scripts for the final Appendix B tables and figures, with dependencies and placeholder input manifests. Final analysis data are not included. |
 
 ## Full running code
 
@@ -23,7 +23,7 @@ The [Participant Agent Interaction runner](Experiment%20Codes/Mistral/Participan
 
 ## Appendix B analysis code
 
-[Analysis Codes (Appendix B)](Analysis%20Codes%20%28Appendix%20B%29/README.md) contains the post-experiment analysis for the final Appendix B exhibits. `Complete_Run_Code.py` runs all eleven scripts; each exhibit also has a standalone entrypoint. This analysis uses externally supplied final experiment outputs, separately from the base-procedure runners in `Experiment Codes`.
+[Results & Analysis Codes (Appendix B)](Results%20%26%20Analysis%20Codes%20%28Appendix%20B%29/README.md) contains the post-experiment analysis for the final Appendix B exhibits. `Complete_Run_Code.py` runs all eleven scripts; each exhibit also has a standalone entrypoint. This analysis uses externally supplied final experiment outputs, separately from the base-procedure runners in `Experiment Codes`.
 
 The folder covers:
 
