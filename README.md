@@ -77,7 +77,7 @@ The folder covers:
 
 `requirements.txt` pins the Python libraries, `NUMBERING_MAP.json` records the final exhibit numbering, and `package_manifest.json` verifies the released code files. The folder README documents the private input schema and provides commands for running the whole analysis or a single exhibit. Runs produce table/plot data, LaTeX, figures and local execution checks.
 
-**The final analysis data are not shared in this repository.** Public input manifests use `Final Output` aliases and `YOUR PATHWAY` placeholders. Reproduction requires the six final workbooks, the reviewed coding files and templates, and, for the combined runner, the private expected-output references. These must be supplied locally; they are not downloaded by the analysis code.
+** Public input manifests use `Final Output` aliases and `YOUR PATHWAY` placeholders. Reproduction requires running the experiment first, obtaining the raw data from the experiment by model and experimental conditions, the coding files and templates, and, for the combined runner, the private expected-output references. 
 
 ## Reproducibility
 
