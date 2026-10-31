@@ -1,0 +1,41 @@
+{
+  "reference_set_id": "Final Output",
+  "files": [
+    {
+      "model": "Qwen",
+      "attempt": 1,
+      "filename": "Final Output_1b.xlsx",
+      "sha256": "YOUR PATHWAY"
+    },
+    {
+      "model": "Qwen",
+      "attempt": 2,
+      "filename": "Final Output_2b.xlsx",
+      "sha256": "YOUR PATHWAY"
+    },
+    {
+      "model": "Qwen",
+      "attempt": 3,
+      "filename": "Final Output_3b.xlsx",
+      "sha256": "YOUR PATHWAY"
+    },
+    {
+      "model": "Mistral",
+      "attempt": 1,
+      "filename": "Final Output_1a.xlsx",
+      "sha256": "YOUR PATHWAY"
+    },
+    {
+      "model": "Mistral",
+      "attempt": 2,
+      "filename": "Final Output_2a.xlsx",
+      "sha256": "YOUR PATHWAY"
+    },
+    {
+      "model": "Mistral",
+      "attempt": 3,
+      "filename": "Final Output_3a.xlsx",
+      "sha256": "YOUR PATHWAY"
+    }
+  ]
+}

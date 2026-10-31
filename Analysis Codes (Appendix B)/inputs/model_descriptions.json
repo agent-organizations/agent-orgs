@@ -1,0 +1,4 @@
+{
+  "Mistral": "Mistral-7B-Instruct-v0.2; five article- and QA-trained LoRA adapters, A--E.",
+  "Qwen": "Qwen-7B-Chat; five article- and QA-trained LoRA adapters, A--E."
+}

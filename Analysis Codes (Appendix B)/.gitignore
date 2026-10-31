@@ -1,0 +1,24 @@
+# Private data and generated analysis outputs stay outside version control.
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+outputs/
+results/
+qa/
+logs/
+verification/
+Final Output*/
+YOUR PATHWAY/
+*.xlsx
+*.xlsm
+*.xls
+*.csv
+*.png
+*.pdf
+# Only the four sanitized input templates are distributable.
+inputs/*
+!inputs/manifest.json
+!inputs/locked_manifest.json
+!inputs/input_checksums.json
+!inputs/model_descriptions.json

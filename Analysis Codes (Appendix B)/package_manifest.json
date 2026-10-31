@@ -1,0 +1,24 @@
+{
+  "files": {
+    ".gitignore": "11b7703db2fe7df7108d4ea39d470ab959895713268b46d804abe1830fb36431",
+    "Complete_Run_Code.py": "85ed3474e062ab0309f3339bd05711b203cf64288c6c2a5afa5381730af9e486",
+    "Figure_B3_1.py": "bda56914776e4c86130127ce16876ff072c8a75c9781682410edb0b43678b22a",
+    "Figure_B3_2.py": "5a88c9394c7ecd583902af343539eb582f429cbeab4ef3227ef5fe0b9d761506",
+    "Figure_B3_3.py": "28074bdf8aa0c14e5358b83fc607335a0cac29ddff5d0683aa5441b26c289321",
+    "Figure_B3_6.py": "72c8997fb7b2f48b239cf59078e03b0199f927dca399332736f8c6dd54b90313",
+    "Figure_B3_7.py": "89bfb07c930780e2fc06bcd3c9608ca207da468d21b5c1a418cb6a58396f148f",
+    "NUMBERING_MAP.json": "c74f4a93d28e88a200448c3d66dbae7602d3723144a19af28d5382f72ec0d269",
+    "README.md": "bbedba4143c2f83a16474879f9291d273edbb55d15d84dd1655ff410ca55beed",
+    "Table_B1b.py": "0bae4f34a2a53f2ba928313c9fd7d24d170243456f63b0c73a0b285a14517bdb",
+    "Table_B3.py": "eb2922ddf775f47ef895af3e8ccdce95ac718146c9380f6fc51b46bc89b59ca1",
+    "Table_B3_4.py": "81fb5c1920e4dde16fab5d29ff648584553c2e1697eb695a7db4308795b49014",
+    "Table_B3_5.py": "b1a0b40a1481dc2424eb557d8eea2e20ba31309dbb5f77279aa9986c027bc83e",
+    "Table_B3_8.py": "7e863b5765b4211e9753de763010fd78012d0de37f7154bebcd0360c777c3af1",
+    "Table_B3_9.py": "b03d5807423f125d8b4e06939652f0ab927ae4878a281fe91f8fec4a510fcfc4",
+    "inputs/input_checksums.json": "b8284abafb6f2b10fbbd17cb0c835374e5d3e04418433377c274cbf218c5ba93",
+    "inputs/locked_manifest.json": "148035457a7785befe8bd928475b936d52f213b3fe1336e2e544bfbec05371f8",
+    "inputs/manifest.json": "148035457a7785befe8bd928475b936d52f213b3fe1336e2e544bfbec05371f8",
+    "inputs/model_descriptions.json": "4a32845a8ba4d11ae3b925e995cfa5d6010a7158981a29b032e23fb5abf7b3b0",
+    "requirements.txt": "0023629cb0933ea5447e8682cbeadbb5774086b2b90505622c1cc172cfa42d44"
+  }
+}
