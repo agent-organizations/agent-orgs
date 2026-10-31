@@ -2,7 +2,7 @@
 
 This folder contains the final analysis programs for Appendix B. It reads the six final experiment workbooks and their reviewed coding files, calculates the table and figure values, and exports CSV, JSON, LaTeX and plot files. It does not train agents or run new manager evaluations.
 
-**Final data are not included.** The `inputs/` files here are sanitized manifest templates and public model descriptions. The complete private input bundle and reference outputs must be supplied separately. A clone of this repository alone cannot reproduce the reported results.
+**Final data are not included.** The `inputs/` files here are sanitized manifest templates and public model descriptions. The complete private input bundle and reference outputs must be supplied separately.
 
 ## Contents and exhibit mapping
 
